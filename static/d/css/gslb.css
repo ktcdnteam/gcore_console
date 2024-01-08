@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/**버튼박스 내 마우스 오버**/
+.btn_box .pop_btn_right:hover,
+.btns_add:hover{background-color:#03428e;}
+.btn_box .pop_btn_left:hover{background-color:#f4f4f4;border-radius:2px;}
+
+
+/*주의사항*/
+.ptitclick{display:inline-block;width:20px;height:29px;background:url(/images/coni/Advanced_pre.svg) no-repeat center;}
+.ptitclick.on{background-image:url(/images/coni/Advanced.svg);}
+.pdescclick p{margin:19px 0;}
+
+/*본문내용*/
+
+.gslb_right .vm_wrap_pop .vm_list {
+     margin: 0;
+}
+.gslb_right .pop_tb_c,
+.gslb_right .pop_tbl{
+    width: 950px;
+}
+
+
+
+
+.gslb_right .apply_tb_c{height: 148px;}
+
+.gslb_right .apply_tb_c tr:first-child th{padding:19px 0 10px 0;}
+.gslb_right .apply_tb_c tr:last-child th{padding-bottom:63px;}
+.gslb_right .apply_tb_c tr:first-child th:last-child{border-right: 1px dashed #B6B6C3;}
+
+.gslb_right .c_th_input th,
+.gslb_right .c_th_input td{padding:0;}
+
+.gslb_right .actionlist{margin: 0 0 10px;}
+
+.gslb_right .actionlist ul{
+    height: 34px;
+    position: relative;
+}
+.gslb_right .actionlist ul li{
+    float: left;
+    height: 34px;
+    text-align: center;
+}
+
+.gslb_right .actionlist ul li span{
+  line-height: 34px;
+  padding: 9px 10px 9px 10px;
+    border-radius: 2px;
+}
+.gslb_right .pop_tbl thead tr th{padding-left:10px;}
+
+.gslb_right .pop_tbl tbody td{padding: 7px 10px;}
+
+
+/* font*/
+.gslb_right .sub_t .r_quick{
+    background: url(/images/coni/LNB_LoadBalancer.svg) left top no-repeat;
+    padding:0;
+}
+.gslb_right .sub_t .h3_quick span a{font-size:13px;line-height:19px;color:#333336;font-family: Spoqa Han Sans Regular;}
+.gslb_right .sub_t .h3_quick .r_quick span{
+    font-size:13px;line-height:19px;color:#333336;font-family: Spoqa Han Sans Bold;
+    margin-left:0;
+}
+.gslb_right .sub_t .h3_quick .r_quick{font-size:13px;line-height:16px;color:#333336;font-family: Lato Regular;}
+.gslb_right .sub_t .title_area h3{font-size:32px;line-height:38px;color:#333336 !important;font-family:Spoqa Han Sans Bold !important;}
+
+/* .sub_t .title_area h3 {margin:37px 0 36px 0;}
+.sub_t .title_area {padding-top:0 !important;height:auto !important;margin:auto !important;} */
+
+

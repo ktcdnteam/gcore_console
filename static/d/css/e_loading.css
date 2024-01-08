@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+.stage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+
+svg {
+  /* width: 18px;
+  height: 18px; */
+  margin: 0 auto;
+  /* fill:  #2CBBB6;  */
+  fill: #03428e;
+  box-sizing: border-box;
+  resize: none;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -78px;
+  margin-left: -118px;
+}
+
+.show_loading_img svg{
+  position: relative;
+  top: auto;
+  left: auto;
+  margin-top: 0;
+  margin-left: 0;    
+}
+
+.show_loading_img > svg{
+  position: relative;
+  top: auto;
+  left: auto;
+  margin-top: 0;
+  margin-left: 0;
+  width: 16px;
+  height: 16px;    
+}
+
+.show_loading_img > .lodingsize_s{
+  /* position: relative;
+  top: auto;
+  left: auto;
+  margin-top: 0;
+  margin-left: 0;
+  width: 16px;
+  height: 16px; */    
+}
+
+/* Windy Cloud Animation */
+.windy-cloud .cloud-wrap {
+  animation: bob 2s infinite cubic-bezier(0,0,.5,1.5);
+}
+.windy-cloud .cloud {
+  animation: cloud-push 4s infinite;
+  transform-origin: left center;
+}
+.windy-cloud .wind-one {
+  animation: wind-slide-one 4s infinite;
+}
+.windy-cloud .wind-two {
+  animation: wind-slide-two 4s infinite;
+}
+.windy-cloud .wind-three {
+  animation: wind-slide-three 4s infinite;
+}
+
+@keyframes bob {
+  0%, 100% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes cloud-push {
+  0%, 80%, 100% {
+    transform: translateX(-120px) scale(1.2);
+  }
+  10%, 60% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes wind-slide-one {
+  0%, 70%, 100% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  10%, 60% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes wind-slide-two {
+  0%, 70%, 100% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  10%, 60% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes wind-slide-three {
+  0%, 70%, 100% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  10%, 60% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_server" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-3{fill:#323232}
+        </style>
+    </defs>
+    <g id="Group_69" transform="translate(-40.11 -100)">
+        <path id="Rectangle_118" fill="#c7e9f4" d="M0 0H18V20H0z" transform="translate(48.11 107)"/>
+        <g id="Group_68">
+            <path id="Rectangle_119" d="M0 0H3V1H0z" class="cls-3" transform="translate(60.11 107.833)"/>
+            <path id="Rectangle_120" d="M0 0H3V1H0z" class="cls-3" transform="translate(60.11 115.5)"/>
+            <path id="Rectangle_121" d="M0 0H3V1H0z" class="cls-3" transform="translate(60.11 123.167)"/>
+            <path id="Path_24" d="M45.11 104v24h22v-24zm21 23h-20v-6.667h20zm0-7.667h-20v-6.666h20zm-20-7.666V105h20v6.667z" class="cls-3"/>
+        </g>
+    </g>
+</svg>

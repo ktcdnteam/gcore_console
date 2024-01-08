@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_watch" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-3{fill:#323232}
+        </style>
+    </defs>
+    <g id="Group_5827" transform="translate(-448 -1300)">
+        <path id="Path_11532" fill="#c7e9f4" d="M465.477 1321.977a5.493 5.493 0 0 1 7.523-5.111V1308h-20v14h12.479z"/>
+        <g id="Group_5826">
+            <path id="Path_11533" d="M462.5 1322h1v-1H451v-15h21v8.5h1v-9.5h-23v17h11.5v3.5H456v1h9v-1h-2.5z" class="cls-3"/>
+            <path id="Path_11534" d="M478 1328.293l-2.8-2.8a5.5 5.5 0 1 0-.707.707l2.8 2.8zm-7.023-1.816a4.5 4.5 0 1 1 4.5-4.5 4.5 4.5 0 0 1-4.5 4.5z" class="cls-3"/>
+            <path id="Rectangle_1520" d="M0 0H1V1H0z" class="cls-3" transform="translate(467.977 1321.477)"/>
+            <path id="Rectangle_1521" d="M0 0H1V1H0z" class="cls-3" transform="translate(470.477 1321.477)"/>
+            <path id="Rectangle_1522" d="M0 0H1V1H0z" class="cls-3" transform="translate(472.977 1321.477)"/>
+        </g>
+    </g>
+</svg>

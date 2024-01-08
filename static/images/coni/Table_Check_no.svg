@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #b6b6c3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="레이어_2" data-name="레이어 2">
+    <g id="Table_Check_no">
+      <rect class="cls-1" x="0.5" y="0.5" width="14" height="14" rx="2"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+2023/12/05 12:01:34 api.go:59: POST https://api.gcore.com/cdn/resources >>> json: cannot unmarshal object into Go value of type string
+ {"errors":{"options":{"stale":{"value":["This field may not be null."]},"edge_cache_settings":{"errors":["Either `default` or `value` field must be specified"]}}}} 
+2023/12/06 04:49:40 api.go:59: POST https://api.gcore.com/cdn/resources >>> json: cannot unmarshal object into Go value of type string
+ {"errors":{"secondaryHostnames":"This field may not be null"}} 
+2023/12/06 04:52:10 api.go:59: POST https://api.gcore.com/cdn/resources >>> json: cannot unmarshal object into Go value of type string
+ {"errors":{"secondaryHostnames":"Secondary hostname cannot be empty"}} 
+2023/12/06 05:24:47 api.go:59: POST https://api.gcore.com/cdn/resources >>> json: cannot unmarshal object into Go value of type string
+ {"errors":{"cname":["CNAME gcore33.ktcdnteam.link is used in Resource ID 313797. Try another CNAME or contact support."]}} 
+2023/12/18 08:39:29 api.go:67: POST https://api.gcore.com/cdn/origin_groups >>> [ERROR : json: cannot unmarshal object into Go value of type string] 
+ {"errors":{"name":["Origin Group name should be unique."]}} 
+2023/12/29 05:08:14 api.go:71: DELETE https://api.gcore.com/cdn/origin_groups/452768 >>> [ERROR : 400] 
+{"errors":{"name":"There are resources using such group"}} 
+POST https://api.gcore.com/cdn/resources/361345/purge  >>> [ERROR : 429 Too Many Requests]
+{
+  "message": "You have exceeded a purge by paths limit. You can send no more than 1 request per minute. New request can be sent in 4 seconds."
+}

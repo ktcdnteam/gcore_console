@@ -1,0 +1,349 @@
+{{define "ORIGIN_GROUP"}}
+<div id="contentwrapper" style="width: 100%;">
+    <div id="contentcolumn3">
+        <div id="cdnContentArea" class="sub_m">
+                <div class="sub_t btop dep1_1 ml60">
+                    <div class="r_quick_wrap">
+                        <span class="r_quick"><a href="" class="cicon cprod_cdn">CDN Standard</a></span> >          
+                        <span class="r_quick_s"><a href="" class="cicons">CDN</a></span>
+                            
+                        <span class="h3_quick"><a href="javascript:go_portal_page('https://manual.cloud.kt.com/kt/cdn-standard-intro');" class="tmanual7">매뉴얼</a></span>
+                        <span class="h3_quick ml10"><a href="javascript:go_portal_inquiry('3','ucloud CDN','/console/cdnlist');" class="thelp7">온라인문의</a></span>
+                        <span class="h3_quick"><a href="javascript:go_portal_satisfaction_evaluation('CDN3.0','CDN');" class="tSatisfactioni7">만족도평가</a></span>
+                    </div>
+                    <div class="title_area dep1_1">
+                        <h3 class="">Origin Group</h3>                                             
+                        <p>CDN Origin Group을 관리합니다.</p>
+                    </div>
+                </div> 
+                <div class="search_server_all_w clfix">
+                    <div class="search_server fl">
+                        <ul class="search_server_ul">
+                            <li>
+                                <span title='Origin Group 생성' class="btn_result_search" id="button_originGroupDeploy" style="cursor:pointer;">
+                                    <a title='Origin Group 생성' href="#">Origin Group 생성</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span title='수정' class="action action_disabled" id="button_originUpdate" style="cursor:pointer;">
+                                    <a href="#">수정</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span title='삭제' class="action action_disabled" id="button_originDelete" style="cursor:pointer;">
+                                    <a href="#">삭제</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                <div class="q_btn_server fr">
+                        <ul class="q_btn_server_ul">
+                            <li class="inline_none">
+                                <div class="vm_searchArea" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">                                                                                                                                                                                                                                              
+                                <input class="cInput" type="text" id="sel_sch_word" placeholder="이름으로 검색" style="display:none;" onkeypress="if(event.keyCode==13){searchEnterEvent();}">                            
+                                <input class="saBtn" type="image" src="/images/coni/Table_Search.svg" id="searchBtn" onmouseover="MM_swapImage('Image_searcht01','','/images/coni/Table_Search_hover.svg',1)" onmouseout="MM_swapImgRestore()" alt="search">                                                                                                                                                              
+                                </div> 
+                                
+                            </li>
+                            <li>
+                                <a title="excel" href="#" class="exsave" onclick="javascript:excelsave('table_body_part','cdn_standard_list.xls')">
+                                </a>
+                            </li>
+                            <li onclick="call_originList()">
+                                <a title="refresh" href="#"  class="reset">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            <!-- 컨텐츠 wrap -->
+            <div class="listscroll"> 
+                <!-- 화면 해상도 높이 조절 start -->                           
+                <div class="sub_con_box_w">                                                                           
+                    <!--    컨텐츠 분할 영역 시작 -->
+                    <div id="" class="mybox">
+                        <table id="table_body_part" class="c_th_tbl">
+                            <caption>리스트</caption>
+                                <colgroup>
+                                    <col style="width:36px;" />
+                                    <col style="width:27.5% ;" />
+                                    <col style="width:27% ;" />
+                                    <col style="width:40.5% ;" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="first" scope="col"><img src="/images/coni/t_space.png" alt="spaceImg" /></th>
+                                        <th id="view_svr_name" scope="col"><a href="#">이름<img class="sort_img" src="/images/coni/Table_Sort_Down.svg" alt="" /></a></th>
+                                        <th id="view_svr_origins" scope="col"><a href="#">Origins<img class="sort_img" src="/images/coni/Table_Sort_Down.svg" style="display:none;" alt="" /></img></a></th>
+                                        <th id="view_svr_cdn" scope="col"><a href="#">CDN 서비스<img class="sort_img" src="/images/coni/Table_Sort_Down.svg" style="display:none;" alt="" /></img></a></th>
+                                    </tr>
+                                </thead>
+                                
+                                <tbody id="table_originList">
+                                    <tr id="div_nonelist" >
+                                        <td colspan="6">조회된 데이터가 없습니다.</td>
+                                    </tr>
+                                    <tr id="base_vmList" class=""  style="display:none;" onmouseout="tr_onmouseout_cdn(this);" onmouseover="tr_onmouseover_cdn(this);" onclick="tr_onclick_main_cdn(this);" >
+                                        <td class="first" id="text_vm_seq"><label class="chkwrap listchkbox"><input id="chkmultichk" type="checkbox" name="originsList" class="chkbox" /></label>
+                                        <div class="show_loading_img" style="display:none;" class="loader loader--style3" title="2">
+                                            <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="lodingsize_s" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                                            <path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z" transform="rotate(95.532 25 25)">
+                                            <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform>
+                                            </path>
+                                            </svg>
+                                        </div>
+                                        </td>
+                                        <td id="text_originDisplayText"></td>
+                                        <td id="text_originList"></td>
+                                        <td id="text_resourceList"></td>
+                                    </tr>
+                                </tbody>
+                        </table><br/><br/><br/>
+                    </div>
+                    <!-- //scroll_s -->
+                </div>
+                <!-- //inner_consolelist_div -->
+            </div>
+        </div>           
+    </div>
+</div>
+
+<!-- Origin Group 생성 -->
+<div class="popUp" id="dialog_OriginGroup_Detail" style="width:960px;top:auto !important; display:none;">
+    <div class="head httable clfix">
+        <h1><!--타이틀--> <span class="del" id="btn_OriginCancel_TOP"><a href="#"><img src="/images/coni/Cancel.svg" alt="" /></a></span></h1>
+    </div>           
+    <div class="body">
+        <div class="con">
+            <div style="margin: 0px 0 20px 0; ">
+                <p style="line-height:36px;font-size:20px;border-bottom:1px solid #000003;">Origin Group 생성</p>
+                <div class="pdescclick" id="purgePreCautionsArea"></div>
+            </div>
+            <ul class="clfix">
+                <li class="fl" style="width:100px;padding: 6px 0 4px 0;">이름</li>
+                <li class="fl">
+                    <textarea id="origin_name" rows="" cols="" class="pop_txt_area3" style="width:500px;min-height:30px;overflow-y:auto;"></textarea>
+                </li>
+            </ul>
+
+            <!-- <ul class="clfix">
+                <li class="fl" style="width:100px;padding: 6px 0 4px 0;">Origin 인증 유형</li>
+                <li class="fl">
+                    <div class="custom-select dib" style="width:500px;">
+                        <select id="purge_domain">
+                            <option value="cdn_domain">None</option>
+                            <option value="cdn_domain">AWS signature V4</option>
+                        </select>
+                        <div class="select-selected">None</div>
+                        <div class="select-items select-hide" id="vm_slim" style="max-height:250px; overflow-y:auto;">
+                        </div>
+                    </div>
+                </li>
+            </ul> -->
+            <ul class="cdn_url clfix mt25" id="originCreateArea5" >
+                <li class="fl" style="width:100px;padding: 6px 0 4px 0;">Default Origin</li>
+                <li class="fl">
+                    <div class="mt10" id="kaka_modify" style="">
+                        <table class="pop_tbl">
+                            <caption>원본서버요청</caption>
+                            <colgroup>
+                                <col style="width: 17%;">
+                                <col style="width: 56px;">
+                                <col style="width: *;">
+                                <col style="width: 20%;">
+                                <col style="width: 73px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Active/Backup</th>
+                                    <th scope="col">Enable</th>
+                                    <th scope="col">Origin Source</th>
+                                    <th scope="col">Use Default Port </th>
+                                    <th scope="col"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="custom-select" style="width: 110px;">
+                                        <select id="backup_box">
+                                            <option value="Active" selected="selected">Active</option>
+                                            <option value="Backup">Backup</option>
+                                        </select>
+                                        </div>
+                                    </th>
+                                    <th scope="col">
+                                        <div class="switch_box">               
+                                            <label class="md_switch">
+                                           <input type="checkbox" id="hardPurgeUse22">
+                                           <span class="md_switch__toggle"></span>
+                                           
+                                         </label>
+                                        </div>
+                                    </th><th scope="col">
+                                        <input title="text" class="i_box" style="width: 300px;" id="step4_modify_header_name" type="text" placeholder="cloud.kt.com" value="">
+                                    </th>
+                                    <th scope="col">
+                                        <label class="chkwrap listchkbox on"><input id="use_default_port" type="checkbox" onclick="selectPortChang()" name="contentsList1" class="chkbox" checked> <span class="msl">80/443</span></label>
+                                        <input title="text" class="i_box" style="width: 130px; display: none;" id="step4_modify_header_value" type="text" placeholder="Other Port" value="">
+                                    </th>
+                                    <th scpoe="col">
+                                        <div class="btns_add" id="step4_modify_header_add"><a>+추가</a></div>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <div style="max-height:160px;overflow:auto;">
+                            <table class="pop_tbl">
+                                <caption>Origin Group 목록</caption>
+                                <colgroup>
+                                    <col style="width: 17%;">
+                                    <col style="width: 56px;">
+                                    <col style="width: *;">
+                                    <col style="width: 20%;">
+                                    <col style="width: 73px;">
+                                </colgroup>                                                                   
+                                <tbody id="modify_header_client_insert">
+                                    <tr id="step4_base_modify_header" style="display: none;">
+                                        <td id="text_step4_modify_header_action">ADD</td>
+                                        <td id="text_step4_modify_header_enable">Content-Type</td>
+                                        <td id="text_step4_modify_header_name">Content-Type</td>
+                                        <td id="text_step4_modify_header_value">application/json</td>
+                                        <td><a class="tablessh"><img src="/images/coni/trash.svg" alt="휴지통" style="margin-left:0;"></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- <span id="modify_header_client_text_area" class="red_txt" style="display: none;"> -->
+                        <span id="modify_header_client_text_area" class="red_txt" style="display: none;">
+                            <span id="modify_header_client_red_text"></span>
+                        </span>
+                    </div>  
+                </li>
+            </ul>
+           <ul>
+            <li style="padding:0px 5px">
+                <div>
+                    <p style="line-height:36px;font-size:20px;border-bottom:1px solid #000003;">주의 사항<span class="ptitclick ml10" id="OriginGroupPreCautions"></span></p>
+                    <div class="pdescclick" id="OriginGroupPreCautionsArea">
+                        <p></p>
+                        
+                    </div>
+                </div>
+                <!-- <div class="create-server__price-option">
+                    <div class="v-info-text">
+                        <img src="https://cloud.kt.com/_nuxt/information.602d3346.svg">&nbsp;오리진은 최소 한개 이상 등록 가능하며 명칭은 최초 오리진으로 등록됩니다. Origin Groups 메뉴에서 조회 및 수정이 가능합니다.  
+                    </div>
+                    <div class="create-server__price-option__centos-eos"></div>
+                </div> -->
+            </li>
+           </ul>
+            <div class="btn_box twobtn mt40">
+                <div>
+                    <div class="pop_btn_left btnl_secondary" id="btn_OriginCancel"><a href="#">취소</a></div> 
+                    <div class="pop_btn_right btnl_primary" id="btn_OriginOk"><a href="#">생성</a></div>
+                 </div>
+            </div>
+        </div><!--con end-->
+    </div>
+</div> 
+
+<!-- Origin 수정 -->
+<div id="dialog_Origin_Update" class="popUp" style="width:500px;top:auto !important;display: none;">         
+    <div class="head htpop clfix">
+        <h1><!--타이틀--> <span class="del" id="button_VM_Stop_TopClose"><a href="#"><img src="/images/coni/Cancel.svg" alt="" /></a></span></h1> 
+    </div>           
+    <div class="body">
+        <div class="con ac">
+            <p class="box_txtl ac"><span id="dialog_Origin_Update_text1"></span>서비스를 수정합니다.</p>
+            <div class="btn_box twobtn mt60">
+                <div>
+                    <div class="pop_btn_left btnl_secondary" id="button_VM_Stop_Cancel"><a href="#">취소</a></div> 
+                    <div class="pop_btn_right btnl_primary" id="button_VM_Stop_OK"><a href="#">정지하기</a></div>
+                 </div>
+            </div>
+        </div>
+        <!--con end-->
+    </div>
+    <!--body end-->
+</div>
+
+<!-- Origin 삭제 -->
+<div id="dialog_Origin_Delete" class="popUp" style="width:500px;top:auto !important;display: none;">         
+    <div class="head htpop clfix">
+        <h1><!--타이틀--> <span class="del" id="button_VM_Delete_TopClose"><a href="#"><img src="/images/coni/Cancel.svg" alt="" /></a></span></h1> 
+    </div>           
+    <div class="body">
+        <div class="con ac">
+            <p class="box_txtl ac"><span id="dialog_Origin_Delete_text1">cdnTest001</span>서비스를 삭제합니다.</p>
+            <div class="btn_box twobtn mt60">
+                <div>
+                    <div class="pop_btn_left btnl_secondary" id="button_VM_Delete_Cancel"><a href="#">취소</a></div> 
+                    <div class="pop_btn_right btnl_primary" id="button_VM_Delete_OK"><a href="#">삭제하기</a></div>
+                 </div>
+            </div>
+        </div>
+        <!--con end-->
+    </div>
+    <!--body end-->
+</div>
+<!-- Origin 수정 -->
+<div id="dialog_cdnPurge" class="popUp" style="width:900px;top:auto !important; display:none;">
+    <div class="head httable clfix">
+        <h1><!--타이틀--> <span class="del" id="btn_PurgeCancel_TOP"><a href="#"><img src="/images/coni/Cancel.svg" alt="" /></a></span></h1>
+    </div>           
+    <div class="body">
+        <div class="con">
+            <p class="box_txtl mb40"><span id="purge_svcName"></span>서비스에 Purge를 요청합니다.</p>
+            <ul class="clfix">
+                <li class="fl" style="width:100px;padding: 6px 0 4px 0;">도메인</li>
+                <li class="fl">
+                    <div class="custom-select dib" style="width:500px;">
+                        <span id="purge_domain"></span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="clfix mt25">
+                <li class="fl" style="width:100px;padding: 6px 0 4px 0;">구분</li>
+                <li class="fl">
+                    <ul class="img_bnlist clfix" id="purge_type" style="padding:0;">
+                        <li><span class="imgbn" value="0" id="purge_type1" style="width:250px;">전체</span></li>
+                        <li><span class="imgbn on" value="1" id="purge_type2" style="width:250px;">URL 단위</span></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <!-- .cdn_url :전체 클릭 시, 숨김 / URL단위 클릭 시, 보임 -->
+            <ul class="cdn_url clfix mt25" id="purgeURLarea">
+                <li class="fl" style="width:100px;padding: 6px 0 4px 0;">URL</li>
+                <li class="fl">
+                    <textarea id="purge_file" rows="" cols="" class="pop_txt_area3" placeholder="/image/test001.jpg&#13;&#10;/image/test002.jpg" style="width:500px;min-height:172px;overflow-y:auto;"></textarea>
+                </li>
+            </ul>
+            
+            <div class="mt20 mb50">
+                <div class="switch_box">               
+                       <label class="md_switch">
+                      <input type="checkbox" id="hardPurgeUse" />
+                      <span class="md_switch__toggle"></span>
+                      <span class="msl">하드 Purge</span>
+                    </label>
+                </div>
+            </div>
+            <div>
+                <p style="line-height:36px;font-size:20px;border-bottom:1px solid #000003;">주의 사항<span class="ptitclick ml10" id="purgePreCautions"></span></p>
+                <div class="pdescclick" id="purgePreCautionsArea">
+                    <p>Purge할 파일명을 입력 시 경로와 파일명을 정확히 입력하셔야 합니다.</p>
+                    <p>Purge할 파일명을 여러 개 등록할 경우 엔터로 구분해 주시기 바랍니다.</p>
+                    <p>전체 Purge 시, 오리진 서버에 부하를 줄 수 있으니 유의하시길 바랍니다.</p>
+                    <p>directory 하위경로에 '*'입력 시 전체 컨텐츠 Purge가 가능합니다. ex)/directory 경로/*</p>
+                </div>
+            </div>
+            <div class="btn_box twobtn mt40">
+                <div>
+                    <div class="pop_btn_left btnl_secondary" id="btn_PurgeCancel"><a href="#">취소</a></div> 
+                    <div class="pop_btn_right btnl_primary" id="btn_PurgeOk"><a href="#">PURGE</a></div>
+                 </div>
+            </div>
+        </div><!--con end-->
+    </div><!--body end-->
+</div>   
+{{end}}

@@ -1,0 +1,10 @@
+
+/********************** g3 ************************/
+.g3_right{padding:60px 0 20px 0;color:#fff;background:#28282d; margin-left: 280px;}
+.g3titbox h1{font-size:32px;line-height:39px;font-family:Lato Regular;}
+.g3titbox h2{font-size:210px;line-height:220px;/*252px;*/font-family:Lato Bold;}
+.g3titbox p{font-size:24px;line-height:29px;font-family:Lato Regular;}
+.g3desbox p{font-size:16px;line-height:24px;font-family:Spoqa Han Sans Regular;}
+.g3desbox p.price{font-size:24px;line-height:36px;font-family:Spoqa Han Sans Bold;}
+.g3desbox p.txt_underline{border-color:#fff;}
+.g3_right .btn_box{background:#28282d;}

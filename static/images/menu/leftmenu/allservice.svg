@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_dedicated_host" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-4{fill:#323232}
+        </style>
+    </defs>
+    <g id="Layer_1" transform="translate(-244 -459)">
+        <g id="Group_5647">
+            <path id="Rectangle_1284" fill="#c7e9f4" d="M0 0H10.5V9.5H0z" transform="translate(256 477)"/>
+            <g id="Group_5646">
+                <path id="Path_11191" d="M269.979 472.207c0-.07.021-.136.021-.207a4.992 4.992 0 0 0-6.994-4.581A6.994 6.994 0 0 0 250 471c0 .116.012.228.017.342a5.994 5.994 0 0 0 1.483 11.633v-1.026a4.981 4.981 0 0 1-1.152-9.663l.7-.247-.036-.745-.008-.137c0-.052-.008-.1-.008-.157a5.995 5.995 0 0 1 11.148-3.068l.451.755.807-.352A3.993 3.993 0 0 1 269 471.97c-.009.064-.016.128-.019.194l-.033.792.763.213A4.5 4.5 0 0 1 268.5 482v1a5.5 5.5 0 0 0 1.479-10.793z" class="cls-4"/>
+                <path id="Path_11192" d="M253.5 480.5v7h14v-13h-14zm13 6h-12v-5h12zm0-11v5h-12v-5z" class="cls-4"/>
+                <path id="Rectangle_1285" d="M0 0H2.5V1H0z" class="cls-4" transform="translate(262 477.5)"/>
+                <path id="Rectangle_1286" d="M0 0H2.5V1H0z" class="cls-4" transform="translate(262 483.5)"/>
+            </g>
+        </g>
+    </g>
+</svg>

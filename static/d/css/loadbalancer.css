@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/********************** LoadBalancer ************************/
+
+
+/**버튼박스 내 마우스 오버**/
+.btn_box .pop_btn_right:hover,
+/* .btns_add:hover{background-color:#2CBBB6 ;} */
+.btns_add:hover{background-color:#03428e;}
+.btn_box .pop_btn_left:hover{background-color:#f4f4f4 ;border-radius:2px;}
+
+
+
+/*본문내용*/
+
+.loadbalancer_right .vm_wrap_pop .vm_list {
+     margin: 0;
+}
+.loadbalancer_right .pop_tb_c,
+.loadbalancer_right .pop_tbl,
+.loadbalancer_right .pop_tbl_new{
+    width: 784px;
+}
+
+
+
+
+.loadbalancer_right .pop_tb_c{height: 90px;}
+
+.loadbalancer_right .pop_tb_c thead th{padding:13px 0 48px 40px;}
+
+
+
+.loadbalancer_right .actionlist{margin: 0 0 10px;}
+
+.loadbalancer_right .actionlist ul{
+    height: 34px;
+    position: relative;
+}
+.loadbalancer_right .actionlist ul li{
+    float: left;
+    height: 34px;
+    text-align: center;
+}
+
+.loadbalancer_right .actionlist ul li span{
+  line-height: 34px;
+    border-radius: 2px;
+}
+.loadbalancer_right .pop_tbl thead tr th, .loadbalancer_right .pop_tbl_new thead tr th{padding-left:10px;}
+
+.loadbalancer_right .pop_tbl tbody td, .loadbalancer_right .pop_tbl_new tbody td{padding: 7px 10px;}
+
+
+/* font*/
+.loadbalancer_right .sub_t .r_quick{
+    background: url(/images/coni/LNB_LoadBalancer.svg) left top no-repeat;
+    padding:0;
+}
+.loadbalancer_right .sub_t .h3_quick span a{font-size:13px;line-height:19px;color:#333336;font-family: Spoqa Han Sans Regular;}
+.loadbalancer_right .sub_t .h3_quick .r_quick span{
+    font-size:13px;line-height:19px;color:#333336;font-family: Spoqa Han Sans Bold;
+    margin-left:0;
+}
+.loadbalancer_right .sub_t .h3_quick .r_quick{font-size:13px;line-height:16px;color:#333336;font-family: Lato Regular;}
+.loadbalancer_right .sub_t .title_area h3{font-size:32px;line-height:38px;color:#333336 !important;font-family:Spoqa Han Sans Bold !important;}
+

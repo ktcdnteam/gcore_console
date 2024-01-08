@@ -1,0 +1,80 @@
+{{define "PURGE"}}
+<div id="contentwrapper" style="width: 100%;">
+    <div id="contentcolumn3">
+        <div id="cdnContentArea" class="sub_m">
+                <div class="sub_t btop dep1_1 ml60">
+                <div class="r_quick_wrap">
+                    <span class="r_quick"><a href="" class="cicon cprod_cdn">CDN Standard</a></span> >          
+                    <span class="r_quick_s"><a href="" class="cicons">CDN</a></span>
+                        
+                    <span class="h3_quick"><a href="javascript:go_portal_page('https://manual.cloud.kt.com/kt/cdn-standard-intro');" class="tmanual7">매뉴얼</a></span>
+                    <span class="h3_quick ml10"><a href="javascript:go_portal_inquiry('3','ucloud CDN','/console/cdnlist');" class="thelp7">온라인문의</a></span>
+                    <span class="h3_quick"><a href="javascript:go_portal_satisfaction_evaluation('CDN3.0','CDN');" class="tSatisfactioni7">만족도평가</a></span>
+                </div>
+                <div class="title_area dep1_1">
+                    <h3 class="">Purge</h3>                                             
+                    <p>Purge를 실행합니다.</p>
+                </div>
+            </div>
+            <!-- 컨텐츠 wrap -->
+            <div class="listscroll"> 
+                <!-- 화면 해상도 높이 조절 start -->                           
+                <div class="sub_con_box_w">                                                                           
+                    <!--    컨텐츠 분할 영역 시작 -->
+                    <div id="cdnPurge" class="mybox">
+                        <div id="cdnPurge"  style="width:900px;padding-top: 30px">
+                            <div class="body">
+                                <div class="con">
+                                    <ul class="clfix">
+                                        <li class="fl" style="width:100px;padding: 6px 0 4px 0;">도메인</li>
+                                        <li class="fl">
+                                            <div class="custom-select dib" style="width: 700px;">
+                                                <select id="purge_domain" style="width: 700px;"></select>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="clfix mt25">
+                                        <li class="fl" style="width:100px;padding: 6px 0 4px 0;">구분</li>
+                                        <li class="fl">
+                                            <ul class="img_bnlist clfix" id="purge_type" style="padding:0;">
+                                                <li><span class="imgbn" value="0" id="purge_type1" style="width:250px;">전체</span></li>
+                                                <li><span class="imgbn on" value="1" id="purge_type2" style="width:250px;">URL 단위</span></li>
+                                                <li><span class="imgbn" value="2" id="purge_type3" style="width:250px;">패턴 단위</span></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <!-- .cdn_url :전체 클릭 시, 숨김 / URL단위 클릭 시, 보임 -->
+                                    <ul class="cdn_url clfix mt25" id="purgeURLarea">
+                                        <li class="fl" style="width:100px;padding: 6px 0 4px 0;">URL</li>
+                                        <li class="fl">
+                                            <textarea id="purge_file" rows="" cols="" class="pop_txt_area3" placeholder="/image/test001.jpg&#13;&#10;/image/test002.jpg" style="width:750px;min-height:172px;overflow-y:auto;"></textarea>
+                                        </li>
+                                    </ul>
+                                    
+                                    <div>
+                                        <p style="line-height:36px;font-size:20px;border-bottom:1px solid #000003;">주의 사항<span class="ptitclick ml10" id="purgePreCautions"></span></p>
+                                        <div class="pdescclick" id="purgePreCautionsArea">
+                                            <p>Purge는 사용 중인 도메인만 가능합니다. (생성 중이거나 정지 상태일 때, 이용 불가능)</p>
+                                            <p>Purge할 파일명을 입력 시 경로와 파일명을 정확히 입력하셔야 합니다.</p>
+                                            <p>Purge할 파일명을 여러 개 등록할 경우 엔터로 구분해 주시기 바랍니다.</p>
+                                            <p>전체 Purge 시, 오리진 서버에 부하를 줄 수 있으니 유의하시길 바랍니다.</p>
+                                        </div>
+                                    </div>
+                                    <div class="btn_box twobtn mt40">
+                                        <div>
+                                            <div class="pop_btn_left btnl_secondary" id="btn_PurgeCancel"><a href="#">취소</a></div> 
+                                            <div class="pop_btn_right btnl_primary" id="btn_PurgeOk"><a href="#">PURGE</a></div>
+                                        </div>
+                                    </div>
+                                </div><!--con end-->
+                            </div><!--body end-->
+                        </div> 
+                    </div>
+                </div>
+                            <!-- //inner_consolelist_div -->
+            </div>
+        </div>           
+    </div>
+</div>  
+{{end}}

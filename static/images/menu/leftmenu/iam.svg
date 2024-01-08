@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_dev_pack" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-2{fill:#c7e9f4}.cls-3{fill:#323232}
+        </style>
+    </defs>
+    <g id="그룹_5835" transform="translate(-244 -1540)">
+        <path id="사각형_1527" d="M0 0H7V7H0z" class="cls-2" transform="translate(251 1547)"/>
+        <path id="사각형_1528" d="M0 0H7V7H0z" class="cls-2" transform="translate(263.5 1547)"/>
+        <path id="사각형_1529" d="M0 0H7V7H0z" class="cls-2" transform="translate(251 1559.5)"/>
+        <path id="사각형_1530" d="M0 0H7V7H0z" class="cls-2" transform="translate(263.5 1559.5)"/>
+        <g id="그룹_5834">
+            <path id="패스_11554" d="M248.5 1555H259v-10.5h-10.5zm1-9.5h8.5v8.5h-8.5z" class="cls-3"/>
+            <path id="패스_11555" d="M261 1544.5v10.5h10.5v-10.5zm9.5 9.5H262v-8.5h8.5z" class="cls-3"/>
+            <path id="패스_11556" d="M248.5 1567.5H259V1557h-10.5zm1-9.5h8.5v8.5h-8.5z" class="cls-3"/>
+            <path id="패스_11557" d="M261 1567.5h10.5V1557H261zm1-9.5h8.5v8.5H262z" class="cls-3"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+em{font-style:normal;}
+
+/* 06_ucloud storage - 6.리셀러 계정 관리 */
+
+
+/*.stitle_btn2 {background:url('/images/common/bg_stitle.gif') no-repeat left top;height:35px;padding:10px 11px 0 20px;}
+.stitle_btn2 p{float:left; color:#666666; padding-top:6px;}
+.stitle_btn2 span{float:right;}*/
+
+.btn_gr5{display:inline-block;height:25px;background:url('/images/common/btn/btn_gr5_l.gif') no-repeat left top;padding-left:8px;vertical-align:top}
+.btn_gr5 a{display:inline-block;height:19px;background:url('/images/common/btn/btn_gr5_r.gif') no-repeat right top;padding:6px 20px 0 0;vertical-align:top}
+
+/* 07_cloud NAS - 인증 정보 관리 */
+.squrebox {padding:17px 0 17px 15px; border:1px solid #ebebeb; background-color:#fafafa;}
+.squrebox ul li {line-height:18px; color:#666;}
+.squrebox p{float:left; color:#666666; padding-top:6px;}
+.squrebox span{float:right; margin-right:15px;}
+
+/* 07_cloud NAS - 스냅샷 */
+/*.btn_tit {height:36px;}*/
+.btn_tit span {display:inline-block; margin-left:10px; margin-top:-5px; vertical-align:middle;}
+
+/* 08_ucloud CDN - 요금 및 이용 내역 */
+.sub_top_fee .m_fee_tbl2{border-top:1px solid #ebebeb;width:718px;table-layout:fixed;background:#fff}
+.sub_top_fee .m_fee_tbl2 th{border-right:0; text-align:center; border-right:1px solid #ebebeb; border-bottom:1px solid #ebebeb; font-weight:normal; padding:10px 18px;vertical-align:middle; color:#666}
+.sub_top_fee .m_fee_tbl2 th.titTh {font-weight:bold; border-bottom:none;}
+.sub_top_fee .m_fee_tbl2 td{border-right:1px solid #ebebeb;padding:10px 5px 10px 10px;vertical-align:middle;text-align:right;color:#000}
+.sub_top_fee .m_fee_tbl2 td em {font-style:normal; padding-right:5px;}
+.sub_top_fee .m_fee_tbl2 td.bd0 {border-right:none; color:#666;}
+.sub_top_fee .m_fee_tbl2 td span{color:#d62326;}
+.sub_top_fee .m_fee_tbl2 th.last{border-right:0}
+.sub_top_fee .m_fee_tbl2 td.last{border-right:0}
+
+/* 06_ucloud storage - 1.스토리지 리스트 */
+.line_bx input.in_ra {margin:-4px 5px 0 0; vertical-align:middle;}
+.line_bx em {font-style:normal;}
+
+/* 13_ucloud_engine - 2.어플리케이션_관리 */
+.squrebox_top {padding:10px 10px; margin-bottom:10px; border:1px solid #ebebeb; background-color:#fafafa;}
+.squrebox_top ul {overflow:hidden;}
+.squrebox_top ul li {float:left;}
+.squrebox_top ul li em {display:inline-block; padding:4px 5px 0 0;}
+.squrebox_top ul li.fr {padding-top:5px;}
+
+/* 13_ucloud_engine - 5.로그히스토리 */
+table.top_sch {margin-bottom:15px;width:720px; table-layout:fixed; background-color:#f5f5f5; border:1px solid #ebebeb;}
+table.top_sch td {padding:15px 10px 10px 10px; overflow:hidden; border-bottom:1px solid #ebebeb; border-right:1px solid #ebebeb;}
+table.top_sch td.ac {text-align:center;}
+table.top_sch td em.float {float:left; margin-right:20px;}
+table.top_sch td ul.evsource {overflow:hidden;}
+table.top_sch td ul.evsource li {float:left;}
+table.top_sch td ul.evsource li .chk_bind input{margin:0px 10px 0 0;margin:0 10px 0 0 \0/IE8+9;*margin:-4px 4px 0 0;vertical-align:top}
+table.top_sch td ul.evsource li .chk_bind label{margin-right:15px;vertical-align:top;*padding:1px 0 0 4px;}
+table.top_sch td ul.select_sec {overflow:hidden;}
+table.top_sch td ul.select_sec li {float:left; margin-right:20px;}
+table.top_sch td ul.select_sec li em {display:inline-block; padding:3px 5px 0 0;}
+table.top_sch td ul.evsource li .chk_bind label{color:#666;}
+
+/* 상품소개 - 상품소개 */
+.ic_txt {color:#666; padding-bottom:10px;}
+.ic_txt a {text-decoration:underline; color:#333;}
+
+.txt_tbtop {text-align:right; padding-bottom:10px;}
+    /* 작은 동그라미 ul */
+ul.bu_list1 li {padding:0 0 5px 10px; background:url('/images/po_common/bul_cir_small.gif') no-repeat left 5px;}
+ul.bu_list1 li.link {text-decoration:underline;}
+ul.bu_list1 li.link a {color:#000;}
+
+.sv_used ul.bu_list1 li {padding:0 0 5px 10px; margin-bottom:0; background:url('/images/po_common/bul_cir_small.gif') no-repeat left 5px;}
+.sv_used ul.bu_list1 li.link {text-decoration:underline;}
+.sv_used ul.bu_list1 li.link a {color:#000;}
+
+.bu_list2 {line-height:1.5; padding:0 0 0 10px; background:url('/images/po_common/bul_cir_small.gif') no-repeat left 6px;}/*작은 동그라미*/
+
+
+
+
+
+/* POPUP */
+.popup .tbl_info_s .wordB {word-break:break-all; white-space: -moz-pre-wrap; white-space: pre-wrap; display:inline-block; }
+
+.popup .line_bx_bt0 {border-top:0px solid #ebebeb; border-left:1px solid #ebebeb; border-right:1px solid #ebebeb; border-bottom:1px solid #ebebeb; ;overflow:hidden;background:#f8f8f8; text-align:left; padding:14px 20px; }
+.popup .line_bx_bt0 span.txt {margin-right:18px;}
+.popup .line_bx_bt0 label {margin-right:10px;}
+.popup .line_bx_bt0 .btn_gr2{display:inline-block;height:25px;background:url('/images/common/btn/btn_gr4_l.gif') no-repeat left top;padding-left:8px;vertical-align:top}
+.popup .line_bx_bt0 .btn_gr2 a{display:inline-block;height:21px;background:url('/images/common/btn/btn_gr4_r.gif') no-repeat right top;padding:4px 8px 0 0;vertical-align:top}
+
+.line_bx_bt0 ul.snTime {overflow:hidden;}
+.line_bx_bt0 ul.snTime li {float:left; width:78px; margin-bottom:10px;}
+
+.popup .scroll_bx4 { width:409px; height:125px; overflow:scroll; overflow-x:hidden; margin-top:10px; border:1px solid #ebebeb; text-align:left;  }
+.popup .scroll_bx4 .txt {font:12px dotum;color:#666666; line-height:18px; padding:10px 10px; }
+
+.popup .scroll_bx5 {float:left; width:215px; height:69px; overflow:scroll; overflow-x:hidden; border:1px solid #ebebeb; text-align:left;  }
+.popup .scroll_bx5 .txt {font:12px dotum;color:#666666; line-height:18px; padding:14px 10px; }
+/* .popup .btn_gr2 {margin-left:5px;} */
+
+.popup .scroll_bx6 { width:564px; height:113px; overflow:scroll; overflow-x:hidden; border:1px solid #ebebeb; text-align:left;  }
+.popup .scroll_bx6 .txt {font:12px dotum;color:#666666; line-height:18px; padding:10px 10px; }
+
+.serverN {margin-top:5px; background-color:#f8f8f8; padding:10px 15px;}
+.serverN dl {overflow:hidden; padding-bottom:10px;}
+.serverN dl dt {float:left; width:90px; color:#000;}
+.serverN dl dd {float:left; width:140px; color:#666;}
+
+.popup .creatVol em {display:inline-block; padding-top:4px; margin-right:20px;}
+.popup .creatVol p {float:left;}
+.popup .creatVol .chk_bind label {padding:3px 0 1px 5px; padding:4px 10px 1px 9px \0/IE8+9;*padding:4px 10px 1px 5px; display:inline-block;}
+.popup .creatVol .chk_bind input {margin:4px 4px 0 0; margin:3px 5px 0px 0 \0/IE8+9;*margin:-1px 0 0 0;}
+
+.popup .loadBal ul {overflow:hidden;}
+.popup .loadBal ul li {float:left; margin-right:15px;}
+.popup .loadBal ul li input {margin-top:-2px; margin-top:-4px \0/IE8+9;*margin-top:-2px;; vertical-align:middle;}
+.popup .loadBal ul li label {display:inline-block; padding:0 0 0 5px; *padding:0 0 0 3px;}
+
+.pl_m .gslbWrap {border-top:1px solid #ebebeb; border-left:1px solid #ebebeb; border-right:1px solid #ebebeb; background-color:#f8f8f8;width:718px}
+.pl_m .gslbWrap fieldset {vertical-align:middle; line-height:16px; padding:15px 8px 13px 8px; border-bottom:1px solid #ebebeb;}
+.pl_m .gslbWrap fieldset div {float:left; margin-right:15px; *margin-right:10px;}
+.pl_m .gslbWrap span.tit {display:inline-block; height:20px; margin:2px 5px 0 0; *margin:-5px 5px 0 0;}/* {display:inline-block; margin:0 5px 0 15px; *margin:0px 5px 0 15px;}*/
+.pl_m .gslbWrap span.tit2 {display:inline-block; padding:2px 5px 0 0;}
+.pl_m .gslbWrap .btn_gr4 {margin-top:-2px;}
+.pl_m .gslbWrap .r_1 {vertical-align:top; margin:3px 3px 0 0; *margin:-1px 3px 0 0;}
+.pl_m .gslbWrap label {padding-top:2px; *padding-top:2px; }
+

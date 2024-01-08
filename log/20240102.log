@@ -1,0 +1,503 @@
+2024/01/02 03:48:39 main.go:29: Start api-server..
+2024/01/02 03:48:39 server.go:9: Start api-server..
+2024/01/02 03:48:42 main.go:29: Start api-server..
+2024/01/02 03:48:42 server.go:9: Start api-server..
+2024/01/02 03:49:07 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/origin_groups/412358  
+2024/01/02 03:49:08 api.go:71: DELETE https://api.gcore.com/cdn/origin_groups/412358 >>> [ERROR : 400] {"errors":{"name":"There are resources using such group"}} 
+2024/01/02 03:49:08 api.go:81: map[name:There are resources using such group]
+2024/01/02 03:49:08 api.go:87: [ERROR : name] There are resources using such group 
+2024/01/02 03:49:08 billing_model.go:322: There are resources using such group
+2024/01/02 03:49:08 route.go:70: There are resources using such group
+2024/01/02 03:49:25 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/341777  
+2024/01/02 03:52:12 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/342774  
+2024/01/02 03:52:33 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/342774  
+2024/01/02 03:52:34 api.go:71: DELETE https://api.gcore.com/cdn/resources/342774 >>> [ERROR : 404] {} 
+2024/01/02 03:52:34 billing_model.go:375: Unknown error
+2024/01/02 03:52:34 route.go:108: Unknown error
+2024/01/02 03:56:05 main.go:29: Start api-server..
+2024/01/02 03:56:05 server.go:9: Start api-server..
+2024/01/02 03:56:14 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/342774  
+2024/01/02 03:56:15 api.go:71: DELETE https://api.gcore.com/cdn/resources/342774 >>> [ERROR : 404] {} 
+2024/01/02 03:56:15 billing_model.go:375: Unknown error
+2024/01/02 03:56:15 route.go:108: Unknown error
+2024/01/02 03:57:44 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/341777  
+2024/01/02 03:57:45 api.go:71: DELETE https://api.gcore.com/cdn/resources/341777 >>> [ERROR : 404] {} 
+2024/01/02 03:57:45 billing_model.go:375: Unknown error
+2024/01/02 03:57:45 route.go:108: Unknown error
+2024/01/02 03:59:44 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/342774  
+2024/01/02 03:59:45 api.go:71: DELETE https://api.gcore.com/cdn/resources/342774 >>> [ERROR : 404] {} 
+2024/01/02 03:59:45 billing_model.go:375: Unknown error
+2024/01/02 03:59:45 route.go:108: Unknown error
+2024/01/02 04:01:33 main.go:29: Start api-server..
+2024/01/02 04:01:33 server.go:9: Start api-server..
+2024/01/02 04:04:28 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/342774  
+2024/01/02 04:04:29 api.go:71: DELETE https://api.gcore.com/cdn/resources/342774 >>> [ERROR : 404] {} 
+2024/01/02 04:04:29 billing_model.go:375: Unknown error
+2024/01/02 04:04:29 route.go:108: Unknown error
+2024/01/02 04:06:15 main.go:29: Start api-server..
+2024/01/02 04:06:15 server.go:9: Start api-server..
+2024/01/02 04:06:20 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/342774  
+2024/01/02 04:06:21 api.go:71: DELETE https://api.gcore.com/cdn/resources/342774 >>> [ERROR : 404] {} 
+2024/01/02 04:06:21 billing_model.go:375: 404 Not Found
+2024/01/02 04:06:21 route.go:108: 404 Not Found
+2024/01/02 04:07:05 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/341777  
+2024/01/02 04:07:06 api.go:71: DELETE https://api.gcore.com/cdn/resources/341777 >>> [ERROR : 404] {} 
+2024/01/02 04:07:06 billing_model.go:375: 404 Not Found
+2024/01/02 04:07:06 route.go:108: 404 Not Found
+2024/01/02 04:07:55 main.go:29: Start api-server..
+2024/01/02 04:07:55 server.go:9: Start api-server..
+2024/01/02 04:07:59 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/341777  
+2024/01/02 04:08:00 api.go:71: DELETE https://api.gcore.com/cdn/resources/341777 >>> [ERROR : 404] {} 
+2024/01/02 04:08:00 billing_model.go:375: 404 Not Found
+2024/01/02 04:08:00 route.go:108: 404 Not Found
+2024/01/02 04:10:43 main.go:29: Start api-server..
+2024/01/02 04:10:43 server.go:9: Start api-server..
+2024/01/02 04:10:47 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/341777  
+2024/01/02 04:10:48 api.go:71: DELETE https://api.gcore.com/cdn/resources/341777 >>> [ERROR : 404] {} 
+2024/01/02 04:10:48 billing_model.go:375: 404 Not Found
+2024/01/02 04:10:48 route.go:108: 404 Not Found
+2024/01/02 04:13:45 main.go:29: Start api-server..
+2024/01/02 04:13:45 server.go:9: Start api-server..
+2024/01/02 04:14:04 main.go:29: Start api-server..
+2024/01/02 04:14:04 server.go:9: Start api-server..
+2024/01/02 04:14:21 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/341777  
+2024/01/02 04:14:22 api.go:71: DELETE https://api.gcore.com/cdn/resources/341777 >>> [ERROR : 404] {} 
+2024/01/02 04:14:22 billing_model.go:375: 404 Not Found
+2024/01/02 04:14:22 route.go:108: 404 Not Found
+2024/01/02 04:14:51 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/341777  
+2024/01/02 04:14:52 api.go:71: DELETE https://api.gcore.com/cdn/resources/341777 >>> [ERROR : 404] {} 
+2024/01/02 04:14:52 billing_model.go:375: 404 Not Found
+2024/01/02 04:14:52 route.go:108: 404 Not Found
+2024/01/02 04:15:48 main.go:29: Start api-server..
+2024/01/02 04:15:48 server.go:9: Start api-server..
+2024/01/02 04:15:58 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/341777  
+2024/01/02 04:15:59 api.go:71: DELETE https://api.gcore.com/cdn/resources/341777 >>> [ERROR : 404] {} 
+2024/01/02 04:15:59 billing_model.go:375: 404 Not Found
+2024/01/02 04:15:59 route.go:108: 404 Not Found
+2024/01/02 04:16:20 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:16:21 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2024/01/02 04:16:21 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2024/01/02 04:16:21 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2024/01/02 04:16:21 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2024/01/02 04:16:21 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:16:31 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:16:37 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:16:42 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:16:50 api.go:41: [POST] Request >> https://api.gcore.com/cdn/resources {"sslEnabled":false,"sslData":null,"active":true,"originGroup":412358,"originProtocol":"HTTP","cname":"cloud.kt.com","description":"service07","origin":"","secondaryHostnames":[],"options":{"edge_cache_settings":{"enabled":true,"default":"4d"},"cache_expire":null,"stale":{"enabled":true,"value":["error","updating"]},"allowedHttpMethods":null,"cache_http_headers":null,"hostHeader":{"enabled":true,"value":"3.3.3.3"},"forward_host_header":null,"limit_bandwidth":null,"bot_protection":null}} 
+2024/01/02 04:16:51 api.go:71: POST https://api.gcore.com/cdn/resources >>> [ERROR : 400] {"errors":{"cname":["CNAME cloud.kt.com is used in Resource ID 346828. Try another CNAME or contact support."]}} 
+2024/01/02 04:16:51 api.go:82: json: cannot unmarshal array into Go struct field ErrorResponse.errors of type string
+2024/01/02 04:16:51 api.go:85: map[cname:]
+2024/01/02 04:16:51 api.go:91: [ERROR : cname]  
+2024/01/02 04:16:51 billing_model.go:363: Unknown error
+2024/01/02 04:16:51 route.go:84: Unknown error
+2024/01/02 04:16:56 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:16:58 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2024/01/02 04:16:58 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2024/01/02 04:16:58 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2024/01/02 04:16:58 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2024/01/02 04:16:58 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:18:10 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:18:17 api.go:41: [POST] Request >> https://api.gcore.com/cdn/resources {"sslEnabled":false,"sslData":null,"active":true,"originGroup":412358,"originProtocol":"HTTP","cname":"cloud.kt.com2","description":"service07","origin":"","secondaryHostnames":[],"options":{"edge_cache_settings":{"enabled":true,"default":"4d"},"cache_expire":null,"stale":{"enabled":true,"value":["error","updating"]},"allowedHttpMethods":null,"cache_http_headers":null,"hostHeader":{"enabled":true,"value":"3.3.3.3"},"forward_host_header":null,"limit_bandwidth":null,"bot_protection":null}} 
+2024/01/02 04:18:19 api.go:71: POST https://api.gcore.com/cdn/resources >>> [ERROR : 400] {"errors":{"cname":["cname cloud.kt.com2 is not a domain name"]}} 
+2024/01/02 04:18:19 api.go:82: json: cannot unmarshal array into Go struct field ErrorResponse.errors of type string
+2024/01/02 04:18:19 api.go:85: map[cname:]
+2024/01/02 04:18:19 api.go:91: [ERROR : cname]  
+2024/01/02 04:18:19 billing_model.go:363: Unknown error
+2024/01/02 04:18:19 route.go:84: Unknown error
+2024/01/02 04:18:24 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:18:25 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2024/01/02 04:18:25 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2024/01/02 04:18:25 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2024/01/02 04:18:25 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2024/01/02 04:18:25 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:18:29 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:18:34 api.go:41: [POST] Request >> https://api.gcore.com/cdn/resources {"sslEnabled":false,"sslData":null,"active":true,"originGroup":412358,"originProtocol":"HTTP","cname":"cloud2.kt.com","description":"service07","origin":"","secondaryHostnames":[],"options":{"edge_cache_settings":{"enabled":true,"default":"4d"},"cache_expire":null,"stale":{"enabled":true,"value":["error","updating"]},"allowedHttpMethods":null,"cache_http_headers":null,"hostHeader":{"enabled":true,"value":"3.3.3.3"},"forward_host_header":null,"limit_bandwidth":null,"bot_protection":null}} 
+2024/01/02 04:18:35 billing_model.go:366: {"id":379116,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":null,"hostHeader":{"enabled":true,"value":"3.3.3.3"},"staticHeaders":null,"static_response_headers":null,"staticRequestHeaders":null,"allowedHttpMethods":null,"stale":{"enabled":true,"value":["error","updating"]},"cors":null,"proxy_cache_methods_set":null,"rewrite":null,"force_return":null,"secure_key":null,"cache_expire":null,"disable_cache":null,"ignore_cookie":null,"cache_http_headers":null,"response_headers_hiding_policy":null,"override_browser_ttl":null,"fetch_compressed":null,"disable_proxy_force_ranges":null,"redirect_http_to_https":null,"redirect_https_to_http":null,"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"limit_bandwidth":null,"request_limiter":null,"bot_protection":null,"waf":null,"country_acl":null,"referrer_acl":null,"user_agent_acl":null,"ip_address_acl":null,"query_params_blacklist":null,"query_params_whitelist":null,"browser_cache_settings":null,"edge_cache_settings":{"enabled":true,"default":"4d"},"forward_host_header":null,"websockets":null,"use_default_le_chain":null,"use_rsa_le_cert":null,"use_dns01_le_challenge":null,"tls_versions":{"enabled":false,"value":["SSLv3","TLSv1","TLSv1.1","TLSv1.2","TLSv1.3"]},"follow_origin_redirect":null,"http3_enabled":null,"image_stack":null},"deleted":false,"secondaryHostnames":[],"rules":[],"client":250053,"status":"processed","active":true,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"3.3.3.3","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"name":null,"created":"2024-01-02T01:18:35.513641Z","updated":"2024-01-02T01:18:35.513660Z","originProtocol":"HTTP","cname":"cloud2.kt.com","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspend_date":null,"suspended":false,"is_primary":null,"description":"service07","originGroup":412358,"sslData":null,"proxy_ssl_ca":null,"proxy_ssl_data":null,"shield_routing_map":null,"primary_resource":null}
+2024/01/02 04:18:40 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:18:40 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:18:41 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2024/01/02 04:18:41 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2024/01/02 04:18:41 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2024/01/02 04:18:41 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2024/01/02 04:18:41 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:18:41 billing_model.go:204: 379116. cloud2.kt.com 2024-01-02 10:18:35 processed 
+2024/01/02 04:18:42 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2024/01/02 04:18:42 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2024/01/02 04:18:42 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2024/01/02 04:18:42 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2024/01/02 04:18:42 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:18:42 billing_model.go:204: 379116. cloud2.kt.com 2024-01-02 10:18:35 processed 
+2024/01/02 04:18:53 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/379116  
+2024/01/02 04:18:59 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:19:00 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2024/01/02 04:19:00 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2024/01/02 04:19:00 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2024/01/02 04:19:00 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2024/01/02 04:19:00 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:19:08 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources/341411  
+2024/01/02 04:19:09 api.go:41: [PUT] Request >> https://api.gcore.com/cdn/resources/341411 {"id":341411,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":null,"hostHeader":{"enabled":true,"value":"1.1.1.1:80"},"stale":{"enabled":true,"value":["error","updating"]},"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"edge_cache_settings":{"enabled":true,"default":"4d"},"tls_versions":{"enabled":false,"value":["TLSv1.3","TLSv1","SSLv3","TLSv1.1","TLSv1.2"]}},"deleted":false,"secondaryHostnames":[],"client":250053,"status":"active","active":false,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"1.1.1.1:80","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"created":"2023-12-18T05:10:15.329641Z","created_str":"","updated":"2023-12-19T07:50:01.546527Z","originProtocol":"HTTP","cname":"abc011.ktcdnteam.link","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspended":false,"description":"abc011","originGroup":447133} 
+2024/01/02 04:19:11 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources/343782  
+2024/01/02 04:19:12 api.go:41: [PUT] Request >> https://api.gcore.com/cdn/resources/343782 {"id":343782,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":null,"hostHeader":{"enabled":true,"value":"210.10.10.10"},"stale":{"enabled":true,"value":["error","updating"]},"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"edge_cache_settings":{"enabled":true,"default":"4d"},"tls_versions":{"enabled":false,"value":["SSLv3","TLSv1","TLSv1.1","TLSv1.2","TLSv1.3"]}},"deleted":false,"secondaryHostnames":[],"client":250053,"status":"active","active":false,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"210.10.10.10","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"created":"2023-12-19T01:05:47.831167Z","created_str":"","updated":"2023-12-19T01:05:47.831183Z","originProtocol":"HTTP","cname":"service06.ktcdnteam.link","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspended":false,"description":"service06","originGroup":449662} 
+2024/01/02 04:19:15 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:19:16 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 suspended 
+2024/01/02 04:19:16 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 suspended 
+2024/01/02 04:19:16 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2024/01/02 04:19:16 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2024/01/02 04:19:16 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:19:17 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources/346828  
+2024/01/02 04:19:18 api.go:41: [PUT] Request >> https://api.gcore.com/cdn/resources/346828 {"id":346828,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":null,"hostHeader":{"enabled":true,"value":"1.1.1.1"},"stale":{"enabled":true,"value":["error","updating"]},"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"edge_cache_settings":{"enabled":true,"default":"4d"},"tls_versions":{"enabled":false,"value":["SSLv3","TLSv1","TLSv1.1","TLSv1.2","TLSv1.3"]}},"deleted":false,"secondaryHostnames":[],"client":250053,"status":"active","active":false,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"1.1.1.1","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"created":"2023-12-20T07:46:50.577237Z","created_str":"","updated":"2023-12-20T07:46:50.577252Z","originProtocol":"HTTP","cname":"cloud.kt.com","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspended":false,"description":"cdn01","originGroup":452768} 
+2024/01/02 04:19:18 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:19:19 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 suspended 
+2024/01/02 04:19:19 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 suspended 
+2024/01/02 04:19:19 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 suspended 
+2024/01/02 04:19:19 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2024/01/02 04:19:19 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:19:23 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources/361343  
+2024/01/02 04:19:24 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:19:24 api.go:41: [PUT] Request >> https://api.gcore.com/cdn/resources/361343 {"id":361343,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":null,"hostHeader":{"enabled":true,"value":"210.104.79.216:80"},"stale":{"enabled":true,"value":["error","updating"]},"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"edge_cache_settings":{"enabled":true,"default":"4d"},"tls_versions":{"enabled":false,"value":["SSLv3","TLSv1","TLSv1.1","TLSv1.2","TLSv1.3"]}},"deleted":false,"secondaryHostnames":[],"client":250053,"status":"active","active":false,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"210.104.79.216:80","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"created":"2023-12-26T05:05:05.505401Z","created_str":"","updated":"2023-12-26T05:05:05.505416Z","originProtocol":"HTTP","cname":"service01.ktcdnteam.link","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspended":false,"description":"service01","originGroup":467684} 
+2024/01/02 04:19:25 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 suspended 
+2024/01/02 04:19:25 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 suspended 
+2024/01/02 04:19:25 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 suspended 
+2024/01/02 04:19:25 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2024/01/02 04:19:25 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:19:30 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:19:31 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:19:32 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 suspended 
+2024/01/02 04:19:32 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 suspended 
+2024/01/02 04:19:32 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 suspended 
+2024/01/02 04:19:32 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 suspended 
+2024/01/02 04:19:32 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:19:33 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 suspended 
+2024/01/02 04:19:33 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 suspended 
+2024/01/02 04:19:33 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 suspended 
+2024/01/02 04:19:33 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 suspended 
+2024/01/02 04:19:33 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:19:37 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/341411  
+2024/01/02 04:19:43 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:19:44 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 suspended 
+2024/01/02 04:19:44 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 suspended 
+2024/01/02 04:19:44 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 suspended 
+2024/01/02 04:19:44 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:19:46 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/undefined  
+2024/01/02 04:19:47 api.go:71: DELETE https://api.gcore.com/cdn/resources/undefined >>> [ERROR : 404] 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+ 
+2024/01/02 04:19:47 billing_model.go:375: 404 Not Found
+2024/01/02 04:19:47 route.go:108: 404 Not Found
+2024/01/02 04:19:52 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:19:53 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 suspended 
+2024/01/02 04:19:53 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 suspended 
+2024/01/02 04:19:53 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 suspended 
+2024/01/02 04:19:53 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:19:53 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/343782  
+2024/01/02 04:19:59 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/346828  
+2024/01/02 04:19:59 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:20:00 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 suspended 
+2024/01/02 04:20:00 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:20:02 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/undefined  
+2024/01/02 04:20:02 api.go:71: DELETE https://api.gcore.com/cdn/resources/undefined >>> [ERROR : 404] 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+ 
+2024/01/02 04:20:02 billing_model.go:375: 404 Not Found
+2024/01/02 04:20:02 route.go:108: 404 Not Found
+2024/01/02 04:20:05 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/361343  
+2024/01/02 04:20:05 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:20:06 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:20:08 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:20:09 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:20:11 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:20:12 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:20:40 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:20:40 billing_model.go:226: &{412358 3.3.3.3 [{3.3.3.3 false true default} {1.1.1.1 true true default} {2.2.2.2 false true default}] false true none  []}
+2024/01/02 04:20:40 billing_model.go:226: &{452768 1.1.1.1 [{1.1.1.1 false true default}] false true none  []}
+2024/01/02 04:20:40 billing_model.go:226: &{447133 1.1.1.1:80 [{1.1.1.1:80 false true default} {210.15.20.14:443 false true default}] false true none  []}
+2024/01/02 04:20:40 billing_model.go:226: &{467684 210.104.79.216:80 [{210.104.79.216:80 false true default}] false true none  []}
+2024/01/02 04:20:40 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 04:20:40 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 04:20:41 billing_model.go:226: &{447363 1.1.1.1:84 [{1.1.1.1:84 false true default} {2.2.2.2:443 false true default}] false true none  []}
+2024/01/02 04:20:41 billing_model.go:226: &{449662 210.10.10.10 [{210.10.10.10 false true default} {1.1.1.1 false true default}] false true none  []}
+2024/01/02 04:20:45 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/origin_groups/447363  
+2024/01/02 04:20:46 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:20:47 billing_model.go:226: &{412358 3.3.3.3 [{3.3.3.3 false true default} {1.1.1.1 true true default} {2.2.2.2 false true default}] false true none  []}
+2024/01/02 04:20:47 billing_model.go:226: &{452768 1.1.1.1 [{1.1.1.1 false true default}] false true none  []}
+2024/01/02 04:20:47 billing_model.go:226: &{447133 1.1.1.1:80 [{1.1.1.1:80 false true default} {210.15.20.14:443 false true default}] false true none  []}
+2024/01/02 04:20:47 billing_model.go:226: &{467684 210.104.79.216:80 [{210.104.79.216:80 false true default}] false true none  []}
+2024/01/02 04:20:47 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 04:20:47 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 04:20:48 billing_model.go:226: &{449662 210.10.10.10 [{210.10.10.10 false true default} {1.1.1.1 false true default}] false true none  []}
+2024/01/02 04:20:51 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/origin_groups/449662  
+2024/01/02 04:20:52 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:20:54 billing_model.go:226: &{412358 3.3.3.3 [{3.3.3.3 false true default} {1.1.1.1 true true default} {2.2.2.2 false true default}] false true none  []}
+2024/01/02 04:20:54 billing_model.go:226: &{452768 1.1.1.1 [{1.1.1.1 false true default}] false true none  []}
+2024/01/02 04:20:54 billing_model.go:226: &{447133 1.1.1.1:80 [{1.1.1.1:80 false true default} {210.15.20.14:443 false true default}] false true none  []}
+2024/01/02 04:20:54 billing_model.go:226: &{467684 210.104.79.216:80 [{210.104.79.216:80 false true default}] false true none  []}
+2024/01/02 04:20:54 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 04:20:54 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 04:20:57 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/origin_groups/467684  
+2024/01/02 04:20:59 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:21:00 billing_model.go:226: &{412358 3.3.3.3 [{3.3.3.3 false true default} {1.1.1.1 true true default} {2.2.2.2 false true default}] false true none  []}
+2024/01/02 04:21:00 billing_model.go:226: &{452768 1.1.1.1 [{1.1.1.1 false true default}] false true none  []}
+2024/01/02 04:21:00 billing_model.go:226: &{447133 1.1.1.1:80 [{1.1.1.1:80 false true default} {210.15.20.14:443 false true default}] false true none  []}
+2024/01/02 04:21:00 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 04:21:00 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 04:21:03 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/origin_groups/447133  
+2024/01/02 04:21:05 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:21:06 billing_model.go:226: &{412358 3.3.3.3 [{3.3.3.3 false true default} {1.1.1.1 true true default} {2.2.2.2 false true default}] false true none  []}
+2024/01/02 04:21:06 billing_model.go:226: &{452768 1.1.1.1 [{1.1.1.1 false true default}] false true none  []}
+2024/01/02 04:21:06 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 04:21:06 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 04:21:06 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/origin_groups/452768  
+2024/01/02 04:21:07 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:21:09 billing_model.go:226: &{412358 3.3.3.3 [{3.3.3.3 false true default} {1.1.1.1 true true default} {2.2.2.2 false true default}] false true none  []}
+2024/01/02 04:21:09 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 04:21:09 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 04:21:12 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/origin_groups/412358  
+2024/01/02 04:21:14 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:21:15 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 04:21:15 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 04:21:32 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:21:33 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:21:42 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:26:04 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:26:13 api.go:41: [POST] Request >> https://api.gcore.com/cdn/resources {"sslEnabled":false,"sslData":null,"active":true,"originGroup":467686,"originProtocol":"HTTP","cname":"cloud11.kt.com","description":"server01","origin":"","secondaryHostnames":[],"options":{"edge_cache_settings":{"enabled":true,"default":"4d"},"cache_expire":null,"stale":{"enabled":true,"value":["error","updating"]},"allowedHttpMethods":null,"cache_http_headers":null,"hostHeader":{"enabled":true,"value":"210.104.79.216:80"},"forward_host_header":null,"limit_bandwidth":null,"bot_protection":null}} 
+2024/01/02 04:26:14 billing_model.go:366: {"id":379118,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":null,"hostHeader":{"enabled":true,"value":"210.104.79.216:80"},"staticHeaders":null,"static_response_headers":null,"staticRequestHeaders":null,"allowedHttpMethods":null,"stale":{"enabled":true,"value":["error","updating"]},"cors":null,"proxy_cache_methods_set":null,"rewrite":null,"force_return":null,"secure_key":null,"cache_expire":null,"disable_cache":null,"ignore_cookie":null,"cache_http_headers":null,"response_headers_hiding_policy":null,"override_browser_ttl":null,"fetch_compressed":null,"disable_proxy_force_ranges":null,"redirect_http_to_https":null,"redirect_https_to_http":null,"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"limit_bandwidth":null,"request_limiter":null,"bot_protection":null,"waf":null,"country_acl":null,"referrer_acl":null,"user_agent_acl":null,"ip_address_acl":null,"query_params_blacklist":null,"query_params_whitelist":null,"browser_cache_settings":null,"edge_cache_settings":{"enabled":true,"default":"4d"},"forward_host_header":null,"websockets":null,"use_default_le_chain":null,"use_rsa_le_cert":null,"use_dns01_le_challenge":null,"tls_versions":{"enabled":false,"value":["SSLv3","TLSv1","TLSv1.1","TLSv1.2","TLSv1.3"]},"follow_origin_redirect":null,"http3_enabled":null,"image_stack":null},"deleted":false,"secondaryHostnames":[],"rules":[],"client":250053,"status":"processed","active":true,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"Origins for server02.ktcdnteam.link","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"name":null,"created":"2024-01-02T01:26:14.609699Z","updated":"2024-01-02T01:26:14.609711Z","originProtocol":"HTTP","cname":"cloud11.kt.com","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspend_date":null,"suspended":false,"is_primary":null,"description":"server01","originGroup":467686,"sslData":null,"proxy_ssl_ca":null,"proxy_ssl_data":null,"shield_routing_map":null,"primary_resource":null}
+2024/01/02 04:26:16 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:26:19 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:26:19 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:26:21 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:26:21 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 processed 
+2024/01/02 04:26:21 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:26:21 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 processed 
+2024/01/02 04:26:27 api.go:41: [POST] Request >> https://api.gcore.com/cdn/resources {"sslEnabled":false,"sslData":null,"active":true,"originGroup":467686,"originProtocol":"HTTP","cname":"c1loud1.kt.com","description":"server03","origin":"","secondaryHostnames":[],"options":{"edge_cache_settings":{"enabled":true,"default":"4d"},"cache_expire":null,"stale":{"enabled":true,"value":["error","updating"]},"allowedHttpMethods":null,"cache_http_headers":null,"hostHeader":{"enabled":true,"value":"210.104.79.216:80"},"forward_host_header":null,"limit_bandwidth":null,"bot_protection":null}} 
+2024/01/02 04:26:29 billing_model.go:366: {"id":379119,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":null,"hostHeader":{"enabled":true,"value":"210.104.79.216:80"},"staticHeaders":null,"static_response_headers":null,"staticRequestHeaders":null,"allowedHttpMethods":null,"stale":{"enabled":true,"value":["error","updating"]},"cors":null,"proxy_cache_methods_set":null,"rewrite":null,"force_return":null,"secure_key":null,"cache_expire":null,"disable_cache":null,"ignore_cookie":null,"cache_http_headers":null,"response_headers_hiding_policy":null,"override_browser_ttl":null,"fetch_compressed":null,"disable_proxy_force_ranges":null,"redirect_http_to_https":null,"redirect_https_to_http":null,"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"limit_bandwidth":null,"request_limiter":null,"bot_protection":null,"waf":null,"country_acl":null,"referrer_acl":null,"user_agent_acl":null,"ip_address_acl":null,"query_params_blacklist":null,"query_params_whitelist":null,"browser_cache_settings":null,"edge_cache_settings":{"enabled":true,"default":"4d"},"forward_host_header":null,"websockets":null,"use_default_le_chain":null,"use_rsa_le_cert":null,"use_dns01_le_challenge":null,"tls_versions":{"enabled":false,"value":["SSLv3","TLSv1","TLSv1.1","TLSv1.2","TLSv1.3"]},"follow_origin_redirect":null,"http3_enabled":null,"image_stack":null},"deleted":false,"secondaryHostnames":[],"rules":[],"client":250053,"status":"processed","active":true,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"Origins for server02.ktcdnteam.link","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"name":null,"created":"2024-01-02T01:26:28.749032Z","updated":"2024-01-02T01:26:28.749044Z","originProtocol":"HTTP","cname":"c1loud1.kt.com","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspend_date":null,"suspended":false,"is_primary":null,"description":"server03","originGroup":467686,"sslData":null,"proxy_ssl_ca":null,"proxy_ssl_data":null,"shield_routing_map":null,"primary_resource":null}
+2024/01/02 04:26:34 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:26:34 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:26:35 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:26:35 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 processed 
+2024/01/02 04:26:35 billing_model.go:204: 379119. c1loud1.kt.com 2024-01-02 10:26:28 processed 
+2024/01/02 04:26:35 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:26:35 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 processed 
+2024/01/02 04:26:35 billing_model.go:204: 379119. c1loud1.kt.com 2024-01-02 10:26:28 processed 
+2024/01/02 04:26:45 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/379119  
+2024/01/02 04:26:51 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:26:52 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:26:52 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 processed 
+2024/01/02 04:27:01 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:27:02 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:27:02 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 processed 
+2024/01/02 04:27:04 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:27:19 api.go:41: [POST] Request >> https://api.gcore.com/cdn/resources {"sslEnabled":false,"sslData":null,"active":true,"originGroup":467686,"originProtocol":"HTTP","cname":"server.kt.com","description":"server03","origin":"","secondaryHostnames":[],"options":{"edge_cache_settings":{"enabled":true,"default":"4d"},"cache_expire":null,"stale":{"enabled":true,"value":["error","updating"]},"allowedHttpMethods":null,"cache_http_headers":null,"hostHeader":{"enabled":true,"value":"210.104.79.216:80"},"forward_host_header":null,"limit_bandwidth":null,"bot_protection":null}} 
+2024/01/02 04:27:20 billing_model.go:366: {"id":379120,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":null,"hostHeader":{"enabled":true,"value":"210.104.79.216:80"},"staticHeaders":null,"static_response_headers":null,"staticRequestHeaders":null,"allowedHttpMethods":null,"stale":{"enabled":true,"value":["error","updating"]},"cors":null,"proxy_cache_methods_set":null,"rewrite":null,"force_return":null,"secure_key":null,"cache_expire":null,"disable_cache":null,"ignore_cookie":null,"cache_http_headers":null,"response_headers_hiding_policy":null,"override_browser_ttl":null,"fetch_compressed":null,"disable_proxy_force_ranges":null,"redirect_http_to_https":null,"redirect_https_to_http":null,"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"limit_bandwidth":null,"request_limiter":null,"bot_protection":null,"waf":null,"country_acl":null,"referrer_acl":null,"user_agent_acl":null,"ip_address_acl":null,"query_params_blacklist":null,"query_params_whitelist":null,"browser_cache_settings":null,"edge_cache_settings":{"enabled":true,"default":"4d"},"forward_host_header":null,"websockets":null,"use_default_le_chain":null,"use_rsa_le_cert":null,"use_dns01_le_challenge":null,"tls_versions":{"enabled":false,"value":["SSLv3","TLSv1","TLSv1.1","TLSv1.2","TLSv1.3"]},"follow_origin_redirect":null,"http3_enabled":null,"image_stack":null},"deleted":false,"secondaryHostnames":[],"rules":[],"client":250053,"status":"processed","active":true,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"Origins for server02.ktcdnteam.link","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"name":null,"created":"2024-01-02T01:27:20.194953Z","updated":"2024-01-02T01:27:20.194968Z","originProtocol":"HTTP","cname":"server.kt.com","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspend_date":null,"suspended":false,"is_primary":null,"description":"server03","originGroup":467686,"sslData":null,"proxy_ssl_ca":null,"proxy_ssl_data":null,"shield_routing_map":null,"primary_resource":null}
+2024/01/02 04:27:25 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:27:25 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:27:26 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:27:26 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 processed 
+2024/01/02 04:27:26 billing_model.go:204: 379120. server.kt.com 2024-01-02 10:27:20 processed 
+2024/01/02 04:27:26 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:27:26 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 processed 
+2024/01/02 04:27:26 billing_model.go:204: 379120. server.kt.com 2024-01-02 10:27:20 processed 
+2024/01/02 04:28:49 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:28:50 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:28:50 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 processed 
+2024/01/02 04:28:50 billing_model.go:204: 379120. server.kt.com 2024-01-02 10:27:20 processed 
+2024/01/02 04:29:00 api.go:41: [DELETE] Request >> https://api.gcore.com/cdn/resources/379120  
+2024/01/02 04:29:06 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:29:07 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:29:07 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 processed 
+2024/01/02 04:29:34 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 04:29:35 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 04:29:35 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 processed 
+2024/01/02 04:39:42 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:39:43 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 04:39:43 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 04:39:44 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:39:45 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 04:39:45 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 04:40:26 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 04:40:27 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 04:40:27 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 05:24:29 main.go:29: Start api-server..
+2024/01/02 05:24:29 server.go:9: Start api-server..
+2024/01/02 05:24:32 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 05:24:33 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 05:24:33 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/02 05:25:18 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 05:25:19 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 05:25:19 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/02 07:17:31 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 07:17:32 api.go:60: [Token ERROR] >> GET Token Start
+2024/01/02 07:17:32 loadconf.go:68: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/02 07:17:34 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 07:17:35 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 07:17:35 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 07:17:36 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 07:31:29 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 07:31:30 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 07:31:30 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 07:31:31 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 07:43:04 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 07:43:05 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 07:43:05 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 07:43:06 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 07:44:40 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 07:44:41 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 07:44:41 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 07:44:42 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 07:50:26 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 07:50:27 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 07:50:27 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 07:50:29 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 07:55:54 main.go:29: Start api-server..
+2024/01/02 07:55:54 server.go:9: Start api-server..
+2024/01/02 07:56:10 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 07:56:11 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 07:56:11 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 07:56:12 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 07:59:02 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 07:59:03 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 07:59:03 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 07:59:04 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 07:59:11 main.go:29: Start api-server..
+2024/01/02 07:59:11 server.go:9: Start api-server..
+2024/01/02 07:59:43 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 07:59:44 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 07:59:44 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 07:59:45 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 08:01:48 main.go:29: Start api-server..
+2024/01/02 08:01:48 server.go:9: Start api-server..
+2024/01/02 08:01:51 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 08:01:52 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 08:01:52 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 08:01:53 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 08:02:33 main.go:29: Start api-server..
+2024/01/02 08:02:33 server.go:9: Start api-server..
+2024/01/02 08:02:36 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 08:02:37 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 08:02:37 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 08:02:38 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 08:03:30 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 08:03:31 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 08:03:31 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 08:03:32 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 08:03:40 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 08:03:41 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 08:03:41 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 08:03:43 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 08:03:50 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 08:03:51 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 08:03:51 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 08:03:53 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 08:06:38 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 08:06:39 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 08:06:39 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 08:06:40 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 08:07:32 main.go:29: Start api-server..
+2024/01/02 08:07:32 server.go:9: Start api-server..
+2024/01/02 08:46:33 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 08:46:35 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 08:46:35 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 08:46:36 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 09:22:14 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 09:22:15 api.go:60: [Token ERROR] >> GET Token Start
+2024/01/02 09:22:15 loadconf.go:68: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/02 09:22:16 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/02 09:22:18 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/02 09:22:18 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/02 11:24:17 main.go:29: Start api-server..
+2024/01/02 11:24:17 server.go:9: Start api-server..
+2024/01/02 11:25:55 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 11:25:56 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 11:25:56 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 11:25:57 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 11:25:57 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/02 11:32:44 main.go:29: Start api-server..
+2024/01/02 11:32:44 server.go:9: Start api-server..
+2024/01/02 11:32:48 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 11:32:49 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 11:32:49 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 11:32:50 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 11:32:50 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/02 11:39:39 main.go:29: Start api-server..
+2024/01/02 11:39:39 server.go:9: Start api-server..
+2024/01/02 12:03:05 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 12:03:07 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 12:03:07 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 12:03:08 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 12:03:08 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/02 12:03:17 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 12:03:18 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 12:03:18 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 12:03:20 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 12:03:20 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/02 12:17:11 main.go:29: Start api-server..
+2024/01/02 12:17:11 server.go:9: Start api-server..
+2024/01/02 12:22:15 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 12:22:16 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 12:22:16 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 12:22:17 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 12:22:17 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/02 12:24:40 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 12:24:42 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 12:24:42 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 12:24:43 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 12:24:43 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/02 12:25:22 main.go:29: Start api-server..
+2024/01/02 12:25:22 server.go:9: Start api-server..
+2024/01/02 12:25:28 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 12:25:29 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 12:25:29 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 12:25:30 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 12:25:30 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/02 12:27:36 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 12:27:38 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 12:27:38 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 12:27:39 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 12:27:39 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/02 12:29:23 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/02 12:29:24 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/02 12:29:24 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/02 12:29:25 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/02 12:29:25 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 03:11:31 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 03:11:32 api.go:60: [Token ERROR] >> GET Token Start
+2024/01/03 03:11:32 loadconf.go:68: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/03 03:11:34 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 03:11:35 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 03:11:35 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 03:11:36 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 03:11:36 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 03:45:54 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 03:45:55 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 03:45:55 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 03:45:56 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 03:45:56 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 03:46:43 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/03 03:46:45 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/03 03:46:45 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/03 03:47:10 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/03 03:47:11 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/03 03:47:11 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/03 03:47:37 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/03 03:47:38 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/03 03:47:38 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/03 03:49:07 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 03:49:08 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 03:49:08 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 03:49:09 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 03:49:09 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}

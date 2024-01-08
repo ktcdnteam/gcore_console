@@ -1,0 +1,388 @@
+{{define "CDN_LIST"}}
+<div id="contentwrapper" style="width: 100%;">
+    <!-- CDN 목록 -->
+    <div id="contentcolumn3">
+        <div id="cdnContentArea" class="sub_m">
+                <div class="sub_t btop dep1_1 ml60">
+                <div class="r_quick_wrap">
+                    <span class="r_quick"><a href="" class="cicon cprod_cdn">CDN Standard</a></span> >          
+                    <span class="r_quick_s"><a href="" class="cicons">CDN</a></span>
+                        
+                    <span class="h3_quick"><a href="javascript:go_portal_page('https://manual.cloud.kt.com/kt/cdn-standard-intro');" class="tmanual7">매뉴얼</a></span>
+                    <span class="h3_quick ml10"><a href="javascript:go_portal_inquiry('3','ucloud CDN','/console/cdnlist');" class="thelp7">온라인문의</a></span>
+                    <span class="h3_quick"><a href="javascript:go_portal_satisfaction_evaluation('CDN3.0','CDN');" class="tSatisfactioni7">만족도평가</a></span>
+                </div>
+                <div class="title_area dep1_1">
+                    <h3 class="">CDN</h3>                                             
+                    <p>CDN 서비스를 관리합니다.</p>
+                </div>
+            </div> 
+            <div class="search_server_all_w clfix">
+                <div class="search_server fl">
+                    <ul class="search_server_ul">
+                        <li>
+                            <span title='서버 생성' class="btn_result_search" id="button_cdnDeploy" style="cursor:pointer;">
+                                <a title='서버 생성' href="#">CDN 생성</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span title='시작' class="action action_disabled" id="button_cdnStart" style="cursor:pointer;">
+                                <a href="#">시작</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span title='정지' class="action action_disabled" id="button_cdnStop" style="cursor:pointer;">
+                                <a href="#">정지</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span title='삭제' tooltip_text='정지 상태에서 가능합니다.' class="action action_disabled" id="button_cdnDelete" style="cursor:pointer;">
+                                <a href="#">삭제</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span title='수정' class="action action_disabled" id="button_cdnModify" style="cursor:pointer;">
+                                <a href="#">서비스 변경</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            <div class="q_btn_server fr">
+                    <ul class="q_btn_server_ul">
+                        <li class="inline_none">
+                            <div class="vm_searchArea" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">                                                                                                                                                                                                                                              
+                            <input class="cInput" type="text" id="sel_sch_word" placeholder="이름으로 검색" style="display:none;" onkeypress="if(event.keyCode==13){searchEnterEvent();}">                            
+                            <input class="saBtn" type="image" src="/images/coni/Table_Search.svg" id="searchBtn" onmouseover="MM_swapImage('Image_searcht01','','/images/coni/Table_Search_hover.svg',1)" onmouseout="MM_swapImgRestore()" alt="search">                                                                                                                                                              
+                            </div> 
+                            
+                        </li>
+                        <li>
+                            <a title="excel" href="#" class="exsave" onclick="javascript:excelsave('table_body_part','cdn_standard_list.xls')">
+                            </a>
+                        </li>
+                        <li onclick="call_resourceList()">
+                            <a title="refresh" href="#"  class="reset">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        <!-- 컨텐츠 wrap -->
+        <div class="listscroll"> 
+            <!-- 화면 해상도 높이 조절 start -->                           
+            <div class="sub_con_box_w">                                                                           
+                <!--    컨텐츠 분할 영역 시작 -->
+                <div id="" class="mybox">
+                            <table id="table_body_part" class="c_th_tbl">
+                                <caption>리스트</caption>
+                                    <colgroup>
+                                        <col style="width:36px;" />
+                                        <col style="width:17.5% ;" />
+                                        <col style="width:17% ;" />
+                                        <col style="width:*" />
+                                        <col style="width:17% ;" />
+                                        <col style="width:29.5% ;" />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="first" scope="col"><img src="/images/coni/t_space.png" alt="spaceImg" /></th>
+                                            <th id="view_svr_name" scope="col"><a href="#">이름<img class="sort_img" src="/images/coni/Table_Sort_Down.svg" alt="" /></a></th>
+                                            <th id="view_svr_state" scope="col"><a href="#">상태<img class="sort_img" src="/images/coni/Table_Sort_Down.svg" style="display:none;" alt="" /></img></a></th>
+                                            <th id="view_svr_cname" scope="col"><a href="#">서비스 도메인<img class="sort_img" src="/images/coni/Table_Sort_Down.svg" style="display:none;" alt="" /></img></a></th>
+                                            <th id="view_svr_origin" scope="col"><a href="#">오리진 그룹<img class="sort_img" src="/images/coni/Table_Sort_Down.svg" style="display:none;" alt="" /></img></a></th>
+                                            <th id="view_svr_dttm" scope="col"><a href="#">생성 일시<img class="sort_img" src="/images/coni/Table_Sort_Down.svg" style="display:none;" alt="" /></img></a></th>
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody id="table_vmList">
+                                        <tr id="div_nonelist" >
+                                            <td colspan="6">조회된 데이터가 없습니다.</td>
+                                        </tr>
+                                        <tr id="base_vmList" class=""  style="display:none;" onmouseout="tr_onmouseout_cdn(this);" onmouseover="tr_onmouseover_cdn(this);" onclick="tr_onclick_main_cdn(this);" >
+                                                    <td class="first" id="text_vm_seq"><label class="chkwrap listchkbox"><input id="chkmultichk" type="checkbox" name="contentsList" class="chkbox" /></label>
+                                            <div class="show_loading_img" style="display:none;" class="loader loader--style3" title="2">
+                                                <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="lodingsize_s" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                                                <path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z" transform="rotate(95.532 25 25)">
+                                                <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform>
+                                                </path>
+                                                </svg>
+                                            </div>
+                                            </td>
+                                            <td id="text_vmDisplayText"></td>
+                                            <td id="img_vmState"><img src="/images/coni/Circle_Green.svg" class="mr4" alt="사용" /></td>
+                                            <td id="text_vmServiceDomain"></td>
+                                            <td id="text_vmOriginGroup"></td>
+                                            <td id="button_vmConsoleView"></td>
+                                        </tr>
+                                    </tbody>
+                                </table><br/><br/><br/>
+                            </div>
+                            <!-- //scroll_s -->
+                        </div>
+                        <!-- //inner_consolelist_div -->
+                    </div>
+                                
+        </div>           
+    </div>
+    <!-- CDN 수정 -->
+    <div id="contentcolumn4" style="display: none;">
+        <div id="cdnContentArea" class="sub_m">
+                <div class="sub_t btop dep1_1 ml60">
+                <div class="r_quick_wrap">
+                    <span class="r_quick"><a href="" class="cicon cprod_cdn">CDN Standard</a></span> >          
+                    <span class="r_quick_s"><a href="" class="cicons">CDN</a></span>
+                        
+                    <span class="h3_quick"><a href="javascript:go_portal_page('https://manual.cloud.kt.com/kt/cdn-standard-intro');" class="tmanual7">매뉴얼</a></span>
+                    <span class="h3_quick ml10"><a href="javascript:go_portal_inquiry('3','ucloud CDN','/console/cdnlist');" class="thelp7">온라인문의</a></span>
+                    <span class="h3_quick"><a href="javascript:go_portal_satisfaction_evaluation('CDN3.0','CDN');" class="tSatisfactioni7">만족도평가</a></span>
+                </div>
+                <div class="title_area dep1_1">
+                    <h3 class="">CDN </h3>                                             
+                    <p>CDN 서비스를 관리합니다.</p>
+                </div>
+            </div> 
+            <div class="search_server_all_w clfix">
+                <div class="search_server fl">
+                    <ul class="search_server_ul">
+                        <li>
+                            <span title='서버 생성' class="btn_result_search" id="button_cdnDeploy" style="cursor:pointer;">
+                                <a title='서버 생성' href="#">CDN 생성</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span title='시작' class="action action_disabled" id="button_cdnStart" style="cursor:pointer;">
+                                <a href="#">시작</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span title='정지' class="action action_disabled" id="button_cdnStop" style="cursor:pointer;">
+                                <a href="#">정지</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span title='삭제' tooltip_text='정지 상태에서 가능합니다.' class="action action_disabled" id="button_cdnDelete" style="cursor:pointer;">
+                                <a href="#">삭제</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span title='수정' class="action action_disabled" id="button_cdnModify" style="cursor:pointer;">
+                                <a href="#">서비스 변경</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            <div class="q_btn_server fr">
+                    <ul class="q_btn_server_ul">
+                        <li class="inline_none">
+                            <div class="vm_searchArea" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">                                                                                                                                                                                                                                              
+                            <input class="cInput" type="text" id="sel_sch_word" placeholder="이름으로 검색" style="display:none;" onkeypress="if(event.keyCode==13){searchEnterEvent();}">                            
+                            <input class="saBtn" type="image" src="/images/coni/Table_Search.svg" id="searchBtn" onmouseover="MM_swapImage('Image_searcht01','','/images/coni/Table_Search_hover.svg',1)" onmouseout="MM_swapImgRestore()" alt="search">                                                                                                                                                              
+                            </div> 
+                            
+                        </li>
+                        <li>
+                            <a title="excel" href="#" class="exsave" onclick="javascript:excelsave('table_body_part','cdn_standard_list.xls')">
+                            </a>
+                        </li>
+                        <li onclick="call_resourceList()">
+                            <a title="refresh" href="#"  class="reset">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        <!-- 컨텐츠 wrap -->
+        <div class="listscroll"> 
+            <!-- 화면 해상도 높이 조절 start -->                           
+            <div class="sub_con_box_w">                                                                           
+                <!--    컨텐츠 분할 영역 시작 -->
+                <div id="" class="mybox">
+                            <table id="table_body_part" class="c_th_tbl">
+                                <caption>리스트</caption>
+                                    <colgroup>
+                                        <col style="width:36px;" />
+                                        <col style="width:17.5% ;" />
+                                        <col style="width:17% ;" />
+                                        <col style="width:*" />
+                                        <col style="width:17% ;" />
+                                        <col style="width:29.5% ;" />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="first" scope="col"><img src="/images/coni/t_space.png" alt="spaceImg" /></th>
+                                            <th id="view_svr_name" scope="col"><a href="#">이름<img class="sort_img" src="/images/coni/Table_Sort_Down.svg" alt="" /></a></th>
+                                            <th id="view_svr_state" scope="col"><a href="#">상태<img class="sort_img" src="/images/coni/Table_Sort_Down.svg" style="display:none;" alt="" /></img></a></th>
+                                            <th id="view_svr_cname" scope="col"><a href="#">서비스 도메인<img class="sort_img" src="/images/coni/Table_Sort_Down.svg" style="display:none;" alt="" /></img></a></th>
+                                            <th id="view_svr_origin" scope="col"><a href="#">오리진 그룹<img class="sort_img" src="/images/coni/Table_Sort_Down.svg" style="display:none;" alt="" /></img></a></th>
+                                            <th id="view_svr_dttm" scope="col"><a href="#">생성 일시<img class="sort_img" src="/images/coni/Table_Sort_Down.svg" style="display:none;" alt="" /></img></a></th>
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody id="table_vmList">
+                                        <tr id="div_nonelist" >
+                                            <td colspan="6">조회된 데이터가 없습니다.</td>
+                                        </tr>
+                                        <tr id="base_vmList" class=""  style="display:none;" onmouseout="tr_onmouseout_cdn(this);" onmouseover="tr_onmouseover_cdn(this);" onclick="tr_onclick_main_cdn(this);" >
+                                                    <td class="first" id="text_vm_seq"><label class="chkwrap listchkbox"><input id="chkmultichk" type="checkbox" name="contentsList" class="chkbox" /></label>
+                                            <div class="show_loading_img" style="display:none;" class="loader loader--style3" title="2">
+                                                <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="lodingsize_s" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                                                <path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z" transform="rotate(95.532 25 25)">
+                                                <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform>
+                                                </path>
+                                                </svg>
+                                            </div>
+                                            </td>
+                                            <td id="text_vmDisplayText"></td>
+                                            <td id="img_vmState"><img src="/images/coni/Circle_Green.svg" class="mr4" alt="사용" /></td>
+                                            <td id="text_vmServiceDomain"></td>
+                                            <td id="text_vmOriginGroup"></td>
+                                            <td id="button_vmConsoleView"></td>
+                                        </tr>
+                                    </tbody>
+                                </table><br/><br/><br/>
+                            </div>
+                            <!-- //scroll_s -->
+                        </div>
+                        <!-- //inner_consolelist_div -->
+                    </div>
+                                
+        </div>           
+    </div>
+</div>
+<!-- new 팝업영역 start -->
+                
+<!-- CDN 정지 -->
+<div id="dialog_CDN_Stop" class="popUp" style="width:500px;top:auto !important;display: none;">         
+    <div class="head htpop clfix">
+        <h1><!--타이틀--> <span class="del" id="button_VM_Stop_TopClose"><a href="#"><img src="/images/coni/Cancel.svg" alt="" /></a></span></h1> 
+    </div>           
+    <div class="body">
+        <div class="con ac">
+            <p class="box_txtl ac"><span id="dialog_CDN_Stop_text1"></span>서비스를 정지합니다.</p>
+            <div class="btn_box twobtn mt60">
+                <div>
+                    <div class="pop_btn_left btnl_secondary" id="button_VM_Stop_Cancel"><a href="#">취소</a></div> 
+                    <div class="pop_btn_right btnl_primary" id="button_VM_Stop_OK"><a href="#">정지하기</a></div>
+                 </div>
+            </div>
+        </div>
+        <!--con end-->
+    </div>
+    <!--body end-->
+</div>
+
+<!-- CDN 삭제 -->
+<div id="dialog_CDN_Delete" class="popUp" style="width:500px;top:auto !important;display: none;">         
+    <div class="head htpop clfix">
+        <h1><!--타이틀--> <span class="del" id="button_VM_Delete_TopClose"><a href="#"><img src="/images/coni/Cancel.svg" alt="" /></a></span></h1> 
+    </div>           
+    <div class="body">
+        <div class="con ac">
+            <p class="box_txtl ac"><span id="dialog_CDN_Delete_text1">cdnTest001</span>서비스를 삭제합니다.</p>
+            <div class="btn_box twobtn mt60">
+                <div>
+                    <div class="pop_btn_left btnl_secondary" id="button_VM_Delete_Cancel"><a href="#">취소</a></div> 
+                    <div class="pop_btn_right btnl_primary" id="button_VM_Delete_OK"><a href="#">삭제하기</a></div>
+                 </div>
+            </div>
+        </div>
+        <!--con end-->
+    </div>
+    <!--body end-->
+</div>
+
+<!-- CDN 시작 -->
+<div id="dialog_CDN_Start" class="popUp" style="width:500px;top:auto !important;display: none;">         
+    <div class="head htpop clfix">
+        <h1><!--타이틀--> <span class="del" id="button_VM_Start_TopClose"><a href="#"><img src="/images/coni/Cancel.svg" alt="" /></a></span></h1> 
+    </div>           
+    <div class="body">
+        <div class="con ac">
+            <p class="box_txtl ac"><span id="dialog_CDN_Start_text1"></span>서비스를 시작합니다.</p>
+            <div class="btn_box twobtn mt60">
+                <div>
+                    <div class="pop_btn_left btnl_secondary" id="button_VM_Start_Cancel"><a href="#">취소</a></div> 
+                    <div class="pop_btn_right btnl_primary" id="button_VM_Start_OK"><a href="#">시작하기</a></div>
+                 </div>
+            </div>
+        </div>
+        <!--con end-->
+    </div>
+    <!--body end-->
+</div>
+
+<!-- CDN 생성 -->
+<div class="popUp" id="dialog_CDN_Detail" style="width:960px;top:auto !important; display:none;">
+    <div class="head httable clfix">
+        <h1><!--타이틀--> <span class="del" id="btn_OriginCancel_TOP"><a href="#"><img src="/images/coni/Cancel.svg" alt="" /></a></span></h1>
+    </div>           
+    <div class="body">
+        <div class="con">
+            <div style="margin: 0px 0 20px 0; ">
+                <p style="line-height:36px;font-size:20px;border-bottom:1px solid #000003;">CDN 생성<span class="ptitclick ml10" id="purgePreCautions"></span></p>
+                <div class="pdescclick" id="purgePreCautionsArea"></div>
+            </div>
+            <ul class="clfix">
+                <li class="fl" style="width:100px;padding: 6px 0 4px 0;">서비스명</li>
+                <li class="fl">
+                    <textarea id="service_name" rows="" cols="" class="pop_txt_area3" style="width:500px;min-height:30px;overflow-y:auto;"></textarea>
+                </li>
+            </ul>
+            <ul class="clfix mt25">
+                <li class="fl" style="width:100px;padding: 6px 0 4px 0;">서비스 도메인</li>
+                <li class="fl">
+                    <textarea id="service_domain" rows="" cols="" class="pop_txt_area3" placeholder="cloud.kt.com" style="width:500px"></textarea>
+                    <!-- <span id="service_domain_client_text_area" class="red_txt" style="display: none;">
+                        <span id="service_domain_client_red_text">도메인 정규식</span>
+                    </span> -->
+                </li>
+            </ul>
+            
+            <ul class="clfix mt25">
+                <li class="fl" style="width:100px;padding: 6px 0 4px 0;">Origin</li>
+                <li class="fl">
+                    <ul class="img_bnlist clfix" id="origin_type" style="padding:0;">
+                        <li><span class="imgbn on" value="1" id="origin_type1" style="width:250px;">기존 Origin Group</span></li>
+                        <li><span class="imgbn" value="0" id="origin_type2" style="width:250px;">신규 Origin 추가</span></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <!-- .cdn_url :전체 클릭 시, 숨김 / URL단위 클릭 시, 보임 -->
+            <ul class="cdn_url clfix mt25" id="originListArea">
+                <li class="fl" style="width:100px;padding: 6px 0 4px 0;">목록</li>
+                <li class="fl">
+                    <div class="custom-select dib" style="width:500px;">
+                        <select id="originGroupList"></select>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cdn_url clfix mt25" id="originCreateArea">
+                <li class="fl" style="width:100px;padding: 6px 0 4px 0;">추가</li>
+                <li class="fl">
+                    <textarea id="originList" rows="" cols="" class="pop_txt_area3" placeholder="210.111.21.88&#13;&#10;210.111.21.89" style="width:500px;overflow-y:auto;"></textarea>
+                </li>
+            </ul>
+           <ul>
+            <li class="fl" style="width:100px;padding: 6px 0 4px 0;"></li>
+            <li style="padding:0px 5px">
+                <div class="create-server__price-option">
+                    <div class="v-info-text">
+                        <img src="https://cloud.kt.com/_nuxt/information.602d3346.svg">&nbsp;                        <p>오리진은 최소 한개 이상 등록 가능하며 명칭은 Defalut Origin으로 등록됩니다. </p>
+                        Origin Groups 메뉴에서 조회 및 수정이 가능합니다.  
+                    </div>
+                        <!-- <img src="https://cloud.kt.com/_nuxt/information.602d3346.svg">&nbsp;*active/backup 유무 기획 (12/31까지. abc04.json참고)</div> -->
+                    <div class="create-server__price-option__centos-eos"></div>
+                </div>
+            </li>
+           </ul>
+            <div class="btn_box twobtn mt40">
+                <div>
+                    <div class="pop_btn_left btnl_secondary" id="btn_OriginCancel"><a href="#">취소</a></div> 
+                    <div class="pop_btn_right btnl_primary" id="btn_ResourceOk"><a href="#">생성</a></div>
+                 </div>
+            </div>
+        </div><!--con end-->
+    </div>
+</div>  
+{{end}}

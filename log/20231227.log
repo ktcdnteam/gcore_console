@@ -1,0 +1,354 @@
+2023/12/27 04:01:37 main.go:29: Start api-server..
+2023/12/27 04:01:37 server.go:9: Start api-server..
+2023/12/27 04:01:48 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 04:01:49 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 04:01:49 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 04:01:49 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 04:01:49 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 04:01:49 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 04:01:49 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 04:01:49 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 04:03:45 main.go:29: Start api-server..
+2023/12/27 04:03:45 server.go:9: Start api-server..
+2023/12/27 04:03:53 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 04:03:54 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 04:03:54 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 04:03:54 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 04:03:54 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 04:03:54 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 04:03:54 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 04:03:54 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 04:07:27 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 04:07:28 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 04:07:28 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 04:07:28 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 04:07:28 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 04:07:28 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 04:07:28 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 04:07:28 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 04:47:17 main.go:30: Start api-server..
+2023/12/27 04:47:17 api.go:38: [GET] Request >> https://api.gcore.com/cdn/clients/me  
+2023/12/27 04:47:18 billing_model.go:321: {"id":250053,"service":{"enabled":true,"status":"active","updated":"2023-10-27T10:30:13.478961Z"},"cname":"cl-glc572d979.gcdn.co","use_balancer":false,"utilization_level":0,"max_objects_count":30,"cdn_resources_rules_max_count":5,"created":"2023-10-27T04:41:26.760569Z","updated":"2023-12-22T17:13:44.926935Z"}
+2023/12/27 04:47:18 server.go:9: Start api-server..
+2023/12/27 04:47:31 main.go:30: Start api-server..
+2023/12/27 04:47:31 api.go:38: [GET] Request >> https://api.gcore.com/cdn/clients/me  
+2023/12/27 04:47:32 billing_model.go:321: {"id":250053,"service":{"enabled":true,"status":"active","updated":"2023-10-27T10:30:13.478961Z"},"cname":"cl-glc572d979.gcdn.co","use_balancer":false,"utilization_level":0,"max_objects_count":30,"cdn_resources_rules_max_count":5,"created":"2023-10-27T04:41:26.760569Z","updated":"2023-12-22T17:13:44.926935Z"}
+2023/12/27 04:47:32 server.go:9: Start api-server..
+2023/12/27 08:14:33 route.go:60: all
+2023/12/27 08:14:33 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 08:14:34 api.go:57: [Token ERROR] >> GET Token Start
+2023/12/27 08:14:34 loadconf.go:68: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2023/12/27 08:14:36 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 08:14:38 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=412358  
+2023/12/27 08:14:39 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=452768  
+2023/12/27 08:14:40 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=447133  
+2023/12/27 08:14:41 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467684  
+2023/12/27 08:14:42 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2023/12/27 08:14:43 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=447363  
+2023/12/27 08:14:44 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=449662  
+2023/12/27 08:15:41 route.go:60: all
+2023/12/27 08:15:41 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 08:15:43 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=412358  
+2023/12/27 08:15:44 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=452768  
+2023/12/27 08:15:45 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=447133  
+2023/12/27 08:15:46 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467684  
+2023/12/27 08:15:47 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2023/12/27 08:15:48 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=447363  
+2023/12/27 08:15:49 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=449662  
+2023/12/27 08:15:50 route.go:60: all
+2023/12/27 08:15:50 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 08:15:56 main.go:30: Start api-server..
+2023/12/27 08:15:56 api.go:38: [GET] Request >> https://api.gcore.com/cdn/clients/me  
+2023/12/27 08:15:57 billing_model.go:321: {"id":250053,"service":{"enabled":true,"status":"active","updated":"2023-10-27T10:30:13.478961Z"},"cname":"cl-glc572d979.gcdn.co","use_balancer":false,"utilization_level":0,"max_objects_count":30,"cdn_resources_rules_max_count":5,"created":"2023-10-27T04:41:26.760569Z","updated":"2023-12-22T17:13:44.926935Z"}
+2023/12/27 08:15:57 server.go:9: Start api-server..
+2023/12/27 08:16:04 route.go:60: all
+2023/12/27 08:16:04 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 08:16:06 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=412358  
+2023/12/27 08:16:07 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=452768  
+2023/12/27 08:16:08 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=447133  
+2023/12/27 08:16:09 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467684  
+2023/12/27 08:16:10 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2023/12/27 08:16:11 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=447363  
+2023/12/27 08:16:12 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=449662  
+2023/12/27 08:18:20 route.go:60: all
+2023/12/27 08:18:20 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 08:18:22 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=412358  
+2023/12/27 08:18:23 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=452768  
+2023/12/27 08:18:24 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=447133  
+2023/12/27 08:18:25 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467684  
+2023/12/27 08:18:26 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2023/12/27 08:18:27 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=447363  
+2023/12/27 08:18:28 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=449662  
+2023/12/27 08:19:38 main.go:30: Start api-server..
+2023/12/27 08:19:38 api.go:38: [GET] Request >> https://api.gcore.com/cdn/clients/me  
+2023/12/27 08:19:39 billing_model.go:321: {"id":250053,"service":{"enabled":true,"status":"active","updated":"2023-10-27T10:30:13.478961Z"},"cname":"cl-glc572d979.gcdn.co","use_balancer":false,"utilization_level":0,"max_objects_count":30,"cdn_resources_rules_max_count":5,"created":"2023-10-27T04:41:26.760569Z","updated":"2023-12-22T17:13:44.926935Z"}
+2023/12/27 08:19:39 server.go:9: Start api-server..
+2023/12/27 08:19:54 route.go:60: all
+2023/12/27 08:19:54 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 08:20:43 main.go:30: Start api-server..
+2023/12/27 08:20:43 api.go:38: [GET] Request >> https://api.gcore.com/cdn/clients/me  
+2023/12/27 08:20:44 billing_model.go:321: {"id":250053,"service":{"enabled":true,"status":"active","updated":"2023-10-27T10:30:13.478961Z"},"cname":"cl-glc572d979.gcdn.co","use_balancer":false,"utilization_level":0,"max_objects_count":30,"cdn_resources_rules_max_count":5,"created":"2023-10-27T04:41:26.760569Z","updated":"2023-12-22T17:13:44.926935Z"}
+2023/12/27 08:20:44 server.go:9: Start api-server..
+2023/12/27 08:20:47 route.go:60: all
+2023/12/27 08:20:47 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 08:23:13 main.go:30: Start api-server..
+2023/12/27 08:23:13 api.go:38: [GET] Request >> https://api.gcore.com/cdn/clients/me  
+2023/12/27 08:23:14 billing_model.go:321: {"id":250053,"service":{"enabled":true,"status":"active","updated":"2023-10-27T10:30:13.478961Z"},"cname":"cl-glc572d979.gcdn.co","use_balancer":false,"utilization_level":0,"max_objects_count":30,"cdn_resources_rules_max_count":5,"created":"2023-10-27T04:41:26.760569Z","updated":"2023-12-22T17:13:44.926935Z"}
+2023/12/27 08:23:14 server.go:9: Start api-server..
+2023/12/27 08:23:17 route.go:60: all
+2023/12/27 08:23:17 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 08:23:19 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=412358  
+2023/12/27 08:23:20 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=452768  
+2023/12/27 08:23:21 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=447133  
+2023/12/27 08:23:22 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467684  
+2023/12/27 08:23:23 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2023/12/27 08:23:24 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=447363  
+2023/12/27 08:23:25 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=449662  
+2023/12/27 08:23:52 main.go:30: Start api-server..
+2023/12/27 08:23:52 api.go:38: [GET] Request >> https://api.gcore.com/cdn/clients/me  
+2023/12/27 08:23:53 billing_model.go:321: {"id":250053,"service":{"enabled":true,"status":"active","updated":"2023-10-27T10:30:13.478961Z"},"cname":"cl-glc572d979.gcdn.co","use_balancer":false,"utilization_level":0,"max_objects_count":30,"cdn_resources_rules_max_count":5,"created":"2023-10-27T04:41:26.760569Z","updated":"2023-12-22T17:13:44.926935Z"}
+2023/12/27 08:23:53 server.go:9: Start api-server..
+2023/12/27 08:24:10 route.go:60: all
+2023/12/27 08:24:10 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 08:25:00 route.go:60: all
+2023/12/27 08:25:00 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 08:25:36 route.go:60: all
+2023/12/27 08:25:36 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 08:25:49 route.go:60: all
+2023/12/27 08:25:49 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 08:26:09 route.go:60: all
+2023/12/27 08:26:09 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 08:26:21 route.go:60: all
+2023/12/27 08:26:21 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 08:29:59 main.go:30: Start api-server..
+2023/12/27 08:29:59 api.go:38: [GET] Request >> https://api.gcore.com/cdn/clients/me  
+2023/12/27 08:30:00 billing_model.go:321: {"id":250053,"service":{"enabled":true,"status":"active","updated":"2023-10-27T10:30:13.478961Z"},"cname":"cl-glc572d979.gcdn.co","use_balancer":false,"utilization_level":0,"max_objects_count":30,"cdn_resources_rules_max_count":5,"created":"2023-10-27T04:41:26.760569Z","updated":"2023-12-22T17:13:44.926935Z"}
+2023/12/27 08:30:00 server.go:9: Start api-server..
+2023/12/27 10:39:51 route.go:60: all
+2023/12/27 10:39:51 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 10:39:52 api.go:57: [Token ERROR] >> GET Token Start
+2023/12/27 10:39:52 loadconf.go:68: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2023/12/27 10:39:54 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 10:49:07 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 10:49:08 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 10:49:08 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 10:49:08 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 10:49:08 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 10:49:08 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 10:49:08 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 10:49:08 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 10:49:41 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 10:49:42 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 10:49:42 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 10:49:42 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 10:49:42 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 10:49:42 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 10:49:42 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 10:49:42 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 10:51:42 route.go:60: all
+2023/12/27 10:51:42 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 10:58:58 main.go:30: Start api-server..
+2023/12/27 10:58:58 api.go:38: [GET] Request >> https://api.gcore.com/cdn/clients/me  
+2023/12/27 10:58:59 billing_model.go:321: {"id":250053,"service":{"enabled":true,"status":"active","updated":"2023-10-27T10:30:13.478961Z"},"cname":"cl-glc572d979.gcdn.co","use_balancer":false,"utilization_level":0,"max_objects_count":30,"cdn_resources_rules_max_count":5,"created":"2023-10-27T04:41:26.760569Z","updated":"2023-12-22T17:13:44.926935Z"}
+2023/12/27 10:58:59 server.go:9: Start api-server..
+2023/12/27 10:59:03 route.go:60: all
+2023/12/27 10:59:03 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 11:00:45 main.go:30: Start api-server..
+2023/12/27 11:00:45 api.go:38: [GET] Request >> https://api.gcore.com/cdn/clients/me  
+2023/12/27 11:00:46 billing_model.go:321: {"id":250053,"service":{"enabled":true,"status":"active","updated":"2023-10-27T10:30:13.478961Z"},"cname":"cl-glc572d979.gcdn.co","use_balancer":false,"utilization_level":0,"max_objects_count":30,"cdn_resources_rules_max_count":5,"created":"2023-10-27T04:41:26.760569Z","updated":"2023-12-22T17:13:44.926935Z"}
+2023/12/27 11:00:46 server.go:9: Start api-server..
+2023/12/27 11:00:56 route.go:60: all
+2023/12/27 11:00:56 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 11:01:15 main.go:30: Start api-server..
+2023/12/27 11:01:15 api.go:38: [GET] Request >> https://api.gcore.com/cdn/clients/me  
+2023/12/27 11:01:16 billing_model.go:321: {"id":250053,"service":{"enabled":true,"status":"active","updated":"2023-10-27T10:30:13.478961Z"},"cname":"cl-glc572d979.gcdn.co","use_balancer":false,"utilization_level":0,"max_objects_count":30,"cdn_resources_rules_max_count":5,"created":"2023-10-27T04:41:26.760569Z","updated":"2023-12-22T17:13:44.926935Z"}
+2023/12/27 11:01:16 server.go:9: Start api-server..
+2023/12/27 11:06:28 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 11:06:30 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 11:06:30 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 11:06:30 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 11:06:30 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 11:06:30 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 11:06:30 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 11:06:30 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 11:06:34 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 11:06:36 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 11:06:36 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 11:06:36 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 11:06:36 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 11:06:36 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 11:06:36 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 11:06:36 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 11:08:05 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 11:08:06 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 11:08:06 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 11:08:06 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 11:08:06 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 11:08:06 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 11:08:06 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 11:08:06 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 11:13:37 route.go:60: all
+2023/12/27 11:13:37 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 11:14:51 main.go:30: Start api-server..
+2023/12/27 11:14:51 api.go:38: [GET] Request >> https://api.gcore.com/cdn/clients/me  
+2023/12/27 11:14:52 billing_model.go:321: {"id":250053,"service":{"enabled":true,"status":"active","updated":"2023-10-27T10:30:13.478961Z"},"cname":"cl-glc572d979.gcdn.co","use_balancer":false,"utilization_level":0,"max_objects_count":30,"cdn_resources_rules_max_count":5,"created":"2023-10-27T04:41:26.760569Z","updated":"2023-12-22T17:13:44.926935Z"}
+2023/12/27 11:14:52 server.go:9: Start api-server..
+2023/12/27 11:14:57 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 11:14:58 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 11:14:58 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 11:14:58 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 11:14:58 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 11:14:58 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 11:14:58 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 11:14:58 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 11:15:07 route.go:60: all
+2023/12/27 11:15:07 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 11:30:43 route.go:60: all
+2023/12/27 11:30:43 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 11:43:36 route.go:60: all
+2023/12/27 11:43:36 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 11:45:13 route.go:60: all
+2023/12/27 11:45:13 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 11:45:34 main.go:30: Start api-server..
+2023/12/27 11:45:34 api.go:38: [GET] Request >> https://api.gcore.com/cdn/clients/me  
+2023/12/27 11:45:35 billing_model.go:321: {"id":250053,"service":{"enabled":true,"status":"active","updated":"2023-10-27T10:30:13.478961Z"},"cname":"cl-glc572d979.gcdn.co","use_balancer":false,"utilization_level":0,"max_objects_count":30,"cdn_resources_rules_max_count":5,"created":"2023-10-27T04:41:26.760569Z","updated":"2023-12-22T17:13:44.926935Z"}
+2023/12/27 11:45:35 server.go:9: Start api-server..
+2023/12/27 11:45:42 route.go:60: all
+2023/12/27 11:45:42 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 11:47:00 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 11:47:01 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 11:47:01 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 11:47:01 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 11:47:01 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 11:47:01 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 11:47:01 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 11:47:01 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 11:48:13 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 11:48:15 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 11:48:15 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 11:48:15 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 11:48:15 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 11:48:15 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 11:48:15 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 11:48:15 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 11:48:22 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 11:48:23 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 11:48:23 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 11:48:23 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 11:48:23 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 11:48:23 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 11:48:23 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 11:48:23 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 11:48:39 main.go:30: Start api-server..
+2023/12/27 11:48:39 api.go:38: [GET] Request >> https://api.gcore.com/cdn/clients/me  
+2023/12/27 11:48:40 billing_model.go:321: {"id":250053,"service":{"enabled":true,"status":"active","updated":"2023-10-27T10:30:13.478961Z"},"cname":"cl-glc572d979.gcdn.co","use_balancer":false,"utilization_level":0,"max_objects_count":30,"cdn_resources_rules_max_count":5,"created":"2023-10-27T04:41:26.760569Z","updated":"2023-12-22T17:13:44.926935Z"}
+2023/12/27 11:48:40 server.go:9: Start api-server..
+2023/12/27 11:48:45 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 11:48:45 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 11:48:45 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 11:48:45 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 11:48:45 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 11:48:45 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 11:48:45 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 11:48:45 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 11:49:37 main.go:30: Start api-server..
+2023/12/27 11:49:37 api.go:38: [GET] Request >> https://api.gcore.com/cdn/clients/me  
+2023/12/27 11:49:38 billing_model.go:321: {"id":250053,"service":{"enabled":true,"status":"active","updated":"2023-10-27T10:30:13.478961Z"},"cname":"cl-glc572d979.gcdn.co","use_balancer":false,"utilization_level":0,"max_objects_count":30,"cdn_resources_rules_max_count":5,"created":"2023-10-27T04:41:26.760569Z","updated":"2023-12-22T17:13:44.926935Z"}
+2023/12/27 11:49:38 server.go:9: Start api-server..
+2023/12/27 11:49:40 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 11:49:41 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 11:49:41 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 11:49:41 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 11:49:41 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 11:49:41 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 11:49:41 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 11:49:41 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 11:49:46 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 11:49:48 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 11:49:48 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 11:49:48 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 11:49:48 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 11:49:48 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 11:49:48 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 11:49:48 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 11:49:53 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 11:49:54 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 11:49:54 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 11:49:54 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 11:49:54 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 11:49:54 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 11:49:54 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 11:49:54 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 11:50:33 main.go:30: Start api-server..
+2023/12/27 11:50:33 api.go:38: [GET] Request >> https://api.gcore.com/cdn/clients/me  
+2023/12/27 11:50:34 billing_model.go:321: {"id":250053,"service":{"enabled":true,"status":"active","updated":"2023-10-27T10:30:13.478961Z"},"cname":"cl-glc572d979.gcdn.co","use_balancer":false,"utilization_level":0,"max_objects_count":30,"cdn_resources_rules_max_count":5,"created":"2023-10-27T04:41:26.760569Z","updated":"2023-12-22T17:13:44.926935Z"}
+2023/12/27 11:50:34 server.go:9: Start api-server..
+2023/12/27 11:50:38 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 11:50:39 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 11:50:39 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 11:50:39 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 11:50:39 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 11:50:39 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 11:50:39 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 11:50:39 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 11:50:51 route.go:60: all
+2023/12/27 11:50:51 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 12:18:45 route.go:60: all
+2023/12/27 12:18:45 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 12:20:31 route.go:60: all
+2023/12/27 12:20:31 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 12:22:18 route.go:60: all
+2023/12/27 12:22:18 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 12:22:48 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 12:22:50 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 12:22:50 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 12:22:50 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 12:22:50 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 12:22:50 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 12:22:50 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 12:22:50 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 12:23:23 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 12:23:24 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 12:23:24 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 12:23:24 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 12:23:24 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 12:23:24 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 12:23:24 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 12:23:24 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/27 12:23:26 route.go:60: all
+2023/12/27 12:23:26 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 12:29:00 main.go:30: Start api-server..
+2023/12/27 12:29:00 api.go:38: [GET] Request >> https://api.gcore.com/cdn/clients/me  
+2023/12/27 12:29:01 billing_model.go:321: {"id":250053,"service":{"enabled":true,"status":"active","updated":"2023-10-27T10:30:13.478961Z"},"cname":"cl-glc572d979.gcdn.co","use_balancer":false,"utilization_level":0,"max_objects_count":30,"cdn_resources_rules_max_count":5,"created":"2023-10-27T04:41:26.760569Z","updated":"2023-12-22T17:13:44.926935Z"}
+2023/12/27 12:29:01 server.go:9: Start api-server..
+2023/12/27 12:29:08 main.go:30: Start api-server..
+2023/12/27 12:29:08 api.go:38: [GET] Request >> https://api.gcore.com/cdn/clients/me  
+2023/12/27 12:29:09 billing_model.go:321: {"id":250053,"service":{"enabled":true,"status":"active","updated":"2023-10-27T10:30:13.478961Z"},"cname":"cl-glc572d979.gcdn.co","use_balancer":false,"utilization_level":0,"max_objects_count":30,"cdn_resources_rules_max_count":5,"created":"2023-10-27T04:41:26.760569Z","updated":"2023-12-22T17:13:44.926935Z"}
+2023/12/27 12:29:09 server.go:9: Start api-server..
+2023/12/27 12:29:14 route.go:60: all
+2023/12/27 12:29:14 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 12:29:24 route.go:60: all
+2023/12/27 12:29:24 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 12:32:17 route.go:60: all
+2023/12/27 12:32:17 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2023/12/27 12:35:07 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/27 12:35:08 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/27 12:35:08 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/27 12:35:08 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/27 12:35:08 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/27 12:35:08 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/27 12:35:08 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/27 12:35:08 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/29 03:02:19 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/29 03:02:20 api.go:57: [Token ERROR] >> GET Token Start
+2023/12/29 03:02:20 loadconf.go:68: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2023/12/29 03:02:22 api.go:38: [GET] Request >> https://api.gcore.com/cdn/resources  
+2023/12/29 03:02:23 billing_model.go:204: 341411. abc011.ktcdnteam.link 2023-12-18 14:10:15 active 
+2023/12/29 03:02:23 billing_model.go:204: 341777. service03.ktcdnteam.link 2023-12-18 15:15:01 suspended 
+2023/12/29 03:02:23 billing_model.go:204: 342774. service07.ktcdnteam.link 2023-12-19 02:50:20 suspended 
+2023/12/29 03:02:23 billing_model.go:204: 343782. service06.ktcdnteam.link 2023-12-19 10:05:47 active 
+2023/12/29 03:02:23 billing_model.go:204: 346828. cloud.kt.com 2023-12-20 16:46:50 active 
+2023/12/29 03:02:23 billing_model.go:204: 361343. service01.ktcdnteam.link 2023-12-26 14:05:05 active 
+2023/12/29 03:02:23 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2023/12/29 03:09:39 route.go:60: all
+2023/12/29 03:09:39 api.go:38: [GET] Request >> https://api.gcore.com/cdn/origin_groups  

@@ -1,0 +1,1111 @@
+{{define "CDN_CREATE"}}
+<div id="contentwrapper" style="width: 100%;">
+    <div id="contentcolumn3">
+        <div id="contentwrapper" style="width: 100%;">
+            <div id="contentcolumn3">
+                <!-- CDN 생성  -->
+                <div id="cdnCreateArea"  class="sub_m" style="margin-top:0px; display: none;">                    
+                    <div class="sub_t btop dep1_1 ml60">
+                            <div class="r_quick_wrap">                                        
+                                    <span class="r_quick"><a href="" class="cicon cprod_cdn">CDN Standard</a></span> >          
+                                    <span class="r_quick"><a href="" class="cicons">CDN</a></span> >
+                                    <span class="r_quick_s"><a href="" class="cicons alarm_create_title cdnTitle">CDN생성</a></span>
+                                    <span class="h3_quick"><a href="javascript:go_portal_page('https://manual.cloud.kt.com/kt/cdn-standard-intro');"><font class="tmanual7">매뉴얼</font></a></span>
+                                        <span class="h3_quick"><a href="javascript:go_portal_inquiry('3','ucloud CDN','/console/cdnlist');" class="txt_lang_online_inquiry thelp7"><font class="txt_lang_online_inquiry2">온라인문의<!-- 온라인 문의 --></font></a></span>
+                                    <span class="h3_quick"><a href="javascript:go_portal_satisfaction_evaluation('CDN3.0','CDN');" class="tSatisfactioni7">만족도평가</a></span>
+                            </div>                                        
+                            <div class="title_area dep1_1">
+                                    <h3 class="alarm_create_title decoText">CDN 생성</h3>
+                            </div>                                                                                                              
+                    </div>  
+                    
+                <!-- CDN 생성 STEP1 -->
+                    <div id="cdn_service_create_step1" class="tabpagescroll mt50 clfix">   
+
+                        <div class="subtab_apply_w">
+                            <ul>
+                                <li class="on"><a href="#">서비스 설정</a></li>
+                                <li><a href="#">원본 서버 설정</a></li>
+                                <li><a href="#">캐싱 설정</a></li>
+                                <li><a href="#">뷰어 설정</a></li>
+                                <li><a href="#">최종 확인</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 화면 해상도 높이 조절 start -->                                    
+                        <div class="sub_con_box_w">     
+                            <div class="sub_box_l">                
+                                <div class="btm_box_04">    
+                
+                                        <table class="c_th_input_cdn">
+                                            <caption>CDN생성</caption>
+                                            <colgroup>
+                                                <col style="width:200px" />
+                                                <col style="width:*" />
+                                            </colgroup>
+                                            
+                                            
+                                            <!-- 다운로드 선택시 -->
+                                            <tbody>
+                                                <tr>
+                                                    <th class="" scope="row">서비스 유형</th>
+                                                    <td id="create_step1_svcType">
+                                                        <div class="stat_bnlist_wrap clfix">
+                                                            <ul class="stat_bnlist" id="step1_svcType">
+                                                                <li><span class="stat on" value="0" style="width:160px;">다운로드</span></li>
+                                                                <li><span class="stat" value="1" style="width:160px;">스트리밍</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                    <td id="modify_step1_svcType"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="" scope="row">서비스 이름</th>
+                                                    <td id="create_step1_svcName">
+                                                        <div class="">
+                                                            <input title="text" class="i_box" style="width: 320px;" id="step1_svcName" type="text" placeholder="" value="" onkeyup="svcNameChk(this)" />
+                                                            <div class="dib ml5">
+                                                                <span class="currentvalue">0</span>
+                                                                /
+                                                                <span>20byte</span>
+                                                            </div>
+                                                        </div>
+    <!--                                                         <p class="mt5">*소문자, 영문, 숫자만 입력 가능합니다. 첫문자는 반듯이 영문으로 입력해야 합니다.</p> -->
+                                                        <p class="mt5"><span id="red_svn_nm" class="red_txt" style=""><span id="red_svn_nm_txt">필수입니다.</span></span></p>
+                                                    </td>
+                                                    <td id="modify_step1_svcName"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="vt" scope="row">서비스 도메인</th>
+                                                    <td>
+                                                        <div class="stat_bnlist_wrap clfix">
+                                                            <ul class="stat_bnlist" id="step1_domainType">
+                                                                <li><span class="stat on" value="0" style="width:160px;">고객도메인</span></li>
+                                                                <li><span class="stat" value="1" style="width:160px;">KT Cloud 도메인</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mt5">
+                                                            <div class=""><input title="text" class="i_box" style="width: 443px;" id="step1_custom_domains" type="text" value="" onkeyup="svcDNameChk(this)" /></div>
+    <!--                                                             <p class="mt5">*영문, 숫자, 점(.), 하이픈(-)만 입력 가능합니다.</p> -->
+                                                            <p class="mt5"><span id="red_svn_dm" class="red_txt" style=""><span id="red_svc_dm_txt">필수입니다.</span></span></p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="" scope="row">프로토콜</th>
+                                                    <td>
+                                                        <div class="stat_bnlist_wrap clfix">
+                                                            <ul class="stat_bnlist" id="step1_sslType">
+                                                                <li id="step1_sslType_1"><span class="stat on" value="0" style="width:160px;">HTTP</span></li>
+                                                                <li id="step1_sslType_2"><span class="stat" value="1" style="width:160px;">HTTPS</span></li>
+                                                                <li id="step1_sslType_3"><span class="stat" value="2" style="width:160px;">HTTP/HTTPS</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <ul class="mt15 clfix" id="certificateArea"><!-- HTTP/HTTPS선택시만 생김 -->
+                                                            <li class="fl" style="line-height:34px;">*HTTPS 서비스 프로토콜을 위한 SSL 인증서 정보를 선택합니다.</li>
+                                                            <li class="fl vm" style="line-height:34px;"><input title="text" class="i_box bg_gy ml60" style="width: 220px;" id="txt_sel_certificate" type="text" disabled /></li>
+                                                            <li class="fl"><span class="btns_secondary" style="cursor: pointer;" id="basecertificateUpload"><a href="">인증서 선택</a></span></li>
+                                                            
+                                                        </ul>
+                                                        <span class="" id="" style="display:none;"></span>
+                                                        <p class="mt5"><span id="red_svn_ssl" class="red_txt" style=""><span id="red_svn_ssl_txt">필수입니다.</span></span></p>
+                                                    </td>
+                                                </tr>
+                                                <tr id="secretkeyArea" style="display:none;">
+                                                    <th scope="row">Secret Key</th>
+                                                    <td id="secretKey_box"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="vt" scope="row">설명(선택)</th>
+                                                    <td>
+                                                        <div><textarea id="step1_svcComment" rows="" cols="" class="in_t" maxlength="2000" title="" style="width:630px;min-height:200px;"></textarea></div>
+                                                        <div class="fr mt5">
+                                                            <span class="currentvalue">0</span>/<span>2000byte</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>                                        
+                                            </tbody>
+                                        </table>
+                                        <div class="btn_apply_wrap" style="width:830px;">
+                                        <p class="ar">
+                                                <span class="btn_left btnl_secondary mr20" type="submit"><a href="/console/d/osadvcdnlist">&nbsp;&nbsp;취소&nbsp;&nbsp;</a></span>
+                                                <span class="btn_right btnl_primary" onclick="cdnCreateStep2()" style="cursor: pointer;"><a href="#">다음</a></span>
+                                            </p>
+                                        </div>
+                                    </div>                                    
+                                    
+                                    
+                                </div>    
+                            </div>
+                    </div>
+                    <!-- //CDN 생성 STEP1 -->
+                    
+                    <!-- CDN 생성 STEP2 -->
+                    <div id="cdn_service_create_step2" class="tabpagescroll mt50 clfix">                        
+
+                        <div class="subtab_apply_w">
+                            <ul>
+                                <li><a href="#">서비스 설정</a></li>
+                                <li class="on"><a href="#">원본 서버 설정</a></li>
+                                <li><a href="#">캐싱 설정</a></li>
+                                <li><a href="#">뷰어 설정</a></li>
+                                <li><a href="#">최종 확인</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 화면 해상도 높이 조절 start -->                                    
+                            <div class="sub_con_box_w">                                     
+                            <!--    컨텐츠 분할 영역 시작 -->
+                            <div class=""> 
+                                    <div class="sub_box_l">
+                                        <table class="c_th_input_cdn">
+                                            <caption>CDN생성</caption>
+                                            <colgroup>
+                                                <col style="width:200px" />
+                                                <col style="width:*" />
+                                            </colgroup>
+                                            
+                                            
+                                            <tbody>
+                                                <tr>
+                                                    <th class="vt" scope="row">원본 서버 위치</th>
+                                                    <td>
+                                                        <div class="stat_bnlist_wrap clfix">
+                                                            <ul class="stat_bnlist" id="org_select">
+                                                                <li><span class="stat on" value="ss" style="width:160px;">KT Cloud Storage</span></li>
+                                                                <li><span class="stat" value="direct" style="width:160px;">직접입력</span></li>                                                                
+                                                            </ul>
+                                                        </div>        
+                                                        <!-- 직접입력 선택시 -->
+                                                        <div class="pr" id="cdnCreateArea_direct_div">
+                                                            <div class="tooltip_right">
+                                                                <input title="text" class="i_box mt15" style="width: 528px;" id="step1_org_serverName" type="text" placeholder="origin.ktics.com" value=""  onkeyup="svcOrgNameChk(this)" />
+                                                                <span class="dtib mt15" style="height:21px;"><img class="dtbc vm ml10" src="/images/coni/Table_Information.svg" alt="정보" /></span>
+                                                            </div>
+                                                            <div class="tooltip_sm3" style="width:420px;left: 153px;top:-33px;"><p class="btxt_white_regular ac">원본파일이 존재하는 실제 서버의 IP 또는 도메인 주소를 입력하세요.</p></div>
+                                                            <span class="" id="" style="display:none;"></span>
+    <!--                                                             <p class="mt5">*영문, 숫자, 점(.), 콤마(,), 하이픈(-)만 입력 가능합니다.</p> -->
+                                                            <p class="mt5"><span id="red_org_svn_nm" class="red_txt" style=""><span id="red_org_svn_nm_txt">필수입니다.</span></span></p>
+                                                        </div>
+                                                        <div id="cdnCreateArea_ss_div">
+                                                            <div class="mt25">
+                                                                <ul class="clfix">
+                                                                    <li class="fl" style="width:120px;line-height:30px;">Availability Zone</li>
+                                                                    <li class="fl">
+                                                                        <div class="custom-select"  style="width:200px;">
+                                                                            <select id="ssServerZone">
+                                                                                <option value="3" selected="selected">KOR-Central</option>
+                                                                                <option value="1">KOR-Central(Storage 2.0)</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="mt20">
+                                                                <ul class="clfix">
+                                                                    <li class="fl pr" style="width: 120px; line-height: 30px;"> 
+                                                                        <div class="dib tooltip_left">파일박스<span class="dtib ml10" style="height:21px;"><img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보" /></span></div>
+                                                                        <div class="tooltip_sm2" style="left: 49px; width: 400px; top: -88px;">
+                                                                            <p class="btxt_white_regular ac">* 원본 파일을 저장한 파일박스를 선택해 주세요.<br />* KT Cloud storage에서 공개한 파일박스만 선택이 가능합니다.<br />* 스트리밍 가능 파일 형식:H.264/AAC Codec을 사용한 MP4파일</p>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="fl">
+                                                                        <div class="custom-select dib" style="width:200px;">
+                                                                            <select id="ssServer"></select>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>                                                               
+                                                            </div>
+                                                            <div class="mt25" id="storage4_origin_path" style="display: none;">
+                                                                <ul class="clfix">
+                                                                    <li class="fl" style="width: 120px; line-height: 30px;"> 원본 서버 경로</li>
+                                                                    <li class="fl">
+                                                                        <div class="custom-select" style="width: 200px;">
+                                                                                    <span class="">
+                                                                                        <input title="text" class="i_box" style="width: 200px;" id="storage4_originsPath" type="text" placeholder="/path" value="">
+                                                                                    </span>
+                                                                                <p class="mt5">
+                                                                                    <span id="ss4_origin_path_text_area" class="red_txt" style="display:none;">
+                                                                                        <span id="">최하위 경로 하단에  "/"를 붙이지 않습니다.</span>
+                                                                                    </span>
+                                                                                </p>
+                                                                                        
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <select name="selectZcopy" style="width: 100px; display: none;" id="selectZcopy">
+                                                        <option value="3" selected="selected">Standard(KOR-Central)</option>
+                                                        <option value="1">KOR-CentralKOR-Central(Storage 2.0)</option>
+                                                </select>
+                                                <tr id="cdnCreateArea_direct_div2">
+                                                    <th scope="row"></th>
+                                                    <td class="vt pr" style="display: flex;">
+                                                        <span>Port</span>
+                                                        <span class="dtib ml10" style="width: 191px; height: 21px;">
+                                                            <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보" />
+                                                        </span>
+                                                        <span>
+                                                            <div class="stat_bnlist_wrap clfix">
+                                                                <ul class="stat_bnlist" id="http_select">
+                                                                    <li><span class="stat on" value="http" style="width:160px;">HTTP</span></li>
+                                                                    <li><span class="stat" value="https" style="width:160px;">HTTPS</span></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="mt10">
+                                                                <div class="">
+                                                                    <input title="text" class="i_box" style="width: 160px;" id="http_port" type="text" placeholder="Port번호를 입력하세요." value="80"  onkeydown="httpChk(this)" onkeyup="httpChk(this)" />
+    <!--                                                                 <input title="text" class="i_box bg_gy" style="width: 160px;" id="" type="text" value="443" onkeydown="httpChk(this)" onkeyup="httpChk(this)" /> -->
+                                                                    <div class="dib btns_secondary ml20" id="btn_usable_port" onclick="event_usable_port(this)"><a>허용포트</a></div>
+                                                                </div>
+                                                                <span class="" id="" style="display:none;"></span>
+                                                                <p class="mt5"><span id="http_red_text_area" class="red_txt" style=""><span id="http_red_text">필수입니다.</span></span></p>
+                                                                <p class="mt5"><span id="http_green_text_area" class="" style=""><span id="http_green_text" class="f_green">사용 가능한 Port입니다.</span></span></p>
+                                                            </div>
+                                                        </span>
+                                                        <div class="tooltip_sm4" style="left: 27px;top: 35px;width: 310px;">
+                                                            <p class="btxt_white_regular ac">CDN 서버와 원본 서버 간의 http(https) request 연결 시 사용할 포트 번호를 변경할 수 있습니다.</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr id="cdnCreateArea_direct_div1">
+                                                    <th scope="row"></th>
+                                                    <td class="pr">
+                                                        <span>원본 서버 경로(선택)</span>
+                                                        <span class="dtib mt7" style="width: 100px; height: 21px;">
+                                                            <img class="tooltip_left dtbc vm ml10" src="/images/coni/Table_Information.svg" alt="정보" />
+                                                        </span>
+                                                        <span class="">
+                                                                <input title="text" class="i_box" style="width: 320px;" id="originsPath" type="text" placeholder="/file_path 형태로 입력하세요." value="" />
+                                                        </span>
+                                                    <p class="mt5">
+                                                        <span id="origin_path_text_area" class="red_txt" style="display:none;">
+                                                            <span id="origin_path_red_text">최하위 경로 하단에  "/"를 붙이지 않습니다.</span>
+                                                        </span>
+                                                    </p>
+                                                    <div class="tooltip_sm2" style="width: 406px; left: 117px; top: -72px;">
+                                                        <p class="btxt_white_regular">
+                                                            오리진 위치에서 실제 서비스로 제공될 디렉토리 위치를 지정합니다.<br />전체 경로로 지정할 경우 입력하지 않습니다.<br />최하위 경로 하단에  “/”를 붙이지 않습니다.
+                                                        </p>
+                                                    </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr id="cdnCreateArea_direct_div3">
+                                                    <th scope="row"></th>
+                                                    <td class="stat_bnlist_wrap clfix" style="display: flex;">
+                                                        <span class="vt">호스트 헤더 전달</span>
+                                                        <span style="width: 128px;"></span>
+                                                        <ul class="stat_bnlist" id="hostHd">
+                                                            <li><span class="stat on" value="ORIGIN_HOSTNAME" style="width:160px;">Origin Hostname</span></li>
+                                                            <li><span class="stat" value="REQUEST_HOST_HEADER" style="width:160px;">Incoming Host Header</span></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr id="">
+                                                    <th class="vt pr" scope="row">
+                                                        <div class="tooltip_left">
+                                                            Modify Header<br />(원본 서버 요청)
+                                                            <span class="dtib ml10" style="height: 21px;">
+                                                                <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보" />
+                                                            </span>
+                                                        </div>
+                                                        <div class="tooltip_sm2" style="left: 72px; width: 339px; top: -42px;">
+                                                            <p class="btxt_white_regular ac">
+                                                            CDN서버에서 원본서버로 요청 시 특정 Header를 추가, 변경하거나 삭제할 수 있습니다.
+                                                            </p>
+                                                        </div>
+                                                    </th>
+                                                    <td>
+                                                        <div class="stat_bnlist_wrap clfix">
+                                                            <ul class="stat_bnlist">
+                                                                <li><span class="stat" id="step2_modify_header1" name="step2_modify_header" style="width:160px;">사용</span></li>
+                                                                <li><span class="stat on" id="step2_modify_header2" name="step2_modify_header" style="width:160px;">사용안함</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- 사용 선택시 -->
+                                                        <div class="mt10" id="step2_modify_header_div" style="display:none;">
+                                                            <table class="pop_tbl">
+                                                                <caption>원본서버요청</caption>
+                                                                <colgroup>
+                                                                    <col style="width: 25%;" />
+                                                                    <col style="width: 25%;" />
+                                                                    <col style="width: *;" />
+                                                                    <col style="width: 40px;" />
+                                                                </colgroup>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col">Action</th>
+                                                                        <th scope="col">Header Name</th>
+                                                                        <th scope="col" colspan="2">Header Value</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="col">
+                                                                            <div class="custom-select" style="width: 160px;">
+                                                                                <select id="step2_modify_header_action">
+                                                                                    <option value="DELETE" selected="selected">DELETE</option>
+                                                                                    <option value="ADD/MODIFY">ADD/MODIFY</option>
+    <!--                                                                                     <option value="MODIFY">MODIFY</option> -->
+                                                                                </select>
+                                                                            </div>
+                                                                        </th>
+                                                                        <th scope="col">
+                                                                            <input title="text" class="i_box" style="width: 160px;" id="step2_modify_header_name" type="text" placeholder="" value="" />
+                                                                        </th>
+                                                                        <th scope="col" colspan="2">
+                                                                            <input title="text" class="i_box" style="width: 260px;" id="step2_modify_header_value" type="text" placeholder="" value="" disabled="disabled" />
+                                                                            <div class="btns_add" id="step2_modify_header_add"><a>+추가</a></div>
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                            </table>
+                                                            <div style="max-height:160px;overflow:auto;">
+                                                                <table class="pop_tbl">
+                                                                    <caption>원본서버요청</caption>
+                                                                    <colgroup>
+                                                                        <col style="width: 25%;" />
+                                                                        <col style="width: 25%;" />
+                                                                        <col style="width: *;" />
+                                                                        <col style="width: 40px;" />
+                                                                    </colgroup>                                                                   
+                                                                    <tbody id="modify_header_insert">
+                                                                        <tr id="base_modify_header" style="display: none;">
+                                                                            <td id="text_step2_modify_header_action">ADD</td>
+                                                                            <td id="text_step2_modify_header_name">Content-Type</td>
+                                                                            <td id="text_step2_modify_header_value">application/json</td>
+                                                                            <td><a class="tablessh"><img src="/images/coni/trash.svg" alt="휴지통" style="margin-left:0;" /></a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <span id="modify_header_text_area" class="red_txt" style="display: none;">
+                                                                <span id="modify_header_red_text">필수입니다.</span>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="btn_apply_wrap">
+                                            <p class="ar">
+                                                <span class="btn_left btnl_secondary mr20" type="submit"><a href="/console/d/osadvcdnlist">&nbsp;&nbsp;취소&nbsp;&nbsp;</a></span>
+                                                <span class="btn_left btnl_secondary mr20" onclick="cdnCreateStep1()"><a href="#">&nbsp;&nbsp;이전&nbsp;&nbsp;</a></span>
+                                                <span class="pop_btn_ct btnl_primary" onclick="cdnCreateStep3()" style="cursor: pointer;"><a href="#">다음</a></span>
+                                            </p>
+                                        </div>
+                                    </div>                                    
+                                    
+                                    
+                                    
+                                </div>    
+                            </div>
+                    </div>
+                    <!-- //CDN 생성 STEP2 -->
+                    
+                    
+                    <!-- CDN 생성 STEP3 -->
+                    <div id="cdn_service_create_step3" class="tabpagescroll mt50 clfix">  
+                        
+                        <div class="subtab_apply_w">
+                            <ul>
+                                <li><a href="#">서비스 설정</a></li>
+                                <li><a href="#">원본 서버 설정</a></li>
+                                <li class="on"><a href="#">캐싱 설정</a></li>
+                                <li><a href="#">뷰어 설정</a></li>
+                                <li><a href="#">최종 확인</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 화면 해상도 높이 조절 start -->                                    
+                            <div class="sub_con_box_w">                                     
+                            <!--    컨텐츠 분할 영역 시작 -->
+                            <div class=""> 
+                                    <div class="sub_box_l">
+                                        <table class="c_th_input_cdn">
+                                            <caption>CDN생성</caption>
+                                            <colgroup>
+                                                <col style="width:250px" />
+                                                <col style="width:*" />
+                                            </colgroup>
+                                            
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="vt">캐싱 옵션</th>
+                                                    <td>
+                                                        <div class="stat_bnlist_wrap clfix">
+                                                            <ul class="stat_bnlist" id="caching_option">
+                                                                <li class="toggle_tab">
+                                                                    <span class="stat on" value="1" style="width:220px;">CDN 캐싱 설정 우선</span>
+                                                                </li>                                                               
+                                                                <li class="toggle_tab">
+                                                                    <span class="stat" value="0" style="width:220px;">원본 서버의 Cache Control 헤더 우선</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="vt">최대 캐싱 기간</th>
+                                                    <td>
+                                                        <div class="custom-select dib" style="width: 300px;">
+                                                            <select id="positive_ttl">
+                                                                <option value="3600">1시간(3,600초)</option>
+                                                                <option value="21600">6시간(21,600초)</option>
+                                                                <option value="43200">12시간(43,200초)</option>
+                                                                <option value="86400" selected="selected">1일(86,400초)</option>
+                                                                <option value="604800">7일(604,800초)</option>
+                                                                <option value="2592000">30일(2,592,000초)</option>
+                                                            </select>
+                                                        </div>
+                                                                
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="vt">에러 응답 캐싱주기 설정</th>
+                                                    <td>
+                                                        <p><input title="text" class="i_box" style="width: 160px;" id="negative_ttl" type="text" placeholder="" value="60" onkeyup="cachingCheck()" /><span>초</span></p>
+                                                        <p class="mt5 noti_red">최대 86,400(1일)까지 허용</p>
+                                                        <p class="mt5 noti_red" id="cachingWarning" style="display: none;">값을 확인해주세요(최대 86,400 까지만 허용 가능합니다.)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="vt pr" scope="row">
+                                                        <div class="tooltip_left">Query 파라미터 무시<span class="dtib ml10" style="height:21px;"><img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보" /></span></div>
+                                                        <div class="tooltip_sm2" style="left: 120px;top: -42px;width: 414px;"><p class="btxt_white_regular">*캐시효율을 높이기 위해서 Query 파라미터를 무시하고 캐싱합니다.</p></div>
+                                                    </th>
+                                                    <td>
+                                                        <div class="stat_bnlist_wrap clfix">
+                                                            <ul class="stat_bnlist">
+                                                                <li><span class="stat" id="query_para2" name="query_para" data-value="IGNORE_ALL" style="width:160px;">사용</span></li>
+                                                                <li><span class="stat on" id="query_para" name="query_para" data-value="INCLUDE_ALL_ALPHABETIZE_ORDER" style="width:160px;">사용 안함</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <th class="vt pr" scope="row">
+                                                        <div class="tooltip_left">Last Mile 압축<span class="dtib ml10" style="height:21px;"><img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보" /></span></div>
+                                                        <div class="tooltip_sm2" style="left: 83px;top: -65px;width: 480px;">
+                                                            <p class="btxt_white_regular ac">
+                                                            *Last Mile 전송 속도 향상을 위해 CDN 플랫폼에서 사용자에게 컨텐츠 전달 시<br /> Gzip Compression 기능을 제공합니다.
+                                                            </p>
+                                                        </div>
+                                                    </th>
+                                                    <td>
+                                                        <div class="stat_bnlist_wrap clfix">
+                                                            <ul class="stat_bnlist">
+                                                                <li><span class="stat" id="compression" name="compression" data-value="true" style="width:160px;">사용</span></li>
+                                                                <li><span class="stat on" id="compression2" name="compression" data-value="false" style="width:160px;">사용 안함</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                
+                                                
+                                                
+                                                <tr>
+                                                    <th class="vt">캐싱 기본 설정</th>
+                                                    <td>
+                                                        <p>캐시 서버에 존재한 캐시 오브젝트를 전달합니다.</p>
+                                                        <p class="mt10">Client No-Cache 요청을 무시 합니다.</p>
+                                                        <p class="mt10">Client 중단 시 콘텐츠 캐싱을 유지합니다.</p>
+                                                    </td>
+                                                </tr>    
+                                            </tbody>                                    
+                                        </table>
+                                        <div class="btn_apply_wrap">
+                                            <p class="ar">
+                                                    <span class="btn_left btnl_secondary mr20" type="submit"><a href="/console/d/osadvcdnlist">&nbsp;&nbsp;취소&nbsp;&nbsp;</a></span>
+                                                    <span class="btn_left btnl_secondary mr20" onclick="cdnCreateStep2()"><a href="#">&nbsp;&nbsp;이전&nbsp;&nbsp;</a></span>
+                                                    <span class="pop_btn_ct btnl_primary" onclick="cdnCreateStep4()" style="cursor: pointer;"><a href="#">다음</a></span>
+                                            </p>
+                                        </div>
+                                    </div>                                    
+                                    
+                                    
+                                    
+                                </div>    
+                            </div>
+                    </div>
+                    <!-- //CDN 생성 STEP3 -->
+                    
+                    <!-- CDN 생성 STEP4 -->
+                    <div id="cdn_service_create_step4" class="tabpagescroll mt50 clfix">
+                
+                        <div class="subtab_apply_w">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        서비스 설정
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">원본 서버 설정</a>
+                                </li>
+                                <li>
+                                    <a href="#">캐싱 설정</a>
+                                </li>
+                                <li class="on">
+                                    <a href="#">뷰어 설정</a>
+                                </li>
+                                <li>
+                                    <a href="#">최종 확인</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 화면 해상도 높이 조절 start -->                                    
+                            <div class="sub_con_box_w">                                     
+                            <!--    컨텐츠 분할 영역 시작 -->
+                            <div class="">  
+                                    <div class="sub_box_l">
+                                        <table class="c_th_input_cdn">
+                                            <caption>CDN생성</caption>
+                                            <colgroup>
+                                                <col style="width: 200px" />
+                                                <col style="width: *" />
+                                            </colgroup>
+
+
+                                            <tbody>
+                                                <tr class="step4_download_div">
+                                                    <th class="vt" scope="row">Allow HTTP Method</th>
+                                                    <td>
+                                                        <div class="stat_bnlist_wrap clfix">
+                                                            <ul class="stat_bnlist" id="allow_http_method">
+                                                                <li class="toggle_tab">
+                                                                    <span class="stat on" id="method_none_post" value="none_post" style="width: 200px;">GET, HEAD, OPTIONS</span>
+                                                                </li>
+                                                                <li class="toggle_tab">
+                                                                    <span class="stat" id="method_post" value="post" style="width: 200px;">
+                                                                        GET, HEAD, OPTIONS, POST
+                                                                    </span>
+                                                                </li>                                                                
+                                                            </ul>
+                                                        </div>                                                       
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="vt">Referer 기반 접근제어</th>
+                                                    <td>
+                                                        <div class="stat_bnlist_wrap clfix">
+                                                            <ul class="stat_bnlist">
+                                                                <li><span class="stat" id="referer_set_1" name="referer_set" data-value="0" style="width:160px;">사용</span></li>
+                                                                <li><span class="stat on" id="referer_set_2" name="referer_set" data-value="1" style="width:160px;">사용 안함</span></li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="mt15" id="referer_area">
+                                                            <textarea id="referers" value="" rows="" cols="" class="in_t" maxlength="" title="" placeholder="지정된 도메인만 제공하도록 허용할 Referer를 추가합니다.\n(숫자,영문자,특수문자 '*', '-', '.'만 허용\n여러개 입력시 줄바꿈으로 구분하세요.)" style="width:500px;min-height:110px;" onkeyup="refererChk(this)"></textarea>
+                                                            <span class="" id="" style="display:none;"></span>
+                                                            <p class="mt5"><span id="referer_text_area" class="red_txt" style="display:none;"><font id="referer_red_text">필수입니다.</font></span></p>
+                                                        </div>
+                                                        <div id="allow_non_exist_referer" style="display:none;">
+                                                            <div class="dib pr" style="width:250px;">                                                        
+                                                                <p class="">Referer가 없는 경우 접근 여부<span class="dtib mt7" style="height:21px;"><img class="tooltip_left dtbc vm ml10" src="/images/coni/Table_Information.svg" alt="정보" /></span></p>
+                                                                <div class="tooltip_sm2" style="width: 454px; left: 176px; top: -86px;">
+                                                                    <p class="btxt_white_regular">
+                                                                                                                                                            리퍼러(referer) 요청 헤더가 없는 경우 콘텐츠 접근 허용 여부를 선택합니다.<br /> 허용 : 리퍼러 접근 제어가 동작하지않습니다.<br /> 차단 : 등록된 리퍼러에 대해서만 접근을 허용합니다.
+                                                                    </p>
+                                                                </div>
+                                                                <div class="stat_bnlist_wrap clfix">
+                                                                    <ul class="stat_bnlist">
+                                                                        <li><span class="stat on" id="non_exist_referer_on" name="non_exist_referer_set" data-value="0" style="width:80px;">허용</span></li>
+                                                                        <li><span class="stat" id="non_exist_referer_off" name="non_exist_referer_set" data-value="1" style="width:80px;">차단</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                    <tr class="step4_download_div">
+                                                    <th class="vt" scope="row">IP 기반 접근제어</th>
+                                                    <td>
+                                                        <div class="stat_bnlist_wrap clfix">
+                                                            <ul class="stat_bnlist">
+                                                                <li><span class="stat" id="ip_access_controll0" name="ip_access_controll" data-value="-1" style="width:160px;">사용</span></li>
+                                                                <li><span class="stat on" id="ip_access_controll1" name="ip_access_controll" data-value="0" style="width:160px;">사용 안함</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mt15" id="ip_access_controll_div" style="display: none;">
+                                                            <div class="stat_bnlist_wrap clfix">
+                                                                <ul class="stat_bnlist">
+                                                                    <li><span class="stat" id="ip_access_controll2" name="ip_access_controll" data-value="1" style="width:100px;">허용</span></li>
+                                                                    <li><span class="stat on" id="ip_access_controll3" name="ip_access_controll" data-value="2" style="width:100px;">차단</span></li>
+                                                                </ul>
+                                                            </div>
+                                                            <textarea id="ip_access_controll_text_area" value="" rows="" cols="" class="in_t" maxlength="" title="" placeholder="접근 제어 설정할 IP를 추가합니다. 여러 개 입력 시 줄바꿈으로 구분하세요.&#13;&#10;(예)&#13;&#10;192.168.1.1&#13;&#10;192.168.1.0/24" style="width: 500px; min-height: 110px;" onkeyup="cidrCheck(this)"></textarea>
+                                                                <span class="" id="" style="display: none;"></span>
+                                                                <p class="mt5">
+                                                                    <span id="ip_access_text_area" class="red_txt" style="display: none;">
+                                                                        <span id="ip_access_red_text">필수입니다.</span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr id="" class="step4_download_div">
+                                                    <th class="vt" scope="row">GEO 기반 접근제어</th>
+                                                    <td>
+                                                        <div class="stat_bnlist_wrap clfix">
+                                                            <ul class="stat_bnlist">
+                                                                <li><span class="stat" id="geo_access_controll0" name="geo_access_controll" data-value="-1" style="width:160px;">사용</span></li>
+                                                                <li><span class="stat on" id="geo_access_controll1" name="geo_access_controll" data-value="0" style="width:160px;">사용 안함</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- 허용/차단 선택시 -->
+                                                        <div class="mt10" id="geo_access_controll_div" style="display:none;">
+                                                            <div class="stat_bnlist_wrap clfix">
+                                                                <ul class="stat_bnlist">
+                                                                    <li><span class="stat" id="geo_access_controll2" name="geo_access_controll" data-value="1" style="width:100px;">허용</span></li>
+                                                                    <li><span class="stat on" id="geo_access_controll3" name="geo_access_controll" data-value="2" style="width:100px;">차단</span></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="custom-select" style="width: 500px;">
+                                                                <select id="country_list">
+                                                                    <option value="KR" selected="selected">대한민국(Republic of Korea, KR)</option>
+                                                                </select>
+    <!--                                                                 <div class="btns_add"><a href="">+추가</a></div> -->
+                                                            </div>
+                                                            <div class="customselc-result3 mt10" id="geo_country_code_div">
+                                                                <p name="" value="" style="display:none;" id="geo_country_code_base">
+                                                                    <span id="country_code_text">KR</span>
+                                                                    <span class="fr ml15 mt5">
+                                                                        <img src="/images/coni/Cancel.svg" style="width:10px; cursor:pointer;" alt="삭제" />
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="mt5">
+                                                                    <span id="geo_access_text_area" class="red_txt" style="display: none;">
+                                                                        <span id="geo_access_red_text">필수입니다.</span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th class="vt" scope="row">Token 기반 접근제어</th>
+                                                    <td>
+                                                        <div class="stat_bnlist_wrap clfix">
+                                                            <ul class="stat_bnlist">
+                                                                <li><span class="stat" id="token_access_controll1" name="token_access_controll" data-value="1" style="width:160px;">사용</span></li>
+                                                                <li><span class="stat on" id="token_access_controll0" name="token_access_controll" data-value="0" style="width:160px;">사용 안함</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr id="cdnCreateArea_cors_div" class="step4_download_div" style="">
+                                                    <th class="vt pr" scope="row">
+                                                        <div class="tooltip_left">
+                                                            CORS 설정
+                                                            <span class="dtib ml10" style="height: 21px;">
+                                                                <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보" />
+                                                            </span>
+                                                        </div>
+                                                        <div class="tooltip_sm2" style="left: 105px;  top: -62px; width: 370px;">
+                                                            <p class="btxt_white_regular">
+                                                            "Access-Control-Allow-Origin :*"헤더를 추가합니다.<br />
+                                                            - "사용 안함" 선택 시, Origin response에 포함된 값을 전달<br />
+                                                            - "사용" 선택 시, 모든 Origin 허용
+                                                            </p>
+                                                        </div>
+
+                                                    </th>
+                                                    <td>
+                                                        <div class="stat_bnlist_wrap clfix">
+                                                            <ul class="stat_bnlist" id="corsSet">
+                                                                <li class="toggle_tab"><span class="stat" value="CORS_ALLOW_ORIGIN" style="width: 160px;">사용</span></li>
+                                                                <li class="toggle_tab"><span class="stat on" value="CORS_NOT_ALLOW_ORIGIN" style="width: 160px;">사용 안함</span></li>
+                                                            </ul>
+                                                        </div>                                                        
+                                                    </td>
+                                                </tr>
+                                                <tr id="">
+                                                    <th class="vt pr" scope="row">
+                                                        <div class="tooltip_left">
+                                                            Modify Header<br />(Client 응답)
+                                                            <span class="dtib ml10" style="height: 21px;">
+                                                                <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보" />
+                                                            </span>
+                                                        </div>
+                                                        <div class="tooltip_sm2" style="left: 72px; width: 339px; top: -42px;">
+                                                            <p class="btxt_white_regular ac">
+                                                            CDN서버에서 Client에 응답 시, 원본 서버에서 응답받은 헤더를 변경하거나 추가, 삭제 할 수 있습니다.
+                                                            </p>
+                                                        </div>
+
+                                                    </th>
+                                                    <td>
+                                                        <div class="stat_bnlist_wrap clfix">
+                                                            <ul class="stat_bnlist" id="step4_modify_header">
+                                                                <li class="toggle_tab"><span class="stat" value="1" style="width: 160px;">사용</span></li>
+                                                                <li class="toggle_tab"><span class="stat on" value="0" style="width: 160px;">사용 안함</span></li>
+                                                            </ul>
+                                                            
+                                                        </div>
+                                                        <!-- 사용 선택시 -->
+                                                            <div class="mt10" id="step4_modify_header_div" style="display:none;">
+                                                            <table class="pop_tbl">
+                                                                <caption>원본서버요청</caption>
+                                                                <colgroup>
+                                                                    <col style="width: 25%;" />
+                                                                    <col style="width: 25%;" />
+                                                                    <col style="width: *;" />
+                                                                    <col style="width: 40px;" />
+                                                                </colgroup>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col">Action</th>
+                                                                        <th scope="col">Header Name</th>
+                                                                        <th scope="col" colspan="2">Header Value</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="col">
+                                                                            <div class="custom-select" style="width: 160px;">
+                                                                                <select id="step4_modify_header_action">
+                                                                                    <option value="DELETE" selected="selected">DELETE</option>
+                                                                                    <option value="ADD/MODIFY">ADD/MODIFY</option>
+    <!--                                                                                     <option value="MODIFY">MODIFY</option> -->
+                                                                                </select>
+                                                                            </div>
+                                                                        </th>
+                                                                        <th scope="col">
+                                                                            <input title="text" class="i_box" style="width: 160px;" id="step4_modify_header_name" type="text" placeholder="" value="" />
+                                                                        </th>
+                                                                        <th scope="col" colspan="2">
+                                                                            <input title="text" class="i_box" style="width: 280px;" id="step4_modify_header_value" type="text" placeholder="" value="" disabled="disabled" />
+                                                                            <div class="btns_add" id="step4_modify_header_add"><a>+추가</a></div>
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                            </table>
+                                                            <div style="max-height:160px;overflow:auto;">
+                                                                <table class="pop_tbl">
+                                                                    <caption>원본서버요청</caption>
+                                                                    <colgroup>
+                                                                        <col style="width: 25%;" />
+                                                                        <col style="width: 25%;" />
+                                                                        <col style="width: *;" />
+                                                                        <col style="width: 40px;" />
+                                                                    </colgroup>                                                                   
+                                                                    <tbody id="modify_header_client_insert">
+                                                                        <tr id="step4_base_modify_header" style="display: none;">
+                                                                            <td id="text_step4_modify_header_action">ADD</td>
+                                                                            <td id="text_step4_modify_header_name">Content-Type</td>
+                                                                            <td id="text_step4_modify_header_value">application/json</td>
+                                                                            <td><a class="tablessh"><img src="/images/coni/trash.svg" alt="휴지통" style="margin-left:0;" /></a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                                <span id="modify_header_client_text_area" class="red_txt" style="display: none;">
+                                                                <span id="modify_header_client_red_text">필수입니다.</span>
+                                                                </span>
+                                                        </div>                                                        
+                                                    </td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                        <div class="btn_apply_wrap">
+                                            <p class="ar">
+                                                <span class="btn_left btnl_secondary mr20" type="submit">
+                                                    <a href="/console/d/osadvcdnlist">
+                                                        &nbsp;&nbsp;
+                                                        취소
+                                                        &nbsp;&nbsp;
+                                                    </a>
+                                                </span>
+                                                <span class="btn_left btnl_secondary mr20" onclick="cdnCreateStep3()">
+                                                    <a href="#">
+                                                        &nbsp;&nbsp;
+                                                        이전
+                                                        &nbsp;&nbsp;
+                                                    </a>
+                                                </span>
+                                                <span class="pop_btn_ct btnl_primary" onclick="cdnCreateStep5()" style="cursor: pointer;">
+                                                    <a href="#">다음</a>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                    </div>   
+                    <!-- //CDN 생성 STEP4 -->
+                    
+                    <!-- CDN 생성 STEP5 -->
+                    <div id="cdn_service_create_step5" class="tabpagescroll mt50 clfix">
+                        <div class="subtab_apply_w">
+                            <ul>
+                                <li><a href="#">서비스 설정</a></li>
+                                <li><a href="#">원본 서버 설정</a></li>
+                                <li><a href="#">캐싱 설정</a></li>
+                                <li><a href="#">뷰어 설정</a></li>
+                                <li class="on"><a href="#">최종 확인</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 화면 해상도 높이 조절 start -->                                    
+                            <div class="sub_con_box_w">                                     
+                            <!--    컨텐츠 분할 영역 시작 -->
+                            <div class="">  
+                                        <div class="sub_box_l">
+                                            <table class="c_th_input_cdn" style="border-top:1px solid #333336;border-bottom: 1px solid #333336;">
+                                            <caption>CDN 서비스설정 내역</caption>
+                                                <colgroup>
+                                                    <col style="width:206px" />
+                                                    <col style="width:*" />
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" colspan="2" class="txt_spoqa_s_bold">서비스 설정</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            유형
+                                                        </th>
+                                                        <td class="b" id="step4_svcType">다운로드</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            이름
+                                                        </th>
+                                                        <td class="b" id="step4_svcName">CDNTest001</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            서비스 도메인
+                                                        </th>
+                                                        <td class="b" id="step4_domainType">ktics.co.kr</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            프로토콜
+                                                        </th>
+                                                        <td class="b" id="step4_sslType">HTTP</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">SSL 인증서</th>
+                                                        <td class="b" id="step4_cdnCerti"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="c_th_input_cdn" style="border-bottom: 1px solid #333336;">
+                                                <caption>CDN 원본 설정 내역</caption>
+                                                <colgroup>
+                                                    <col style="width:206px" />
+                                                    <col style="width:*" />
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" colspan="2" class="txt_spoqa_s_bold">원본 서버 설정</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                        <th scope="row" class="vt">원본 위치</th>
+                                                        <td>
+                                                            <p class="b" id="step4_org_select">KT Cloud Storage</p>
+                                                            <p class="mt20 b" id="step4_ssServer">(KOR-Central) FileBox001</p>
+                                                            <p class="b" id="step4_org_serverName">abc.co</p>
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="step4_http_port">
+                                                        <th scope="row">오리진 프로토콜</th>
+                                                        <td id="" class="b">HTTP</td>
+                                                    </tr>
+                                                    <tr id="step4_hostHeader">
+                                                        <th scope="row">호스트 헤더 전달</th>
+                                                        <td id="" class="b">Origin HostName</td>
+                                                    </tr> 
+                                                    <tr id="step4_originsPath">
+                                                        <th scope="row">원본 서버 경로</th>
+                                                        <td id="" class="b">file_path</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <th scope="row" class="vt">Modify Header(원본 서버 요청)</th>
+                                                        <td>
+                                                            <p id="step5_modify_header_step2">사용</p>
+                                                            <div id="step5_modify_header_step2_div" style="max-height:150px;overflow:auto; display:none;">
+                                                                <table class="pop_tbl">
+                                                                    <caption>리스트</caption>
+                                                                    <colgroup>
+                                                                        <col style="width:33.33%" />
+                                                                        <col style="width:33.33%" />
+                                                                        <col style="width:*" />
+                                                                    </colgroup>
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col">Action</th>
+                                                                            <th scope="col">Header Name</th>
+                                                                            <th scope="col">Header Value</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr id="step5_modify_header_base" style="display:none;">
+                                                                            <td id="base_action">ADD</td>
+                                                                            <td id="base_name">Content-Type</td>
+                                                                            <td id="base_value">application/json</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>                                             
+                                                </tbody>
+                                            </table>
+                                            <table class="c_th_input_cdn" style="border-bottom: 1px solid #333336;">
+                                                <caption>CDN 캐싱 설정 내역</caption>
+                                                <colgroup>
+                                                    <col style="width:206px" />
+                                                    <col style="width:*" />
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" colspan="2" class="txt_spoqa_s_bold">캐싱 설정</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">캐싱옵션</th>
+                                                        <td id="step5_caching_option">원본서버의 Cache Control 헤더 우선</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">최대 캐싱 기간</th>
+                                                        <td id="step4_positive_ttl">1일</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <th scope="row">에러 응답 캐싱 주기 설정</th>
+                                                        <td id="step4_negative_ttl">1일</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <th scope="row">Query 파라미터 무시</th>
+                                                        <td id="step4_query_para">사용</td>
+                                                    </tr>  
+                                                    <tr>
+                                                        <th scope="row">Last Mile 압축</th>
+                                                        <td id="step4_compression">사용</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="c_th_input_cdn" style="border-bottom: 1px solid #333336;">
+                                                <caption>CDN 뷰어 설정 내역</caption>
+                                                <colgroup>
+                                                    <col style="width:206px" />
+                                                    <col style="width:*" />
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" colspan="2" class="txt_spoqa_s_bold">뷰어 설정</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="step4_download_div">
+                                                        <th scope="row">Allow HTTP Methods</th>
+                                                        <td id="step5_allow_http_method">GET,HEAD, OPTIONS</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <th scope="row" class="vt">Referer기반 접근제어</th>
+                                                        <td>
+                                                            <p id="step4_referer_set">허용</p>
+                                                            <div id="step4_non_exist_referer_tr">
+                                                                <textarea id="step4_referer_input" class=pop_txt_area3 bg_gy mt5 value="" rows="" cols="" maxlength="" title="" style="width: 500px; min-height: 110px;" onkeyup="refererChk(this)" disabled></textarea>
+                                                                <p class="mt5">Referer없는 경우 접근여부 : <span id="step4_non_exist_referer">허용</span></p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>   
+                                                    <tr class="step4_download_div">
+                                                        <th scope="row" class="vt">IP 기반 접근제어</th>
+                                                        <td>
+                                                            <div id="">
+                                                                <p id="step5_ip_access_controll">허용</p>
+                                                                <textarea id="step5_ip_access_controll_text" class="pop_txt_area3 bg_gy mt5" value="" rows="" cols="" maxlength="" title="" style="width: 500px; min-height: 110px; display: none;" disabled></textarea>
+                                                            </div>
+                                                        </td>
+                                                    </tr> 
+                                                    <tr class="step4_download_div">
+                                                        <th scope="row" class="vt">GEO 기반 접근제어</th>
+                                                        <td>
+                                                            <div>
+                                                                <p id="step5_geo_access_controll">허용</p>
+                                                                <textarea id=step5_geo_access_controll_text class="pop_txt_area3 bg_gy mt5" value="" rows="" cols="" maxlength="" title="" style="width: 500px; min-height: 110px; display: none;" disabled></textarea>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" class="mt20">Token 기반 접근제어</th>
+                                                        <td class="mt20" id="step4_secretKey">사용 안함</td>
+                                                    </tr>
+                                                    <tr class="step4_download_div">
+                                                        <th scope="row">CORS 설정</th>
+                                                        <td id="step4_cors">사용 안 함</td>
+                                                    </tr>  
+                                                    <tr>
+                                                        <th scope="row" class="vt">Modify Header(Client 응답)</th>
+                                                        <td>
+                                                            <p id="step5_modify_header_step4">사용</p>
+                                                            <div id="step5_modify_header_step4_div" style="max-height:150px;overflow:auto; display:none;">
+                                                                <table class="pop_tbl">
+                                                                    <caption>리스트</caption>
+                                                                    <colgroup>
+                                                                        <col style="width:33.33%" />
+                                                                        <col style="width:33.33%" />
+                                                                        <col style="width:*" />
+                                                                    </colgroup>
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col">Action</th>
+                                                                            <th scope="col">Header Name</th>
+                                                                            <th scope="col">Header Value</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr id="step5_modify_header2_base" style="display:none;">
+                                                                            <td id="base_action">ADD</td>
+                                                                            <td id="base_name">Content-Type</td>
+                                                                            <td id="base_value">application/json</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                </div>
+                                                        </td>
+                                                    </tr>                                           
+                                                </tbody>
+                                            </table>
+                                            <div class="btn_apply_wrap">
+                                                <p class="ar">
+                                                    <span class="btn_left btnl_secondary mr20" type="submit"><a href="/console/d/osadvcdnlist">&nbsp;&nbsp;취소&nbsp;&nbsp;</a></span>
+                                                    <span class="btn_left btnl_secondary mr20" onclick="cdnCreateStep4()"><a href="#">&nbsp;&nbsp;이전&nbsp;&nbsp;</a></span>
+                                                    <span class="pop_btn_ct btnl_primary" id="createCDN2" onclick="createCDN2('1')" style="cursor: pointer;"><a href="#" id="createCDN2Text">생성하기</a></span>
+                                                </p>
+                                            </div>
+                                        </div>                                    
+                                        
+                                        
+                                    </div>
+                                </div>    
+                    
+                    </div>
+                    <!-- //CDN 생성 STEP5 -->
+                </div>             
+            </div>
+        </div>
+    </div>
+</div>
+{{end}}

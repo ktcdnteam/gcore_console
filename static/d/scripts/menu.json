@@ -1,0 +1,59 @@
+[
+  {
+    "displayName": "All Services",
+    "url": "/cdn/list#",
+    "menu": "allservice",
+    "children": []
+  },{
+    "displayName": "CDN Edge+",
+    "url": "",
+    "menu": "cdn-standard",
+    "children": [
+      {
+        "displayName": "CDN Resource",
+        "url": "/cdn/list",
+        "meta": {
+          "subtitle": "CDN Resource를 관리합니다",
+          "manualLink": "",
+          "qnaCategorySq": 3,
+          "qnaCategoryName": "CDN Edge+",
+          "unavailableZones": [
+            "DX-Central",
+            "DX-DCN-CJ"
+          ]
+        },
+        "menu": "cdnEdgeManagement"
+      },
+      {
+        "displayName": "Origin Groups",
+        "url": "/cdn/origin_group",
+        "meta": {
+          "subtitle": "Origin Groups을 설정합니다.",
+          "manualLink": "",
+          "qnaCategorySq": 3,
+          "qnaCategoryName": "CDN Edge+",
+          "unavailableZones": [
+            "DX-Central",
+            "DX-DCN-CJ"
+          ]
+        },
+        "menu": "cdnEdgeOriginGroups"
+      },
+      {
+        "displayName": "Purge",
+        "url": "/cdn/purge",
+        "meta": {
+          "subtitle": "Purge을 실행합니다.",
+          "manualLink": "",
+          "qnaCategorySq": 3,
+          "qnaCategoryName": "CDN Edge+",
+          "unavailableZones": [
+            "DX-Central",
+            "DX-DCN-CJ"
+          ]
+        },
+        "menu": "cdnEdgePurge"
+      }
+    ]
+  }
+]

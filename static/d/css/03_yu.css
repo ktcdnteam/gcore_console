@@ -1,0 +1,957 @@
+@charset "utf-8";
+
+.popup .pop_tit {position:relative;color:#333;margin-bottom:10px;text-align:left;}
+.popup .pop_tit span {position:absolute; right:0;top:0; color:#666666; font-weight:normal;}
+.popup .pop_tit em {display:block; padding-top:5px;}
+
+/* #2013.10.21 JeongJeongSeak console 클라우드서버 안내 메세지 버튼생성 # */
+.popup .pop_tit7 {position:relative; color:#000000;margin-bottom:10px;text-align:left;}
+.popup .pop_tit7 span {color:#666666; font-weight:bold; margin-top:-15px;}
+.popup .pop_tit7 em {display:block;font: 12px dotum; padding-top:5px;}
+
+.popup .pop_tit2 span {padding-left:10px; color:#d62326; }
+.popup .txt_type1 {margin-top:10px; padding-left: 9px; background: url("/images/popup/bg_ts.gif") no-repeat left 6px; text-align:left; }
+.popup .txt_type2 { text-align:left; margin-top:10px;}
+.popup .txt_type2 li {background: url("/images/popup/bg_ts.gif") no-repeat left 6px; padding-left:9px;}
+.popup .txt_type2 li.ex_list {background:none;}
+.popup .txt_type2 li.ex_list dd {padding-left:23px;}
+.popup .txt_type2 li.c_r {color:#d62326;background: url("/images/popup/bg_t_rs.gif") no-repeat left 6px; padding-left:9px;}
+.popup .txt_type3 {display:inline-block; margin-top:10px; padding-left: 9px; background: url("/images/popup/bg_ts.gif") no-repeat left 5px; text-align:left;line-height:1.4}
+.popup .txt_type4 {background:url('/images/popup/bg_ts_line.gif') no-repeat 0 8px; padding-left:10px;}
+.popup .txt_type5 {background:url('/images/popup/bul_cuation.png') no-repeat 0 2px; padding-left:17px; margin-top:10px;}
+
+.popup .scroll_bx { width:393px; height:113px; overflow:scroll; overflow-x:hidden; border:1px solid #ebebeb; text-align:left;  }
+.popup .scroll_bx .txt {font:12px dotum;color:#666666; line-height:18px; padding:14px 10px; }
+.popup .scroll_bx2 { width:302px; height:179px; overflow:scroll; overflow-x:hidden; border:1px solid #ebebeb; text-align:left; margin-top:0px; }
+.popup .scroll_bx2 .txt {font:12px dotum;color:#666666; line-height:18px; padding:14px 10px; }
+.popup .scroll_bx3 { width:200px; height:70px; overflow:scroll; overflow-x:hidden; border:1px solid #ebebeb; text-align:left; margin-top:0px; }
+.popup .scroll_bx3 .txt {font:12px dotum;color:#666666; line-height:18px; padding:10px 10px; }
+
+.popup .text_bx {margin-top:0px;}
+.popup .text_ar {font:12px dotum;color:#666666; padding:10px 10px;border:1px solid #ebebeb; text-align:left;border:1px solid #ebebeb; text-align:left; } 
+
+.popup .tbl_info_s{ width:409px; table-layout:fixed;border-top:1px solid #ebebeb; border-left:1px solid #ebebeb;}
+.popup .tbl_info_s tbody th{height:22px;;padding:11px 0 0 14px;background:#f8f8f8;color:#666666;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;vertical-align:top;text-align:left;}
+.popup .tbl_info_s tbody td{font:normal 12px dotum;color:#666666;padding:8px 10px;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;vertical-align:middle;text-align:left;}
+.popup .tbl_info_s tbody td em { display:inline-block; padding: 4px 8px 0 3px; vertical-align: middle; font: 12px dotum;}
+.popup .tbl_info_s tbody td img{vertical-align:middle;}
+.popup .tbl_info_s tbody input {vertical-align:middle;}
+.popup .tbl_info_s tbody td .btn{position:absolute;right:10px;top:4px;}
+.popup .tbl_info_s tbody td.ln_none{border-right:0;}
+.popup .tbl_info_s tbody td.td_in{padding:2px 10px}
+.popup .tbl_info_s .chk {margin-right:10px; vertical-align:middle;}
+.popup .tbl_info_s .in_ra {margin-right:5px; display: inline-block; vertical-align:middle; }
+.popup .tbl_info_s .in_txt_g{border:1px solid #c8c8c8;padding:2px 0 2px 5px;font:12px dotum;color:#333333; background-color:#f5f5f5;}
+.popup .tbl_info_s .in_ip {overflow:hidden;}
+.popup .tbl_info_s .in_ip ul {overflow:hidden;}
+.popup .tbl_info_s .in_ip ul li{float:left; margin:2px 5px 0 0;}
+.popup .tbl_info_s .in_ip ul li span {display:inline-block; padding:3px 5px 0 5px;}
+
+.popup .tbl_info_s2{ width:409px; table-layout:fixed;border-top:1px solid #ebebeb; border-left:1px solid #ebebeb;}
+.popup .tbl_info_s2 tbody th{height:22px;padding:7px 0 7px 14px;background:#f8f8f8;color:#666666;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;vertical-align:middle;text-align:left;}
+.popup .tbl_info_s2 tbody td{font:normal 12px dotum;color:#666666;padding:8px 10px;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;vertical-align:middle;text-align:left;}
+.popup .tbl_info_s2 tbody td.cb {background:#f8f8f8;}
+.popup .tbl_info_s2 tbody td em { display:inline-block; padding: 4px 8px 0 0; vertical-align: middle; font: 12px dotum;}
+.popup .tbl_info_s2 tbody td img{vertical-align:middle;}
+.popup .tbl_info_s2 tbody input {vertical-align:middle;}
+.popup .tbl_info_s2 tbody td .btn{position:absolute;right:10px;top:4px;}
+.popup .tbl_info_s2 tbody td.ln_none{border-right:0;}
+.popup .tbl_info_s2 tbody td.td_in{padding:2px 5px}
+.popup .tbl_info_s2 .chk {margin-right:10px; vertical-align:middle;}
+.popup .tbl_info_s2 .in_ra {margin-right:5px; display: inline-block; vertical-align:middle; }
+.popup .tbl_info_s2 .in_txt_g{border:1px solid #c8c8c8;padding:2px 0 2px 5px;font:12px dotum;color:#333333; background-color:#f5f5f5;}
+
+
+.popup .tbl_info_vc_s {width:409px; table-layout:fixed;border-top:1px solid #ebebeb; border-left:1px solid #ebebeb;}
+.popup .tbl_info_vc_s thead th {height:22px;padding:11px 0 0 0;background:#f8f8f8;color:#666666; border:1px solid #ebebeb;vertical-align:top;text-align:center;}
+.popup .tbl_info_vc_s thead th.vt{vertical-align:middle;padding:0;}
+.popup .tbl_info_vc_s thead th.btn{padding:3px 10px;text-align:right;background:#f8f8f8;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;}
+.popup .tbl_info_vc_s tbody td{padding:8px 10px 7px 10px;font:normal 12px dotum;color:#666666;border-left:1px solid #ebebeb; border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;vertical-align:middle;text-align:center;}
+.popup .tbl_info_vc_s tbody td.img{padding:7px 10px 7px 10px}
+.popup .tbl_info_vc_s tbody td.in{padding:3px 10px 3px 10px;vertical-align:middle}
+.popup .tbl_info_vc_s tbody td.in .in_txt{border:1px solid #c8c8c8;font:12px dotum;color:#666}
+.popup .tbl_info_vc_s tbody td.al{padding-left:10px;}
+.popup .tbl_info_vc_s tbody td.al15{text-align:left;padding-left:15px;}
+.popup .tbl_info_vc_s tbody tr.on td{color:#d62326}
+.popup .tbl_info_vc_s tbody td img{vertical-align:middle;}
+.popup .tbl_info_vc_s tfoot td.btn{padding:3px 10px;text-align:right;background:#f8f8f8;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;} 
+.popup .tbl_info_vc_s tfoot th{padding:8px 10px 7px 10px;background:#f8f8f8;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;}
+.popup .tbl_info_vc_s tfoot td{padding:8px 10px 7px 10px;background:#f8f8f8;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;}
+
+.popup .tbl_info2_m{ width:509px; table-layout:fixed;border-top:1px solid #ebebeb; border-left:1px solid #ebebeb;}
+.popup .tbl_info2_m tbody th {padding:15px 0 15px 20px; *padding-left:15px;background:#f8f8f8;font:12px dotum; color:#666666;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb; vertical-align:middle; text-align:left;}
+.popup .tbl_info2_m tbody th em { display:inline-block; padding: 4px 8px 0 0; vertical-align:top; font: 12px dotum;}
+.popup .tbl_info2_m tbody th strong { display:inline-block; padding: 3px 0 0 4px; }
+.popup .tbl_info2_m tbody th label {margin-right:10px;}
+.popup .tbl_info2_m tbody th input {vertical-align:middle;}
+.popup .tbl_info2_m .chk {margin-right:10px;}
+.popup .tbl_info2_m .in_ra {margin-right:3px; display: inline-block; padding: 3px 0 0 4px;}
+.popup .tbl_info2_m .in_txt_g{border:1px solid #c8c8c8;padding:2px 0 2px 5px;font:12px dotum;color:#333333; background-color:#f5f5f5;}
+
+.popup .tbl_info_vc_m {width:507px; table-layout:fixed;border-top:1px solid #ebebeb; border-left:1px solid #ebebeb;}
+.popup .tbl_info_vc_m thead th {height:22px;padding:11px 0 0 0;background:#f8f8f8;color:#666666; border:1px solid #ebebeb;vertical-align:top;text-align:center;}
+.popup .tbl_info_vc_m thead th.vt{vertical-align:middle;padding:0;}
+.popup .tbl_info_vc_m thead th.btn{padding:3px 10px;text-align:right;background:#f8f8f8;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;}
+.popup .tbl_info_vc_m tbody td{padding:8px 10px 7px 10px;font:normal 12px dotum;color:#666666;border-left:1px solid #ebebeb; border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;vertical-align:middle;text-align:center;}
+.popup .tbl_info_vc_m tbody td.img{padding:7px 10px 7px 10px}
+.popup .tbl_info_vc_m tbody td.in{padding:3px 10px 3px 10px;vertical-align:middle}
+.popup .tbl_info_vc_m tbody td.in .in_txt{border:1px solid #c8c8c8;font:12px dotum;color:#666}
+.popup .tbl_info_vc_m tbody td.al{padding-left:10px;}
+.popup .tbl_info_vc_m tbody td.al15{text-align:left;padding-left:15px;}
+.popup .tbl_info_vc_m tbody tr.on td{color:#d62326}
+.popup .tbl_info_vc_m tbody td img{vertical-align:middle;}
+.popup .tbl_info_vc_m tfoot td.btn{padding:3px 10px;text-align:right;background:#f8f8f8;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;} 
+.popup .tbl_info_vc_m tfoot th{padding:8px 10px 7px 10px;background:#f8f8f8;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;}
+.popup .tbl_info_vc_m tfoot td{padding:8px 10px 7px 10px;background:#f8f8f8;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;}
+
+.popup .line_bx { border:1px solid #ebebeb; ;overflow:hidden;background:#f8f8f8; text-align:left; padding:14px 20px; }
+.popup .line_bx span.txt {margin-right:18px;}
+.popup .line_bx label {margin-right:10px;}
+.popup .line_bx .btn_gr2{display:inline-block;height:25px;background:url('/images/common/btn/btn_gr4_l.gif') no-repeat left top;padding-left:8px;vertical-align:top}
+.popup .line_bx .btn_gr2 a{display:inline-block;height:21px;background:url('/images/common/btn/btn_gr4_r.gif') no-repeat right top;padding:5px 8px 0 0;vertical-align:top}
+
+.popup .s_fee_info2{width:100%;table-layout:fixed;border-top:1px solid #ebebeb;border-left:1px solid #ebebeb;}
+.popup .s_fee_info2 tbody th{background:#fafafa;color:#666666;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;vertical-align:middle;padding:9px 0 20px 0}
+.popup .s_fee_info2 tbody th img{margin-bottom:3px;}
+.popup .s_fee_info2 tbody td{font:normal 12px dotum;color:#333333;padding:8px 10px 4px 10px;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;vertical-align:middle;text-align:left;}
+.popup .s_fee_info2 tbody td dl{margin-top:-3px;}
+.popup .s_fee_info2 tbody td dt{float:left;width:auto;padding-top:4px; color:#666666;}
+.popup .s_fee_info2 tbody td dd{float:right;padding:0;}
+.popup .s_fee_info2 tbody td dl.two{margin-top:-8px;}
+.popup .s_fee_info2 tbody td dl.two dt{float:left;width:auto;padding-top:8px;}
+.popup .s_fee_info2 tbody td dl.two dd{float:right;padding-top:10px;}
+.popup .s_fee_info2 tbody td img{vertical-align:middle;}
+.popup .s_fee_info2 tbody td .btn{position:absolute;right:10px;top:4px;}
+
+
+/*테이블*/
+
+.th_tbl04{width: 720px; height:74px; background: url('/images/common/bg_table6.gif') no-repeat left top;  table-layout: fixed; }
+.th_tbl04 thead th{height:37px;vertical-align:middle; background:none; text-align:center;color:#000000;}
+.th_tbl04 thead th.more a{display:inline-block;padding:4px 0 4px 0;height:10px; margin-left:-1px;}
+.th_tbl04 tbody td{display:none;}
+
+.th_tbl03{width: 720px; height:74px; background: url('/images/common/bg_table5.gif') no-repeat left top;  table-layout: fixed; }
+.th_tbl03 thead th{height:37px;vertical-align:middle; background:none; text-align:center;color:#000000;}
+.th_tbl03 thead th.more a{display:inline-block;padding:4px 0 4px 0;height:10px; margin-left:-1px;}
+.th_tbl03 tbody td{display:none;}
+.th_tbl03.bg11{ background: url('/images/common/bg_table11.gif') no-repeat left top; table-layout: fixed; }
+
+.th_tbl05{width: 720px; height:37px; background: url('/images/common/bg_table7.gif') no-repeat left top;  table-layout: fixed; }
+.th_tbl05 thead th{height:37px;vertical-align:middle; background:none; text-align:center;color:#000000;}
+.th_tbl05 thead th.more a{display:inline-block;padding:4px 0 4px 0;height:10px; margin-left:-1px;}
+.th_tbl05 tbody td{display:none;}
+/* 리뉴얼 테이블위해 추가 */
+.th_tbl_05{width: 720px; height:37px; background: url('/images/common/bg_table7.gif') no-repeat left top;  table-layout: fixed; }
+.th_tbl_05 tbody td{height:37px;vertical-align:middle; background:none; text-align:center;color:#000000;}
+.th_tbl_05 tbody td.more a{display:inline-block;padding:4px 0 4px 0;height:10px; margin-left:-1px;}
+
+
+.th_tbl06{width: 512px; height:37px; table-layout: fixed; }
+.th_tbl06 thead th{height:37px;vertical-align:middle; text-align:center;color:#000000; border: 1px solid #c8c8c8; background: #f5f5f5; }
+.th_tbl06 thead th.more a{display:inline-block;padding:4px 0 4px 0;height:10px; margin-left:-1px;}
+.th_tbl06 tbody td{display:none;}
+
+.th_tbl06_new{width: 512px; height:37px; background: url('/images/common/bg_table8.gif') no-repeat left top;  table-layout: fixed; }
+.th_tbl06_new thead th{height:37px;vertical-align:middle; background:none; text-align:center;color:#000000;}
+.th_tbl06_new thead th.more a{display:inline-block;padding:4px 0 4px 0;height:10px; margin-left:-1px;}
+.th_tbl06_new tbody td{display:none;}
+
+.th_tbl07{width: 720px; height:74px; background: url('/images/common/bg_table9.gif') no-repeat left top;  table-layout: fixed; }
+.th_tbl07 thead th{height:37px;vertical-align:middle; background:none; text-align:center;color:#000000;}
+.th_tbl07 thead th.more a{display:inline-block;padding:4px 0 4px 0;height:10px; margin-left:-1px;}
+.th_tbl07 tbody td{display:none;}
+
+.text_tit  {border-bottom: 1px solid #eee;padding:30px 0px 30px 0px;}
+.text_tit span {color:#333; font-size: 24px;}
+
+.tit_box {position:relative; width:100%;height:47px; margin-top:50px; margin-bottom:15px;}
+.tit_box h3 {
+    position:absolute;left:0;top:0; padding-top:0px; margin:0px;
+    }
+.tit_box .fr2 {position:absolute; right:0;bottom:0;}
+
+.btmOpBox {position:relative; overflow:hidden; top:10px; }
+.btmOpBox .paging {position:absolute; top:0; left:0; text-align:center; width:100%;}
+.btmOpBox .btnLeft  {float:left; margin-top:10px;}
+.btmOpBox .btnLeft li {float:left;}
+.btmOpBox .btnRight {float:right; margin-top:10px;}
+.btmOpBox .btnRight li {float:left;}
+
+/* ul.priceTab             { background: url('/images/po_common/price_tab.jpg') no-repeat left -348px; width: 740px; height: 131px; padding: 21px 0px 0px 20px; }
+ul.priceTab li              { background-image: url('/images/po_common/price_tab.jpg'); background-repeat: no-repeat; width: 136px; height: 29px; text-indent: -9999px; overflow: hidden; float: left; margin-right: 10px; margin-bottom: 11px; }
+ul.priceTab li a         { display: block; width: 100%; height: 100%; }
+ul.priceTab li.tab1         { background-position: 0 0px; }
+ul.priceTab li.tab2         { background-position: 0 -29px; }
+ul.priceTab li.tab3         { background-position: 0 -58px; }
+ul.priceTab li.tab4         { background-position: 0 -87px; }
+ul.priceTab li.tab5         { background-position: 0 -116px; }
+ul.priceTab li.tab6         { background-position: 0 -145px; }
+ul.priceTab li.tab7         { background-position: 0 -174px; }
+ul.priceTab li.tab8         { background-position: 0 -203px; }
+ul.priceTab li.tab9        { background-position: 0 -232px; }
+ul.priceTab li.tab10         { background-position: 0 -261px; }
+ul.priceTab li.tab11         { background-position: 0 -290px; }
+ul.priceTab li.tab12         { background-position: 0 -319px; }
+ul.priceTab li.tab1.on         { background-position: -136px 0px; }
+ul.priceTab li.tab2.on         { background-position: -136px -29px; }
+ul.priceTab li.tab3.on         { background-position: -136px -58px; }
+ul.priceTab li.tab4.on         { background-position: -136px -87px; }
+ul.priceTab li.tab5.on         { background-position: -136px -116px; }
+ul.priceTab li.tab6.on         { background-position: -136px -145px; }
+ul.priceTab li.tab7.on         { background-position: -136px -174px; }
+ul.priceTab li.tab8.on         { background-position: -136px -203px; }
+ul.priceTab li.tab9.on        { background-position: -136px -232px; }
+ul.priceTab li.tab10.on     { background-position: -136px -261px; }
+ul.priceTab li.tab11.on     { background-position: -136px -290px; }
+ul.priceTab li.tab12.on     { background-position: -136px -319px; } */
+
+
+
+
+/* ul.priceTab             { background: url('/images/po_common/price_tab.jpg') no-repeat left -1139px; width: 100%; height: 200px; padding: 41px 0px 0px 50px; }
+ul.priceTab li              { background-image: url('/images/po_common/price_tab.jpg'); background-repeat: no-repeat; width: 159px; height: 57px; text-indent: -9999px; overflow: hidden; float: left; margin-right: 0px; margin-bottom: 1px; }
+ul.priceTab li a         { display: block; width: 100%; height: 100%; }
+ul.priceTab li.tab0         { background-position: 0 0px; }
+ul.priceTab li.tab1         { background-position: 0 -56px; }
+ul.priceTab li.tab2         { background-position: 0 -112px; }
+ul.priceTab li.tab3         { background-position: 0 -168px; }
+ul.priceTab li.tab4         { background-position: 0 -224px; }
+ul.priceTab li.tab5         { background-position: 0 -280px; }
+ul.priceTab li.tab6         { background-position: 0 -336px; }
+ul.priceTab li.tab7         { background-position: 0 -392px; }
+ul.priceTab li.tab8        { background-position: 0 -448px; }
+ul.priceTab li.tab9         { background-position: 0 -504px; }
+ul.priceTab li.tab10         { background-position: 0 -560px; }
+ul.priceTab li.tab11         { background-position: 0 -616px; }
+ul.priceTab li.tab12         { background-position: 0 -672px; }
+ul.priceTab li.tab13         { background-position: 0 -728px; }
+#2014.9.30 JeongJeongSeak  요금 및 이용내역 상품 마켓프레이스 ucloud Encoder 항목추가#
+ul.priceTab li.tab14         { background-position: 0 -784px; }
+ul.priceTab li.tab15         { background-position: 0 -840px; }
+ul.priceTab li.tab16         { background-position: 0 -952px; }
+#2015.11.9 JeongJeongSeak  요금 및 이용내역 상품 CDN Global 항목추가#
+ul.priceTab li.tab17           { background-position: 0 -1008px; }
+# 요금 및 이용내역 상품 appster 항목추가#
+ul.priceTab li.tab18     { background-position: 0 -1064px; }
+#2016.5.25 요금 및 이용내역 상품 pc backupl 항목추가#
+ul.priceTab li.tab19     { background-position: 0 -1120px; }
+ul.priceTab li.tab20     { background-position: 0 -1176px; }
+
+
+ul.priceTab li.tab0.on         { background-position: -159px 0px; }
+ul.priceTab li.tab1.on         { background-position: -159px -56px; }
+ul.priceTab li.tab2.on         { background-position: -159px -113px; }
+ul.priceTab li.tab3.on         { background-position: -159px -170px; }
+ul.priceTab li.tab4.on         { background-position: -159px -227px; }
+ul.priceTab li.tab5.on         { background-position: -159px -284px; }
+ul.priceTab li.tab6.on         { background-position: -159px -341px; }
+ul.priceTab li.tab7.on         { background-position: -159px -398px; }
+ul.priceTab li.tab8.on        { background-position: -159px -455px; }
+ul.priceTab li.tab9.on     { background-position: -159px -512px; }
+ul.priceTab li.tab10.on     { background-position: -159px -569px; }
+ul.priceTab li.tab11.on     { background-position: -159px -626px; }
+ul.priceTab li.tab12.on     { background-position: -159px -683px; }
+ul.priceTab li.tab13.on     { background-position: -159px -740px; }
+#2014.9.30 JeongJeongSeak  요금 및 이용내역 상품 마켓프레이스 ucloud Encoder 항목추가#
+ul.priceTab li.tab14.on     { background-position: -159px -797px; }
+ul.priceTab li.tab15.on     { background-position: -159px -854px; }
+ul.priceTab li.tab16.on     { background-position: -159px -911px; }
+#2015.11.9 JeongJeongSeak  요금 및 이용내역 상품 CDN Global 항목추가#
+ul.priceTab li.tab17.on     { background-position: -159px -968px; }
+# 요금 및 이용내역 상품 appster 항목추가#
+ul.priceTab li.tab18.on     { background-position: -159px -1025px; }
+#2016.5.25 요금 및 이용내역 상품 pc backupl 항목추가#
+ul.priceTab li.tab19.on     { background-position: -159px -1082px; }
+ul.priceTab li.tab20.on     { background-position: -159px -1139px; } */
+
+.sv_view{}
+.sv_view li{zoom:1;background:url('/images/po_common/bg_dash_sub.gif') repeat-x left bottom; padding-bottom:30px; padding-top:0px;}
+.sv_view li.last{background:none;padding-bottom:0px;margin-bottom:0px;}
+.sv_view li dl{}
+.sv_view li dl dt{margin-bottom:14px; margin-top:30px;}
+.sv_view li dl dd{font:12px/1.5 dotum;color:#666;}
+.sv_view li ul.line li {background:url('/images/po_sub/ico_line.gif') no-repeat 0 7px; margin:0; padding:0; margin-left:-8px !important; padding-left:8px !important; min-height:0;}
+
+div.infoBox                     {  }
+div.infoBox div.info                 { background: url('/images/po_sub/member/login_dot.gif') repeat-x left top; margin-top: 10px; position: relative; overflow: hidden; clear: both; }
+div.infoBox div.info.type2             { margin-top: 10px; }
+div.infoBox div.info.btns p             { margin-top: 30px; }
+div.infoBox div.info.btns .list            { float: right; margin-top: 0px; }
+div.infoBox div.info label             { background-image: url('/images/po_sub/member/login_icons.png'); background-repeat: no-repeat; background-position: left -5px; display: block; font-weight: bold; color: #666; padding-left: 15px; float: left; height: 32px; line-height: 32px; margin-top: 12px; }
+div.infoBox div.info label.red             { background-position: 0 -238px; }
+div.infoBox div.info input.log             { clear:both; border: 1px solid #c8c8c8; height: 16px; width: 342px; }
+div.infoBox div.info textarea             { clear: both; width: 888px; height: 178px; border: 1px solid #ebebeb; padding: 20px; color: #666; }
+div.infoBox p.sav                     { position: absolute; right: 0px; top: 22px; }
+div.infoBox p.sav.chk                 { position: static; margin-top: 10px; }
+div.infoBox p.sav.chk2                 { position: static; display: inline-block; *display: inline; zoom:1; vertical-align: middle;  }
+div.infoBox p.sav.chk2 label                 { font-weight: normal; padding-left: 5px !important; }
+div.infoBox p.sav label , div.infoBox p.sav input     { float: left; padding: 0px !important; margin: 0px !important; vertical-align: middle; height:13px !important; line-height: 13px !important; padding-left: 10px !important; }
+div.infoBox div.detailBox div.cbtn         { float: right; margin-top: 21px; }
+div.infoBox div.detailBox span.btn_on_bk     { float: right; margin-top: 21px; }
+
+div.infoBox div.chkListBox             { width: 100%; margin: auto; }
+div.infoBox div.detailBox ul.list         { float: left; margin-top: 25px; }
+div.infoBox div.detailBox ul.list li         { background: url('/images/po_sub/member/login_icons.png') no-repeat right -54px; float: left; clear: both; padding-right: 7px; line-height: 20px; }
+div.infoBox div.detailBox ul.list li a         { color: #000; }
+div.infoBox div.chkListBox p.important         { height: 20px; line-height: 12px; float: right; margin-top: -20px; color: #df2428; }
+div.infoBox div.chkListBox p.important span     { vertical-align: middle; }
+div.infoBox div.chkListBox p.important.type2    { color:#666; }
+div.infoBox div.chkListBox span.chkIcon     { background: url('/images/po_sub/member/login_icons.png') no-repeat left -331px; width: 7px; height: 7px; font-size: 0px; line-height: 0px; display: inline-block; *display: inline; zoom:1; vertical-align: middle; }
+div.infoBox div.chkListBox span.chkIcon2     { background: url('/images/po_sub/member/login_icons.png') no-repeat left -18px; width: 5px; height: 5px; font-size: 0px; line-height: 0px; display: inline-block; *display: inline; zoom:1; vertical-align: middle; }
+div.infoBox div.chkListBox span.chkIcon3     { background: url('/images/po_sub/member/login_icons.png') no-repeat left -293px; width: 5px; height: 4px; font-size: 0px; line-height: 0px; display: inline-block; *display: inline; zoom:1; vertical-align: middle; }
+div.infoBox div.chkListBox dl             { float: left; width: 770px;}
+div.infoBox div.chkListBox dl.line {background:url('/images/po_common/bg_dash_sub.gif') repeat-x left bottom; padding-bottom:5px;}
+div.infoBox div.chkListBox dl dt         { width: 180px;  float: left; color: #666; font-weight: bold; padding-top: 20px; }
+div.infoBox div.chkListBox dl dt span.txt     { vertical-align: middle; padding-left: 10px; }
+div.infoBox div.chkListBox dl dd         { float: left; padding-top: 6px; width:619px; }
+div.infoBox div.chkListBox dl dd .btn_gr2     { margin-left: 5px; }
+
+div.infoBox div.chkListBox div.desc         { float: left; clear:both; padding-top: 11px ; width: 619px; }
+div.infoBox div.chkListBox div.desc.type3     { width: auto; }
+div.infoBox div.chkListBox div.desc.type4    { width: auto; margin-bottom:-14px !important; width:600px; *height:36px; }
+div.infoBox div.chkListBox div.desc.line     { background: url('/images/po_sub/member/login_dot.gif') repeat-x left top; }
+div.infoBox div.chkListBox div.desc.line_bot{background:url('/images/po_common/bg_dash_sub.gif') repeat-x left bottom;padding-bottom:10px;}
+div.infoBox div.chkListBox div.desc.type2     { margin-top: -3px; }
+div.infoBox div.chkListBox div.desc p.txt     { word-break:break-all; white-space: break-all ; position: relative; padding-left: 8px; display: inline-block; *display: inline; zoom:1;}
+
+div.infoBox div.chkListBox div.desc strong.location1     { color: #666; }
+div.infoBox div.chkListBox div.desc strong.location2     { color: #000; }
+div.infoBox div.chkListBox div.desc span.locationGap     { background: url('/images/po_sub/member/login_icons.png') no-repeat left -373px; width: 3px; height: 5px; display: inline-block; font-size: 0px; line-height: 0px; text-indent: -9999px;overflow: hidden; vertical-align: middle; margin: 0px 5px; }
+div.infoBox div.chkListBox dl input.type1     { border: 1px solid #c8c8c8; width: 253px; height: 18px; vertical-align: middle; }
+div.infoBox div.chkListBox dl input.type2     { border: 1px solid #c8c8c8; width: 120px; height: 18px; vertical-align: middle; }
+div.infoBox div.chkListBox dl input.type3     { border: 1px solid #c8c8c8; width: 53px; height: 18px; vertical-align: middle; }
+div.infoBox div.chkListBox dl span.gap     { width: 15px; text-align: center; display: inline-block; *display: inline; zoom:1; margin: 0px -4px; padding: 0px; }
+div.infoBox div.chkListBox dl select         { vertical-align: middle; }
+div.infoBox div.chkListBox dl span          { vertical-align: middle; }
+div.infoBox div.chkListBox dl span a         { text-decoration: none; }
+div.infoBox div.chkListBox span.icon     { background: url('/images/po_sub/member/login_icons.png') repeat-x left -293px; width: 5px; height: 4px; font-size: 0px; line-height: 0px; display: inline-block; *display: inline; zoom:1;  position: absolute; left: 0px; top: 6px; }
+
+div.infoBox div.chkListBox .dach_noen     {background:none; }
+div.infoBox div.chkListBox .dach_line {background:url('/images/po_common/bg_dash_sub.gif') repeat-x left bottom; padding-bottom:5px;}
+
+
+
+
+div.infoBox_mp                     {  }
+div.infoBox_mp div.info                 { /* background: url('/images/po_sub/member/login_dot.gif') repeat-x left top; */ margin-top: 10px; position: relative; overflow: hidden; clear: both; }
+div.infoBox_mp div.info.type2             { margin-top: 10px; }
+div.infoBox_mp div.info.btns p             { margin-top: 30px; }
+div.infoBox_mp div.info.btns .list            { float: right; margin-top: 0px; }
+div.infoBox_mp div.info label             {display: inline-block; }
+div.infoBox_mp div.info label.red             { background-position: 0 -238px; }
+div.infoBox_mp div.info input.log             { clear:both; border: 1px solid #c8c8c8; height: 16px; width: 342px; }
+div.infoBox_mp div.info textarea             { clear: both; width: 888px; height: 178px; border: 1px solid #ebebeb; padding: 20px; color: #666; }
+div.infoBox_mp p.sav                     { position: absolute; right: 0px; top: 22px; }
+div.infoBox_mp p.sav.chk                 { position: static; margin-top: 10px; }
+div.infoBox_mp p.sav.chk2                 { position: static; display: inline-block; *display: inline; zoom:1; vertical-align: middle;  }
+div.infoBox_mp p.sav.chk2 label                 { font-weight: normal; padding-left: 5px !important; }
+div.infoBox_mp p.sav label , div.infoBox p.sav input     { }
+div.infoBox_mp div.detailBox div.cbtn         { float: right; margin-top: 21px; }
+div.infoBox_mp div.detailBox span.btn_on_bk     { float: right; margin-top: 21px; }
+
+div.infoBox_mp div.chkListBox             { width: 100%; margin: auto; }
+div.infoBox_mp div.detailBox ul.list         { float: left; margin-top: 25px; }
+div.infoBox_mp div.detailBox ul.list li         { background: url('/images/po_sub/member/login_icons.png') no-repeat right -54px; float: left; clear: both; padding-right: 7px; line-height: 20px; }
+div.infoBox_mp div.detailBox ul.list li a         { color: #000; }
+div.infoBox_mp div.chkListBox p.important         { height: 20px; line-height: 12px; float: right; margin-top: -20px; color: #df2428; }
+div.infoBox_mp div.chkListBox p.important span     { vertical-align: middle; }
+div.infoBox_mp div.chkListBox p.important.type2    { color:#666; }
+div.infoBox_mp div.chkListBox span.chkIcon     { background: url('/images/po_sub/member/login_icons.png') no-repeat left -331px; width: 7px; height: 7px; font-size: 0px; line-height: 0px; display: inline-block; *display: inline; zoom:1; vertical-align: middle; }
+div.infoBox_mp div.chkListBox span.chkIcon2     { background: url('/images/po_sub/member/login_icons.png') no-repeat left -18px; width: 5px; height: 5px; font-size: 0px; line-height: 0px; display: inline-block; *display: inline; zoom:1; vertical-align: middle; }
+div.infoBox_mp div.chkListBox span.chkIcon3     { background: url('/images/po_sub/member/login_icons.png') no-repeat left -293px; width: 5px; height: 4px; font-size: 0px; line-height: 0px; display: inline-block; *display: inline; zoom:1; vertical-align: middle; }
+div.infoBox_mp div.chkListBox dl             { float: left; width: 770px;}
+div.infoBox_mp div.chkListBox dl.line {background:url('/images/po_common/bg_dash_sub.gif') repeat-x left bottom; padding-bottom:5px;}
+div.infoBox_mp div.chkListBox dl dt         { width: 180px;  float: left; color: #666; font-weight: bold; padding-top: 20px; }
+div.infoBox_mp div.chkListBox dl dt span.txt     { vertical-align: middle; padding-left: 10px; }
+div.infoBox_mp div.chkListBox dl dd         { float: left; padding-top: 6px; width:550px; }
+div.infoBox_mp div.chkListBox dl dd .btn_gr2     { margin-left: 5px; }
+
+div.infoBox_mp div.chkListBox div.desc         { float: left; clear:both; padding-top: 11px ; width: 619px; }
+div.infoBox_mp div.chkListBox div.desc.type3     { width: auto; }
+div.infoBox_mp div.chkListBox div.desc.type4    { width: auto; margin-bottom:-14px !important; width:600px; *height:36px; }
+div.infoBox_mp div.chkListBox div.desc.line     { background: url('/images/po_sub/member/login_dot.gif') repeat-x left top; }
+div.infoBox_mp div.chkListBox div.desc.line_bot{background:url('/images/po_common/bg_dash_sub.gif') repeat-x left bottom;padding-bottom:10px;}
+div.infoBox_mp div.chkListBox div.desc.type2     { margin-top: -3px; }
+div.infoBox_mp div.chkListBox div.desc p.txt     { word-break:break-all; white-space: break-all ; position: relative; padding-left: 8px; display: inline-block; *display: inline; zoom:1;}
+
+div.infoBox_mp div.chkListBox div.desc.myinfo         { float: left; clear:both; padding-top: 11px ; width: 100%; }
+div.infoBox_mp div.chkListBox div.desc.myinfo a     { color:#999; line-height: 26px;text-decoration:none;}
+
+div.infoBox_mp div.chkListBox div.desc strong.location1     { color: #666; }
+div.infoBox_mp div.chkListBox div.desc strong.location2     { color: #000; }
+div.infoBox_mp div.chkListBox div.desc span.locationGap     { background: url('/images/po_sub/member/login_icons.png') no-repeat left -373px; width: 3px; height: 5px; display: inline-block; font-size: 0px; line-height: 0px; text-indent: -9999px;overflow: hidden; vertical-align: middle; margin: 0px 5px; }
+div.infoBox_mp div.chkListBox dl input.type1     { border: 1px solid #c8c8c8; width: 253px; height: 18px; vertical-align: middle; padding: 15px 10px 15px 10px; }
+div.infoBox_mp div.chkListBox dl input.type2     { border: 1px solid #c8c8c8; width: 120px; height: 18px; vertical-align: middle; padding: 15px 10px 15px 10px;}
+div.infoBox_mp div.chkListBox dl input.type3     { border: 1px solid #c8c8c8; width: 53px; height: 18px; vertical-align: middle; padding: 15px 10px 15px 10px; }
+div.infoBox_mp div.chkListBox dl span.gap     { width: 15px; text-align: center; display: inline-block; *display: inline; zoom:1; margin: 0px -4px; padding: 0px; }
+div.infoBox_mp div.chkListBox dl select         { vertical-align: middle; }
+div.infoBox_mp div.chkListBox dl span          { vertical-align: middle; }
+div.infoBox_mp div.chkListBox dl span a         { text-decoration: none; }
+div.infoBox_mp div.chkListBox span.icon     { background: url('/images/po_sub/member/login_icons.png') repeat-x left -293px; width: 5px; height: 4px; font-size: 0px; line-height: 0px; display: inline-block; *display: inline; zoom:1;  position: absolute; left: 0px; top: 6px; }
+
+div.infoBox_mp div.chkListBox .dach_noen     {background:none; }
+div.infoBox_mp div.chkListBox .dach_line {/* background:url('/images/po_common/bg_dash_sub.gif') repeat-x left bottom; padding-bottom:5px; */}
+
+
+
+.crb {color:#666666;}
+
+
+div.searchBox {  }
+div.searchBox h2  {font: bold 20px dotum; color: #d62326; height: 71px; line-height: 71px; padding-top: 40px; }
+div.searchBox .sch_bar {height:35px; background: url('/images/po_sub/member/search_bg.jpg') no-repeat left top; clear:both; overflow: hidden; margin-bottom:40px; padding:16px 20px 0 17px;}
+div.searchBox .sch_bar .tit {float:left;color:#000000; font:bold 14px dotum; }
+div.searchBox .sch_bar .tit strong {color:#d62326; font:bold 14px dotum; }
+div.searchBox .sch_bar .input {float:right;}
+div.searchBox .no_sch {height:305px; background: url('/images/po_sub/member/search_box.gif') no-repeat left top; width:100%; position:relative; left:15px; top:0px; text-align:center; font:bold 14px dotum;}
+div.searchBox .no_sch .img {position:absolute center top:85px; padding-top:80px; padding-bottom:30px;}
+div.searchBox .no_sch .text_r { color:#d62326; padding-bottom:6px;}
+div.searchBox .no_sch .text_b { color:#666666;}
+
+div.searchBox .sch_list {padding-left:15px;}
+div.searchBox .sch_list .tit {margin-bottom:20px;}
+div.searchBox .sch_list .tit strong{font-weight:normal; color:#d62326; }
+div.searchBox .sch_list ul {width:930px; background:url('/images/po_common/bg_dash_sub.gif') repeat-x left top;}
+div.searchBox .sch_list ul li {background:url('/images/po_common/bg_dash_noti.gif') repeat-x left bottom; padding-bottom:20px; padding-top:20px;}
+div.searchBox .sch_list ul li.last {background: none; margin-bottom: 0; padding-bottom: 0;}
+div.searchBox .sch_list ul li.line {background:url('/images/po_common/bg_dash_sub.gif') repeat-x left bottom; padding-bottom:20px;}
+div.searchBox .sch_list ul li dt { font:bold 12px/1.6 dotum; color:#666666;}
+div.searchBox .sch_list ul li dt strong {color:#d62326;}
+div.searchBox .sch_list ul li dd {font:12px/1.6 dotum; color:#666666; }
+div.searchBox .sch_list ul li dd strong {font-weight:normal; color:#d62326;}
+div.searchBox .sch_list ul li dd a {display:block;color:#000000; font:12px/1.6 dotum; text-decoration: underline;}
+
+.size_wap{width:780px; padding:0; position:relative;}
+.size_wap .pm_t{background:url('/images/po_sub/member/bg_wap.png') no-repeat left top; height:44px;}
+.size_wap .pm_t h1{ padding:17px 0px 0px 10px; font:bold 14px dotum;color:#fff}
+.size_wap .pm_m{background:url('/images/popup/bg_mid_m.png') repeat-y left top;}
+.size_wap .pm_m .line_bx {width:470px !important; border:1px solid #ebebeb; ;overflow:hidden;background:#f8f8f8; text-align:left;}
+.size_wap .pm_b{background:url('/images/po_sub/member/bg_wap_b.png') no-repeat left bottom; height:41px; text-align:center; padding-top:10px;}
+.size_wap .center {width:720px;margin-top:30px; margin-left:30px; margin-bottom:30px; padding-bottom:30px;  *padding-bottom:0px;}
+.size_wap .center h3 {margin-top:30px;margin-bottom:20px; padding-left:16px; background: url("/images/po_sub/member/p_w_bl.gif") no-repeat left 4px; text-align:left; font-size:14px; color:#000000;}
+.size_wap .center .pw_list li {background:url('/images/po_common/bg_dash_sub.gif') repeat-x left top; padding-top:20px;} 
+.size_wap .center .tab{height:42px;background:url('/images/po_sub/bg_tab.gif') repeat-x left top;}
+.size_wap .center .tab li{float:left;width:190px;height:29px;padding:13px 0 0 0;text-align:center;background:url('/images/po_sub/bg_tab_off.gif') no-repeat left top;}
+.size_wap .center .tab li.last{background:url('/images/po_sub/bg_tab_last_off.gif') no-repeat left top;}
+.size_wap .center .tab li em{font:14px dotum;color:#fff}
+.size_wap .center .tab li.on{padding:13px 0 0 0;height:29px;background:url('/images/po_sub/bg_tab_on.gif') no-repeat left top;}
+.size_wap .center .tab li.on em{padding-left:10px;background:url('/images/po_sub/bul_tab_on_dot.gif') no-repeat left 5px;font:bold 14px dotum;color:#fff}
+
+.size_wap .center ul.ls_st1{margin-bottom:16px;}
+.size_wap .center ul.ls_st1 li{background:url('/images/po_common/bul_cir_large.gif') no-repeat left 5px;padding-left:16px;font:12px/1.6 dotum;color:#666;margin-bottom:5px;}
+.size_wap .center ul.ls_st1 li strong{font:bold 12px/1.6 dotum;color:#666}
+.size_wap .center ul.ls_st1 li .crb{color:#d62326;}
+.size_wap .center ul.ls_st2{}
+.size_wap .center ul.ls_st2 li{background:url('/images/po_common/bul_cir_small.gif') no-repeat left 4px;padding-left:9px;}
+.size_wap .center ul.ls_st2 li a{font:12px/1.6 dotum;color:#000;background:url('/images/c_main/bul_arr_go.gif') no-repeat left 3px;padding-right:12px;}
+.size_wap .center ul.ls_st2 li a:focus,
+.size_wap .center ul.ls_st2 li a:hover{text-decoration:underline;}
+.size_wap .center .ls_st1 li a.deco {text-decoration:underline; color:#000;}
+
+.size_wap .center ul.ls_st1 li em.bul {font-weight:bold; margin:0 9px 0 0; padding:0 12px 0 0; background:url('/images/po_common/bg_path_arr.gif') no-repeat right 4px;}
+.size_wap .center ul.ls_st1 li em.bul_last {color:#000; font-weight:bold;} 
+
+.size_wap .center .notice{background:url('/images/po_common/bg_dash_noti.gif') repeat-x left top;padding-top:15px;width:720px;margin-bottom:20px;}
+.size_wap .center .notice dl {background:url('/images/po_common/bg_dash_noti.gif') repeat-x left bottom;padding-bottom:15px;}
+.size_wap .center .notice dl dt{float:left;height:13px;background:url('/images/po_common/bg_notice.gif') no-repeat left 1px;padding:2px 20px 0 23px;color:#666;}
+.size_wap .center .notice dl dd{float:left;width:580px;border-left:1px solid #dedede;margin:1px 0;padding-left:19px;font:12px/1.6 dotum;color:#666;}
+
+.size_wap .center .pros_cons{}
+.size_wap .center .pros_cons li{zoom:1;background:url('/images/po_common/bg_dash_sub.gif') repeat-x left bottom;min-height:78px;padding-bottom:20px;padding-bottom:16px \0/IE8+9;margin-bottom:19px;margin-bottom:20px \0/IE8+9;}
+.size_wap .center .pros_cons li.last{background:none;padding-bottom:0px;margin-bottom:0px;}
+.size_wap .center .pros_cons li:after{content:"";display:block;clear:both;}
+.size_wap .center .pros_cons li .img{float:left;width:80px;height:78px;}
+.size_wap .center .pros_cons li dl{float:right;width:620px;min-height:78px}
+.size_wap .center .pros_cons li dl dt{font:bold 12px/1.3 dotum;color:#666;margin-bottom:8px;}
+.size_wap .center .pros_cons li dl dt span {font:12px/1.5 dotum;color:#666;}
+.size_wap .center .pros_cons li dl dt img{vertical-align:top;margin-bottom:10px;}
+.size_wap .center .pros_cons li dl dd{background:url('/images/po_common/bul_cir_small.gif') no-repeat left 6px;padding-left:9px;font:12px/1.5 dotum;color:#666;margin-bottom:1px;}
+.size_wap .center .pros_cons li dl dd ul.line li {background:url('/images/po_sub/ico_line.gif') no-repeat 0 7px; margin:0; padding:0; margin-left:-8px !important; padding-left:8px !important; min-height:0;}
+.size_wap .center .pros_cons li dl dd.bg_none {padding-left:0;background:none;}
+.size_wap .center .pros_cons li dl dd a{font:12px/1.6 dotum;color:#000;background:url('/images/c_main/bul_arr_go.gif') no-repeat right 3px;padding-right:10px;text-decoration:underline;}
+
+
+.size_wap .center .sv_used{}
+.size_wap .center .sv_used li{zoom:1;background:url('/images/po_common/bg_dash_noti.gif') repeat-x left top;padding-top:17px; margin-bottom:20px;}
+.size_wap .center .sv_used li.last{background:none;padding-bottom:0px;margin-bottom:0px;}
+
+.size_wap .center .sv_used li .txt1{background:url('/images/po_common/bul_cir_large.gif') no-repeat left 4px;padding-left:17px;font:bold 12px/1.5 dotum;color:#666;margin-bottom:8px;}
+.size_wap .center .sv_used li .txt1 span {font-weight:normal;} 
+.size_wap .center .sv_used li .txt2{font:12px/1.5 dotum;color:#666;margin-bottom:8px;}
+
+.size_wap .center .t_info{width:720px;table-layout:fixed;border-top:1px solid #ebebeb;border-left:1px solid #ebebeb; text-align:center;}
+.size_wap .center .t_info tbody th{height:13px;padding:0px 0 1px 15px;background:#f8f8f8;color:#666666;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;vertical-align:top;text-align:left;*height:33px;*padding:0 0 0 15px;*vertical-align:middle;}
+.size_wap .center .t_info tbody td{font:normal 12px dotum;color:#666666; padding:10px 0 10px 0px;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;vertical-align:top;*height:17px;*padding:10px 0 7px 10px;*vertical-align:top;}
+.size_wap .center .t_info tbody td.vm{font:normal 12px dotum;color:#666666; border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;vertical-align:middle;}
+.size_wap .center .t_info tbody td img{vertical-align:middle;}
+.size_wap .center .t_info tbody td.in .in_txt{border:1px solid #c8c8c8;font:12px dotum;color:#666}
+
+
+
+
+
+
+
+/* #2013.12.10 JeongJeongSeak  요금계산기 개선 # */
+/* .size_wap77{ width:; padding:0; position:relative; }
+.size_wap77 .pm_t{background:url('/images/po_sub/member/bg_wap.png') no-repeat left top; height:44px;}
+.size_wap77 .pm_t h1{ padding:17px 0px 0px 10px; font:bold 14px dotum;color:#fff}
+.size_wap77 .pm_m{background:url('/images/popup/bg_mid_m.png') repeat-y left top;}
+.size_wap77 .pm_m .line_bx {width:470px !important; border:1px solid #ebebeb; ;overflow:hidden;background:#f8f8f8; text-align:left;}
+.size_wap77 .pm_b{background:url('/images/po_sub/member/bg_wap_b.png') no-repeat left bottom; height:41px; text-align:center; padding-top:10px;}
+
+
+
+.size_wap77 .center {border:0px solid #000000; width:778px;margin-top:30px; margin-left:15px; margin-bottom:30px; padding-bottom:30px;  *padding-bottom:0px;}
+.size_wap77 .center h3 {border:0px solid #000000;  margin-top:30px;margin-bottom:0px; padding-top:5px; padding-left:16px; background: url("/images/po_sub/member/p_w_bl.gif") no-repeat left 10px; text-align:left; font-size:14px; color:#000000;}
+.size_wap77 .center .dotline7 {background:url('/images/po_common/bg_dash_noti.gif') repeat-x left top; margin-top:15px; padding-bottom:1px;}
+.size_wap77 .center .pw_list li {background:url('/images/po_common/bg_dash_sub.gif') repeat-x left top; padding-top:20px;} 
+.size_wap77 .center .tab{height:42px;background:url('/images/po_sub/bg_tab.gif') repeat-x left top;}
+.size_wap77 .center .tab li{float:left;width:190px;height:29px;padding:13px 0 0 0;text-align:center;background:url('/images/po_sub/bg_tab_off.gif') no-repeat left top;}
+.size_wap77 .center .tab li.last{background:url('/images/po_sub/bg_tab_last_off.gif') no-repeat left top;}
+.size_wap77 .center .tab li em{font:14px dotum;color:#fff}
+.size_wap77 .center .tab li.on{padding:13px 0 0 0;height:29px;background:url('/images/po_sub/bg_tab_on.gif') no-repeat left top;}
+.size_wap77 .center .tab li.on em{padding-left:10px;background:url('/images/po_sub/bul_tab_on_dot.gif') no-repeat left 5px;font:bold 14px dotum;color:#fff}
+
+.size_wap77 .center ul.ls_st1{margin-bottom:16px;}
+.size_wap77 .center ul.ls_st1 li{background:url('/images/po_common/bul_cir_large.gif') no-repeat left 5px;padding-left:16px;font:12px/1.6 dotum;color:#666;margin-bottom:5px;}
+.size_wap77 .center ul.ls_st1 li strong{font:bold 12px/1.6 dotum;color:#666}
+.size_wap77 .center ul.ls_st1 li .crb{color:#d62326;}
+.size_wap77 .center ul.ls_st2{}
+.size_wap77 .center ul.ls_st2 li{background:url('/images/po_common/bul_cir_small.gif') no-repeat left 4px;padding-left:9px;}
+.size_wap77 .center ul.ls_st2 li a{font:12px/1.6 dotum;color:#000;background:url('/images/c_main/bul_arr_go.gif') no-repeat left 3px;padding-right:12px;}
+.size_wap77 .center ul.ls_st2 li a:focus,
+.size_wap77 .center ul.ls_st2 li a:hover{text-decoration:underline;}
+.size_wap77 .center .ls_st1 li a.deco {text-decoration:underline; color:#000;}
+
+.size_wap77 .center ul.ls_st1 li em.bul {font-weight:bold; margin:0 9px 0 0; padding:0 12px 0 0; background:url('/images/po_common/bg_path_arr.gif') no-repeat right 4px;}
+.size_wap77 .center ul.ls_st1 li em.bul_last {color:#000; font-weight:bold;} 
+
+.size_wap77 .center .notice{background:url('/images/po_common/bg_dash_noti.gif') repeat-x left top;padding-top:15px;width:720px;margin-bottom:20px;}
+.size_wap77 .center .notice dl {background:url('/images/po_common/bg_dash_noti.gif') repeat-x left bottom;padding-bottom:15px;}
+.size_wap77 .center .notice dl dt{float:left;height:13px;background:url('/images/po_common/bg_notice.gif') no-repeat left 1px;padding:2px 20px 0 23px;color:#666;}
+.size_wap77 .center .notice dl dd{float:left;width:580px;border-left:1px solid #dedede;margin:1px 0;padding-left:19px;font:12px/1.6 dotum;color:#666;}
+
+.size_wap77 .center .pros_cons{}
+.size_wap77 .center .pros_cons li{zoom:1;background:url('/images/po_common/bg_dash_sub.gif') repeat-x left bottom;min-height:78px;padding-bottom:20px;padding-bottom:16px \0/IE8+9;margin-bottom:19px;margin-bottom:20px \0/IE8+9;}
+.size_wap77 .center .pros_cons li.last{background:none;padding-bottom:0px;margin-bottom:0px;}
+.size_wap77 .center .pros_cons li:after{content:"";display:block;clear:both;}
+.size_wap77 .center .pros_cons li .img{float:left;width:80px;height:78px;}
+.size_wap77 .center .pros_cons li dl{float:right;width:620px;min-height:78px}
+.size_wap77 .center .pros_cons li dl dt{font:bold 12px/1.3 dotum;color:#666;margin-bottom:8px;}
+.size_wap77 .center .pros_cons li dl dt span {font:12px/1.5 dotum;color:#666;}
+.size_wap77 .center .pros_cons li dl dt img{vertical-align:top;margin-bottom:10px;}
+.size_wap77 .center .pros_cons li dl dd{background:url('/images/po_common/bul_cir_small.gif') no-repeat left 6px;padding-left:9px;font:12px/1.5 dotum;color:#666;margin-bottom:1px;}
+.size_wap77 .center .pros_cons li dl dd ul.line li {background:url('/images/po_sub/ico_line.gif') no-repeat 0 7px; margin:0; padding:0; margin-left:-8px !important; padding-left:8px !important; min-height:0;}
+.size_wap77 .center .pros_cons li dl dd.bg_none {padding-left:0;background:none;}
+.size_wap77 .center .pros_cons li dl dd a{font:12px/1.6 dotum;color:#000;background:url('/images/c_main/bul_arr_go.gif') no-repeat right 3px;padding-right:10px;text-decoration:underline;}
+
+
+.size_wap77 .center .sv_used{}
+.size_wap77 .center .sv_used li{zoom:1;background:url('') repeat-x left top;padding-top:10px; margin-bottom:20px;}
+.size_wap77 .center .sv_used li.last{background:none;padding-bottom:0px;margin-bottom:0px;}
+
+.size_wap77 .center .sv_used li .txt1{background:url('/images/po_common/bul_cir_large.gif') no-repeat left 4px;padding-left:17px;font:bold 12px/1.5 dotum;color:#666;margin-bottom:8px;}
+.size_wap77 .center .sv_used li .txt1 span {font-weight:normal;} 
+.size_wap77 .center .sv_used li .txt2{font:12px/1.5 dotum;color:#666;margin-bottom:8px;}
+
+.size_wap77 .center .t_info{width:720px;table-layout:fixed;border-top:1px solid #ebebeb;border-left:1px solid #ebebeb; text-align:center;}
+.size_wap77 .center .t_info tbody th{height:13px;padding:0px 0 1px 15px;background:#f8f8f8;color:#666666;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;vertical-align:top;text-align:left;*height:33px;*padding:0 0 0 15px;*vertical-align:middle;}
+.size_wap77 .center .t_info tbody td{font:normal 12px dotum;color:#666666; padding:10px 0 10px 0px;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;vertical-align:top;*height:17px;*padding:10px 0 7px 10px;*vertical-align:top;}
+.size_wap77 .center .t_info tbody td.vm{font:normal 12px dotum;color:#666666; border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;vertical-align:middle;}
+.size_wap77 .center .t_info tbody td img{vertical-align:middle;}
+.size_wap77 .center .t_info tbody td.in .in_txt{border:1px solid #c8c8c8;font:12px dotum;color:#666}
+ */
+
+
+
+
+
+
+
+
+
+dl.resultPrice01                        { background: url("/images/po_common/calcul_pop_bg.gif"); width:718px; height: 48px; line-height: 48px; border:1px solid #d7d7d7;clear:both;}
+dl.resultPrice01 dt                     { float: left; padding-left: 19px; font-weight: bold; color:#000000;}
+dl.resultPrice01 dd                     { float: right; padding-right: 19px; color:#000000;}
+dl.resultPrice01 dd img            {vertical-align:middle;display: inline-block; padding-bottom:4px; }
+dl.resultPrice01 dd span             { display: inline-block; height: 23px; line-height: 23px; border-right: 1px solid #ccc; padding-right: 40px;color:#000000}
+dl.resultPrice01 dd strong         { display: inline-block; font-weight:normal; width:164px; text-align:right;}
+
+.resultPrice02                                {width:720px; height:50px; clear:both;}
+.resultPrice02 dl.l_box                    {float:left; width:268px; height:48px; line-height:48px;  border:1px solid #ebebeb; background-color:#f8f8f8;}
+.resultPrice02 dl.l_box dt                { float:left; padding-left:19px; font-weight: bold; color:#666666; }
+.resultPrice02 dl.l_box dd            { float:right; padding-right:19px; color:#000000;}
+.resultPrice02 dl.l_box img            {vertical-align:middle;display: inline-block; padding-bottom:4px; }
+.resultPrice02 dl.l_box dd span    {display:inline-block; padding-right:8px;}
+.resultPrice02 dl.l_box dd strong     { display: inline-block;  font-weight:normal;}
+.resultPrice02 dl.r_box                { background: url("/images/po_common/calcul_pop_bg.gif"); float:right; width:448px; height:48px; line-height:48px;  border:1px solid #d7d7d7; background-color:#f8f8f8;}
+.resultPrice02 dl.r_box dt                { float:left; padding-left:19px; font-weight: bold; color:#000000;}
+.resultPrice02 dl.r_box dd            { float:right; padding-right:19px;}
+.resultPrice02 dl.r_box img            {vertical-align:middle;display: inline-block; padding-bottom:4px; }
+.resultPrice02 dl.r_box dd span    {display: inline-block; height: 23px; line-height: 23px; border-right: 1px solid #ccc; padding-right: 40px; color:#000000;}
+.resultPrice02 dl.r_box dd strong { width:164px; display: inline-block; font-weight:normal; color:#000000; text-align:right;}
+
+.resultPrice_btn                            {float:right; height:30px; line-height: 30px; margin-top:10px; font-weight: bold;clear:both;}
+.resultPrice_btn span                    { display:inline-block;height:30px; line-height: 30px; border-right: 1px solid #ccc; padding-right: 40px;color:#666666; }
+.resultPrice_btn strong img            {vertical-align:middle;display: inline-block; padding-left:20px;}
+
+.size_wap .p_tab_dep                    {margin:0 1px; padding:0px 29px 2px 29px;list-style:none;font-size:12px;background:url('/images/common/bg_p_tab.gif') repeat-x left bottom; position:absolute;left:0 ;bottom:2px;}
+.size_wap .p_tab_dep li                {float:left;width:238px;border:1px solid #dedede; margin-bottom:-1px;background:#ebebeb;}
+.size_wap .p_tab_dep li a            {display:block;padding:12px 0 0 0;cursor:pointer;width:238px;text-align:center;height:23px;}
+.size_wap .p_tab_dep li em            {font:12px dotum;color:#666}
+.size_wap .p_tab_dep li.on            {border:1px solid #df2428;border-bottom:1px solid #ffffff;background:#fff;margin-bottom:-1px;_margin-bottom:-2px;}
+.size_wap .p_tab_dep li.on em    {background:url('/images/common/bul_plusr.gif') no-repeat left 6px;padding:0 0 0 12px;color:#d62326;}
+
+.size_wap .caution_w                    {width:719px;background:url('/images/popup/bg_dash_l.png') no-repeat left top; padding-top:20px;margin-top:20px;}
+.size_wap .w_cont_notice            { padding:20px 29px 30px 29px; position:relative;font:12px/1.6 dotum;color:#000000;background:#f7f7f7; url('/images/popup/bg_notice_gr.png') repeat-x left bottom;}
+.size_wap .w_cont_notice p        {padding-bottom:33px;color:#000000; }
+
+.customList                                {background: url("/images/common/bul.custom.gif") repeat-x scroll left bottom; padding-bottom:20px;}
+.customList li                             {background: url("/images/common/bul.custom.gif") repeat-x scroll left top; width:100%; margin-bottom: 20px; padding-top:20px; overflow:hidden;}
+.customList li p.img                    {float:left;display:inline-block;  margin-right:20px;}
+.customList li.last                        {margin-bottom:0px;}
+.customList li dl                            {float:left; width:70%;}
+.customList li dt                            {padding-bottom:10px; font-weight:bold; color:#000000;} 
+.customList li dt strong                {color:#d62326;}
+.customList li dt span                    {color:#000000;}
+.customList li dd .txtInfo                {padding-bottom:10px; line-height:15px;}
+.customList li dd .txtInfo img        {padding-right:6px;vertical-align:middle; padding-bottom:2px;}
+.customList li dd .txtInfo span        {color:#666666;}
+.customList li dd a                        {background: url("/images/c_main/bul_arr_go.gif")  no-repeat right 3px; color: #000000; padding-right: 10px; text-decoration: underline;}
+
+/* 구축사례 20130514 추가*/
+.architecture                                {border:0px solid #000000; position:relative; background: url("/images/common/bul.custom.gif") repeat-x scroll left bottom; padding-bottom:20px;}
+.architecture li                             {background: url("/images/common/bul.custom.gif") repeat-x scroll left top; width:760px; margin-bottom: 20px; padding-top:20px; overflow:hidden;}
+.architecture li p.img                    {float:left;display:inline-block;  margin-right:20px;}
+.architecture li.last                        {margin-bottom:0px;}
+.architecture li dl                            {border:0px solid #000000; margin-left:15px; float:left; width:710px;}
+.architecture li dt                            {padding-bottom:10px; font-weight:bold; color:#000000;} 
+.architecture li dt strong                {color:#d62326;}
+.architecture li dt span                    {color:#000000;}
+.architecture li dd .txtInfo                {border:0px solid #000000; padding-bottom:10px; line-height:15px;}
+.architecture li dd .txtInfo img        {padding-right:6px;vertical-align:middle; padding-bottom:2px; }
+.architecture li dd .txtInfo span        {color:#666666; }
+.architecture li dd  span a        {text-decoration:none;}
+.architecture li dd  span a:hover    {background: url("/images/c_main/bul_arr_go_on.gif")  no-repeat right 3px; color: #000000; font: 12px/1.6 dotum; padding-right: 10px; text-decoration: underline;}
+.architecture li dd .view01        {border:0px solid #000000; float:left; width:350px;}
+.architecture li dd .view02        {border:0px solid #000000; float:left; width:300px;}
+.architecture li dd a                        {background: url("/images/c_main/bul_arr_go.gif")  no-repeat right 3px; color: #000000; font: 12px/1.6 dotum; padding-right: 10px; text-decoration: underline;}
+
+
+/* 구축사례 기본구성과 사례보기 20130527 추가 */
+
+
+/*Web-Service Architecture*/
+
+
+.architecture_specwrap                            {border:0px solid #000000; border-top:1px solid #ebebeb; position:relative; width:760px; min-height:600px; background: url("/images/common/spec_webservice_bg.gif") no-repeat left 10px; padding-bottom:20px; overflow:hidden;}
+.architecture_specwrap .architecture_spec                                {border:0px solid #000000; float:right; width:320px; margin-top:50px; margin-bottom:50px; padding:0px;}
+.architecture_specwrap .architecture_spec .sec_title                             {border:0px solid #000000; width:320px; height:36px; background: url("/images/common/spec_tit_bg.gif")  no-repeat 0 0; margin-bottom: 10px; padding:; }
+.architecture_specwrap .architecture_spec h4                             {border:0px solid #000000;  background: url("")  no-repeat -10px -10px; color:#333; text-align:center; padding:10px; overflow:hidden;}
+.architecture_specwrap .architecture_spec .sec_listwrap                             {border:0px solid #000000; margin-left:8px; }
+.architecture_specwrap .architecture_spec .sec_listwrap li                             {margin-bottom: 10px; padding-top:15px; overflow:hidden;}
+
+.architecture_specwrap .architecture_spec .sec_listwrap li dl                            {border:0px solid #000000;}
+.architecture_specwrap .architecture_spec .sec_listwrap li dt                            {border:0px solid #000000; border-bottom:1px solid #eeeeee; padding-bottom:5px; margin-bottom:5px; font-weight:bold; color:#000000;} 
+.architecture_specwrap .architecture_spec .sec_listwrap li dt strong                {color:#d62326;}
+.architecture_specwrap .architecture_spec .sec_listwrap li dt span                    {color:#000000;}
+.architecture_specwrap .architecture_spec .sec_listwrap li dd                 {border:0px solid #000000; background: url("/images/common/bul_circle.gif")  no-repeat 0px 10px; padding:5px 0px 0px 8px; line-height:15px;}
+.architecture_specwrap .architecture_spec .sec_listwrap li dd .txtInfo                {border:0px solid #000000; padding-bottom:10px; line-height:15px;}
+.architecture_specwrap .architecture_spec .sec_listwrap li dd .txtInfo img        {padding-right:6px;vertical-align:middle; padding-bottom:2px; }
+.architecture_specwrap .architecture_spec .sec_listwrap li dd .txtInfo span        {color:#666666; }
+.architecture_specwrap .architecture_spec .sec_listwrap li dd  span a        {text-decoration:none;}
+.architecture_specwrap .architecture_spec .sec_listwrap li dd  span a:hover    {background: url("/images/c_main/bul_arr_go_on.gif")  no-repeat right 3px; color: #000000; font: 12px/1.6 dotum; padding-right: 10px; text-decoration: underline;}
+.architecture_specwrap .architecture_spec .sec_listwrap li dd .view01        {border:0px solid #000000; float:left; width:350px;}
+.architecture_specwrap .architecture_spec .sec_listwrap li dd .view02        {border:0px solid #000000; float:left; width:300px;}
+
+.architecture_specwrap01c                            {border:0px solid #000000; border-top:1px solid #ebebeb; position:relative; width:760px; min-height:600px; background: url("/images/common/spec_webservice_bg01c.gif") no-repeat left 10px; padding-bottom:20px; overflow:hidden;}
+.architecture_specwrap01c .architecture_spec                                {border:0px solid #000000; float:right; width:320px; margin-top:50px; margin-bottom:50px; padding:0px;}
+.architecture_specwrap01c .architecture_spec .sec_title                             {border:0px solid #000000; width:320px; height:36px; background: url("/images/common/spec_tit_bg.gif")  no-repeat 0 0; margin-bottom: 10px; padding:; }
+.architecture_specwrap01c .architecture_spec h4                             {border:0px solid #000000;  background: url("")  no-repeat -10px -10px; color:#333; text-align:center; padding:10px; overflow:hidden;}
+.architecture_specwrap01c .architecture_spec .sec_listwrap                             {border:0px solid #000000; margin-left:8px; }
+.architecture_specwrap01c .architecture_spec .sec_listwrap li                             {margin-bottom: 10px; padding-top:15px; overflow:hidden;}
+
+.architecture_specwrap01c .architecture_spec .sec_listwrap li dl                            {border:0px solid #000000;}
+.architecture_specwrap01c .architecture_spec .sec_listwrap li dt                            {border:0px solid #000000; border-bottom:1px solid #eeeeee; padding-bottom:5px; margin-bottom:5px; font-weight:bold; color:#000000;} 
+.architecture_specwrap01c .architecture_spec .sec_listwrap li dt strong                {color:#d62326;}
+.architecture_specwrap01c .architecture_spec .sec_listwrap li dt span                    {color:#000000;}
+.architecture_specwrap01c .architecture_spec .sec_listwrap li dd                 {border:0px solid #000000; background: url("/images/common/bul_circle.gif")  no-repeat 0px 10px; padding:5px 0px 0px 8px; line-height:15px;}
+.architecture_specwrap01c .architecture_spec .sec_listwrap li dd .txtInfo                {border:0px solid #000000; padding-bottom:10px; line-height:15px;}
+.architecture_specwrap01c .architecture_spec .sec_listwrap li dd .txtInfo img        {padding-right:6px;vertical-align:middle; padding-bottom:2px; }
+.architecture_specwrap01c .architecture_spec .sec_listwrap li dd .txtInfo span        {color:#666666; }
+.architecture_specwrap01c .architecture_spec .sec_listwrap li dd  span a        {text-decoration:none;}
+.architecture_specwrap01c .architecture_spec .sec_listwrap li dd  span a:hover    {background: url("/images/c_main/bul_arr_go_on.gif")  no-repeat right 3px; color: #000000; font: 12px/1.6 dotum; padding-right: 10px; text-decoration: underline;}
+.architecture_specwrap01c .architecture_spec .sec_listwrap li dd .view01        {border:0px solid #000000; float:left; width:350px;}
+.architecture_specwrap01c .architecture_spec .sec_listwrap li dd .view02        {border:0px solid #000000; float:left; width:300px;}
+
+
+/*Game_architectureⅠ*/
+
+
+.architecture_specwrap02s                            {border:0px solid #000000; border-top:1px solid #ebebeb; position:relative; width:760px; min-height:600px; background: url("/images/common/spec_webservice_bg02s.gif") no-repeat left 10px; padding-bottom:20px; overflow:hidden;}
+.architecture_specwrap02s .architecture_spec                                {border:0px solid #000000; float:right; width:320px; margin-top:50px; margin-bottom:50px; padding:0px;}
+.architecture_specwrap02s .architecture_spec .sec_title                             {border:0px solid #000000; width:320px; height:36px; background: url("/images/common/spec_tit_bg.gif")  no-repeat 0 0; margin-bottom: 10px; padding:; }
+.architecture_specwrap02s .architecture_spec h4                             {border:0px solid #000000;  background: url("")  no-repeat -10px -10px; color:#333; text-align:center; padding:10px; overflow:hidden;}
+.architecture_specwrap02s .architecture_spec .sec_listwrap                             {border:0px solid #000000; margin-left:8px; }
+.architecture_specwrap02s .architecture_spec .sec_listwrap li                             {margin-bottom: 10px; padding-top:15px; overflow:hidden;}
+
+.architecture_specwrap02s .architecture_spec .sec_listwrap li dl                            {border:0px solid #000000;}
+.architecture_specwrap02s .architecture_spec .sec_listwrap li dt                            {border:0px solid #000000; border-bottom:1px solid #eeeeee; padding-bottom:5px; margin-bottom:5px; font-weight:bold; color:#000000;} 
+.architecture_specwrap02s .architecture_spec .sec_listwrap li dt strong                {color:#d62326;}
+.architecture_specwrap02s .architecture_spec .sec_listwrap li dt span                    {color:#000000;}
+.architecture_specwrap02s .architecture_spec .sec_listwrap li dd                 {border:0px solid #000000; background: url("/images/common/bul_circle.gif")  no-repeat 0px 10px; padding:5px 0px 0px 8px; line-height:15px;}
+.architecture_specwrap02s .architecture_spec .sec_listwrap li dd .txtInfo                {border:0px solid #000000; padding-bottom:10px; line-height:15px;}
+.architecture_specwrap02s .architecture_spec .sec_listwrap li dd .txtInfo img        {padding-right:6px;vertical-align:middle; padding-bottom:2px; }
+.architecture_specwrap02s .architecture_spec .sec_listwrap li dd .txtInfo span        {color:#666666; }
+.architecture_specwrap02s .architecture_spec .sec_listwrap li dd  span a        {text-decoration:none;}
+.architecture_specwrap02s .architecture_spec .sec_listwrap li dd  span a:hover    {background: url("/images/c_main/bul_arr_go_on.gif")  no-repeat right 3px; color: #000000; font: 12px/1.6 dotum; padding-right: 10px; text-decoration: underline;}
+.architecture_specwrap02s .architecture_spec .sec_listwrap li dd .view01        {border:0px solid #000000; float:left; width:350px;}
+.architecture_specwrap02s .architecture_spec .sec_listwrap li dd .view02        {border:0px solid #000000; float:left; width:300px;}
+
+
+
+
+.architecture_specwrap02c                            {border:0px solid #000000; border-top:1px solid #ebebeb; position:relative; width:760px; min-height:600px; background: url("/images/common/spec_webservice_bg02c.gif") no-repeat left 10px; padding-bottom:20px; overflow:hidden;}
+.architecture_specwrap02c .architecture_spec                                {border:0px solid #000000; float:right; width:320px; margin-top:50px; margin-bottom:50px; padding:0px;}
+.architecture_specwrap02c .architecture_spec .sec_title                             {border:0px solid #000000; width:320px; height:36px; background: url("/images/common/spec_tit_bg.gif")  no-repeat 0 0; margin-bottom: 10px; padding:; }
+.architecture_specwrap02c .architecture_spec h4                             {border:0px solid #000000;  background: url("")  no-repeat -10px -10px; color:#333; text-align:center; padding:10px; overflow:hidden;}
+.architecture_specwrap02c .architecture_spec .sec_listwrap                             {border:0px solid #000000; margin-left:8px; }
+.architecture_specwrap02c .architecture_spec .sec_listwrap li                             {margin-bottom: 10px; padding-top:15px; overflow:hidden;}
+
+.architecture_specwrap02c .architecture_spec .sec_listwrap li dl                            {border:0px solid #000000;}
+.architecture_specwrap02c .architecture_spec .sec_listwrap li dt                            {border:0px solid #000000; border-bottom:1px solid #eeeeee; padding-bottom:5px; margin-bottom:5px; font-weight:bold; color:#000000;} 
+.architecture_specwrap02c .architecture_spec .sec_listwrap li dt strong                {color:#d62326;}
+.architecture_specwrap02c .architecture_spec .sec_listwrap li dt span                    {color:#000000;}
+.architecture_specwrap02c .architecture_spec .sec_listwrap li dd                 {border:0px solid #000000; background: url("/images/common/bul_circle.gif")  no-repeat 0px 10px; padding:5px 0px 0px 8px; line-height:15px;}
+.architecture_specwrap02c .architecture_spec .sec_listwrap li dd .txtInfo                {border:0px solid #000000; padding-bottom:10px; line-height:15px;}
+.architecture_specwrap02c .architecture_spec .sec_listwrap li dd .txtInfo img        {padding-right:6px;vertical-align:middle; padding-bottom:2px; }
+.architecture_specwrap02c .architecture_spec .sec_listwrap li dd .txtInfo span        {color:#666666; }
+.architecture_specwrap02c .architecture_spec .sec_listwrap li dd  span a        {text-decoration:none;}
+.architecture_specwrap02c .architecture_spec .sec_listwrap li dd  span a:hover    {background: url("/images/c_main/bul_arr_go_on.gif")  no-repeat right 3px; color: #000000; font: 12px/1.6 dotum; padding-right: 10px; text-decoration: underline;}
+.architecture_specwrap02c .architecture_spec .sec_listwrap li dd .view01        {border:0px solid #000000; float:left; width:350px;}
+.architecture_specwrap02c .architecture_spec .sec_listwrap li dd .view02        {border:0px solid #000000; float:left; width:300px;}
+
+
+/*Game Architecture Ⅱ*/
+
+.architecture_specwrap03s                            {border:0px solid #000000; border-top:1px solid #ebebeb; position:relative; width:760px; min-height:600px; background: url("/images/common/spec_webservice_bg03s.gif") no-repeat left 10px; padding-bottom:20px; overflow:hidden;}
+.architecture_specwrap03s .architecture_spec                                {border:0px solid #000000; float:right; width:320px; margin-top:50px; margin-bottom:50px; padding:0px;}
+.architecture_specwrap03s .architecture_spec .sec_title                             {border:0px solid #000000; width:320px; height:36px; background: url("/images/common/spec_tit_bg.gif")  no-repeat 0 0; margin-bottom: 10px; padding:; }
+.architecture_specwrap03s .architecture_spec h4                             {border:0px solid #000000;  background: url("")  no-repeat -10px -10px; color:#333; text-align:center; padding:10px; overflow:hidden;}
+.architecture_specwrap03s .architecture_spec .sec_listwrap                             {border:0px solid #000000; margin-left:8px; }
+.architecture_specwrap03s .architecture_spec .sec_listwrap li                             {margin-bottom: 10px; padding-top:15px; overflow:hidden;}
+
+.architecture_specwrap03s .architecture_spec .sec_listwrap li dl                            {border:0px solid #000000;}
+.architecture_specwrap03s .architecture_spec .sec_listwrap li dt                            {border:0px solid #000000; border-bottom:1px solid #eeeeee; padding-bottom:5px; margin-bottom:5px; font-weight:bold; color:#000000;} 
+.architecture_specwrap03s .architecture_spec .sec_listwrap li dt strong                {color:#d62326;}
+.architecture_specwrap03s .architecture_spec .sec_listwrap li dt span                    {color:#000000;}
+.architecture_specwrap03s .architecture_spec .sec_listwrap li dd                 {border:0px solid #000000; background: url("/images/common/bul_circle.gif")  no-repeat 0px 10px; padding:5px 0px 0px 8px; line-height:15px;}
+.architecture_specwrap03s .architecture_spec .sec_listwrap li dd .txtInfo                {border:0px solid #000000; padding-bottom:10px; line-height:15px;}
+.architecture_specwrap03s .architecture_spec .sec_listwrap li dd .txtInfo img        {padding-right:6px;vertical-align:middle; padding-bottom:2px; }
+.architecture_specwrap03s .architecture_spec .sec_listwrap li dd .txtInfo span        {color:#666666; }
+.architecture_specwrap03s .architecture_spec .sec_listwrap li dd  span a        {text-decoration:none;}
+.architecture_specwrap03s .architecture_spec .sec_listwrap li dd  span a:hover    {background: url("/images/c_main/bul_arr_go_on.gif")  no-repeat right 3px; color: #000000; font: 12px/1.6 dotum; padding-right: 10px; text-decoration: underline;}
+.architecture_specwrap03s .architecture_spec .sec_listwrap li dd .view01        {border:0px solid #000000; float:left; width:350px;}
+.architecture_specwrap03s .architecture_spec .sec_listwrap li dd .view02        {border:0px solid #000000; float:left; width:300px;}
+
+
+
+
+.architecture_specwrap03c                            {border:0px solid #000000; border-top:1px solid #ebebeb; position:relative; width:760px; min-height:600px; background: url("/images/common/spec_webservice_bg03c.gif") no-repeat left 10px; padding-bottom:20px; overflow:hidden;}
+.architecture_specwrap03c .architecture_spec                                {border:0px solid #000000; float:right; width:320px; margin-top:50px; margin-bottom:50px; padding:0px;}
+.architecture_specwrap03c .architecture_spec .sec_title                             {border:0px solid #000000; width:320px; height:36px; background: url("/images/common/spec_tit_bg.gif")  no-repeat 0 0; margin-bottom: 10px; padding:; }
+.architecture_specwrap03c .architecture_spec h4                             {border:0px solid #000000;  background: url("")  no-repeat -10px -10px; color:#333; text-align:center; padding:10px; overflow:hidden;}
+.architecture_specwrap03c .architecture_spec .sec_listwrap                             {border:0px solid #000000; margin-left:8px; }
+.architecture_specwrap03c .architecture_spec .sec_listwrap li                             {margin-bottom: 10px; padding-top:15px; overflow:hidden;}
+
+.architecture_specwrap03c .architecture_spec .sec_listwrap li dl                            {border:0px solid #000000;}
+.architecture_specwrap03c .architecture_spec .sec_listwrap li dt                            {border:0px solid #000000; border-bottom:1px solid #eeeeee; padding-bottom:5px; margin-bottom:5px; font-weight:bold; color:#000000;} 
+.architecture_specwrap03c .architecture_spec .sec_listwrap li dt strong                {color:#d62326;}
+.architecture_specwrap03c .architecture_spec .sec_listwrap li dt span                    {color:#000000;}
+.architecture_specwrap03c .architecture_spec .sec_listwrap li dd                 {border:0px solid #000000; background: url("/images/common/bul_circle.gif")  no-repeat 0px 10px; padding:5px 0px 0px 8px; line-height:15px;}
+.architecture_specwrap03c .architecture_spec .sec_listwrap li dd .txtInfo                {border:0px solid #000000; padding-bottom:10px; line-height:15px;}
+.architecture_specwrap03c .architecture_spec .sec_listwrap li dd .txtInfo img        {padding-right:6px;vertical-align:middle; padding-bottom:2px; }
+.architecture_specwrap03c .architecture_spec .sec_listwrap li dd .txtInfo span        {color:#666666; }
+.architecture_specwrap03c .architecture_spec .sec_listwrap li dd  span a        {text-decoration:none;}
+.architecture_specwrap03c .architecture_spec .sec_listwrap li dd  span a:hover    {background: url("/images/c_main/bul_arr_go_on.gif")  no-repeat right 3px; color: #000000; font: 12px/1.6 dotum; padding-right: 10px; text-decoration: underline;}
+.architecture_specwrap03c .architecture_spec .sec_listwrap li dd .view01        {border:0px solid #000000; float:left; width:350px;}
+.architecture_specwrap03c .architecture_spec .sec_listwrap li dd .view02        {border:0px solid #000000; float:left; width:300px;}
+
+
+
+/*Contents Delivery Architecture*/
+
+.architecture_specwrap04s                            {border:0px solid #000000; border-top:1px solid #ebebeb; position:relative; width:760px; min-height:600px; background: url("/images/common/spec_webservice_bg04s.gif") no-repeat left 10px; padding-bottom:20px; overflow:hidden;}
+.architecture_specwrap04s .architecture_spec                                {border:0px solid #000000; float:right; width:320px; margin-top:50px; margin-bottom:50px; padding:0px;}
+.architecture_specwrap04s .architecture_spec .sec_title                             {border:0px solid #000000; width:320px; height:36px; background: url("/images/common/spec_tit_bg.gif")  no-repeat 0 0; margin-bottom: 10px; padding:; }
+.architecture_specwrap04s .architecture_spec h4                             {border:0px solid #000000;  background: url("")  no-repeat -10px -10px; color:#333; text-align:center; padding:10px; overflow:hidden;}
+.architecture_specwrap04s .architecture_spec .sec_listwrap                             {border:0px solid #000000; margin-left:8px; }
+.architecture_specwrap04s .architecture_spec .sec_listwrap li                             {margin-bottom: 10px; padding-top:15px; overflow:hidden;}
+
+.architecture_specwrap04s .architecture_spec .sec_listwrap li dl                            {border:0px solid #000000;}
+.architecture_specwrap04s .architecture_spec .sec_listwrap li dt                            {border:0px solid #000000; border-bottom:1px solid #eeeeee; padding-bottom:5px; margin-bottom:5px; font-weight:bold; color:#000000;} 
+.architecture_specwrap04s .architecture_spec .sec_listwrap li dt strong                {color:#d62326;}
+.architecture_specwrap04s .architecture_spec .sec_listwrap li dt span                    {color:#000000;}
+.architecture_specwrap04s .architecture_spec .sec_listwrap li dd                 {border:0px solid #000000; background: url("/images/common/bul_circle.gif")  no-repeat 0px 10px; padding:5px 0px 0px 8px; line-height:15px;}
+.architecture_specwrap04s .architecture_spec .sec_listwrap li dd .txtInfo                {border:0px solid #000000; padding-bottom:10px; line-height:15px;}
+.architecture_specwrap04s .architecture_spec .sec_listwrap li dd .txtInfo img        {padding-right:6px;vertical-align:middle; padding-bottom:2px; }
+.architecture_specwrap04s .architecture_spec .sec_listwrap li dd .txtInfo span        {color:#666666; }
+.architecture_specwrap04s .architecture_spec .sec_listwrap li dd  span a        {text-decoration:none;}
+.architecture_specwrap04s .architecture_spec .sec_listwrap li dd  span a:hover    {background: url("/images/c_main/bul_arr_go_on.gif")  no-repeat right 3px; color: #000000; font: 12px/1.6 dotum; padding-right: 10px; text-decoration: underline;}
+.architecture_specwrap04s .architecture_spec .sec_listwrap li dd .view01        {border:0px solid #000000; float:left; width:350px;}
+.architecture_specwrap04s .architecture_spec .sec_listwrap li dd .view02        {border:0px solid #000000; float:left; width:300px;}
+
+
+
+
+.architecture_specwrap04c                            {border:0px solid #000000; border-top:1px solid #ebebeb; position:relative; width:760px; min-height:600px; background: url("/images/common/spec_webservice_bg04c.gif") no-repeat left 10px; padding-bottom:20px; overflow:hidden;}
+.architecture_specwrap04c .architecture_spec                                {border:0px solid #000000; float:right; width:320px; margin-top:50px; margin-bottom:50px; padding:0px;}
+.architecture_specwrap04c .architecture_spec .sec_title                             {border:0px solid #000000; width:320px; height:36px; background: url("/images/common/spec_tit_bg.gif")  no-repeat 0 0; margin-bottom: 10px; padding:; }
+.architecture_specwrap04c .architecture_spec h4                             {border:0px solid #000000;  background: url("")  no-repeat -10px -10px; color:#333; text-align:center; padding:10px; overflow:hidden;}
+.architecture_specwrap04c .architecture_spec .sec_listwrap                             {border:0px solid #000000; margin-left:8px; }
+.architecture_specwrap04c .architecture_spec .sec_listwrap li                             {margin-bottom: 10px; padding-top:15px; overflow:hidden;}
+
+.architecture_specwrap04c .architecture_spec .sec_listwrap li dl                            {border:0px solid #000000;}
+.architecture_specwrap04c .architecture_spec .sec_listwrap li dt                            {border:0px solid #000000; border-bottom:1px solid #eeeeee; padding-bottom:5px; margin-bottom:5px; font-weight:bold; color:#000000;} 
+.architecture_specwrap04c .architecture_spec .sec_listwrap li dt strong                {color:#d62326;}
+.architecture_specwrap04c .architecture_spec .sec_listwrap li dt span                    {color:#000000;}
+.architecture_specwrap04c .architecture_spec .sec_listwrap li dd                 {border:0px solid #000000; background: url("/images/common/bul_circle.gif")  no-repeat 0px 10px; padding:5px 0px 0px 8px; line-height:15px;}
+.architecture_specwrap04c .architecture_spec .sec_listwrap li dd .txtInfo                {border:0px solid #000000; padding-bottom:10px; line-height:15px;}
+.architecture_specwrap04c .architecture_spec .sec_listwrap li dd .txtInfo img        {padding-right:6px;vertical-align:middle; padding-bottom:2px; }
+.architecture_specwrap04c .architecture_spec .sec_listwrap li dd .txtInfo span        {color:#666666; }
+.architecture_specwrap04c .architecture_spec .sec_listwrap li dd  span a        {text-decoration:none;}
+.architecture_specwrap04c .architecture_spec .sec_listwrap li dd  span a:hover    {background: url("/images/c_main/bul_arr_go_on.gif")  no-repeat right 3px; color: #000000; font: 12px/1.6 dotum; padding-right: 10px; text-decoration: underline;}
+.architecture_specwrap04c .architecture_spec .sec_listwrap li dd .view01        {border:0px solid #000000; float:left; width:350px;}
+.architecture_specwrap04c .architecture_spec .sec_listwrap li dd .view02        {border:0px solid #000000; float:left; width:300px;}
+
+
+/*SNS Architecture*/
+
+
+
+.architecture_specwrap05s                            {border:0px solid #000000; border-top:1px solid #ebebeb; position:relative; width:760px; min-height:600px; background: url("/images/common/spec_webservice_bg05s.gif") no-repeat left 10px; padding-bottom:20px; overflow:hidden;}
+.architecture_specwrap05s .architecture_spec                                {border:0px solid #000000; float:right; width:320px; margin-top:50px; margin-bottom:50px; padding:0px;}
+.architecture_specwrap05s .architecture_spec .sec_title                             {border:0px solid #000000; width:320px; height:36px; background: url("/images/common/spec_tit_bg.gif")  no-repeat 0 0; margin-bottom: 10px; padding:; }
+.architecture_specwrap05s .architecture_spec h4                             {border:0px solid #000000;  background: url("")  no-repeat -10px -10px; color:#333; text-align:center; padding:10px; overflow:hidden;}
+.architecture_specwrap05s .architecture_spec .sec_listwrap                             {border:0px solid #000000; margin-left:8px; }
+.architecture_specwrap05s .architecture_spec .sec_listwrap li                             {margin-bottom: 10px; padding-top:15px; overflow:hidden;}
+
+.architecture_specwrap05s .architecture_spec .sec_listwrap li dl                            {border:0px solid #000000;}
+.architecture_specwrap05s .architecture_spec .sec_listwrap li dt                            {border:0px solid #000000; border-bottom:1px solid #eeeeee; padding-bottom:5px; margin-bottom:5px; font-weight:bold; color:#000000;} 
+.architecture_specwrap05s .architecture_spec .sec_listwrap li dt strong                {color:#d62326;}
+.architecture_specwrap05s .architecture_spec .sec_listwrap li dt span                    {color:#000000;}
+.architecture_specwrap05s .architecture_spec .sec_listwrap li dd                 {border:0px solid #000000; background: url("/images/common/bul_circle.gif")  no-repeat 0px 10px; padding:5px 0px 0px 8px; line-height:15px;}
+.architecture_specwrap05s .architecture_spec .sec_listwrap li dd .txtInfo                {border:0px solid #000000; padding-bottom:10px; line-height:15px;}
+.architecture_specwrap05s .architecture_spec .sec_listwrap li dd .txtInfo img        {padding-right:6px;vertical-align:middle; padding-bottom:2px; }
+.architecture_specwrap05s .architecture_spec .sec_listwrap li dd .txtInfo span        {color:#666666; }
+.architecture_specwrap05s .architecture_spec .sec_listwrap li dd  span a        {text-decoration:none;}
+.architecture_specwrap05s .architecture_spec .sec_listwrap li dd  span a:hover    {background: url("/images/c_main/bul_arr_go_on.gif")  no-repeat right 3px; color: #000000; font: 12px/1.6 dotum; padding-right: 10px; text-decoration: underline;}
+.architecture_specwrap05s .architecture_spec .sec_listwrap li dd .view01        {border:0px solid #000000; float:left; width:350px;}
+.architecture_specwrap05s .architecture_spec .sec_listwrap li dd .view02        {border:0px solid #000000; float:left; width:300px;}
+
+
+
+
+.architecture_specwrap05c                            {border:0px solid #000000; border-top:1px solid #ebebeb; position:relative; width:760px; min-height:600px; background: url("/images/common/spec_webservice_bg05c.gif") no-repeat left 10px; padding-bottom:20px; overflow:hidden;}
+.architecture_specwrap05c .architecture_spec                                {border:0px solid #000000; float:right; width:320px; margin-top:50px; margin-bottom:50px; padding:0px;}
+.architecture_specwrap05c .architecture_spec .sec_title                             {border:0px solid #000000; width:320px; height:36px; background: url("/images/common/spec_tit_bg.gif")  no-repeat 0 0; margin-bottom: 10px; padding:; }
+.architecture_specwrap05c .architecture_spec h4                             {border:0px solid #000000;  background: url("")  no-repeat -10px -10px; color:#333; text-align:center; padding:10px; overflow:hidden;}
+.architecture_specwrap05c .architecture_spec .sec_listwrap                             {border:0px solid #000000; margin-left:8px; }
+.architecture_specwrap05c .architecture_spec .sec_listwrap li                             {margin-bottom: 10px; padding-top:15px; overflow:hidden;}
+
+.architecture_specwrap05c .architecture_spec .sec_listwrap li dl                            {border:0px solid #000000;}
+.architecture_specwrap05c .architecture_spec .sec_listwrap li dt                            {border:0px solid #000000; border-bottom:1px solid #eeeeee; padding-bottom:5px; margin-bottom:5px; font-weight:bold; color:#000000;} 
+.architecture_specwrap05c .architecture_spec .sec_listwrap li dt strong                {color:#d62326;}
+.architecture_specwrap05c .architecture_spec .sec_listwrap li dt span                    {color:#000000;}
+.architecture_specwrap05c .architecture_spec .sec_listwrap li dd                 {border:0px solid #000000; background: url("/images/common/bul_circle.gif")  no-repeat 0px 10px; padding:5px 0px 0px 8px; line-height:15px;}
+.architecture_specwrap05c .architecture_spec .sec_listwrap li dd .txtInfo                {border:0px solid #000000; padding-bottom:10px; line-height:15px;}
+.architecture_specwrap05c .architecture_spec .sec_listwrap li dd .txtInfo img        {padding-right:6px;vertical-align:middle; padding-bottom:2px; }
+.architecture_specwrap05c .architecture_spec .sec_listwrap li dd .txtInfo span        {color:#666666; }
+.architecture_specwrap05c .architecture_spec .sec_listwrap li dd  span a        {text-decoration:none;}
+.architecture_specwrap05c .architecture_spec .sec_listwrap li dd  span a:hover    {background: url("/images/c_main/bul_arr_go_on.gif")  no-repeat right 3px; color: #000000; font: 12px/1.6 dotum; padding-right: 10px; text-decoration: underline;}
+.architecture_specwrap05c .architecture_spec .sec_listwrap li dd .view01        {border:0px solid #000000; float:left; width:350px;}
+.architecture_specwrap05c .architecture_spec .sec_listwrap li dd .view02        {border:0px solid #000000; float:left; width:300px;}
+
+
+
+/*Fault Tolerance Architecture*/
+
+.architecture_specwrap06s                            {border:0px solid #000000; border-top:1px solid #ebebeb; position:relative; width:760px; min-height:700px; background: url("/images/common/spec_webservice_bg06s.gif") no-repeat left 10px; padding-bottom:20px; overflow:hidden;}
+.architecture_specwrap06s .architecture_spec                                {border:0px solid #000000; float:right; width:320px; margin-top:50px; margin-bottom:50px; padding:0px;}
+.architecture_specwrap06s .architecture_spec .sec_title                             {border:0px solid #000000; width:320px; height:36px; background: url("/images/common/spec_tit_bg.gif")  no-repeat 0 0; margin-bottom: 10px; padding:; }
+.architecture_specwrap06s .architecture_spec h4                             {border:0px solid #000000;  background: url("")  no-repeat -10px -10px; color:#333; text-align:center; padding:10px; overflow:hidden;}
+.architecture_specwrap06s .architecture_spec .sec_listwrap                             {border:0px solid #000000; margin-left:8px; }
+.architecture_specwrap06s .architecture_spec .sec_listwrap li                             {margin-bottom: 10px; padding-top:15px; overflow:hidden;}
+
+.architecture_specwrap06s .architecture_spec .sec_listwrap li dl                            {border:0px solid #000000;}
+.architecture_specwrap06s .architecture_spec .sec_listwrap li dt                            {border:0px solid #000000; border-bottom:1px solid #eeeeee; padding-bottom:5px; margin-bottom:5px; font-weight:bold; color:#000000;} 
+.architecture_specwrap06s .architecture_spec .sec_listwrap li dt strong                {color:#d62326;}
+.architecture_specwrap06s .architecture_spec .sec_listwrap li dt span                    {color:#000000;}
+.architecture_specwrap06s .architecture_spec .sec_listwrap li dd                 {border:0px solid #000000; background: url("/images/common/bul_circle.gif")  no-repeat 0px 10px; padding:5px 0px 0px 8px; line-height:15px;}
+.architecture_specwrap06s .architecture_spec .sec_listwrap li dd .txtInfo                {border:0px solid #000000; padding-bottom:10px; line-height:15px;}
+.architecture_specwrap06s .architecture_spec .sec_listwrap li dd .txtInfo img        {padding-right:6px;vertical-align:middle; padding-bottom:2px; }
+.architecture_specwrap06s .architecture_spec .sec_listwrap li dd .txtInfo span        {color:#666666; }
+.architecture_specwrap06s .architecture_spec .sec_listwrap li dd  span a        {text-decoration:none;}
+.architecture_specwrap06s .architecture_spec .sec_listwrap li dd  span a:hover    {background: url("/images/c_main/bul_arr_go_on.gif")  no-repeat right 3px; color: #000000; font: 12px/1.6 dotum; padding-right: 10px; text-decoration: underline;}
+.architecture_specwrap06s .architecture_spec .sec_listwrap li dd .view01        {border:0px solid #000000; float:left; width:350px;}
+.architecture_specwrap06s .architecture_spec .sec_listwrap li dd .view02        {border:0px solid #000000; float:left; width:300px;}
+
+
+
+
+.architecture_specwrap06c                            {border:0px solid #000000; border-top:1px solid #ebebeb; position:relative; width:760px; min-height:600px; background: url("/images/common/spec_webservice_bg06c.gif") no-repeat left 10px; padding-bottom:20px; overflow:hidden;}
+.architecture_specwrap06c .architecture_spec                                {border:0px solid #000000; float:right; width:320px; margin-top:50px; margin-bottom:50px; padding:0px;}
+.architecture_specwrap06c .architecture_spec .sec_title                             {border:0px solid #000000; width:320px; height:36px; background: url("/images/common/spec_tit_bg.gif")  no-repeat 0 0; margin-bottom: 10px; padding:; }
+.architecture_specwrap06c .architecture_spec h4                             {border:0px solid #000000;  background: url("")  no-repeat -10px -10px; color:#333; text-align:center; padding:10px; overflow:hidden;}
+.architecture_specwrap06c .architecture_spec .sec_listwrap                             {border:0px solid #000000; margin-left:8px; }
+.architecture_specwrap06c .architecture_spec .sec_listwrap li                             {margin-bottom: 10px; padding-top:15px; overflow:hidden;}
+
+.architecture_specwrap06c .architecture_spec .sec_listwrap li dl                            {border:0px solid #000000;}
+.architecture_specwrap06c .architecture_spec .sec_listwrap li dt                            {border:0px solid #000000; border-bottom:1px solid #eeeeee; padding-bottom:5px; margin-bottom:5px; font-weight:bold; color:#000000;} 
+.architecture_specwrap06c .architecture_spec .sec_listwrap li dt strong                {color:#d62326;}
+.architecture_specwrap06c .architecture_spec .sec_listwrap li dt span                    {color:#000000;}
+.architecture_specwrap06c .architecture_spec .sec_listwrap li dd                 {border:0px solid #000000; background: url("/images/common/bul_circle.gif")  no-repeat 0px 10px; padding:5px 0px 0px 8px; line-height:15px;}
+.architecture_specwrap06c .architecture_spec .sec_listwrap li dd .txtInfo                {border:0px solid #000000; padding-bottom:10px; line-height:15px;}
+.architecture_specwrap06c .architecture_spec .sec_listwrap li dd .txtInfo img        {padding-right:6px;vertical-align:middle; padding-bottom:2px; }
+.architecture_specwrap06c .architecture_spec .sec_listwrap li dd .txtInfo span        {color:#666666; }
+.architecture_specwrap06c .architecture_spec .sec_listwrap li dd  span a        {text-decoration:none;}
+.architecture_specwrap06c .architecture_spec .sec_listwrap li dd  span a:hover    {background: url("/images/c_main/bul_arr_go_on.gif")  no-repeat right 3px; color: #000000; font: 12px/1.6 dotum; padding-right: 10px; text-decoration: underline;}
+.architecture_specwrap06c .architecture_spec .sec_listwrap li dd .view01        {border:0px solid #000000; float:left; width:350px;}
+.architecture_specwrap06c .architecture_spec .sec_listwrap li dd .view02        {border:0px solid #000000; float:left; width:300px;}
+
+
+
+
+
+
+
+
+
+
+.spec_detail .tab{height:20px;}
+.spec_detail .tab li{float:left; height:20px; padding:8px 0 2px 0; text-align:center;}
+.spec_detail .tab li.last{background-color:#333; width:380px;}
+.spec_detail .tab li em{font:12px dotum;color:#fff}
+.spec_detail .tab li.on{padding:8px 0 2px 0; height:20px; background-color:#cc3333; width:380px;}
+.spec_detail .tab li.on em{padding-left:10px;color:#fff}
+
+
+
+
+.no_down {width:718px; height:90px; line-height:90px; border:1px solid #ebebeb ; overflow:hidden;background-color:#f8f8f8;}
+.no_down p {text-align:center;}
+
+.agree_table{/* margin:0;height:auto;padding:0; */}
+.agree_table table{width:100%;border-top:1px solid #ebebeb;border-left:1px solid #ebebeb;margin:0;height:auto;padding:0;}
+.agree_table table th{font-weight:bold; min-height:12px;background:#f8f8f8;padding:8px 10px 7px 10px;color:#666666;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;vertical-align:middle;text-align:center;line-height:1.5}
+.agree_table table td{ white-space: pre-line; min-height:12px;color:#666666;padding:8px 10px 7px 10px;border-bottom:1px solid #ebebeb;border-right:1px solid #ebebeb;vertical-align:middle;text-align:center;line-height:1.5}
+.agree_table table td.alignL{text-align:left;}
+
+
+
+
+
+
+

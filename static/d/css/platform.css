@@ -1,0 +1,54 @@
+
+@charset "utf-8";
+
+
+/********************** Platform ************************/
+.platform_right{}
+
+.platformgbox{width:1100px;margin:0 auto;}
+
+.apply_wrap{margin:12px 0 15px 0;} 
+.apply_wrap .btn_right{margin-left:20px;}
+.apply_wrap .btn_right, .apply_wrap .btn_left{
+    display:inline-block;border-radius: 2px;
+}
+
+.tb_platform{}
+.tb_platform col{border:1px solid rgba(182,182,195,0.5);box-sizing:border-box;}
+.tb_platform col:first-child{border:none;}
+/* .tb_platform col.on{border:4px solid  #009591 ;box-sizing:border-box;} */
+.tb_platform col.on{border:4px solid #141e49;box-sizing:border-box;}
+
+.tb_platform thead tr th span{position:relative;}
+.tb_platform thead tr th.on{background: url(/images/coni/platform_check.svg) no-repeat 20px 20px;}
+
+.tb_platform thead tr th h2, .tb_platform thead tr th p{}
+/* .tb_platform thead tr th.on h2, .tb_platform thead tr th.on p{color: #009591  !important;} */
+.tb_platform thead tr th.on h2, .tb_platform thead tr th.on p{color:#141e49 !important;}
+.tb_platform thead h2, .tb_platform thead p, .tb_platform tbody{text-align:center;}
+.tb_platform thead p:last-child{font-size:14px;line-height:20px;color:#b6b6c3;font-family: Spoqa Han Sans Regular;padding:9px 0 9px 0;}
+.tb_platform thead tr th, .tb_platform tbody tr td{}
+
+
+.tb_platform tbody tr:nth-child(odd){background:#f4f4f4;} /*홀수*/
+.tb_platform tbody tr:nth-child(even){} /*짝수*/
+.tb_platform tbody tr td{padding:8px 0;filter:opacity(0.5);Opacity:0.5;}
+.tb_platform tbody tr td.on{filter:opacity(1) !important;Opacity:1 !important;}
+.tb_platform.d1 tbody tr td:nth-of-type(2){filter:opacity(1) !important;Opacity:1 !important;}
+.tb_platform.g1g2 tbody tr td:nth-of-type(3){filter:opacity(1) !important;Opacity:1 !important;}
+.tb_platform tbody tr td:first-child{font-size:18px;line-height:22px;color:#333336;font-family:Lato Regular;filter:opacity(1) !important;Opacity:1 !important;}
+.tb_platform tbody tr td:last-child{font-size:14px;line-height:20px;color:#333336;font-family: Spoqa Han Sans Regular;}
+.tb_platform tbody tr td span img{width:24px;height:24px;}
+
+/**버튼박스 내 마우스오버**/
+/* .platform_right .btn_right:hover{background-color:#2CBBB6}
+.platform_right .btn_ct:hover{background-color:#2CBBB6;}
+.platform_right .btns_add:hover{background-color:#2CBBB6;} */
+
+.platform_right .btn_right:hover{background-color:#03428e;}
+.platform_right .btn_left:hover{background-color:#f4f4f4;border-radius:2px;}
+.platform_right .btn_ct:hover{background-color:#03428e;}
+.platform_right .btns_add:hover{background-color:#03428e;}
+
+.colborder.on > span{color: #e32728;}
+

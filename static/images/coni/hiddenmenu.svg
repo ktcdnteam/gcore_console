@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #333336;
+      }
+    </style>
+  </defs>
+  <g id="레이어_2" data-name="레이어 2">
+    <g id="hiddenmenu">
+      <rect class="cls-1" width="21" height="20"/>
+      <g>
+        <circle class="cls-2" cx="3.49996" cy="10" r="1"/>
+        <circle class="cls-2" cx="10.5" cy="10" r="1"/>
+        <circle class="cls-2" cx="17.50004" cy="10" r="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

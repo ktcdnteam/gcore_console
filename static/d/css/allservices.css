@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/********************** allservices ************************/
+.allservices_right{margin:40px 15% 17px 0px; max-width:1193px;}
+
+.apply_wrap .btn_applybox{margin:12px 0 15px 0;} 
+.apply_wrap .btn_right{margin-left:20px;}
+.apply_wrap .btn_right, .apply_wrap .btn_left{
+    display:inline-block;border-radius: 2px;
+}
+
+.allservices_right h1{color:#333336 !important;}
+
+.allservicesbox{width:100%;}
+.service_normal{display:block;margin:30px 0 20px 0;}
+.service_normal.on{display:none;}
+.service_normal div{border-radius:2px;margin-right:10px;}
+.service_normal div:last-child{margin-right:0;}
+.service_active{display:none;margin:20px 0;}
+.service_active.on{display:block;}
+
+/*버튼박스 내 마우스 오버**/
+.allservices_right .btn_right:hover{/* background-color: #2CBBB6 ; */ background-color:#03428e;}
+.allservices_right .btn_left:hover{background-color:#f4f4f4;border-radius:2px;}
+.allservices_right .btn_ct:hover{/* background-color: #2CBBB6 ; */ background-color:#03428e;}
+.allservices_right .btns_add:hover{/* background-color: #2CBBB6 ; */ background-color:#03428e;}
+
+/** 본문내용 **/
+.allservices_con{display: inline-block; width: 100%;/* overflow:hidden; */}
+.allservices_con div{}
+.allservices_con div{width:calc(50% - 50px);box-sizing:border-box;}
+.allservices_con div:first-child{float:left;}
+.allservices_con div:last-child{float:right;}
+
+.allservices_con dl{clear:both;border-top:1px solid #333336;box-sizing:border-box;}
+.allservices_con dl dt{width:35%;float:left;font-size:20px;line-height:29px;color:#333336;font-family: Spoqa Han Sans Bold;}
+.allservices_con dl dd{width:65%;float:right;} 
+
+.allservices_con dl dt, .allservices_con dl dd:nth-of-type(1){margin-top:20px;} 
+.allservices_con dl dd{margin-bottom:15px;} 
+.allservices_con dl dd:last-child{margin-bottom:20px;} 
+.allservices_con dl dd label{color:#333336;} 
+.allservices_con dl dd, .allservices_con dl dd span{display:inline-table;}
+.allservices_con dl dd span img{display: table-cell;vertical-align: middle;}
+
+.allservices_con dl dt{font-family:Lato Bold;font-size:20px;line-height:24px;overflow-wrap: anywhere;}
+.allservices_con dl dd{font-family:Lato Regular;font-size:16px;line-height:19px;} 
+
+
+/*텍스트 누르면 체크표시*/
+.allservices_con dl dd label.chkboxwrap.on{background:url("/images/coni/Table_Check_yes.svg");background-size:contain;}
+
+
+
+/*툴팁*/
+.allservices_con dl dd{position:relative;}
+.tooltip_sm{
+    display:none;
+    background:#333336;
+    position:absolute;
+    bottom:30px;left:0px;
+    padding:9px 9px 14.5px 9px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.16);
+    z-index:10000;
+}
+.tooltip_sm.on{display:block;}
+.tooltip_sm::before{
+    display: block;
+    content: " ";
+    position: absolute;
+    bottom: -8px;
+    left: 13px;
+    width: 0;
+    height: 0;
+    margin-left: 0px;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 8px 8px 0;
+    border-top-color: #333336;
+}
+
+

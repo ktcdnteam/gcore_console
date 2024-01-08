@@ -1,0 +1,630 @@
+2024/01/03 04:01:25 main.go:29: Start api-server..
+2024/01/03 04:01:25 server.go:9: Start api-server..
+2024/01/03 04:01:29 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 04:01:30 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 04:01:30 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 04:01:31 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 04:01:31 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 04:04:22 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 04:04:23 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 04:04:23 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 04:04:24 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 04:04:24 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 04:05:57 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 04:05:58 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 04:05:58 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 04:05:59 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 04:05:59 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 04:07:58 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 04:07:59 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 04:07:59 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 04:08:00 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 04:08:00 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 04:09:43 main.go:29: Start api-server..
+2024/01/03 04:09:43 server.go:9: Start api-server..
+2024/01/03 04:10:32 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 04:10:34 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 04:10:34 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 04:10:35 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 04:10:35 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 04:11:53 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 04:11:55 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 04:11:55 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 04:11:56 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 04:11:56 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 04:13:24 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 04:13:26 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 04:13:26 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 04:13:27 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 04:13:27 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 04:14:01 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 04:14:02 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 04:14:02 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 04:14:03 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 04:14:03 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 04:21:07 main.go:29: Start api-server..
+2024/01/03 04:21:07 server.go:9: Start api-server..
+2024/01/03 04:21:16 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 04:21:17 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 04:21:17 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 04:21:18 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 04:21:18 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 04:31:29 main.go:29: Start api-server..
+2024/01/03 04:31:29 server.go:9: Start api-server..
+2024/01/03 05:31:49 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 05:31:50 api.go:60: [Token ERROR] >> GET Token Start
+2024/01/03 05:31:50 loadconf.go:68: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/03 05:31:52 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 05:31:53 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 05:31:53 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 05:31:54 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 05:31:54 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 07:16:43 main.go:29: Start api-server..
+2024/01/03 07:16:43 server.go:9: Start api-server..
+2024/01/03 07:16:46 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 07:16:47 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 07:16:47 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 07:16:49 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 07:16:49 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 07:29:29 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 07:29:31 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 07:29:31 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 07:29:32 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 07:29:32 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 07:30:10 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 07:30:10 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 07:30:10 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 07:30:11 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 07:30:11 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 07:31:07 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/03 07:31:08 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/03 07:31:08 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/03 07:31:09 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 07:32:18 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/03 07:32:19 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 07:32:20 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/03 07:32:20 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/03 07:33:16 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 07:33:17 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 07:33:17 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 07:33:18 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 07:33:18 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 07:34:33 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 07:34:34 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 07:34:34 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 07:34:36 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 07:34:36 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 07:35:36 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 07:35:37 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 07:35:37 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 07:35:38 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 07:35:38 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 07:36:01 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 07:36:02 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 07:36:02 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 07:36:03 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 07:36:03 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 07:36:23 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 07:36:25 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 07:36:25 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 07:36:26 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 07:36:26 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 07:37:24 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 07:37:25 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 07:37:25 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 07:37:26 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 07:37:26 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:10:16 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:10:17 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:10:17 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:10:18 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:10:18 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:11:00 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:11:01 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:11:01 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:11:02 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:11:02 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:21:31 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:21:32 api.go:60: [Token ERROR] >> GET Token Start
+2024/01/03 08:21:32 loadconf.go:68: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/03 08:21:33 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:21:35 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:21:35 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:21:36 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:21:36 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:23:56 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:23:57 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:23:57 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:23:58 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:23:58 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:24:03 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:24:04 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:24:04 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:24:10 main.go:29: Start api-server..
+2024/01/03 08:24:10 server.go:9: Start api-server..
+2024/01/03 08:24:14 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:24:15 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:24:15 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:24:16 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:24:16 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:37:26 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:37:28 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:37:28 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:37:29 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:37:29 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:37:46 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:37:47 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:37:47 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:37:48 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:37:48 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:38:31 main.go:29: Start api-server..
+2024/01/03 08:38:31 server.go:9: Start api-server..
+2024/01/03 08:38:34 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:38:35 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:38:35 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:38:36 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:38:36 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:38:49 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:38:50 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:38:50 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:38:51 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:38:51 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:39:22 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:39:24 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:39:24 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:39:25 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:39:25 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:39:54 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:39:55 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:39:55 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:39:56 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:39:56 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:40:39 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/03 08:40:40 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/03 08:40:40 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/03 08:40:40 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:41:04 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/03 08:41:05 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/03 08:41:05 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/03 08:41:07 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:41:53 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:41:54 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:41:54 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:41:56 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:41:56 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:42:46 main.go:29: Start api-server..
+2024/01/03 08:42:46 server.go:9: Start api-server..
+2024/01/03 08:42:48 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:42:50 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:42:50 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:42:51 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:42:51 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:44:39 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:44:40 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:44:40 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:44:42 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:44:42 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:45:04 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:45:05 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:45:05 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:45:06 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:45:06 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:47:58 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:48:01 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:48:01 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:48:02 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:48:02 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:48:17 main.go:29: Start api-server..
+2024/01/03 08:48:17 server.go:9: Start api-server..
+2024/01/03 08:48:19 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:48:21 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:48:21 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:48:22 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:48:22 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:49:49 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:49:51 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:49:51 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:49:52 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:49:52 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:50:50 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:50:51 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:50:51 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:50:53 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:50:53 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:52:35 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:52:37 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:52:37 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:52:38 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:52:38 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:53:00 main.go:29: Start api-server..
+2024/01/03 08:53:00 server.go:9: Start api-server..
+2024/01/03 08:53:05 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:53:07 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:53:07 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:53:09 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:53:09 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:53:57 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:53:59 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:53:59 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:54:00 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:54:00 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:54:44 main.go:29: Start api-server..
+2024/01/03 08:54:44 server.go:9: Start api-server..
+2024/01/03 08:54:46 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:54:47 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:54:47 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:54:48 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:54:48 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 08:59:23 main.go:29: Start api-server..
+2024/01/03 08:59:23 server.go:9: Start api-server..
+2024/01/03 08:59:35 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 08:59:36 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 08:59:36 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 08:59:37 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 08:59:37 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:00:56 main.go:29: Start api-server..
+2024/01/03 09:00:56 server.go:9: Start api-server..
+2024/01/03 09:00:58 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:00:59 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:00:59 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:01:00 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:01:00 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:11:39 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:11:40 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:11:40 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:11:41 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:11:41 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:13:47 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:13:48 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:13:48 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:13:49 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:13:49 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:14:55 main.go:29: Start api-server..
+2024/01/03 09:14:55 server.go:9: Start api-server..
+2024/01/03 09:15:10 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:15:11 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:15:11 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:15:13 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:15:13 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:17:04 main.go:29: Start api-server..
+2024/01/03 09:17:04 server.go:9: Start api-server..
+2024/01/03 09:17:06 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:17:07 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:17:07 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:17:08 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:17:08 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:18:25 main.go:29: Start api-server..
+2024/01/03 09:18:25 server.go:9: Start api-server..
+2024/01/03 09:18:28 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:18:29 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:18:29 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:18:30 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:18:30 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:19:11 main.go:29: Start api-server..
+2024/01/03 09:19:11 server.go:9: Start api-server..
+2024/01/03 09:19:13 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:19:15 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:19:15 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:19:16 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:19:16 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:19:59 main.go:29: Start api-server..
+2024/01/03 09:19:59 server.go:9: Start api-server..
+2024/01/03 09:20:01 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:20:03 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:20:03 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:20:04 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:20:04 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:20:05 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:20:05 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:20:05 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:20:06 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:20:06 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:20:54 main.go:29: Start api-server..
+2024/01/03 09:20:54 server.go:9: Start api-server..
+2024/01/03 09:20:56 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:20:57 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:20:57 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:20:58 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:20:58 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:21:02 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:21:04 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:21:04 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:21:05 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:21:05 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:26:13 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:26:15 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:26:15 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:26:16 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:26:16 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:31:34 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:31:35 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:31:35 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:31:36 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:31:36 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:31:43 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:31:44 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:31:44 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:31:45 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:31:45 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:35:32 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:35:33 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:35:33 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:35:34 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:35:34 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:37:17 main.go:29: Start api-server..
+2024/01/03 09:37:17 server.go:9: Start api-server..
+2024/01/03 09:37:19 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:37:20 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:37:20 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:37:21 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:37:21 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:38:04 main.go:29: Start api-server..
+2024/01/03 09:38:04 server.go:9: Start api-server..
+2024/01/03 09:38:09 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:38:10 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:38:10 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:38:11 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:38:11 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:39:05 main.go:29: Start api-server..
+2024/01/03 09:39:05 server.go:9: Start api-server..
+2024/01/03 09:39:09 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:39:10 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:39:10 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:39:11 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:39:11 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:40:57 main.go:29: Start api-server..
+2024/01/03 09:40:57 server.go:9: Start api-server..
+2024/01/03 09:40:59 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:41:00 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:41:00 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:41:01 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:41:01 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 09:41:30 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 09:41:31 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 09:41:31 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 09:41:32 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 09:41:32 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 10:03:10 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 10:03:11 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 10:03:11 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 10:03:12 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 10:03:12 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 10:03:22 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 10:03:23 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 10:03:23 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 10:03:24 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 10:03:24 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 10:03:36 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 10:03:37 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 10:03:37 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 10:03:38 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 10:03:38 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 10:04:16 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 10:04:17 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 10:04:17 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 10:04:18 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 10:04:18 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 10:05:41 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 10:05:43 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 10:05:43 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 10:05:44 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 10:05:44 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 10:10:11 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 10:10:12 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 10:10:12 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 10:10:13 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 10:10:13 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 10:10:46 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 10:10:47 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 10:10:47 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 10:10:48 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 10:10:48 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 10:12:34 main.go:29: Start api-server..
+2024/01/03 10:12:34 server.go:9: Start api-server..
+2024/01/03 10:12:36 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 10:12:38 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 10:12:38 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 10:12:39 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 10:12:39 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 10:13:28 main.go:29: Start api-server..
+2024/01/03 10:13:28 server.go:9: Start api-server..
+2024/01/03 10:13:31 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 10:13:31 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 10:13:31 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 10:13:32 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 10:13:32 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 10:13:59 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 10:14:01 main.go:29: Start api-server..
+2024/01/03 10:14:01 server.go:9: Start api-server..
+2024/01/03 10:14:02 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 10:14:03 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 10:14:03 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 10:14:03 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 10:14:04 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 10:14:04 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 10:14:04 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 10:14:04 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 10:14:05 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 10:14:05 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 10:19:02 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 10:19:06 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 10:19:06 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 10:19:07 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 10:19:07 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 10:47:02 main.go:29: Start api-server..
+2024/01/03 10:47:02 server.go:9: Start api-server..
+2024/01/03 10:47:07 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 10:47:08 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 10:47:08 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 10:47:09 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 10:47:09 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 10:47:39 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 10:47:43 main.go:29: Start api-server..
+2024/01/03 10:47:43 server.go:9: Start api-server..
+2024/01/03 10:47:45 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 10:47:46 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 10:47:46 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 10:47:47 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 10:47:47 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 11:30:53 main.go:29: Start api-server..
+2024/01/03 11:30:53 server.go:9: Start api-server..
+2024/01/03 11:30:54 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 11:30:55 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 11:30:55 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 11:30:56 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 11:30:56 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 11:33:10 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 11:33:11 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 11:33:11 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 11:33:12 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 11:33:12 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 11:36:36 main.go:29: Start api-server..
+2024/01/03 11:36:36 server.go:9: Start api-server..
+2024/01/03 11:36:39 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 11:36:40 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 11:36:40 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 11:36:41 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 11:36:41 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 11:37:01 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 11:37:02 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 11:37:02 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 11:37:03 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 11:37:03 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 11:37:39 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 11:37:41 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 11:37:41 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 11:37:42 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 11:37:42 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 11:40:35 main.go:29: Start api-server..
+2024/01/03 11:40:35 server.go:9: Start api-server..
+2024/01/03 11:40:37 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 11:40:38 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 11:40:38 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 11:40:39 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 11:40:39 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 11:44:10 main.go:29: Start api-server..
+2024/01/03 11:44:10 server.go:9: Start api-server..
+2024/01/03 11:44:14 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 11:44:15 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 11:44:15 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 11:44:16 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 11:44:16 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 11:48:37 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 11:48:40 main.go:29: Start api-server..
+2024/01/03 11:48:40 server.go:9: Start api-server..
+2024/01/03 11:48:42 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 11:48:44 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 11:48:44 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 11:48:46 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 11:48:46 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 11:50:30 main.go:29: Start api-server..
+2024/01/03 11:50:30 server.go:9: Start api-server..
+2024/01/03 11:50:33 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 11:50:34 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 11:50:34 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 11:50:35 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 11:50:35 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 11:51:32 main.go:29: Start api-server..
+2024/01/03 11:51:32 server.go:9: Start api-server..
+2024/01/03 11:51:37 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 11:51:38 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 11:51:38 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 11:51:39 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 11:51:39 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 11:54:23 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/03 11:54:24 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/03 11:54:24 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/03 11:54:25 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 11:54:27 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 11:54:27 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 11:54:28 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 11:54:28 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 11:57:59 main.go:29: Start api-server..
+2024/01/03 11:57:59 server.go:9: Start api-server..
+2024/01/03 11:58:21 main.go:29: Start api-server..
+2024/01/03 11:58:21 server.go:9: Start api-server..
+2024/01/03 11:58:51 main.go:29: Start api-server..
+2024/01/03 11:58:51 server.go:9: Start api-server..
+2024/01/03 11:58:55 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 11:58:57 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 11:58:57 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 11:58:58 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 11:58:58 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 12:01:31 main.go:29: Start api-server..
+2024/01/03 12:01:31 server.go:9: Start api-server..
+2024/01/03 12:01:33 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 12:01:34 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 12:01:34 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 12:01:35 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 12:01:35 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 12:05:56 main.go:29: Start api-server..
+2024/01/03 12:05:56 server.go:9: Start api-server..
+2024/01/03 12:05:58 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 12:05:59 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 12:05:59 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 12:06:00 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 12:06:00 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 12:07:03 main.go:29: Start api-server..
+2024/01/03 12:07:03 server.go:9: Start api-server..
+2024/01/03 12:07:05 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 12:07:06 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 12:07:06 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 12:07:07 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 12:07:07 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 12:07:22 main.go:29: Start api-server..
+2024/01/03 12:07:22 server.go:9: Start api-server..
+2024/01/03 12:07:24 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 12:07:25 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 12:07:25 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 12:07:26 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 12:07:26 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 12:07:39 main.go:29: Start api-server..
+2024/01/03 12:07:39 server.go:9: Start api-server..
+2024/01/03 12:07:41 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 12:07:42 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 12:07:42 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 12:07:43 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 12:07:43 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/03 12:18:27 main.go:29: Start api-server..
+2024/01/03 12:18:27 server.go:9: Start api-server..
+2024/01/03 12:18:29 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/03 12:18:30 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/03 12:18:30 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/03 12:18:31 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/03 12:18:31 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/04 03:13:59 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/04 03:14:00 api.go:60: [Token ERROR] >> GET Token Start
+2024/01/04 03:14:00 loadconf.go:68: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/04 03:14:00 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/04 03:14:01 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/04 03:14:01 api.go:60: [Token ERROR] >> GET Token Start
+2024/01/04 03:14:01 loadconf.go:68: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/04 03:14:02 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/04 03:14:02 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/04 03:14:03 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/04 03:14:04 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/04 03:14:04 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/04 03:14:05 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/04 03:14:05 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/04 04:51:50 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/04 04:51:51 api.go:60: [Token ERROR] >> GET Token Start
+2024/01/04 04:51:51 loadconf.go:68: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/04 04:51:53 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/04 04:51:54 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/04 04:51:54 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/04 04:51:55 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/04 04:51:55 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/04 04:51:55 billing_model.go:226: &{491121 nuxt [{nuxt.ktcdnteam.link:3000 false true default}] false true none  []}
+2024/01/04 04:53:49 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/04 04:53:50 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/04 04:53:50 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/04 04:53:51 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/04 04:54:09 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/04 04:54:11 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/04 04:54:11 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/04 04:54:12 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/04 04:54:12 billing_model.go:226: &{486615 baba01 [{asdf.com:880 false true default} {nexon.com false true default}] false true none  []}
+2024/01/04 04:54:12 billing_model.go:226: &{491121 nuxt [{nuxt.ktcdnteam.link:3000 false true default}] false true none  []}
+2024/01/04 05:15:18 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/04 05:15:19 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/04 05:15:19 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 

@@ -1,0 +1,529 @@
+@charset "utf-8";
+
+#topsection #memberNav {
+    border: 0px solid #000;
+    margin-left: 10px;    
+    position: absolute;  
+    top: 0px;    
+    left: 129px;    
+}
+
+
+#topsection #memberNav .menu {
+    border: 0px solid currentColor; border-image: none; line-height: normal; overflow: visible; font-family: Tahoma, Geneva, sans-serif; font-size: 12px; white-space: nowrap; position: relative;
+}
+#topsection #memberNav .menu::after {
+    clear: both; display: block; content: "";
+}
+#topsection #memberNav .menu .inset {
+    border: 0px solid currentColor; border-image: none; overflow: visible; position: relative; z-index: 2; background-image: url(""); background-repeat: repeat-x; _background-image: none;
+}
+#topsection #memberNav .menu .inset::after {
+    clear: both; display: block; content: "";
+}
+/* #topsection #memberNav .menu ul {
+    list-style: none; margin: 0px 0px; padding: 0px; float: left;
+} */
+#topsection #memberNav .menu ul {
+    list-style: none; margin: 0px 0px; padding: 0px;
+}
+#topsection #memberNav .menu ul::after {
+    clear: both; display: block; content: "";
+}
+#topsection #memberNav .menu li {
+    float: left; position: relative; z-index: 1;
+}
+#topsection #memberNav .menu a {
+    padding: 18px 0px 18px 0px; text-decoration: none !important; margin-bottom: -1px; float: left; position: relative; cursor: pointer;
+}
+#topsection #memberNav .menu a span {
+    padding: 18px 18px 18px 0px; height: 14px; color: rgb(255, 255, 255); font-weight: bold; vertical-align: top;
+}
+#topsection #memberNav .menu a span img {
+    margin-top: -10px; vertical-align: top;
+}
+#topsection #memberNav .menu a span .i {
+    background: url("/images/c_common/gnb_btn_dropdown_nor.png") no-repeat top; margin: 3px 0px 0px 7px; padding: 0px; border: 0px currentColor !important; border-image: none !important; 
+    width: 11px; height: 11px; line-height: 0; overflow: hidden; font-size: 0px; vertical-align: top; display: inline-block; opacity: 1;
+}
+#topsection #memberNav .menu .gradient {
+    left: 0px; top: 0px; width: 100%; height: 35px; display: none; position: absolute; z-index: 1; _display: block;
+}
+#topsection #memberNav .menu .shadow {
+    border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(204, 204, 204) rgb(204, 204, 204); margin: 1px -1px; border-image: none; left: 0px; width: 100%; height: 0px; bottom: -3px; line-height: 0; overflow: hidden; font-size: 0px; position: absolute; z-index: 1;
+}
+#topsection #memberNav .menu .major {
+    float: left; position: relative; z-index: 2;
+}
+#topsection #memberNav .menu .major a {
+    overflow: hidden;
+}
+#topsection #memberNav .menu .major span {
+    border-right-color: currentColor; border-left-color: currentColor; border-right-width: 0px; border-left-width: 0px; border-right-style: solid; border-left-style: solid; _zoom: 1;
+}
+
+
+
+#topsection #memberNav .menu .major li.active {
+    margin: 0px -1px; border-right-color: currentColor; border-left-color: currentColor; border-right-width: 0px; border-left-width: 0px; border-right-style: solid; border-left-style: solid; z-index: 2; _border: 0; _margin: 0;
+}
+#topsection #memberNav .menu .major li a:hover {
+    padding-right: 1px; padding-left: 1px; background-image: url("/images/c_common/gnb_btn_dropdown_sel.png"); background-image: none;
+}
+#topsection #memberNav .menu .major li a:active {
+    padding-right: 1px; padding-left: 1px; background-image: url("/images/c_common/gnb_btn_dropdown_sel.png"); background-image: none;
+}
+#topsection #memberNav .menu .major li a:focus {
+    padding-right: 1px; padding-left: 1px; background-image: url("/images/c_common/gnb_btn_dropdown_sel.png"); background-image: none;
+}
+
+#topsection #memberNav .menu .major li.active a {
+    padding-right: 1px; padding-left: 1px; background-image: url("/images/c_common/gnb_btn_dropdown_sel.png"); background-image: none;
+}
+#topsection #memberNav .menu .major li.active .i {
+        background: url("/images/c_common/gnb_btn_dropdown_sel.png") no-repeat center 0px; margin: 3px 0px 0px 7px; padding: 0px; border: 0px currentColor !important; border-image: none !important; 
+        width: 11px; height: 11px; line-height: 0; overflow: hidden; font-size: 0px; vertical-align: top; display: inline-block; filter: none; opacity: 1;
+}
+
+
+
+
+#topsection #memberNav .menu .major li.active span {
+    border: 0px currentColor; border-image: none;
+}
+
+#topsection #memberNav .menu .major .sub {
+    margin: 2px 0px 0px; left: -1px; top: 41px; width: auto; display: none; position: absolute;
+}
+#topsection #memberNav .menu .major li.active .sub {
+    display: block;
+}
+#topsection #memberNav .menu .major .sub ul {
+    border:1px solid #353535; background-color:#ffffff; box-shadow:3px 3px 1px #cccccc;-moz-box-shadow:3px 3px 1px #cccccc;-webkit-box-shadow:3px 3px 1px #cccccc;
+}
+#topsection #memberNav .menu .major .sub li {
+    margin: 0px; border: 0px currentColor; border-image: none; width: 100%; clear: both; float: none; display: block; _display: inline; vertical-align:middle; word-wrap:break-word;word-break:break-all; white-space:normal;
+}
+#topsection #memberNav .menu .major .sub ul li .sub_in_ul{ border:none; box-shadow:none; width:100%;}
+#topsection #memberNav .menu .major .sub ul li .sub_in_ul li{clear:both}
+#topsection #memberNav .menu .major .sub ul li .sub_in_ul li.tit_sub_in_ul{ border-bottom:1px solid #e5e5e5; /*background:url('/images/c_common/icon_check_gnb_red.png') no-repeat  right; */ }
+#topsection #memberNav .menu .major .sub ul li .sub_in_ul li.tit_sub_in_ul a:hover {background:url('/images/c_common/icon_check_red.png') no-repeat  right; }
+#topsection #memberNav .menu .major .sub a {
+    margin: 0px; padding: 0px !important; width: 100%; clear: both; float: none; display: block; filter: none; background-image: none !important; _width: auto;
+}
+#topsection #memberNav .menu .major .sub a span {
+    padding: 5px 10px; border: 0px currentColor; border-image: none; height: auto; color: rgb(118, 118, 118); font-weight: normal; display: inline-block;
+}
+
+#topsection #memberNav .menu .aside ul {
+    padding-left: 5px; border-left-color: currentColor; border-left-width: 1px; border-left-style: solid;
+}
+#topsection #memberNav .menu .aside a {
+    padding-left: 10px; opacity: 0.7;
+}
+#topsection #memberNav .menu .major .sub ul li a:hover {
+    opacity: 1;
+    background-color:#f6f6f6;
+}
+#topsection #memberNav .menu .major .sub ul li a:active {
+    opacity: 1;
+    background-color:#f6f6f6;
+}
+#topsection #memberNav .menu .major .sub ul li a:focus {
+    opacity: 1;
+    background-color:#f6f6f6;
+}
+#topsection #memberNav .menu .aside span {
+    padding: 0px 12px 0px 18px; font-weight: normal;
+}
+
+#topsection #memberNav .menu .aside li span {
+    height: 14px; display: inline-block;
+}
+#topsection #memberNav .menu .aside .m1 span {
+    background: url("iconHistory.png") no-repeat 0px; _background: none;
+}
+#topsection #memberNav .menu .aside .m2 span {
+    background: url("iconSetup.png") no-repeat 0px; _background: none;
+}
+#topsection #memberNav .menu .aside .sub {
+    margin: 2px 0px 0px; top: 100%; width: 300px; right: -2px; display: none; position: absolute;
+}
+#topsection #memberNav .menu .aside li.active .sub {
+    display: block;
+}
+#topsection #memberNav .menu .aside .sub ul {
+    background: rgb(255, 255, 255); border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(135, 135, 135) rgb(135, 135, 135); margin: 0px; padding: 1px; border-image: none; float: right;
+}
+#topsection #memberNav .menu .aside .sub li {
+    margin: 0px; border: 0px currentColor; border-image: none; width: 100%; clear: both; float: none; display: block; _display: inline;
+}
+#topsection #memberNav .menu .aside .sub a {
+    margin: 0px; padding: 0px !important; width: 100%; overflow: hidden; clear: both; float: none; display: block; filter: none; background-image: none !important; _width: auto;
+}
+#topsection #memberNav .menu .aside .sub a span {
+    padding: 5px 20px; border: 0px currentColor; border-image: none; color: rgb(118, 118, 118) !important; font-weight: normal; display: inline-block; filter: none; background-image: none !important; _zoom: 0;
+}
+
+
+
+
+#topsection #serviceNav {
+    border: 0px solid #fff;
+    padding: 12px 0px;
+    position: absolute;  
+    top: 0px;    
+    right: 65px; 
+}
+
+
+#topsection #serviceNav .menu {
+    border: 0px solid currentColor; border-image: none; line-height: normal; overflow: visible; font-family: Tahoma, Geneva, sans-serif; font-size: 12px; white-space: nowrap; position: relative;
+}
+#topsection #serviceNav .menu::after {
+    clear: both; display: block; content: "";
+}
+#topsection #serviceNav .menu .inset {
+    border: 0px solid currentColor; border-image: none; overflow: visible; position: relative; z-index: 2; background-image: url(""); background-repeat: repeat-x; _background-image: none;
+}
+#topsection #serviceNav .menu .inset::after {
+    clear: both; display: block; content: "";
+}
+/* #topsection #serviceNav .menu ul {
+    list-style: none; margin: 0px 0px; padding: 0px; float: left;
+} */
+#topsection #serviceNav .menu ul::after {
+    clear: both; display: block; content: "";
+}
+#topsection #serviceNav .menu li {
+    float: left; position: relative; z-index: 1;
+}
+#topsection #serviceNav .menu a {
+    padding: 20px 0px 20px 0px; text-decoration: none !important; margin-bottom: -1px; float: left; position: relative; cursor: pointer;
+}
+#topsection #serviceNav .menu a span {
+    padding: 18px 18px 18px 0px; height: 14px; color: rgb(255, 255, 255); font-weight: bold; vertical-align: top;
+}
+#topsection #serviceNav .menu a span img {
+    margin-top: -10px; vertical-align: top;
+}
+#topsection #serviceNav .menu a span .i {
+    background: url("/images/c_common/gnb_btn_dropdown_nor.png") no-repeat top; margin: 3px 0px 0px 7px; padding: 0px; border: 0px currentColor !important; border-image: none !important; 
+    width: 11px; height: 11px; line-height: 0; overflow: hidden; font-size: 0px; vertical-align: top; display: inline-block; opacity: 1;
+}
+#topsection #serviceNav .menu .gradient {
+    left: 0px; top: 0px; width: 100%; height: 35px; display: none; position: absolute; z-index: 1; _display: block;
+}
+#topsection #serviceNav .menu .shadow {
+    border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(204, 204, 204) rgb(204, 204, 204); margin: 1px -1px; border-image: none; left: 0px; width: 100%; height: 0px; bottom: -3px; line-height: 0; overflow: hidden; font-size: 0px; position: absolute; z-index: 1;
+}
+#topsection #serviceNav .menu .major {
+    float: left; position: relative; z-index: 2;
+}
+#topsection #serviceNav .menu .major a {
+    overflow: hidden;
+}
+#topsection #serviceNav .menu .major span {
+    border-right-color: currentColor; border-left-color: currentColor; border-right-width: 0px; border-left-width: 0px; border-right-style: solid; border-left-style: solid; _zoom: 1;
+}
+
+
+
+#topsection #serviceNav .menu .major li.active {
+    margin: 0px -1px; border-right-color: currentColor; border-left-color: currentColor; border-right-width: 0px; border-left-width: 0px; border-right-style: solid; border-left-style: solid; z-index: 2; _border: 0; _margin: 0;
+}
+#topsection #serviceNav .menu .major li a:hover {
+    padding-right: 1px; padding-left: 1px; background-image: url("/images/c_common/gnb_btn_dropdown_sel.png"); background-image: none;
+}
+#topsection #serviceNav .menu .major li a:active {
+    padding-right: 1px; padding-left: 1px; background-image: url("/images/c_common/gnb_btn_dropdown_sel.png"); background-image: none;
+}
+#topsection #serviceNav .menu .major li a:focus {
+    padding-right: 1px; padding-left: 1px; background-image: url("/images/c_common/gnb_btn_dropdown_sel.png"); background-image: none;
+}
+/*#topsection #memberNav .menu .major li.active a {
+    padding-right: 1px; padding-left: 1px; background-image: url("/images/common/bgBarActiveHover.png"); background-image: none;
+}*/
+#topsection #serviceNav .menu .major li.active a {
+    padding-right: 1px; padding-left: 1px; background-image: url("/images/c_common/gnb_btn_dropdown_sel.png"); background-image: none;
+}
+#topsection #serviceNav .menu .major li.active .i {
+        background: url("/images/c_common/gnb_btn_dropdown_sel.png") no-repeat center 0px; margin: 3px 0px 0px 7px; padding: 0px; border: 0px currentColor !important; border-image: none !important; 
+        width: 11px; height: 11px; line-height: 0; overflow: hidden; font-size: 0px; vertical-align: top; display: inline-block; filter: none; opacity: 1;
+}
+
+
+
+
+#topsection #serviceNav .menu .major li.active span {
+    border: 0px currentColor; border-image: none;
+}
+#topsection #serviceNav .menu .major .sub {
+    margin: 2px 0px 0px; left: -1px; top: 100%; width: 300px; display: none; position: absolute;
+}
+#topsection #serviceNav .menu .major li.active .sub {
+    display: block;
+}
+#topsection #serviceNav .menu .major .sub ul {
+    background: rgb(255, 255, 255); border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(135, 135, 135) rgb(135, 135, 135); margin: 0px; padding: 1px; border-image: none;
+}
+#topsection #serviceNav .menu .major .sub li {
+    margin: 0px; border: 0px currentColor; border-image: none; width: 100%; clear: both; float: none; display: block; _display: inline;
+}
+#topsection #serviceNav .menu .major .sub a {
+    margin: 0px; padding: 0px !important; width: 100%; clear: both; float: none; display: block; filter: none; background-image: none !important; _width: auto;
+}
+#topsection #serviceNav .menu .major .sub a span {
+    padding: 5px 20px; border: 0px currentColor; border-image: none; height: auto; color: rgb(118, 118, 118); font-weight: normal; display: inline-block;
+}
+
+
+
+
+#topsection #serviceNav .menu .aside {
+    /* background: url("bgBarEnd.png"); */ border-left-color: currentColor; border-left-width: 0px; border-left-style: solid; float: right; position: relative; z-index: 2; _background: none;
+    height:60px;
+}
+/* #topsection #serviceNav .menu .aside ul {
+    padding-left: 5px; border-left-color: currentColor; border-left-width: 0px; border-left-style: solid;
+} */
+#topsection #serviceNav .menu .aside a {
+    padding-left: 10px;
+    opacity: 1;
+}
+#topsection #serviceNav .menu .aside a:hover {
+    padding-left: 10px; 
+}
+
+#topsection #serviceNav .menu .aside a:active {
+    opacity: 1;
+}
+#topsection #serviceNav .menu .aside a:focus {
+    opacity: 1;
+}
+#topsection #serviceNav .menu .aside li span {
+     display: inline-block;
+}
+
+#topsection #serviceNav .menu .aside li span.amount_txt{
+    /* color:  #009591; */
+    color: #141e49;
+    font-size: 24px;
+    font-family: Spoqa Han Sans Regular;
+    line-height: 36px;
+    margin-top: -7px;
+}
+
+
+#topsection #serviceNav .menu .aside .m1 span {
+    background: url("iconHistory.png") no-repeat 0px; _background: none;
+}
+#topsection #serviceNav .menu .aside .m2 span {
+    background: url("iconSetup.png") no-repeat 0px; _background: none;
+}
+
+
+
+
+
+
+#topsection #serviceNav .menu .aside .alram {
+    position:relative;
+    width: 38px; 
+    /*height: 38px;*/ 
+    text-align: center; 
+    letter-spacing: 0em; 
+    display: block; 
+    background:url('/images/coni/GNB_Noti.svg') no-repeat 50% 50%;
+}
+
+
+
+#topsection #serviceNav .menu .aside .alram .item-count {
+    background: #fff; 
+    width: 15px; 
+    height: 15px;  
+    position: absolute;  
+    top: 3px;    
+    right: 10px; 
+    line-height: 14px; 
+    font-size: 0.6em; 
+    color:/* #2cbbb6; */#03428e;        
+    border-radius: 8px;    
+    /* background:url('/images/coni/GNB_Noti.svg') no-repeat center 50%; */
+}
+
+/* #topsection #serviceNav .menu .aside .s_notice {
+    position:relative;
+    width: 38px;
+    text-align: center; 
+    letter-spacing: 0em; 
+    display: block; 
+    background:url('/images/coni/GNB_price.svg') no-repeat center 50%;
+} */
+
+
+#topsection #serviceNav .menu .aside .s_price {
+    position:relative;
+    width: 38px;
+    text-align: center; 
+    letter-spacing: 0em; 
+    display: block; 
+    background:url('/images/coni/GNB_price.svg') no-repeat center 50%;
+}
+
+#topsection #serviceNav .menu .aside .s_language {
+    position:relative;
+    width: 38px;
+    text-align: center; 
+    letter-spacing: 0em; 
+    display: block; 
+    background:url('/images/coni/GNB_language.svg') no-repeat center 50%;
+}
+
+#topsection #serviceNav .menu .aside .s_account {
+    position:relative;
+    width: 38px;
+    text-align: center; 
+    letter-spacing: 0em; 
+    display: block; 
+    background:url('/images/coni/GNB_account.svg') no-repeat center 50%;
+}
+
+
+
+
+#topsection #serviceNav .menu .aside .alram:hover {background-image:url('/images/coni/GNB_Noti_hover.svg');}
+#topsection #serviceNav .menu .aside .s_price:hover {background-image:url('/images/coni/GNB_price_hover.svg');}
+#topsection #serviceNav .menu .aside .s_language:hover {background-image:url('/images/coni/GNB_language_hover.svg');}
+#topsection #serviceNav .menu .aside .s_account:hover {background-image:url('/images/coni/GNB_account_hover.svg');}
+
+
+
+
+#topsection #serviceNav .menu .aside .sub {
+    border: 0px solid #e32728;
+    margin: 0px 0px 0px; top: 38px; /* width: 310px; */ right: -2px; display: none; position: absolute;
+}
+#topsection #serviceNav .menu .aside li.active .sub {
+    display: block;
+}
+/* #topsection #serviceNav .menu .aside .sub ul {
+    background: rgb(255, 255, 255); border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(135, 135, 135) rgb(135, 135, 135); margin: 0px; padding: 1px; border-image: none; float: right;
+}
+#topsection #serviceNav .menu .aside .sub li {
+    margin: 0px; border: 0px currentColor; border-image: none; width: 100%; clear: both; float: none; display: block; _display: inline;
+} */
+#topsection #serviceNav .menu .aside .sub a {
+    margin: 0px; padding: 0px !important; width: 100%; overflow: hidden; clear: both; float: none; /* display: block; */ filter: none; background-image: none !important; _width: auto;
+}
+
+#topsection #serviceNav .menu .aside .sub a.bigprice{
+    /*color:  #009591; */
+    color: #141e49;
+    font-size: 24px;
+    font-family: Spoqa Han Sans Regular;
+    line-height: 36px;
+}
+
+#topsection #serviceNav .menu .aside .sub a.bigprice:hover{
+    /*color:  #2cbbb6; */
+    color: #03428e;
+    font-size: 24px;
+    font-family: Spoqa Han Sans Regular;
+    line-height: 36px;
+}
+#topsection #serviceNav .menu .aside .sub a span {
+    color:#fff;padding: 5px 20px; border: 0px currentColor; border-image: none; font-weight: normal; display: inline-block; filter: none; background-image: none !important; _zoom: 0;
+}
+
+
+
+
+
+
+/* 스마트 가이드 */
+#topsection #systemNav {
+    border: 0px solid #fff;
+    padding: 7px 6px 5px 8px;
+    position: absolute;
+    height:40px;
+    top: 5px;    
+    right: 170px;    
+    /* background-color:#000; */
+}
+
+#topsection #systemNav ul {
+
+}
+#topsection #systemNav li {
+    margin:0px 8px 0px 8px;float:left;
+}
+#topsection #systemNav li .smgt {
+    color:#fff;    vertical-align: middle;margin-right:10px; padding-top:3px;display:inline-block;
+}
+
+#topsection #systemNav li .smgt2 {
+    width:34px; height:13px;color:#fff;    vertical-align: middle;margin-right:10px; margin-top:3px;display:inline-block;background:url('/images/c_common/icon_smtbeta.png') no-repeat 50% 30%;
+}
+
+
+/* btn white2 */
+.btn_result_submit_g2 {margin-top:4px;display:inline-block;vertical-align:middle; padding:1px 13px;;; height:14px;line-height:14px; background-color:#636161; text-align:center;border:1px solid #adabab; border-radius:16px; -webkit-border-radius:16px; -moz-border-radius:16px;}
+.btn_result_submit_g2 a{color:#eee}
+.btn_result_submit_g2 a:hover{color:#eee}
+.btn_result_submit_g2 a img{ vertical-align:text-top; padding-right:5px;}
+.btn_result_submit_g2:hover {margin-top:4px;display:inline-block;vertical-align:middle; padding:1px 13px;;; height:14px;line-height:14px; background-color:#333; text-align:center;border:1px solid #adabab; border-radius:16px; -webkit-border-radius:16px; -moz-border-radius:16px;}
+.btn_result_submit_g2:hover a{color:#fff}
+.btn_result_submit_g2:hover a:hover{color:#fff}
+.btn_result_submit_g2:hover a img{ vertical-align:text-top; padding-right:5px;}
+
+
+
+/* 시스템 아이콘 */
+/* #topsection #systemNav {
+    border: 0px solid #fff;
+    padding: 7px 6px 5px 8px;
+    position: absolute;  
+    top: 0px;    
+    right: 17%;    
+    background-color:#000;
+}
+
+#topsection #systemNav ul {
+
+}
+#topsection #systemNav li {
+    margin:0px 8px 0px 8px;float:left;
+}
+#topsection #systemNav a {
+    margin: 0px; padding: 0px !important; width: 100%; overflow: hidden; clear: both; float: none; display: block; filter: none; background-image: none !important; _width: auto;
+}
+#topsection #systemNav a span {
+    color:#fff;padding: 5px 20px; border: 0px currentColor; border-image: none; font-weight: normal; display: inline-block; filter: none; background-image: none !important; _zoom: 0;
+} */
+
+
+#topsection #systemNav .gnbconst {
+    display:block;
+    width: 36px;
+    height:35px;
+    background:url('/images/c_common/icon_const_r.png') no-repeat 50% 30%;
+}
+
+
+#topsection #systemNav .gnbpower {
+    display:block;
+    width: 36px;
+    height:35px;
+    background:url('/images/c_common/icon_power_gray.png') no-repeat 50% 30%;
+}
+
+
+#topsection #systemNav .gnbsecurity {
+    display:block;
+    width: 36px;
+    height:35px;
+    background:url('/images/c_common/icon_security_gray.png') no-repeat 50% 30%;
+}
+

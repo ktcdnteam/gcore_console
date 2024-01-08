@@ -1,0 +1,33 @@
+{
+    "sslData": null,
+    "sslEnabled": false,
+    "active": true,
+    "originGroup": 411993,
+    "originProtocol": "HTTP",
+    "cname": "gcore04.ktcdnteam.link",
+    "description": "",
+    "secondaryHostnames": [],
+    "options": {
+        "edge_cache_settings": {
+            "enabled": true,
+            "default": "4d"
+        },
+        "cache_expire": null,
+        "stale": {
+            "enabled": true,
+            "value": [
+                "error",
+                "updating"
+            ]
+        },
+        "allowedHttpMethods": null,
+        "cache_http_headers": null,
+        "hostHeader": {
+            "enabled": true,
+            "value": "1.1.1.1"
+        },
+        "forward_host_header": null,
+        "limit_bandwidth": null,
+        "bot_protection": null
+    }
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #b6b6c3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        fill: #03428e;
+      }
+    </style>
+  </defs>
+  <g id="레이어_2" data-name="레이어 2">
+    <g id="Table_Check_yes">
+      <rect class="cls-1" x="0.5" y="0.5" width="14" height="14" rx="2"/>
+      <path class="cls-2" d="M5.722,11.5a.57123.57123,0,0,1-.41287-.17223L2.64251,8.54563a.50122.50122,0,0,1,.04123-.73783.58032.58032,0,0,1,.78451.03873l2.23906,2.33679L11.519,3.68656a.58026.58026,0,0,1,.78288-.0642.49975.49975,0,0,1,.06782.73477L6.1473,11.3135a.5703.5703,0,0,1-.41558.1865Z"/>
+    </g>
+  </g>
+</svg>

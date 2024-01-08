@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/********************** packaging ************************/
+
+
+/**버튼박스 내 마우스 오버**/
+.btn_box .pop_btn_right:hover,
+.pop_btn_ct:hover,
+.btns_add:hover{background-color:#03428e;}
+.btn_box .pop_btn_left:hover{background-color:#f4f4f4;border-radius:2px;}
+
+
+
+/*본문내용*/
+
+
+
+/* font*/
+.packaging_right .sub_t .r_quick {
+    background: url(/images/coni/LNB_Packaging.svg) left bottom
+        no-repeat;
+    padding:0;
+}
+.packaging_right .sub_t .h3_quick span a{font-size:13px;line-height:19px;color:#333336;font-family: Spoqa Han Sans Regular;}
+.packaging_right .sub_t .h3_quick .r_quick span{
+    font-size:13px;line-height:19px;color:#333336;font-family: Spoqa Han Sans Bold;
+    margin-left:0;
+}
+.packaging_right .sub_t .h3_quick .r_quick{font-size:13px;line-height:16px;color:#333336;font-family: Lato Regular;}
+.packaging_right .sub_t .title_area h3{font-size:32px;line-height:38px;color:#333336 !important;font-family:Spoqa Han Sans Bold !important;}
+
+/* .sub_t .title_area h3 {margin:37px 0 150px 0;}
+.sub_t .title_area {padding-top:0 !important;height:auto !important;margin:auto !important;} */

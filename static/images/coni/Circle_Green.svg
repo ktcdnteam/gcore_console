@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3ba72d;
+      }
+    </style>
+  </defs>
+  <g id="레이어_2" data-name="레이어 2">
+    <g id="Circle_Green">
+      <circle class="cls-1" cx="6" cy="6" r="6"/>
+    </g>
+  </g>
+</svg>

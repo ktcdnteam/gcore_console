@@ -574,3 +574,304 @@
 2024/01/08 09:42:11 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
 2024/01/08 09:42:11 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
 2024/01/08 09:42:12 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/08 10:36:00 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 10:36:01 api.go:60: [Token ERROR] >> GET Token Start
+2024/01/08 10:36:01 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/08 10:36:03 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 10:36:04 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 10:36:04 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 10:36:04 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 10:37:19 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 10:37:20 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 10:37:20 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 10:37:20 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 10:47:05 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/08 10:47:13 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 10:47:14 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 10:47:14 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 10:47:14 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 10:47:37 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 10:47:38 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 10:47:38 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 10:47:38 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 10:49:14 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 10:49:15 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 10:49:15 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 10:49:15 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 10:50:18 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 10:50:19 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 10:50:19 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 10:50:19 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 10:50:31 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 10:50:32 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 10:50:32 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 10:50:32 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 10:51:26 main.go:28: Start api-server..
+2024/01/08 10:51:26 server.go:9: Start api-server..
+2024/01/08 10:56:31 main.go:28: Start api-server..
+2024/01/08 10:56:31 server.go:9: Start api-server..
+2024/01/08 10:56:40 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 10:56:41 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 10:56:41 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 10:56:41 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 10:58:11 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 10:58:12 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 10:58:12 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 10:58:12 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 10:58:22 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 10:58:25 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 10:58:25 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 10:58:25 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:10:19 main.go:28: Start api-server..
+2024/01/08 11:10:19 server.go:9: Start api-server..
+2024/01/08 11:10:25 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:10:26 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:10:26 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:10:26 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:11:01 main.go:28: Start api-server..
+2024/01/08 11:11:01 server.go:9: Start api-server..
+2024/01/08 11:11:11 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:11:12 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:11:12 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:11:12 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:11:26 main.go:28: Start api-server..
+2024/01/08 11:11:26 server.go:9: Start api-server..
+2024/01/08 11:11:49 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:11:50 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:11:50 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:11:50 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:14:14 main.go:28: Start api-server..
+2024/01/08 11:14:14 server.go:9: Start api-server..
+2024/01/08 11:14:56 main.go:28: Start api-server..
+2024/01/08 11:14:56 server.go:9: Start api-server..
+2024/01/08 11:16:06 main.go:28: Start api-server..
+2024/01/08 11:16:06 server.go:9: Start api-server..
+2024/01/08 11:16:14 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:16:15 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:16:15 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:16:15 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:28:07 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:28:08 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:28:08 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:28:08 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:28:17 main.go:28: Start api-server..
+2024/01/08 11:28:17 server.go:9: Start api-server..
+2024/01/08 11:31:02 main.go:28: Start api-server..
+2024/01/08 11:31:02 server.go:9: Start api-server..
+2024/01/08 11:31:08 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:31:09 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:31:09 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:31:09 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:31:32 main.go:28: Start api-server..
+2024/01/08 11:31:32 server.go:9: Start api-server..
+2024/01/08 11:32:02 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:32:03 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:32:03 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:32:03 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:32:48 main.go:28: Start api-server..
+2024/01/08 11:32:48 server.go:9: Start api-server..
+2024/01/08 11:34:02 main.go:28: Start api-server..
+2024/01/08 11:34:02 server.go:9: Start api-server..
+2024/01/08 11:34:16 main.go:28: Start api-server..
+2024/01/08 11:34:16 server.go:9: Start api-server..
+2024/01/08 11:34:51 main.go:28: Start api-server..
+2024/01/08 11:34:51 server.go:9: Start api-server..
+2024/01/08 11:34:52 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:34:53 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:34:53 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:34:53 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:38:13 main.go:28: Start api-server..
+2024/01/08 11:38:13 server.go:9: Start api-server..
+2024/01/08 11:38:37 main.go:28: Start api-server..
+2024/01/08 11:38:37 server.go:9: Start api-server..
+2024/01/08 11:38:39 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:38:40 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:38:40 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:38:40 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:38:56 main.go:28: Start api-server..
+2024/01/08 11:38:56 server.go:9: Start api-server..
+2024/01/08 11:38:58 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:38:59 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:38:59 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:38:59 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:39:13 main.go:28: Start api-server..
+2024/01/08 11:39:13 server.go:9: Start api-server..
+2024/01/08 11:39:15 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:39:16 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:39:16 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:39:16 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:43:48 main.go:28: Start api-server..
+2024/01/08 11:43:48 server.go:9: Start api-server..
+2024/01/08 11:43:59 main.go:28: Start api-server..
+2024/01/08 11:43:59 server.go:9: Start api-server..
+2024/01/08 11:44:02 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:44:03 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:44:03 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:44:03 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:45:22 main.go:28: Start api-server..
+2024/01/08 11:45:22 server.go:9: Start api-server..
+2024/01/08 11:45:27 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:45:28 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:45:28 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:45:28 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:45:43 main.go:28: Start api-server..
+2024/01/08 11:45:43 server.go:9: Start api-server..
+2024/01/08 11:45:45 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:45:46 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:45:46 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:45:46 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:45:54 main.go:28: Start api-server..
+2024/01/08 11:45:54 server.go:9: Start api-server..
+2024/01/08 11:45:56 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:45:57 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:45:57 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:45:57 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:46:11 main.go:28: Start api-server..
+2024/01/08 11:46:11 server.go:9: Start api-server..
+2024/01/08 11:46:13 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:46:14 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:46:14 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:46:14 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:46:24 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:46:26 main.go:28: Start api-server..
+2024/01/08 11:46:26 server.go:9: Start api-server..
+2024/01/08 11:46:28 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:46:29 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:46:29 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:46:29 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:46:37 main.go:28: Start api-server..
+2024/01/08 11:46:37 server.go:9: Start api-server..
+2024/01/08 11:46:39 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:46:40 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:46:40 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:46:40 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:46:51 main.go:28: Start api-server..
+2024/01/08 11:46:51 server.go:9: Start api-server..
+2024/01/08 11:47:35 main.go:28: Start api-server..
+2024/01/08 11:47:35 server.go:9: Start api-server..
+2024/01/08 11:47:37 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:47:38 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:47:38 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:47:38 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:47:46 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:47:47 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:47:47 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:47:47 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:55:25 main.go:28: Start api-server..
+2024/01/08 11:55:25 server.go:9: Start api-server..
+2024/01/08 11:55:28 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:55:29 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:55:29 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:55:29 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:57:32 main.go:28: Start api-server..
+2024/01/08 11:57:32 server.go:9: Start api-server..
+2024/01/08 11:57:34 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:57:35 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:57:35 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:57:35 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 11:59:56 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 11:59:56 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/08 11:59:57 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 11:59:57 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 11:59:57 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 12:29:43 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 12:29:46 main.go:28: Start api-server..
+2024/01/08 12:29:46 server.go:9: Start api-server..
+2024/01/08 12:29:47 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 12:29:48 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 12:29:48 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 12:29:48 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 12:30:28 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 12:30:29 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 12:30:29 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 12:30:29 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 12:31:44 main.go:28: Start api-server..
+2024/01/08 12:31:44 server.go:9: Start api-server..
+2024/01/08 12:31:46 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 12:31:47 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 12:31:47 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 12:31:47 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 12:34:21 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/08 12:34:22 billing_model.go:226: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/08 12:34:22 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/08 12:34:23 billing_model.go:226: &{486194 origin01 [{cloud.kt.com:443 false true default} {gcore02.ktcdnteam.link true false default}] false true none  []}
+2024/01/08 12:34:23 billing_model.go:226: &{491753 www.asdf.com [{www.asdf.com false true default} {www.nexon.com false true default}] false false none  []}
+2024/01/08 12:34:23 billing_model.go:226: &{491121 nuxt [{nuxt.ktcdnteam.link:3000 false true default} {gcore02.ktcdnteam.link false true default}] false true none  []}
+2024/01/08 12:35:20 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 12:35:21 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 12:35:21 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 12:35:21 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 12:38:17 main.go:28: Start api-server..
+2024/01/08 12:38:17 server.go:9: Start api-server..
+2024/01/08 12:38:20 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 12:38:21 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 12:38:21 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 12:38:21 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 12:39:39 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/08 12:39:41 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/08 12:39:41 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/08 12:39:41 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/08 12:40:12 api.go:41: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/09 03:08:48 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/09 03:08:49 api.go:60: [Token ERROR] >> GET Token Start
+2024/01/09 03:08:49 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/09 03:08:51 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/09 03:08:52 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/09 03:08:52 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/09 03:08:52 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/09 03:08:53 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/09 03:08:54 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/09 03:08:54 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/09 03:08:54 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/09 03:09:05 api.go:41: [POST] Request >> https://api.gcore.com/cdn/resources/361345/purge {"urls":null,"paths":["/cdn/*"],"id":"361345"} 
+2024/01/09 03:09:06 api.go:71: POST https://api.gcore.com/cdn/resources/361345/purge >>> [ERROR : 400] {"errors":{"urls":["This field may not be null."]}} 
+2024/01/09 03:09:06 api.go:82: json: cannot unmarshal array into Go struct field ErrorResponse.errors of type string
+2024/01/09 03:09:06 api.go:85: map[urls:]
+2024/01/09 03:09:06 api.go:91: [ERROR : urls]  
+2024/01/09 03:09:06 billing_model.go:399: Unknown error
+2024/01/09 03:09:06 route.go:102: Unknown error
+2024/01/09 03:09:11 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/09 03:09:12 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/09 03:09:12 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/09 03:09:12 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/09 03:10:44 api.go:41: [POST] Request >> https://api.gcore.com/cdn/resources/361345/purge {"urls":["/images"],"paths":null,"id":"361345"} 
+2024/01/09 03:10:46 api.go:71: POST https://api.gcore.com/cdn/resources/361345/purge >>> [ERROR : 400] {"errors":{"paths":["This field may not be null."]}} 
+2024/01/09 03:10:46 api.go:82: json: cannot unmarshal array into Go struct field ErrorResponse.errors of type string
+2024/01/09 03:10:46 api.go:85: map[paths:]
+2024/01/09 03:10:46 api.go:91: [ERROR : paths]  
+2024/01/09 03:10:46 billing_model.go:399: Unknown error
+2024/01/09 03:10:46 route.go:102: Unknown error
+2024/01/09 03:10:51 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/09 03:10:52 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/09 03:10:52 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/09 03:10:52 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/09 03:11:32 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/09 03:11:33 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/09 03:11:33 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/09 03:11:33 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/09 03:11:39 api.go:41: [POST] Request >> https://api.gcore.com/cdn/resources/361345/purge {"urls":["/server01"],"paths":null,"id":"361345"} 
+2024/01/09 03:11:40 api.go:71: POST https://api.gcore.com/cdn/resources/361345/purge >>> [ERROR : 400] {"errors":{"paths":["This field may not be null."]}} 
+2024/01/09 03:11:40 api.go:82: json: cannot unmarshal array into Go struct field ErrorResponse.errors of type string
+2024/01/09 03:11:40 api.go:85: map[paths:]
+2024/01/09 03:11:40 api.go:91: [ERROR : paths]  
+2024/01/09 03:11:40 billing_model.go:399: Unknown error
+2024/01/09 03:11:40 route.go:102: Unknown error
+2024/01/09 03:11:45 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/09 03:11:46 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/09 03:11:46 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/09 03:11:46 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/09 03:12:17 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/09 03:12:18 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/09 03:12:18 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/09 03:12:18 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 
+2024/01/09 03:12:23 api.go:41: [POST] Request >> https://api.gcore.com/cdn/resources/361345/purge {"urls":["/images"],"paths":null,"id":"361345"} 
+2024/01/09 03:12:24 api.go:71: POST https://api.gcore.com/cdn/resources/361345/purge >>> [ERROR : 400] {"errors":{"paths":["This field may not be null."]}} 
+2024/01/09 03:12:24 api.go:82: json: cannot unmarshal array into Go struct field ErrorResponse.errors of type string
+2024/01/09 03:12:24 api.go:85: map[paths:]
+2024/01/09 03:12:24 api.go:91: [ERROR : paths]  
+2024/01/09 03:12:24 billing_model.go:399: Unknown error
+2024/01/09 03:12:24 route.go:102: Unknown error
+2024/01/09 03:12:29 api.go:41: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/09 03:12:30 billing_model.go:204: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 active 
+2024/01/09 03:12:30 billing_model.go:204: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/09 03:12:30 billing_model.go:204: 393269. cloud.kt.com 2024-01-08 13:16:05 suspended 

@@ -14,3 +14,6 @@ POST https://api.gcore.com/cdn/resources/361345/purge  >>> [ERROR : 429 Too Many
 {
   "message": "You have exceeded a purge by paths limit. You can send no more than 1 request per minute. New request can be sent in 4 seconds."
 }
+
+2024/01/09 11:28:20 api.go:90: POST https://api.gcore.com/cdn/resources/361345/purge >>> [ERROR : 400] 
+{"errors":{"paths":{"1":["This field may not be blank."]}}}

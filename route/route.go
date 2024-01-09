@@ -91,13 +91,17 @@ func Route() *echo.Echo {
 
 		return c.JSON(200, &ResponseMsgBlock{Status: "00", Data: u})
 	})
+
+	//Purge 실행할 때, urls 혹은 paths 필드 하나만 넣어야됨.
+	//{"urls":["/images"],"id":"361345"}
+	//{"urls":["/images"],"id":"361345"}
+	//"urls":["/images"],"paths":null,"id":"361345"} >> [ERROR : 400] {"errors":{"paths":["This field may not be null."]}}
 	e.POST("cdn/resources/purge", func(c echo.Context) error {
 		u := new(model.PurgeBlock)
 		if err := c.Bind(u); err != nil {
 			log.Println(err)
 			return c.JSON(200, &ResponseMsgBlock{Status: "10", Data: err.Error()})
 		}
-		log.Println(u)
 		err := model.PurgeCDN(u)
 		if err != nil {
 			log.Println(err)

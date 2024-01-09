@@ -309,10 +309,11 @@ func PostOriginGroupList(u *OriginResource) (*PostOriginGroupBlock, error) {
 gcore cdn resource 는 이름 생성X (Cname 식별키)
 */
 type ResourceBlock struct {
-	ServiceName   string `json:"service_name"`
-	ServiceDomain string `json:"service_domain"`
-	OriginID      int    `json:"origin_id"`
-	OriginURL     string `json:"origin_url"`
+	ServiceName    string `json:"service_name"`
+	ServiceDomain  string `json:"service_domain"`
+	OriginID       int    `json:"origin_id"`
+	OriginURL      string `json:"origin_url"`
+	OriginProtocol string `json:"originProtocol"`
 }
 
 func DeleteOriginGroup(id string) error {
@@ -333,6 +334,7 @@ func Csdf() error {
 	log.Println(string(respBody))
 	return nil
 }
+
 func CreateCDN(u *ResourceBlock) error {
 	host := &HostHeaderBlock{
 		Enabled: true,
@@ -341,12 +343,12 @@ func CreateCDN(u *ResourceBlock) error {
 	resourceInfo := &PostResourceBlock{
 		SslEnabled: false, // SSL 사용 여부
 		// SslData:            null,           // SSL 관련 데이터, 필요한 경우 설정
-		Active:             true,            // 활성화 상태
-		OriginGroup:        u.OriginID,      // 오리진 그룹 ID
-		OriginProtocol:     "HTTP",          // 오리진 프로토콜, "HTTPS"로도 설정 가능
-		Cname:              u.ServiceDomain, // CNAME
-		Description:        u.ServiceName,   // 설명
-		SecondaryHostnames: []string{},      // 보조 호스트네임, 필요한 경우 추가
+		Active:             true,             // 활성화 상태
+		OriginGroup:        u.OriginID,       // 오리진 그룹 ID
+		OriginProtocol:     u.OriginProtocol, // 오리진 프로토콜, "HTTPS", "MATCH"
+		Cname:              u.ServiceDomain,  // CNAME
+		Description:        u.ServiceName,    // 설명
+		SecondaryHostnames: []string{},       // 보조 호스트네임, 필요한 경우 추가
 		Options: &OptionsBlock{
 			Stale:             &StaleBlock{Enabled: true, Value: []string{"error", "updating"}},
 			EdgeCacheSettings: &EdgeCacheSettingsBlock{Enabled: true, Default: "4d"},
@@ -380,12 +382,9 @@ func DeleteCDN(id string) error {
 }
 
 type PurgeBlock struct {
-	Urls  []string `json:"urls, omitempty"`
-	Paths []string `json:"paths, omitempty"`
+	Urls  []string `json:"urls,omitempty"`  // omitempty 옵션 추가
+	Paths []string `json:"paths,omitempty"` // omitempty 옵션 추가
 	ID    string   `json:"id"`
-
-	// Paths []string `json:"paths"`
-
 }
 
 func PurgeCDN(purgeList *PurgeBlock) error {
@@ -394,6 +393,7 @@ func PurgeCDN(purgeList *PurgeBlock) error {
 		log.Println(err)
 		return err
 	}
+	log.Println(purgeList)
 	_, err = gcoreapi.Request(reqJSON, fmt.Sprintf("cdn/resources/%s/purge", purgeList.ID), "POST", loadconf.TOTKENINFO.Access)
 	if err != nil {
 		log.Println(err)

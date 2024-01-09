@@ -85,6 +85,17 @@ function advcdnListReady(){
     setEventCheckbox();
 }
 
+function setPageCDNList(ok){
+    if (ok){
+        // cdn list
+        $("#cdnListContent").show();
+        $("#cdnModifyContent").hide();
+    }else{
+        // cdn 수정
+        $("#cdnListContent").hide();
+        $("#cdnModifyContent").show();
+    }
+}
 function setEventCheckbox(){
     $("input:checkbox.chkbox").bind("change", function(){
         
@@ -210,7 +221,8 @@ function ssList(){
     });
 }
 function get_originGroupList(){
-$('option','#originGroupList').remove();
+    selectbox_design($("#protocolBox"));
+    $('option','#originGroupList').remove();
     $.ajax({
         url: "/cdn/origin_groups/name",
         type: "GET",
@@ -219,8 +231,8 @@ $('option','#originGroupList').remove();
         success: function(json) { 
             json.forEach(function (elem) {
                 $('<option value="'+ elem.id +'" value1="'+ elem.sources[0].source+'">'+elem.name +'</option>').appendTo('#originGroupList');   
-                selectbox_design($("#originGroupList"));
             })
+            selectbox_design($("#originGroupList"));
         }
     });
 }
@@ -750,6 +762,11 @@ function setControl_Panel_CDN(state){
             $("#button_cdnStart").unbind("click"); 
             $("#button_cdnStop").unbind("click").bind("click" , button_cdnStop_event); 
             $("#button_cdnDelete").unbind("click");
+            $("#button_cdnModify").unbind("click").bind("click" , function(e) {
+                e.preventDefault();
+                event_cdnModify(e);
+                return false;
+            });
             show_tooltip("button_cdnDelete", "Y");
             
         }else if(state == "suspended"){ // 정지상태
@@ -769,6 +786,11 @@ function setControl_Panel_CDN(state){
                 event_cdnStart(e);
                 return false;
             }); 
+            $("#button_cdnModify").unbind("click").bind("click" , function(e) {
+                e.preventDefault();
+                event_cdnModify(e);
+                return false;
+            });
 
         } else if (state == "processed") {
             //각 액션 버튼 셋팅
@@ -783,12 +805,12 @@ function setControl_Panel_CDN(state){
                 event_cdnDelete(e);
                 return false;
             });
+            $("#button_cdnModify").unbind("click").bind("click" , function(e) {
+                e.preventDefault();
+                event_cdnModify(e);
+                return false;
+            });
         } 
-        $("#button_cdnModify").unbind("click").bind("click" , function(e) {
-            e.preventDefault();
-            event_cdnModify(e);
-            return false;
-        });
     
 }
 function setControl_Panel_Origin(){
@@ -953,10 +975,12 @@ function set_CdnEvent(){
                     showCommonNoLangErrorMsg("", "서비스 도메인을 입력해 주세요.");
                     return;
                 }
-                showCommonNoLangErrorMsg("", "서비스 도메인을 확인해 주세요." + param.service_domain + "은 도메인 형식에 맞지 않습니다.");
+                showCommonNoLangErrorMsg("", "서비스 도메인을 확인해 주세요. " + param.service_domain + "은 도메인 형식에 맞지 않습니다.");
                 return;
             }
-            
+            // Protocol
+            var protocol = dlgForm.find("#protocolBox option:selected").val();
+
             // Origin 선택 및 유효성 체크
             if(origin_type == "1"){         //기존 Origin Group
                 var $selectedOption = dlgForm.find("#originGroupList option:selected")
@@ -965,6 +989,7 @@ function set_CdnEvent(){
                 
                 param.origin_id = Number(selectNum);
                 param.origin_url = selectValue1;
+                param.originProtocol = protocol
                 resourceCreate(param);
                 dlgForm.dialog("close");
             }else if (origin_type == "0"){      //신규 Origin 추가
@@ -983,31 +1008,32 @@ function set_CdnEvent(){
                         return;
                     }
                 }
-                // var params = {origins : origin_arr};
-                // $.ajax({
-                //     url : "/cdn/origin_group",
-                //     type : "POST",
-                //     contentType: "application/json",
-                //     data : JSON.stringify(params),
-                //     dataType : "json",
-                //     success : function(json) {
-                //         if(json.status == "29") { /* IAM 사용자 정책 처리 */
-                //             commonErrorMessage("29");
-                //             return;
-                //         }   
-                //         if ( json.status == '00'){
-                //             param.origin_id = json.data.id;
-                //             param.origin_url = json.data.sources[0].source;
-                //             resourceCreate(param);
-                //             dlgForm.dialog("close");
-                //         }
-                //     },error: function(XMLHttpResponse) {
-                //         var resp = JSON.parse(XMLHttpResponse.responseText);
-                //         success_msg = param.service_name + " 생성 실패 (" + resp.data + ")";
-                //         add_noti_message("/cdn/list", success_msg);
-                //         process_toast_popup("CDN", success_msg, false);
-                //     }
-                // }); 
+                var params = {origins : origin_arr};
+                $.ajax({
+                    url : "/cdn/origin_group",
+                    type : "POST",
+                    contentType: "application/json",
+                    data : JSON.stringify(params),
+                    dataType : "json",
+                    success : function(json) {
+                        if(json.status == "29") { /* IAM 사용자 정책 처리 */
+                            commonErrorMessage("29");
+                            return;
+                        }   
+                        if ( json.status == '00'){
+                            param.origin_id = json.data.id;
+                            param.origin_url = json.data.sources[0].source;
+                            param.originProtocol = protocol
+                            resourceCreate(param);
+                            dlgForm.dialog("close");
+                        }
+                    },error: function(XMLHttpResponse) {
+                        var resp = JSON.parse(XMLHttpResponse.responseText);
+                        success_msg = param.service_name + " 생성 실패 (" + resp.data + ")";
+                        add_noti_message("/cdn/list", success_msg);
+                        process_toast_popup("CDN", success_msg, false);
+                    }
+                }); 
             }
             $("#purge_OkUrl").empty();
             $("#purge_FailUrl").empty();
@@ -1037,26 +1063,18 @@ function set_CdnEvent(){
 
 //CDN 수정
 function event_cdnModify(e){
+    var mdfForm = $("#cdnModifyContent");
     e.preventDefault();
     var svc_id = selectedRow.data("id");
     var svc_name = selectedRow.data("service_name")
-    var el_dialog = $("#dialog_CDN_Delete"); 
-    commonDialogInit(el_dialog);
-    el_dialog.dialog("open");
-    // var cdn_domain = selectedRow.data("domain");
-    $("#dialog_CDN_Delete").find("#dialog_CDN_Delete_text1").text(svc_name);
-    $("#button_VM_Delete_TopClose", el_dialog).unbind("click").bind("click" , cancelDelPop);
-    $("#button_VM_Delete_Cancel", el_dialog).unbind("click").bind("click" , cancelDelPop);
-    function cancelDelPop(){
-        el_dialog.dialog("close");
-    }
-    $("#button_VM_Delete_OK", el_dialog).unbind("click").bind("click" , vmDelOK);
-    function vmDelOK(){
-        el_dialog.dialog("close");
-        call_CDN_Modify(svc_id, svc_name);
-        return false;
-    }
+    var svc_domain = selectedRow.data("domain")
+    $("#cdnListContent").hide();
+    $("#cdnModifyContent").show();
+    mdfForm.find("#modify_svcName").text(svc_name);
+    mdfForm.find("#service_name").text(svc_name);
+    mdfForm.find("#service_domain").text(svc_domain);
 }
+
 //CDN 수정
 function call_CDN_Modify (svc_id, svc_name) {
     var success_msg = svc_name + " 삭제 시작";
@@ -1092,7 +1110,7 @@ function call_CDN_Modify (svc_id, svc_name) {
                 add_noti_message("/console/d/osadvcdnlist", success_msg);
                 process_toast_popup("CDN", success_msg, false);
             }
-            setTimeout(() =>  call_resourceList(), 5000);
+            setTimeout(() =>  call_resourceList(), 3000);
         }
     });
 
@@ -1156,7 +1174,7 @@ function call_CDN_Delete (svc_id, svc_name) {
                 add_noti_message("/console/d/osadvcdnlist", success_msg);
                 process_toast_popup("CDN", success_msg, false);
             }
-            setTimeout(() =>  call_resourceList(), 5000);
+            setTimeout(() =>  call_resourceList(), 3000);
         }
     });
 
@@ -1227,7 +1245,7 @@ function call_CDN_Stop(svc_id, svc_name){
                 add_noti_message("/console/d/osadvcdnlist", success_msg);
                 process_toast_popup("CDN", success_msg, false);
             }
-            setTimeout(() =>  call_resourceList(), 5000);
+            setTimeout(() =>  call_resourceList(), 3000);
         }
     });
 }
@@ -1285,7 +1303,7 @@ function call_CDN_Start(svc_id, svc_name){
                 add_noti_message("/console/d/osadvcdnlist", success_msg);
                 process_toast_popup("CDN", success_msg, false);
             }
-            setTimeout(() =>  call_resourceList(), 5000);
+            setTimeout(() =>  call_resourceList(), 3000);
         }
     });
 }
@@ -1404,15 +1422,14 @@ function call_cdnPurge(){
             }
         }
 
-
         if(purge_type !== "0"){
             //파일지정 선택
-            if (purgeurl == "") {
-                showCommonNoLangErrorMsg("", "Purge할 URL을 입력해주세요.");
+            var purge_arr = trim(purgeurl.split("\n"));
+            for (var i=0; i < purge_arr.length ; i++) {
+                if (purge_arr[i] == "") showCommonNoLangErrorMsg("", "Purge할 URL을 확인해주세요.");
                 return;
             }
-            var purge_arr = purgeurl.split("\n");
-            console.log(purge_arr.length)
+
             if(purge_arr.length > 30){
                 showCommonNoLangErrorMsg("", "URL/패턴 Purge시, 한번에 최대 30개 파일입력 가능합니다.");
                 return;
@@ -1422,9 +1439,7 @@ function call_cdnPurge(){
         //purge_type 
         // 0: 전체, 1 : URL, 2: 패턴
         var selectedValue = purgeForm.find("#purge_domain").val();
-
         var svc_doamin = $("#purge_domain option:selected").text();
-        console.log(selectedValue)
         var params = {id : selectedValue}
         if (purge_type == 1){
            params.urls = purge_arr;
@@ -1462,7 +1477,7 @@ function call_cdnPurge(){
                     add_noti_message("/console/d/osadvcdnlist", success_msg);
                     process_toast_popup("CDN", success_msg, false);
                 }
-                setTimeout(() =>  call_resourceList(), 5000);
+                setTimeout(() =>  call_resourceList(), 3000);
             }
             ,error: function(XMLHttpResponse) {
                 success_msg = svc_doamin + " purge 실패";
@@ -1496,13 +1511,13 @@ function resourceCreate(param){
                 success_msg = param.service_name + " 생성 성공";
                 add_noti_message("/console/d/osadvcdnlist", success_msg);
                 process_toast_popup("CDN", success_msg, true);
-                setTimeout(() =>  call_resourceList(), 5000);
+                setTimeout(() =>  call_resourceList(), 3000);
             }else{
-                success_msg = param.service_name + " 생성 실패";
+                success_msg = param.service_name + " 생성 실패 (" + json.data + ")";
                 add_noti_message("/cdn/list", success_msg);
                 process_toast_popup("CDN", success_msg, false);
             }
-            setTimeout(() =>  call_resourceList(), 5000);
+            setTimeout(() =>  call_resourceList(), 3000);
         }
         // ,error: function(json) {
         //         success_msg = param.service_name + " 생성 실패";
@@ -1719,6 +1734,7 @@ function set_OriginEvent(){
                 origin_url : '',
 
             };
+            console.log("origin group에서 log찍히면 이부분 지우기. 복붙코드")
             if(origin_type == "1"){
                 var $selectedOption = dlgForm.find("#originGroupList option:selected")
                 var selectNum = $selectedOption.val();
@@ -1738,20 +1754,6 @@ function set_OriginEvent(){
                     showCommonNoLangErrorMsg("", "한번에 최대 5개까지 입력 가능합니다.");
                     return;
                 }
-                // var userurl = "";
-                // for (var p = 0; p < origin_arr.length; p++) {
-                //     var temp_arr = origin_arr[p].split(".");
-    
-                //      var temp = null;
-                //     if(temp_arr.length >= 2) {
-                //         temp = temp_arr[temp_arr.length-1].toLowerCase();
-                //     }
-                    
-                //     userurl =userurl + origin_arr[p];
-                //     if (origin_arr.length > p+1){
-                //         userurl = userurl +",";
-                //     }
-                // }
                 var params = {origins : origin_arr};
                 $.ajax({
                     url : "/cdn/origin_group",
@@ -1767,6 +1769,7 @@ function set_OriginEvent(){
                         if ( json.status == '00'){
                             param.origin_id = json.data.id;
                             param.origin_url = json.data.sources[0].source;
+                            param.protocol = protocol;
                             resourceCreate(param);
                             dlgForm.dialog("close");
                         }
@@ -2119,7 +2122,7 @@ function event_originUpdate(e){
                     success_msg = selectedRow.data("svc_name") + " purge 성공";
                     add_noti_message("/console/d/osadvcdnlist", success_msg);
                     process_toast_popup("CDN", success_msg, true);
-                    setTimeout(() =>  call_originList(), 5000);
+                    setTimeout(() =>  call_originList(), 3000);
                 }else{
                     success_msg = selectedRow.data("svc_name") + " purge 실패";
                     add_noti_message("/console/d/osadvcdnlist", success_msg);
@@ -2194,7 +2197,7 @@ function call_CDN_Stop(svc_id, svc_name){
                 add_noti_message("/console/d/osadvcdnlist", success_msg);
                 process_toast_popup("CDN", success_msg, false);
             }
-            setTimeout(() =>  call_resourceList(), 5000);
+            setTimeout(() =>  call_resourceList(), 3000);
         }
     });
 }
@@ -2423,4 +2426,13 @@ function showCommonNoLangErrorMsg(title_cls, msg_cls, close_function){
 
 function CloseErrorMsg(){
     $("#dialogCommonErrorMsg").remove();
+}
+
+//공백제거
+function trim(val) {
+    if(val == null) {
+        return null;
+    }
+    
+    return val.replace(/^\s*/, "").replace(/\s*$/, "");
 }

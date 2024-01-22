@@ -53,7 +53,9 @@ func Route() *echo.Echo {
 		// ordering := c.QueryParam("ordering")
 
 		// deleted := c.QueryParam("deleted")
-		// fields := c.QueryParam("fields")
+		fields := c.QueryParam("fields")
+		log.Println(fields)
+		log.Println("id,cname,status")
 		cdnList, err := model.GetResourceList(c.Request().RequestURI)
 		if err != nil {
 			log.Println(err)

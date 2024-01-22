@@ -1,0 +1,369 @@
+2024/01/22 03:18:37 main.go:28: Start api-server..
+2024/01/22 03:18:37 server.go:9: Start api-server..
+2024/01/22 03:20:23 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/22 03:20:24 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 03:22:13 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/22 03:22:14 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 03:24:07 main.go:28: Start api-server..
+2024/01/22 03:24:07 server.go:9: Start api-server..
+2024/01/22 03:24:12 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/22 03:24:13 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 03:28:19 main.go:28: Start api-server..
+2024/01/22 03:28:19 server.go:9: Start api-server..
+2024/01/22 03:28:22 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/22 03:28:24 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 03:29:17 main.go:28: Start api-server..
+2024/01/22 03:29:17 server.go:9: Start api-server..
+2024/01/22 03:29:21 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/22 03:29:22 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 03:29:58 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/22 03:29:58 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 03:29:59 resource_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/22 03:29:59 resource_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/22 03:29:59 resource_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/22 03:29:59 resource_model.go:318: 414622. gcore01.ktcdnteam.link 2024-01-17 18:17:11 active 
+2024/01/22 03:32:13 main.go:28: Start api-server..
+2024/01/22 03:32:13 server.go:9: Start api-server..
+2024/01/22 03:32:15 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 03:32:16 resource_model.go:341: &{491753 www.asdf.com [{www.asdf.com false true default} {www.nexon.com false true default}] true false none  []}
+2024/01/22 03:32:16 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=491753  
+2024/01/22 03:32:17 resource_model.go:341: &{505876 2.2.1.8 [{2.2.1.8 false true default} {1.2.3.4 false true default}] true false none  []}
+2024/01/22 03:32:17 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=505876  
+2024/01/22 03:32:18 resource_model.go:341: &{523548 8.8.8.8 [{8.8.8.8 false true default}] true false none  []}
+2024/01/22 03:32:18 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=523548  
+2024/01/22 03:32:19 resource_model.go:341: &{526029 1.1.1.1 [{1.1.1.1 false true default}] true false none  []}
+2024/01/22 03:32:19 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=526029  
+2024/01/22 03:33:12 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/22 03:33:12 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 03:33:13 resource_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/22 03:33:13 resource_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/22 03:33:13 resource_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/22 03:33:13 resource_model.go:318: 414622. gcore01.ktcdnteam.link 2024-01-17 18:17:11 active 
+2024/01/22 03:33:18 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/22 03:33:19 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 03:38:02 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/22 03:38:03 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 03:38:12 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/22 03:38:13 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 03:38:16 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/22 03:38:17 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 03:38:46 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/22 03:38:47 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 03:41:48 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/22 03:41:49 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 03:57:54 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/22 03:57:55 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 04:01:30 main.go:28: Start api-server..
+2024/01/22 04:01:30 server.go:9: Start api-server..
+2024/01/22 04:05:53 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/22 04:05:54 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 04:08:58 main.go:28: Start api-server..
+2024/01/22 04:08:58 server.go:9: Start api-server..
+2024/01/22 04:09:00 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/22 04:09:02 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 04:12:32 main.go:28: Start api-server..
+2024/01/22 04:12:32 server.go:9: Start api-server..
+2024/01/22 04:12:35 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/22 04:12:35 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 04:12:36 resource_model.go:326: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/22 04:12:36 resource_model.go:326: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/22 04:12:36 resource_model.go:326: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/22 04:12:36 resource_model.go:326: 414622. gcore01.ktcdnteam.link 2024-01-17 18:17:11 active 
+2024/01/22 04:13:02 api.go:60: [POST] Request >> https://api.gcore.com/cdn/origin_groups {"id":0,"auth_type":"none","use_next":false,"sources":[{"source":"6.6.6.6","backup":false,"enabled":true}],"name":"6.6.6.6"} 
+2024/01/22 04:13:03 api.go:60: [POST] Request >> https://api.gcore.com/cdn/resources {"sslEnabled":false,"sslData":null,"active":true,"originGroup":537731,"originProtocol":"MATCH","cname":"service06.gcore.com","description":"service06","origin":"","secondaryHostnames":[],"options":{"edge_cache_types":{"enabled":true,"default":"4d"},"cache_expire":null,"stale":{"enabled":true,"value":["error","updating"]},"allowedHttpMethods":null,"cache_http_headers":null,"hostHeader":{"enabled":true,"value":"6.6.6.6"},"forward_host_header":null,"limit_bandwidth":null,"bot_protection":null}} 
+2024/01/22 04:13:05 resource_model.go:491: {"id":425691,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":null,"hostHeader":{"enabled":true,"value":"6.6.6.6"},"staticHeaders":null,"static_response_headers":null,"staticRequestHeaders":null,"allowedHttpMethods":null,"stale":{"enabled":true,"value":["error","updating"]},"cors":null,"proxy_cache_methods_set":null,"rewrite":null,"force_return":null,"secure_key":null,"cache_expire":null,"disable_cache":null,"ignore_cookie":null,"cache_http_headers":null,"response_headers_hiding_policy":null,"override_browser_ttl":null,"fetch_compressed":null,"disable_proxy_force_ranges":null,"redirect_http_to_https":null,"redirect_https_to_http":null,"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"limit_bandwidth":null,"request_limiter":null,"bot_protection":null,"waf":null,"country_acl":null,"referrer_acl":null,"user_agent_acl":null,"ip_address_acl":null,"query_params_blacklist":null,"query_params_whitelist":null,"browser_cache_settings":null,"edge_cache_settings":{"enabled":true,"default":"4d"},"forward_host_header":null,"websockets":null,"use_default_le_chain":null,"use_rsa_le_cert":null,"use_dns01_le_challenge":null,"tls_versions":{"enabled":false,"value":["SSLv3","TLSv1","TLSv1.1","TLSv1.2","TLSv1.3"]},"follow_origin_redirect":null,"http3_enabled":null,"image_stack":null},"deleted":false,"secondaryHostnames":[],"rules":[],"client":250053,"status":"processed","active":true,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"6.6.6.6","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"name":null,"created":"2024-01-22T01:13:04.763366Z","updated":"2024-01-22T01:13:04.763381Z","originProtocol":"MATCH","cname":"service06.gcore.com","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspend_date":null,"suspended":false,"is_primary":null,"description":"service06","originGroup":537731,"sslData":null,"proxy_ssl_ca":null,"proxy_ssl_data":null,"shield_routing_map":null,"primary_resource":null}
+2024/01/22 04:13:08 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/22 04:13:08 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/22 04:13:09 resource_model.go:326: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/22 04:13:09 resource_model.go:326: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/22 04:13:09 resource_model.go:326: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/22 04:13:09 resource_model.go:326: 414622. gcore01.ktcdnteam.link 2024-01-17 18:17:11 active 
+2024/01/22 04:13:09 resource_model.go:326: 425691. service06.gcore.com 2024-01-22 10:13:04 processed 
+2024/01/22 04:13:09 resource_model.go:326: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/22 04:13:09 resource_model.go:326: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/22 04:13:09 resource_model.go:326: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/22 04:13:09 resource_model.go:326: 414622. gcore01.ktcdnteam.link 2024-01-17 18:17:11 active 
+2024/01/22 04:13:09 resource_model.go:326: 425691. service06.gcore.com 2024-01-22 10:13:04 processed 
+2024/01/22 04:14:16 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/425691  
+2024/01/22 04:14:17 resource_model.go:507: ###
+2024/01/22 04:14:17 resource_model.go:508: {"id":425691,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":null,"hostHeader":{"enabled":true,"value":"6.6.6.6"},"staticHeaders":null,"static_response_headers":null,"staticRequestHeaders":null,"allowedHttpMethods":null,"stale":{"enabled":true,"value":["error","updating"]},"cors":null,"proxy_cache_methods_set":null,"rewrite":null,"force_return":null,"secure_key":null,"cache_expire":null,"disable_cache":null,"ignore_cookie":null,"cache_http_headers":null,"response_headers_hiding_policy":null,"override_browser_ttl":null,"fetch_compressed":null,"disable_proxy_force_ranges":null,"redirect_http_to_https":null,"redirect_https_to_http":null,"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"limit_bandwidth":null,"request_limiter":null,"bot_protection":null,"waf":null,"country_acl":null,"referrer_acl":null,"user_agent_acl":null,"ip_address_acl":null,"query_params_blacklist":null,"query_params_whitelist":null,"browser_cache_settings":null,"edge_cache_settings":{"enabled":true,"default":"4d"},"forward_host_header":null,"websockets":null,"use_default_le_chain":null,"use_rsa_le_cert":null,"use_dns01_le_challenge":null,"tls_versions":{"enabled":false,"value":["SSLv3","TLSv1","TLSv1.1","TLSv1.2","TLSv1.3"]},"follow_origin_redirect":null,"http3_enabled":null,"image_stack":null},"deleted":false,"secondaryHostnames":[],"rules":[],"client":250053,"status":"processed","active":true,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"6.6.6.6","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"name":null,"created":"2024-01-22T01:13:04.763366Z","updated":"2024-01-22T01:13:04.763381Z","originProtocol":"MATCH","cname":"service06.gcore.com","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspend_date":null,"suspended":false,"is_primary":null,"description":"service06","originGroup":537731,"sslData":null,"proxy_ssl_ca":null,"proxy_ssl_data":null,"shield_routing_map":null,"primary_resource":null}
+2024/01/22 04:14:17 resource_model.go:509: ###
+2024/01/22 04:14:17 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 04:16:04 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/22 04:16:04 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 04:16:05 resource_model.go:326: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/22 04:16:05 resource_model.go:326: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/22 04:16:05 resource_model.go:326: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/22 04:16:05 resource_model.go:326: 414622. gcore01.ktcdnteam.link 2024-01-17 18:17:11 active 
+2024/01/22 04:16:05 resource_model.go:326: 425691. service06.gcore.com 2024-01-22 10:13:04 processed 
+2024/01/22 04:22:07 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/425691  
+2024/01/22 04:22:08 resource_model.go:507: ###
+2024/01/22 04:22:08 resource_model.go:508: {"id":425691,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":null,"hostHeader":{"enabled":true,"value":"6.6.6.6"},"staticHeaders":null,"static_response_headers":null,"staticRequestHeaders":null,"allowedHttpMethods":null,"stale":{"enabled":true,"value":["error","updating"]},"cors":null,"proxy_cache_methods_set":null,"rewrite":null,"force_return":null,"secure_key":null,"cache_expire":null,"disable_cache":null,"ignore_cookie":null,"cache_http_headers":null,"response_headers_hiding_policy":null,"override_browser_ttl":null,"fetch_compressed":null,"disable_proxy_force_ranges":null,"redirect_http_to_https":null,"redirect_https_to_http":null,"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"limit_bandwidth":null,"request_limiter":null,"bot_protection":null,"waf":null,"country_acl":null,"referrer_acl":null,"user_agent_acl":null,"ip_address_acl":null,"query_params_blacklist":null,"query_params_whitelist":null,"browser_cache_settings":null,"edge_cache_settings":{"enabled":true,"default":"4d"},"forward_host_header":null,"websockets":null,"use_default_le_chain":null,"use_rsa_le_cert":null,"use_dns01_le_challenge":null,"tls_versions":{"enabled":false,"value":["SSLv3","TLSv1","TLSv1.1","TLSv1.2","TLSv1.3"]},"follow_origin_redirect":null,"http3_enabled":null,"image_stack":null},"deleted":false,"secondaryHostnames":[],"rules":[],"client":250053,"status":"processed","active":true,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"6.6.6.6","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"name":null,"created":"2024-01-22T01:13:04.763366Z","updated":"2024-01-22T01:13:04.763381Z","originProtocol":"MATCH","cname":"service06.gcore.com","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspend_date":null,"suspended":false,"is_primary":null,"description":"service06","originGroup":537731,"sslData":null,"proxy_ssl_ca":null,"proxy_ssl_data":null,"shield_routing_map":null,"primary_resource":null}
+2024/01/22 04:22:08 resource_model.go:509: ###
+2024/01/22 04:22:08 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 04:44:13 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/22 04:44:13 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 04:44:14 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/22 04:44:14 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/22 04:44:14 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/22 04:44:14 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/22 04:44:16 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/22 04:44:16 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 04:44:17 resource_model.go:326: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/22 04:44:17 resource_model.go:326: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/22 04:44:17 resource_model.go:326: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/22 04:44:17 resource_model.go:326: 414622. gcore01.ktcdnteam.link 2024-01-17 18:17:11 active 
+2024/01/22 04:44:17 resource_model.go:326: 425691. service06.gcore.com 2024-01-22 10:13:04 active 
+2024/01/22 05:23:40 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 05:23:40 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/22 05:23:41 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/22 05:23:41 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/22 05:23:41 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/22 05:23:41 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/22 05:23:43 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/22 05:23:43 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 05:23:44 resource_model.go:326: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/22 05:23:44 resource_model.go:326: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/22 05:23:44 resource_model.go:326: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/22 05:23:44 resource_model.go:326: 414622. gcore01.ktcdnteam.link 2024-01-17 18:17:11 active 
+2024/01/22 05:23:44 resource_model.go:326: 425691. service06.gcore.com 2024-01-22 10:13:04 active 
+2024/01/22 05:23:46 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/22 05:23:47 resource_model.go:507: ###
+2024/01/22 05:23:47 resource_model.go:508: {"id":396129,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":null,"hostHeader":{"enabled":true,"value":"www.asdf.com"},"staticHeaders":null,"static_response_headers":null,"staticRequestHeaders":null,"allowedHttpMethods":null,"stale":{"enabled":true,"value":["error","updating"]},"cors":null,"proxy_cache_methods_set":null,"rewrite":null,"force_return":null,"secure_key":null,"cache_expire":null,"disable_cache":null,"ignore_cookie":null,"cache_http_headers":null,"response_headers_hiding_policy":null,"override_browser_ttl":null,"fetch_compressed":null,"disable_proxy_force_ranges":null,"redirect_http_to_https":null,"redirect_https_to_http":null,"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"limit_bandwidth":null,"request_limiter":null,"bot_protection":null,"waf":null,"country_acl":null,"referrer_acl":null,"user_agent_acl":null,"ip_address_acl":null,"query_params_blacklist":null,"query_params_whitelist":null,"browser_cache_settings":null,"edge_cache_settings":{"enabled":true,"custom_values":{"201":"10s","any":"10s"},"value":"345600s"},"forward_host_header":null,"websockets":null,"use_default_le_chain":null,"use_rsa_le_cert":null,"use_dns01_le_challenge":null,"tls_versions":{"enabled":false,"value":["TLSv1.3","TLSv1.1","TLSv1.2","TLSv1","SSLv3"]},"follow_origin_redirect":null,"http3_enabled":null,"image_stack":null},"deleted":false,"secondaryHostnames":[],"rules":[],"client":250053,"status":"active","active":true,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"www.asdf.com","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"name":null,"created":"2024-01-09T07:40:11.833398Z","updated":"2024-01-10T05:54:57.745615Z","originProtocol":"HTTP","cname":"gcore06.ktcdnteam.link","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspend_date":null,"suspended":false,"is_primary":null,"description":"server05","originGroup":491753,"sslData":null,"proxy_ssl_ca":null,"proxy_ssl_data":null,"shield_routing_map":null,"primary_resource":null}
+2024/01/22 05:23:47 resource_model.go:509: ###
+2024/01/22 05:23:47 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 08:46:47 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 08:46:48 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/22 08:46:48 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/22 08:46:50 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 08:53:18 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/22 08:53:19 resource_model.go:507: ###
+2024/01/22 08:53:19 resource_model.go:508: {"id":396129,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":null,"hostHeader":{"enabled":true,"value":"www.asdf.com"},"staticHeaders":null,"static_response_headers":null,"staticRequestHeaders":null,"allowedHttpMethods":null,"stale":{"enabled":true,"value":["error","updating"]},"cors":null,"proxy_cache_methods_set":null,"rewrite":null,"force_return":null,"secure_key":null,"cache_expire":null,"disable_cache":null,"ignore_cookie":null,"cache_http_headers":null,"response_headers_hiding_policy":null,"override_browser_ttl":null,"fetch_compressed":null,"disable_proxy_force_ranges":null,"redirect_http_to_https":null,"redirect_https_to_http":null,"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"limit_bandwidth":null,"request_limiter":null,"bot_protection":null,"waf":null,"country_acl":null,"referrer_acl":null,"user_agent_acl":null,"ip_address_acl":null,"query_params_blacklist":null,"query_params_whitelist":null,"browser_cache_settings":null,"edge_cache_settings":{"enabled":true,"custom_values":{"201":"10s","any":"10s"},"value":"345600s"},"forward_host_header":null,"websockets":null,"use_default_le_chain":null,"use_rsa_le_cert":null,"use_dns01_le_challenge":null,"tls_versions":{"enabled":false,"value":["TLSv1.3","TLSv1.1","TLSv1.2","TLSv1","SSLv3"]},"follow_origin_redirect":null,"http3_enabled":null,"image_stack":null},"deleted":false,"secondaryHostnames":[],"rules":[],"client":250053,"status":"active","active":true,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"www.asdf.com","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"name":null,"created":"2024-01-09T07:40:11.833398Z","updated":"2024-01-10T05:54:57.745615Z","originProtocol":"HTTP","cname":"gcore06.ktcdnteam.link","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspend_date":null,"suspended":false,"is_primary":null,"description":"server05","originGroup":491753,"sslData":null,"proxy_ssl_ca":null,"proxy_ssl_data":null,"shield_routing_map":null,"primary_resource":null}
+2024/01/22 08:53:19 resource_model.go:509: ###
+2024/01/22 09:29:11 main.go:28: Start api-server..
+2024/01/22 09:29:11 server.go:9: Start api-server..
+2024/01/22 09:39:21 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 09:39:25 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 09:39:48 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 09:43:39 main.go:28: Start api-server..
+2024/01/22 09:43:39 server.go:9: Start api-server..
+2024/01/22 09:43:43 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/22 09:43:43 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 09:43:44 resource_model.go:326: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/22 09:43:44 resource_model.go:326: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/22 09:43:44 resource_model.go:326: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/22 09:43:44 resource_model.go:326: 414622. gcore01.ktcdnteam.link 2024-01-17 18:17:11 active 
+2024/01/22 09:43:44 resource_model.go:326: 425691. service06.gcore.com 2024-01-22 10:13:04 active 
+2024/01/22 09:44:07 main.go:28: Start api-server..
+2024/01/22 09:44:07 server.go:9: Start api-server..
+2024/01/22 09:44:08 route.go:57: /cdn/resources?ordering=status&delete=false&fields=id,description,status,cname,originGroup_name,created_str,origins
+2024/01/22 09:44:08 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/22 09:44:08 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 09:44:09 resource_model.go:326: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/22 09:44:09 resource_model.go:326: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/22 09:44:09 resource_model.go:326: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/22 09:44:09 resource_model.go:326: 414622. gcore01.ktcdnteam.link 2024-01-17 18:17:11 active 
+2024/01/22 09:44:09 resource_model.go:326: 425691. service06.gcore.com 2024-01-22 10:13:04 active 
+2024/01/22 09:44:46 main.go:28: Start api-server..
+2024/01/22 09:44:46 server.go:9: Start api-server..
+2024/01/22 09:46:47 main.go:28: Start api-server..
+2024/01/22 09:46:47 server.go:9: Start api-server..
+2024/01/22 09:48:47 main.go:28: Start api-server..
+2024/01/22 09:48:47 server.go:9: Start api-server..
+2024/01/22 09:48:49 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?delete=false&fields=id,description,status,cname,originGroup_name,created,origins  
+2024/01/22 09:48:49 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 09:48:51 resource_model.go:328: 396129. gcore06.ktcdnteam.link 2024-01-09 07:40:11.833398 +0000 UTC active 
+2024/01/22 09:48:51 resource_model.go:328: 397881. gcore07.ktcdnteam.link 2024-01-10 04:47:42.081934 +0000 UTC active 
+2024/01/22 09:48:51 resource_model.go:328: 412315. www.asdf.com 2024-01-16 11:08:50.503025 +0000 UTC active 
+2024/01/22 09:48:51 resource_model.go:328: 414622. gcore01.ktcdnteam.link 2024-01-17 09:17:11.876711 +0000 UTC active 
+2024/01/22 09:48:51 resource_model.go:328: 425691. service06.gcore.com 2024-01-22 01:13:04.763366 +0000 UTC active 
+2024/01/22 09:54:50 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?delete=false&fields=id,description,status,cname,originGroup_name,created,origins  
+2024/01/22 09:54:50 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 09:54:52 resource_model.go:328: 396129. gcore06.ktcdnteam.link 2024-01-09 07:40:11.833398 +0000 UTC active 
+2024/01/22 09:54:52 resource_model.go:328: 397881. gcore07.ktcdnteam.link 2024-01-10 04:47:42.081934 +0000 UTC active 
+2024/01/22 09:54:52 resource_model.go:328: 412315. www.asdf.com 2024-01-16 11:08:50.503025 +0000 UTC active 
+2024/01/22 09:54:52 resource_model.go:328: 414622. gcore01.ktcdnteam.link 2024-01-17 09:17:11.876711 +0000 UTC active 
+2024/01/22 09:54:52 resource_model.go:328: 425691. service06.gcore.com 2024-01-22 01:13:04.763366 +0000 UTC active 
+2024/01/22 09:55:28 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?delete=false&fields=id,description,status,cname,originGroup_name,created,origins  
+2024/01/22 09:55:28 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 09:55:29 resource_model.go:328: 396129. gcore06.ktcdnteam.link 2024-01-09 07:40:11.833398 +0000 UTC active 
+2024/01/22 09:55:29 resource_model.go:328: 397881. gcore07.ktcdnteam.link 2024-01-10 04:47:42.081934 +0000 UTC active 
+2024/01/22 09:55:29 resource_model.go:328: 412315. www.asdf.com 2024-01-16 11:08:50.503025 +0000 UTC active 
+2024/01/22 09:55:29 resource_model.go:328: 414622. gcore01.ktcdnteam.link 2024-01-17 09:17:11.876711 +0000 UTC active 
+2024/01/22 09:55:29 resource_model.go:328: 425691. service06.gcore.com 2024-01-22 01:13:04.763366 +0000 UTC active 
+2024/01/22 09:56:18 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 09:56:18 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?delete=false&fields=id,description,status,cname,originGroup_name,created,origins  
+2024/01/22 09:56:19 resource_model.go:328: 396129. gcore06.ktcdnteam.link 2024-01-09 07:40:11.833398 +0000 UTC active 
+2024/01/22 09:56:19 resource_model.go:328: 397881. gcore07.ktcdnteam.link 2024-01-10 04:47:42.081934 +0000 UTC active 
+2024/01/22 09:56:19 resource_model.go:328: 412315. www.asdf.com 2024-01-16 11:08:50.503025 +0000 UTC active 
+2024/01/22 09:56:19 resource_model.go:328: 414622. gcore01.ktcdnteam.link 2024-01-17 09:17:11.876711 +0000 UTC active 
+2024/01/22 09:56:19 resource_model.go:328: 425691. service06.gcore.com 2024-01-22 01:13:04.763366 +0000 UTC active 
+2024/01/22 09:57:37 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?delete=false&fields=id,description,status,cname,originGroup_name,created,origins  
+2024/01/22 09:57:37 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 09:57:38 resource_model.go:328: 396129. gcore06.ktcdnteam.link 2024-01-09 07:40:11.833398 +0000 UTC active 
+2024/01/22 09:57:38 resource_model.go:328: 397881. gcore07.ktcdnteam.link 2024-01-10 04:47:42.081934 +0000 UTC active 
+2024/01/22 09:57:38 resource_model.go:328: 412315. www.asdf.com 2024-01-16 11:08:50.503025 +0000 UTC active 
+2024/01/22 09:57:38 resource_model.go:328: 414622. gcore01.ktcdnteam.link 2024-01-17 09:17:11.876711 +0000 UTC active 
+2024/01/22 09:57:38 resource_model.go:328: 425691. service06.gcore.com 2024-01-22 01:13:04.763366 +0000 UTC active 
+2024/01/22 09:58:20 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?delete=false&fields=id,description,status,cname,originGroup_name,created,origins  
+2024/01/22 09:58:20 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 09:58:21 resource_model.go:328: 396129. gcore06.ktcdnteam.link 2024-01-09 07:40:11.833398 +0000 UTC active 
+2024/01/22 09:58:21 resource_model.go:328: 397881. gcore07.ktcdnteam.link 2024-01-10 04:47:42.081934 +0000 UTC active 
+2024/01/22 09:58:21 resource_model.go:328: 412315. www.asdf.com 2024-01-16 11:08:50.503025 +0000 UTC active 
+2024/01/22 09:58:21 resource_model.go:328: 414622. gcore01.ktcdnteam.link 2024-01-17 09:17:11.876711 +0000 UTC active 
+2024/01/22 09:58:21 resource_model.go:328: 425691. service06.gcore.com 2024-01-22 01:13:04.763366 +0000 UTC active 
+2024/01/22 09:59:16 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?delete=false&fields=id,description,status,cname,originGroup_name,created,origins  
+2024/01/22 09:59:16 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 09:59:17 resource_model.go:328: 396129. gcore06.ktcdnteam.link 2024-01-09 07:40:11.833398 +0000 UTC active 
+2024/01/22 09:59:17 resource_model.go:328: 397881. gcore07.ktcdnteam.link 2024-01-10 04:47:42.081934 +0000 UTC active 
+2024/01/22 09:59:17 resource_model.go:328: 412315. www.asdf.com 2024-01-16 11:08:50.503025 +0000 UTC active 
+2024/01/22 09:59:17 resource_model.go:328: 414622. gcore01.ktcdnteam.link 2024-01-17 09:17:11.876711 +0000 UTC active 
+2024/01/22 09:59:17 resource_model.go:328: 425691. service06.gcore.com 2024-01-22 01:13:04.763366 +0000 UTC active 
+2024/01/22 10:01:52 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?delete=false&fields=id,description,status,cname,originGroup_name,created,origins  
+2024/01/22 10:01:52 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 10:01:53 resource_model.go:328: 396129. gcore06.ktcdnteam.link 2024-01-09 07:40:11.833398 +0000 UTC active 
+2024/01/22 10:01:53 resource_model.go:328: 397881. gcore07.ktcdnteam.link 2024-01-10 04:47:42.081934 +0000 UTC active 
+2024/01/22 10:01:53 resource_model.go:328: 412315. www.asdf.com 2024-01-16 11:08:50.503025 +0000 UTC active 
+2024/01/22 10:01:53 resource_model.go:328: 414622. gcore01.ktcdnteam.link 2024-01-17 09:17:11.876711 +0000 UTC active 
+2024/01/22 10:01:53 resource_model.go:328: 425691. service06.gcore.com 2024-01-22 01:13:04.763366 +0000 UTC active 
+2024/01/22 10:02:17 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?delete=false&fields=id,description,status,cname,originGroup_name,created,origins  
+2024/01/22 10:02:17 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/22 10:02:18 resource_model.go:328: 396129. gcore06.ktcdnteam.link 2024-01-09 07:40:11.833398 +0000 UTC active 
+2024/01/22 10:02:18 resource_model.go:328: 397881. gcore07.ktcdnteam.link 2024-01-10 04:47:42.081934 +0000 UTC active 
+2024/01/22 10:02:18 resource_model.go:328: 412315. www.asdf.com 2024-01-16 11:08:50.503025 +0000 UTC active 
+2024/01/22 10:02:18 resource_model.go:328: 414622. gcore01.ktcdnteam.link 2024-01-17 09:17:11.876711 +0000 UTC active 
+2024/01/22 10:02:18 resource_model.go:328: 425691. service06.gcore.com 2024-01-22 01:13:04.763366 +0000 UTC active 
+2024/01/22 10:04:21 main.go:28: Start api-server..
+2024/01/22 10:04:21 server.go:9: Start api-server..
+2024/01/22 10:04:43 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?ordering=status,-id&deleted=true&fields=id,cname,status  
+2024/01/22 10:04:44 resource_model.go:328: 425691. service06.gcore.com 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:04:44 resource_model.go:328: 414622. gcore01.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:04:44 resource_model.go:328: 412315. www.asdf.com 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:04:44 resource_model.go:328: 397881. gcore07.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:04:44 resource_model.go:328: 396129. gcore06.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:04:44 resource_model.go:328: 412316. www.asdfg.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 412045. gcore09.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 395596. gcore05.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 393269. cloud.kt.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 386283. asdf.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 379120. server.kt.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 379119. c1loud1.kt.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 379118. cloud11.kt.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 379116. cloud2.kt.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 361345. server02.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 361343. service01.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 346828. cloud.kt.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 343782. service06.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 342774. service07.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 341780. service05.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 341778. service04.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 341777. service03.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 341776. service02.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 341640. service01.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 341411. abc011.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 341403. abc04.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 341401. abc03.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 341399. abc002.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 341397. gcore0333.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 341387. cdnasdf.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 325445. gcore055.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 319047. ktcloudcdn.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 313797. gcore33.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 313796. gcore33.ktcdnteam 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 312120. gcore05.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 311773. gcore04.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:04:44 resource_model.go:328: 241376. testcdn.a.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:46 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?ordering=status,-id&deleted=true&fields=id,cname,status  
+2024/01/22 10:05:47 resource_model.go:328: 425691. service06.gcore.com 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:05:47 resource_model.go:328: 414622. gcore01.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:05:47 resource_model.go:328: 412315. www.asdf.com 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:05:47 resource_model.go:328: 397881. gcore07.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:05:47 resource_model.go:328: 396129. gcore06.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:05:47 resource_model.go:328: 412316. www.asdfg.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 412045. gcore09.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 395596. gcore05.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 393269. cloud.kt.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 386283. asdf.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 379120. server.kt.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 379119. c1loud1.kt.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 379118. cloud11.kt.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 379116. cloud2.kt.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 361345. server02.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 361343. service01.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 346828. cloud.kt.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 343782. service06.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 342774. service07.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 341780. service05.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 341778. service04.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 341777. service03.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 341776. service02.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 341640. service01.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 341411. abc011.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 341403. abc04.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 341401. abc03.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 341399. abc002.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 341397. gcore0333.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 341387. cdnasdf.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 325445. gcore055.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 319047. ktcloudcdn.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 313797. gcore33.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 313796. gcore33.ktcdnteam 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 312120. gcore05.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 311773. gcore04.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:05:47 resource_model.go:328: 241376. testcdn.a.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:33 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?ordering=status,-id&deleted=true&fields=id,cname,status  
+2024/01/22 10:06:36 resource_model.go:328: 425691. service06.gcore.com 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:06:36 resource_model.go:328: 414622. gcore01.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:06:36 resource_model.go:328: 412315. www.asdf.com 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:06:36 resource_model.go:328: 397881. gcore07.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:06:36 resource_model.go:328: 396129. gcore06.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:06:36 resource_model.go:328: 412316. www.asdfg.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 412045. gcore09.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 395596. gcore05.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 393269. cloud.kt.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 386283. asdf.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 379120. server.kt.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 379119. c1loud1.kt.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 379118. cloud11.kt.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 379116. cloud2.kt.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 361345. server02.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 361343. service01.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 346828. cloud.kt.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 343782. service06.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 342774. service07.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 341780. service05.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 341778. service04.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 341777. service03.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 341776. service02.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 341640. service01.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 341411. abc011.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 341403. abc04.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 341401. abc03.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 341399. abc002.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 341397. gcore0333.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 341387. cdnasdf.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 325445. gcore055.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 319047. ktcloudcdn.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 313797. gcore33.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 313796. gcore33.ktcdnteam 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 312120. gcore05.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 311773. gcore04.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:36 resource_model.go:328: 241376. testcdn.a.com 0001-01-01 00:00:00 +0000 UTC deleted 
+2024/01/22 10:06:50 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?ordering=status,-id&deleted=false&fields=id,cname,status  
+2024/01/22 10:06:51 resource_model.go:328: 425691. service06.gcore.com 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:06:51 resource_model.go:328: 414622. gcore01.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:06:51 resource_model.go:328: 412315. www.asdf.com 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:06:51 resource_model.go:328: 397881. gcore07.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:06:51 resource_model.go:328: 396129. gcore06.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:09:47 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?ordering=status,-id&deleted=false&fields=id,cname,status  
+2024/01/22 10:09:49 resource_model.go:328: 425691. service06.gcore.com 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:09:49 resource_model.go:328: 414622. gcore01.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:09:49 resource_model.go:328: 412315. www.asdf.com 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:09:49 resource_model.go:328: 397881. gcore07.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:09:49 resource_model.go:328: 396129. gcore06.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:26:56 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?ordering=status,-id&deleted=false&fields=id,cname,status  
+2024/01/22 10:26:57 resource_model.go:328: 425691. service06.gcore.com 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:26:57 resource_model.go:328: 414622. gcore01.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:26:57 resource_model.go:328: 412315. www.asdf.com 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:26:57 resource_model.go:328: 397881. gcore07.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:26:57 resource_model.go:328: 396129. gcore06.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 

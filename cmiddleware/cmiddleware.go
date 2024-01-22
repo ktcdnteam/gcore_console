@@ -15,8 +15,8 @@ type CustomContext struct {
 	AdminInfo AdminInfoBlock
 }
 
-// AdminConsoleAuth : Custom middleware for auth
-func AdminConsoleAuth(next echo.HandlerFunc) echo.HandlerFunc {
+// GcoreConsoleAuth : Custom middleware for auth
+func GcoreConsoleAuth(next echo.HandlerFunc) echo.HandlerFunc {
 	return func(c echo.Context) error {
 		cc := &CustomContext{Context: c}
 		contentType := c.Request().Header.Get("Content-Type")

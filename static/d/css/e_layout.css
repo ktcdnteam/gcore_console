@@ -1493,7 +1493,7 @@
 /* Dashboard 해상도 스크롤 높이 조절 */
 .sub_con_box_dash{width: 100%;height:calc( 100% - 180px);}
 
-/* Usage 해상도 스크롤 높이 조절 */
+/* Statistics 해상도 스크롤 높이 조절 */
 .sub_con_box_usage{width: 100%;height:calc( 100% - 200px);}
 .sub_con_box_usage2{width: 100%;height: calc( 100% - 280px);} /*cdn3.0*/
 
@@ -5828,7 +5828,7 @@ input.rdo{width:0px;height:0px;position:absolute;/* top:-5000px; */z-index:-1;di
     .scroll_maria .c_th_tbl input.sht, .scroll_maria .n_th_tbl input.sht{width:118px !important;}
 }
 
-@media all and (max-width: 1510px){
+@media all and (max-width: 2340px){
     
     /*내계정 내 테이블*/
     .scroll_tbl.ms {
@@ -6066,7 +6066,7 @@ input.rdo{width:0px;height:0px;position:absolute;/* top:-5000px; */z-index:-1;di
   
     /*상품 생성페이지 - 서브메뉴 생성단계가 없는 경우 */
     .scroll_notab.md{
-        overflow-x: hidden; overflow-y: auto; height: 100%;
+        overflow-x: scroll;height: 100%;
     }
     
 }

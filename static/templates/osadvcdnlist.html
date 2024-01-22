@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>KT Cloud – CDN Standard</title>
+<title>KT Cloud – CDN Edge</title>
 
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <link rel='stylesheet' href='/css/jquery-ui-1.12.1.custom.css' type="text/css" />
@@ -19,10 +19,10 @@
 <script type='text/javascript' src='/js/toastr.min.js'></script>
 <script type='text/javascript' src='/js/dshow.js'></script>
 
-<script type='text/javascript' src='/d/scripts/portal.common.popup.js?version=1701924972719'></script>
-<script type='text/javascript' src='/d/scripts/portal.common.function.js?version=1701924972719'></script>
-<script type='text/javascript' src='/d/scripts/portal.common.cr.js?version=1701924972719'></script>
-<script type='text/javascript' src='/d/scripts/console.common.2020_renewal.js?version=1701924972719'></script>
+<!-- <script type='text/javascript' src='/d/scripts/portal.common.popup.js?version=1701924972719'></script> -->
+<!-- <script type='text/javascript' src='/d/scripts/portal.common.function.js?version=1701924972719'></script> -->
+<!-- <script type='text/javascript' src='/d/scripts/portal.common.cr.js?version=1701924972719'></script> -->
+<!-- <script type='text/javascript' src='/d/scripts/console.common.2020_renewal.js?version=1701924972719'></script> -->
 <link href="/css/jquery.jqplot.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript"> 
@@ -71,7 +71,7 @@
 
 <!-- left lnb -->
 <link rel='stylesheet' type='text/css' href='/d/css/e_vrBar.css?ver=1.1' />
-<script src='/js/e_vrBar.js?version=1701924972719'></script>
+<!-- <script src='/js/e_vrBar.js?version=1701924972719'></script> -->
 
 <script type='text/javascript'>
     // 스마트 가이드 바로가기 - 서버 청약 체크 로직
@@ -383,7 +383,7 @@
             <div class='depth1' id=''>
             <div class="vNav">
                           <ul id='depth1_menu_ul' >
-                            <li class="vdepth1 cdn-standard active">
+                            <li class="vdepth1 cdn-standard">
                                 <a href="#">
                                 <img src="/images/menu/leftmenu/cdn-standard.svg">
                                 <span>CDN Edge</span>
@@ -395,14 +395,19 @@
                                         <span>Resources</span>
                                         </a>
                                     </li>
-                                    <li class="vdepth2 cdn3Usage">
+                                    <!-- <li class="vdepth2 cdn3Statistics">
                                         <a href="/cdn/origin_group">
                                         <span>Origin Group</span>
                                         </a>
-                                    </li>
-                                    <li class="vdepth2 cdn3Usage">
+                                    </li> -->
+                                    <li class="vdepth2 cdn3Statistics">
                                         <a href="/cdn/purge">
                                         <span>Purge</span>
+                                        </a>
+                                    </li>
+                                    <li class="vdepth2 cdn3Statistics">
+                                        <a href="/cdn/usage">
+                                        <span>Statistics</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -501,12 +506,6 @@
 
 <!---- Container 서비스 -->
 <input type="text" id="txt_lang_lmlnb_container" name='컨테이너리스트' style="display:none;"/>
-
-
-
-
-    
-
         <script type='text/javascript' src='/js/e_hrBar.js'></script>    
 
         <script type="text/javascript" src="/scripts/console.cdn.js?version=1701924973219"></script>
@@ -516,20 +515,27 @@
         {{end}}
         {{if eq .URL "ORIGIN_GROUP"}}
             {{template "ORIGIN_GROUP"}}
+            <script type="text/javascript" src="/d/scripts/origingroup.js?version=1701924973219"></script>
         {{end}}
         {{if eq .URL "PURGE"}}
             {{template "PURGE"}}
         {{end}}
-        
-
-        <!-- //contentwrapper -->
+        {{if eq .URL "CDN_DETAIL"}}
+            {{template "CDN_DETAIL"}}
+            <script>
+                var svc_id = {{.ID}} 
+                console.log(svc_id)
+            </script>
+        {{end}}
+        {{if eq .URL "STATISTICS"}}
+            {{template "STATISTICS"}}
+        {{end}}
 
 
 </div>
 <!-- //b -->
 
-
-<!-- Usage-에러 -->
+<!-- Statistics-에러 -->
     <div class="popUp" style="width:500px;top:auto !important;display: none;">         
             <div class="head htsht clfix">
                 <h1><!--타이틀--> <span class="del"><a href="#"><img src="/images/coni/Cancel.svg" alt="" /></a></span></h1> 

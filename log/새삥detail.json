@@ -1,0 +1,85 @@
+{
+  "sslData": null,
+  "sslEnabled": false,
+  "id": 412315,
+  "name": null,
+  "enabled": true,
+  "active": true,
+  "originGroup": 523548,
+  "originProtocol": "MATCH",
+  "description": "service08",
+  "origin": null,
+  "cname": "www.asdf.com",
+  "secondaryHostnames": [],
+  "shieldDatacenter": null,
+  "shielded": false,
+  "vp_enabled": false,
+  "options": {
+    "edge_cache_settings": {
+      "enabled": true,
+      "default": "4d"
+    },
+    "browser_cache_settings": null,
+    "follow_origin_redirect": null,
+    "ignore_cookie": null,
+    "ignoreQueryString": null,
+    "query_params_blacklist":null,
+    "query_params_whitelist":null,
+    "stale": {
+      "enabled": true,
+      "value": [
+        "error"
+      ]
+    },
+    "country_acl":null,
+
+    "slice": null,
+    "fetch_compressed": null,
+    "gzipOn": null,
+    "redirect_http_to_https": null,
+    "redirect_https_to_http": null,
+    "hostHeader": {
+      "enabled": true,
+      "value": "8.8.8.8"
+    },
+    "forward_host_header": null,
+    "staticHeaders": null,
+    "staticRequestHeaders": null,
+    "rewrite": null,
+    "force_return": null,
+    "user_agent_acl": null,
+    "ip_address_acl": null,
+    "referrer_acl": null,
+    "secure_key": null,
+    "cors": null,
+    
+    "allowedHttpMethods": null,
+    "proxy_cache_methods_set": null,
+    "brotli_compression": null,
+    "sni": {
+      "enabled": true,
+      "sni_type": "dynamic",
+      "custom_hostname": ""
+    },
+    "request_limiter": null,
+    "bot_protection": null,
+    "websockets": null,
+    "waf": null,
+    "tls_versions": {
+      "enabled": false,
+      "value": [
+        "SSLv3",
+        "TLSv1",
+        "TLSv1.1",
+        "TLSv1.2",
+        "TLSv1.3"
+      ]
+    },
+    "static_response_headers": null,
+    "response_headers_hiding_policy": null,
+    "image_stack": null,
+    "custom_server_name": null,
+    "http3_enabled": null,
+    "limit_bandwidth": null
+  }
+}

@@ -1,0 +1,658 @@
+{{define "CDN_DETAIL"}}
+<div id="cdnModifyContent" style="width: 100%;">
+    <div id="contentcolumn3">
+        <div id="cdnContentArea" class="sub_m">
+            <div class="sub_t btop dep1_1 ml60">
+                <div class="r_quick_wrap">
+                    <span class="r_quick"><a href="" class="cicon cprod_cdn">CDN Edge</a></span> >          
+                    <span class="r_quick_s"><a href="" class="cicons">CDN</a></span>
+                        
+                    <span class="h3_quick"><a href="javascript:go_portal_page('https://manual.cloud.kt.com/kt/cdn-standard-intro');" class="tmanual7">매뉴얼</a></span>
+                    <span class="h3_quick ml10"><a href="javascript:go_portal_inquiry('3','ucloud CDN','/console/cdnlist');" class="thelp7">온라인문의</a></span>
+                    <span class="h3_quick"><a href="javascript:go_portal_satisfaction_evaluation('CDN3.0','CDN');" class="tSatisfactioni7">만족도평가</a></span>
+                </div>
+                <div class="title_area dep1_1">
+                    <h3 class="">CDN 변경</h3>                                             
+                    <p class="box_txtl mb40"><span id="modify_svcName"></span>서비스를 변경합니다.</p>
+                </div>
+            </div>
+            <!-- 컨텐츠 wrap -->
+            <div class="listscroll"> 
+                <!-- 화면 해상도 높이 조절 start -->                           
+                <div class="sub_con_box_w">                                                                           
+                    <!--    컨텐츠 분할 영역 시작 -->
+<div id="" class="mybox">
+    <div id="inner_consolecontent_div10" class="slimscrollcls" style="overflow: hidden; width: 100%; height: 100%;">
+        <!--    컨텐츠 분할 영역 시작 -->
+        <div class="scroll_notab md" style="overflow-x: scroll;">
+            <div class="highsetting_wrap">
+                <div class="highsetting_tit">
+                    <p style="font-weight: bold !important;">기본 설정</p>
+                </div>
+            </div>
+            <div class="sub_box_c mt40">
+                <div class="" id="service_create_div">
+                    <table class="c_th_input_cdn" style="margin-bottom: 30px">
+                        <caption>CDN 변경</caption>
+                        <colgroup>
+                            <col style="width:320px; margin-top:10px; ">
+                            <col style="width: *">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th class="" scope="row">서비스명</th>
+                                <td value="" id="service_name"></td>
+                            </tr>
+                            <tr>
+                                <th class="" scope="row">서비스도메인</th>
+                                <td value="" id="service_domain"></td>
+                            </tr>
+                            <tr>
+                                <th class="vt pr" scope="row">
+                                    <div class="tooltip_left dib">
+                                        오리진 서버
+                                        <span class="dtib ml10" style="height: 21px;">
+                                            <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보">
+                                        </span>
+                                    </div>
+                                    <div class="tooltip_sm2" style="left: 69px; top: -44px; width: 444px;">
+                                        <p class="btxt_white_regular ac">오리진 서버</p>
+                                    </div>
+                                </th>
+                                <td>
+                                    <div class="custom-select dib" style="width:500px;">
+                                        <select id="originGroupList2"></select>
+                                    </div>
+                                </td>
+                                <tr>
+                                    <th class="vt pr" scope="row">
+                                        <div class="tooltip_left dib">
+                                            프로토콜
+                                            <span class="dtib ml10" style="height: 21px;">
+                                                <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보">
+                                            </span>
+                                        </div>
+                                        <div class="tooltip_sm2" style="left: 69px; top: -44px; width: 444px;">
+                                            <p class="btxt_white_regular ac">원본파일이 존재하는 실제 서버의 IP주소 또는 도메인 주소를 입력하세요.</p>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="custom-select dib"  style="width:500px;">
+                                            <select id="protocolBox2">
+                                                <option value="HTTP">HTTP</option>
+                                                <option value="HTTPS">HTTPS</option>
+                                                <option value="MATCH">HTTP/HTTPS</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                        </tbody>
+                    </table>
+                    <!-- Cache 설정 메뉴 -->
+                    <div class="highsetting_wrap">
+                        <div class="highsetting_tit">
+                            <p style="font-weight: bold !important;">Cache 설정<span class="ptitclick ml10" id="cacheSetting"></span></p>
+                        </div>
+                        <div class="pdescclick" id="cacheSettingArea">
+                            <div class="depth_highsetting_wrap">
+                                <dl class="depth_highsetting dp_on" id="highsetting_content">
+                                    <!-- CDN caching -->
+                                    <dt>
+                                        <div class="switch_box">
+                                            <label class="md_switch pr">
+                                                <input type="checkbox" id="cachingToggle">
+                                                <span class="md_switch__toggle on"></span>
+                                                <div class="tooltip_left dib msl">
+                                                    CDN caching
+                                                    <span class="dtib ml10" style="height: 21px;">
+                                                        <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보">
+                                                    </span>
+                                                </div>
+                                                <div class="tooltip_sm2" style="left: 115px; top: -81px; width: 610px;">
+                                                    <p class="btxt_white_regular ac">CDN 서버의 캐시 만료 시간입니다.</p>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </dt>
+                                    <dd id="cdn_caching_content" class="toggle_content">
+                                        <div class="">
+                                            <table class="c_th_input_cdn">
+                                                <caption>CDN caching</caption>
+                                                <colgroup>
+                                                    <col width="250px">
+                                                    <col width="*">
+                                                </colgroup>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <!-- <th class="vt">기본 캐시 만료</th> -->
+                                                        <th class="vt"></th>
+                                                        <td>
+                                                            <div class="stat_bnlist_wrap clfix">
+                                                                <ul class="stat_bnlist" id="caching_control_type">
+                                                                    <li><span class="stat on" value="0" style="width:160px;">원본 서버 Control</span></li>
+                                                                    <li><span class="stat" value="1" style="width:160px;">Cache Control</span></li>
+                                                                </ul>
+                                                            </div>
+                                                            <ul class="clfix custom_check_box" id="caching_option_check1">
+                                                                <div class="custom-select dib"  style="width:320px; margin-top:10px;">
+                                                                    <select id="caching_select_create" onchange="selectCacheOtherChang()">
+                                                                        <option value="0s">캐시하지 않음</option>
+                                                                        <option value="10s">10초</option>
+                                                                        <option value="60s">1분</option>
+                                                                        <option value="600s">10분</option>
+                                                                        <option value="1800s">30분</option>
+                                                                        <option value="3600s">1시간</option>
+                                                                        <option value="14400s">4시간</option>
+                                                                        <option value="43200s">12시간</option>
+                                                                        <option value="172800s">2일</option>
+                                                                        <option value="345600s">4일</option>
+                                                                        <option value="other">직접 설정</option>
+                                                                    </select>
+                                                                </div>
+                                                                <input class="i_popup al" id="caching_time_other" placeholder="[초] 단위로 입력해주세요. (숫자만 가능)" type="text" style="width: 279px;display: none;">
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </dd>
+                                    <!-- Redirect 응답 설정 -->
+                                    <dt>
+                                        <div class="switch_box">
+                                            <label class="md_switch pr">
+                                                <input type="checkbox" id="redirectToggle">
+                                                <span class="md_switch__toggle on"></span>
+                                                <div class="tooltip_left dib msl">
+                                                    Redirect 응답 설정
+                                                    <span class="dtib ml10" style="height: 21px;">
+                                                        <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보">
+                                                    </span>
+                                                </div>
+                                                <div class="tooltip_sm2" style="left: 172px; top: -115px; width: 491px;">
+                                                    <p class="btxt_white_regular">
+                                                        원본 서버가 리디렉션을 반환하는 경우 옵션을 사용하면 CDN이 리디렉션에서 반환된 원본 서버에서 요청된 콘텐츠를 가져올 수 있습니다.
+                                                        <br>최종 사용자에게 최신 콘텐츠를 제공하려면 옵션을 관리한 후 캐시를 제거해야 합니다.
+                                                    </p>
+                                                </div>
+
+                                            </label>
+                                        </div>
+                                    </dt>
+                                    <dd id="redirect_response_content" class="toggle_content">
+                                        <div class="">
+                                            <table class="c_th_input_cdn">
+                                                <caption>Redirect 응답 설정</caption>
+                                                <colgroup>
+                                                    <col width="250px">
+                                                    <col width="*">
+                                                </colgroup>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="vt pr">   
+                                                            <!-- <div class="dib" style="line-height:30px;">
+                                                                <p class="tooltip_left"> 원본에서 리디렉션<span class="dtib" style="height:21px;"><img class="dtbc vm ml10" src="/images/coni/Table_Information.svg" alt="정보"></span></p>
+                                                                <div class="tooltip_sm2" style="width: 450px;left: 107px;top: -78px;"><p class="btxt_white_regular">원본 서버가 Redirect를 반환하는 경우 옵션을 사용하면 CDN이 Redirect에서 반환된 원본 서버에서 요청된 콘텐츠를 가져올 수 있습니다.<br>최종 사용자에게 최신 콘텐츠를 제공하려면 옵션을 관리한 후 캐시를 제거해야 합니다.</p></div> -->
+                                                            <!-- </div>                                                                              -->
+                                                        </th>
+                                                        <td>
+                                                            <div class="stat_bnlist_wrap clfix">
+                                                                <ul class="stat_bnlist" id="query_parameter_check" style="width: 368px;">
+                                                                    <div class="mt10" id="redirect_response_controll_div" style="">
+                                                                        <div class="custom-select" style="width: 500px;">
+                                                                            <select id="redirect_code_list">
+                                                                                <option value="301">301</option>
+                                                                                <option value="302">302</option>
+                                                                                <option value="303">303</option>
+                                                                                <option value="307">307</option>
+                                                                                <option value="308">308</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="customselc-result3 mt10" id="redirect_code_div">
+                                                                            <p name="" value="" style="display:none;" id="redirect_code_base">
+                                                                                <span id="redirect_code_text">KR</span>
+                                                                                <span class="fr ml15 mt5">
+                                                                                    <img src="/images/coni/Cancel.svg" style="width:10px; cursor:pointer;" alt="삭제">
+                                                                                </span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <div>
+                                                                            <p class="mt5">
+                                                                                <span id="redirect_text_area" class="red_txt" style="display: none;">
+                                                                                    <span id="redirect_red_text">필수입니다.</span>
+                                                                                </span>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </dd>
+                                    <!-- 브라우저 캐싱 활성화 -->
+                                    <dt>
+                                        <div class="switch_box">
+                                            <label class="md_switch pr">
+                                                <input type="checkbox" id="browserToggle">
+                                                <span class="md_switch__toggle on"></span>
+                                                <div class="tooltip_left dib msl">
+                                                    브라우저 캐싱 활성화 설정
+                                                    <span class="dtib ml10" style="height: 21px;">
+                                                        <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보">
+                                                    </span>
+                                                </div>
+                                                <div class="tooltip_sm2" style="left: 172px; top: -115px; width: 491px;">
+                                                    <p class="btxt_white_regular">
+                                                        원본 서버가 리디렉션을 반환하는 경우 옵션을 사용하면 CDN이 리디렉션에서 반환된 원본 서버에서 요청된 콘텐츠를 가져올 수 있습니다.
+                                                        <br>최종 사용자에게 최신 콘텐츠를 제공하려면 옵션을 관리한 후 캐시를 제거해야 합니다.
+                                                    </p>
+                                                </div>
+
+                                            </label>
+                                        </div>
+                                    </dt>
+                                    <dd id="browser_caching_content" class="toggle_content">
+                                        <div class="">
+                                            <table class="c_th_input_cdn">
+                                                <caption>브라우저 캐싱 활성화</caption>
+                                                <colgroup>
+                                                    <col width="250px">
+                                                    <col width="*">
+                                                </colgroup>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="vt"></th>
+                                                        <td>
+                                                            <div class="stat_bnlist_wrap clfix">
+                                                                <ul class="stat_bnlist" id="caching_control_type2">
+                                                                    <li><span class="stat on" value="0" style="width:160px;">원본 서버 Control</span></li>
+                                                                    <li><span class="stat" value="1" style="width:160px;">Cache Control</span></li>
+                                                                </ul>
+                                                            </div>
+                                                            <ul class="clfix custom_check_box" id="caching_option_check2" style="display: none;">
+                                                                <div class="custom-select dib"  style="width:320px; margin-top:10px;">
+                                                                    <select id="browser_caching_select_create" onchange="selectCacheOtherChang2()">
+                                                                        <option value="0s">캐시하지 않음</option>
+                                                                        <option value="10s">10초</option>
+                                                                        <option value="60s">1분</option>
+                                                                        <option value="600s">10분</option>
+                                                                        <option value="1800s">30분</option>
+                                                                        <option value="3600s">1시간</option>
+                                                                        <option value="14400s">4시간</option>
+                                                                        <option value="43200s">12시간</option>
+                                                                        <option value="172800s">2일</option>
+                                                                        <option value="345600s">4일</option>
+                                                                        <!-- <option value="4d">4일</option> -->
+                                                                        <option value="other">직접 설정</option>
+                                                                    </select>
+                                                                </div>
+                                                                <input class="i_popup al" id="browser_caching_time_other" placeholder="형식: 숫자 + s(초) ex)3600s " type="text" style="width: 279px;display: none;">
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </dd>
+                                    <!-- Set-Cookie 무시 -->
+                                    <dt>
+                                        <div class="switch_box">
+                                            <label class="md_switch pr">
+                                                <input type="checkbox" id="setCookieToggle">
+                                                <span class="md_switch__toggle on"></span>
+                                                <div class="tooltip_left dib msl">
+                                                    Set-Cookie 무시
+                                                    <span class="dtib ml10" style="height: 21px;">
+                                                        <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보">
+                                                    </span>
+                                                </div>
+                                                <div class="tooltip_sm2" style="left: 172px; top: -115px; width: 491px;">
+                                                    <p class="btxt_white_regular">
+                                                        Set-Cookie 헤더가 있는 파일에 대한 캐싱 동작을 하나의 개체 또는 다른 개체로 정의합니다.
+                                                        <br>캐시된 트래픽의 비율을 최적화하려면 Set-Cookie를 무시하는 것이 좋습니다.
+                                                    </p>
+                                                </div>
+
+                                            </label>
+                                        </div>
+                                    </dt>
+                                    <!-- 쿼리 문자열 무시 -->
+                                    <dt>
+                                        <div class="switch_box">
+                                            <label class="md_switch pr">
+                                                <input type="checkbox" id="queryToggle">
+                                                <span class="md_switch__toggle on"></span>
+                                                <div class="tooltip_left dib msl">
+                                                    쿼리 문자열 무시
+                                                    <span class="dtib ml10" style="height: 21px;">
+                                                        <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보">
+                                                    </span>
+                                                </div>
+                                                <div class="tooltip_sm2" style="left: 115px; top: -81px; width: 610px;">
+                                                    <p class="btxt_white_regular ac">이 옵션은 쿼리 문자열이 포함된 파일을 하나의 개체로 캐싱할지 또는 다른 개체로 인식할지 판별합니다. 
+                                                        <br>ex) http://cdn.example.com/photo.jpeg?id=6, http://cdn.example.com/photo.jpeg?id=1
+                                                    </p>
+                                                </div>
+                                                <!-- <div class="custom-select dib" style="width:500px;">
+                                                    <select id="originGroupList2"></select>
+                                                </div> -->
+                                            </label>
+                                        </div>
+                                    </dt>
+                                    <dd id="ignore_query_content" class="toggle_content">
+                                        <div class="">
+                                            <table class="c_th_input_cdn">
+                                                <caption>쿼리 문자열 무시</caption>
+                                                <colgroup>
+                                                    <col width="250px">
+                                                    <col width="*">
+                                                </colgroup>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <!-- <th class="vt">기본 캐시 만료</th> -->
+                                                        <th class="vt"></th>
+                                                        <td>
+                                                            <div class="stat_bnlist_wrap clfix">
+                                                                <ul class="stat_bnlist" id="caching_control_type3">
+                                                                    <li><span class="stat on" value="0" style="width:260px;">전체 무시(Ignore all)</span></li>
+                                                                    <li><span class="stat" value="1" style="width:260px;">입력한 매개변수 제외하고 전체(Ignore all except)</span></li>
+                                                                    <li><span class="stat" value="2" style="width:260px;">입력한 매개변수만 무시(Ignore only)</span></li>
+                                                                </ul>
+                                                            </div>
+                                                            <textarea class="pop_txt_area3" id="ignore_query_time_other" onchange="selectCacheOtherChang3()" placeholder="파라미터명을 입력하세요. 복수개일 경우, 줄바꿈으로 구분합니다." style="width: 600px; margin-top:10px; display: none;"></textarea>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </dd>
+                                    <!-- 온라인 활성화 -->
+                                    <dt>
+                                        <div class="switch_box">
+                                            <label class="md_switch pr">
+                                                <input type="checkbox" id="onlineToggle">
+                                                <span class="md_switch__toggle on"></span>
+                                                <div class="tooltip_left dib msl">
+                                                    온라인 활성화
+                                                    <span class="dtib ml10" style="height: 21px;">
+                                                        <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보">
+                                                    </span>
+                                                </div>
+                                                <div class="tooltip_sm2" style="left: 115px; top: -81px; width: 610px;">
+                                                    <p class="btxt_white_regular ac">오류가 발생할 경우, 오래된 캐시 콘텐츠를 제공하세요.                                                        
+                                                    </p>
+                                                </div>
+                                                <!-- <div class="custom-select dib" style="width:500px;">
+                                                    <select id="originGroupList2"></select>
+                                                </div> -->
+                                            </label>
+                                        </div>
+                                    </dt>
+                                    <dd id="online_content" class="toggle_content">
+                                        <div class="">
+                                            <table class="c_th_input_cdn">
+                                                <caption>온라인 활성화</caption>
+                                                <colgroup>
+                                                    <col width="250px">
+                                                    <col width="*">
+                                                </colgroup>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <!-- <th class="vt">기본 캐시 만료</th> -->
+                                                        <th class="vt"></th>
+                                                        <td>
+                                                            <div class="stat_bnlist_wrap clfix">
+                                                                <ul class="stat_bnlist" id="online_check" style="width: 368px;">
+                                                                    <div class="mt10" id="online_controll_div" style="">
+                                                                        <div class="custom-select" style="width: 500px;">
+                                                                            <select id="online_code_list" onchange="selectCacheOtherChang4()">
+                                                                                <option value="error">ERROR</option>
+                                                                                <option value="updating">Updating</option>
+                                                                                <option value="timeout">Timeout</option>
+                                                                                <option value="invalid_header">Invalid Header</option>
+                                                                                <option value="http_500">HTTP 500</option>
+                                                                                <option value="http_502">HTTP 502</option>
+                                                                                <option value="http_503">HTTP 503</option>
+                                                                                <option value="http_504">HTTP 504</option>
+                                                                                <option value="http_403">HTTP 403</option>
+                                                                                <option value="http_404">HTTP 404</option>
+                                                                                <option value="http_429">HTTP 429</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="customselc-result3 mt10" id="online_code_div">
+                                                                            <p name="" value="" style="display:none;" id="online_code_base">
+                                                                                <span id="online_code_text">KR</span>
+                                                                                <span class="fr ml15 mt5">
+                                                                                    <img src="/images/coni/Cancel.svg" style="width:10px; cursor:pointer;" alt="삭제">
+                                                                                </span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <div>
+                                                                            <p class="mt5">
+                                                                                <span id="online_text_area" class="red_txt" style="display: none;">
+                                                                                    <span id="online_red_text">필수입니다.</span>
+                                                                                </span>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Access 설정 메뉴 -->
+                    <div class="highsetting_wrap">
+                        <div class="highsetting_tit">
+                            <p style="font-weight: bold !important;">Access 설정<span class="ptitclick ml10" id="accessSetting"></span></p>
+                        </div>
+                        <div class="pdescclick" id="accessSettingArea">
+                            <div class="depth_highsetting_wrap">
+                                <dl class="depth_highsetting dp_on" id="highsetting_content">
+                                    <dt>
+                                        <div class="switch_box">
+                                            <label class="md_switch pr">
+                                                <input type="checkbox" id="geoToggle">
+                                                <span class="md_switch__toggle on"></span>
+                                                <div class="tooltip_left dib msl">
+                                                    GEO 접근제어
+                                                    <span class="dtib ml10" style="height: 21px;">
+                                                        <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보">
+                                                    </span>
+                                                </div>
+                                                <div class="tooltip_sm2" style="left: 115px; top: -81px; width: 610px;">
+                                                    <p class="btxt_white_regular ac">GEO 접근제어입니다.</p>
+                                                </div>
+                                                <!-- <div class="custom-select dib" style="width:500px;">
+                                                    <select id="originGroupList2"></select>
+                                                </div> -->
+                                            </label>
+                                        </div>
+                                    </dt>
+                                    <dd id="geo_content" class="toggle_content">
+                                        <div class="">
+                                            <table class="c_th_input_cdn">
+                                                <caption>GEO접근 제어</caption>
+                                                <colgroup>
+                                                    <col width="250px">
+                                                    <col width="*">
+                                                </colgroup>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <!-- <th class="vt">기본 캐시 만료</th> -->
+                                                        <th class="vt"></th>
+                                                        <td>
+                                                            <div class="stat_bnlist_wrap clfix">
+                                                                <ul class="stat_bnlist" id="query_parameter_check" style="width: 368px;">
+                                                                    <div class="mt10" id="geo_access_controll_div" style="">
+                                                                        <div class="stat_bnlist_wrap clfix">
+                                                                            <ul class="stat_bnlist" id="geo_policy_type">
+                                                                                <li><span class="stat on" value="0" style="width:160px;">허용</span></li>
+                                                                                <li><span class="stat" value="1" style="width:160px;">차단</span></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="custom-select" style="width: 500px;">
+                                                                           {{template "COUNTRY"}}
+                                                                        </div>
+                                                                        <div class="customselc-result3 mt10" id="geo_country_code_div">
+                                                                            <p name="" value="" style="display:none;" id="geo_country_code_base">
+                                                                                <span id="country_code_text">KR</span>
+                                                                                <span class="fr ml15 mt5">
+                                                                                    <img src="/images/coni/Cancel.svg" style="width:10px; cursor:pointer;" alt="삭제">
+                                                                                </span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <div>
+                                                                            <p class="mt5">
+                                                                                <span id="geo_access_text_area" class="red_txt" style="display: none;">
+                                                                                    <span id="geo_access_red_text">필수입니다.</span>
+                                                                                </span>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content 설정 메뉴 -->
+                    <div class="highsetting_wrap">
+                        <div class="highsetting_tit">
+                            <p style="font-weight: bold !important;">Content 설정<span class="ptitclick ml10" id="contentSetting"></span></p>
+                        </div>
+                        <div class="pdescclick" id="contentSettingArea">
+                            <div class="depth_highsetting_wrap">
+                                <dl class="depth_highsetting dp_on" id="highsetting_content">
+                                    <!--dp_on 화면 보임, dp_off 화면 숨김-->
+                                    <dt>
+                                        <div class="switch_box">
+                                            <label class="md_switch pr">
+                                                <input type="checkbox" id="">
+                                                <span class="md_switch__toggle on"></span>
+                                                <div class="tooltip_left dib msl">
+                                                    기능
+                                                    <span class="dtib ml10" style="height: 21px;">
+                                                        <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보">
+                                                    </span>
+                                                </div>
+                                                <div class="tooltip_sm2" style="left: 115px; top: -81px; width: 610px;">
+                                                    <p class="btxt_white_regular ac">기능설명</p>
+                                                </div>
+                                                <!-- <div class="custom-select dib" style="width:500px;">
+                                                    <select id="originGroupList2"></select>
+                                                </div> -->
+                                            </label>
+                                        </div>
+                                    </dt>
+                                    <dd id="content_rule_content" class="toggle_content">
+                                        <div class="">
+                                            <table class="c_th_input_cdn">
+                                                <caption>기능</caption>
+                                                <colgroup>
+                                                    <col width="250px">
+                                                    <col width="*">
+                                                </colgroup>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <!-- <th class="vt">기본 캐시 만료</th> -->
+                                                        <th class="vt"></th>
+                                                        <td>
+                                                            <!-- function -->
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- HTTP headers 설정 메뉴 -->
+                    <div class="highsetting_wrap">
+                        <div class="highsetting_tit">
+                            <p style="font-weight: bold !important;">HTTP Headers<span class="ptitclick ml10" id="httpHeadersSetting"></span></p>
+                        </div>
+                        <div class="pdescclick" id="httpHeadersSettingArea">
+                            <div class="depth_highsetting_wrap">
+                                <dl class="depth_highsetting dp_on" id="highsetting_content">
+                                    <!--dp_on 화면 보임, dp_off 화면 숨김-->
+                                    <dt>
+                                        <div class="switch_box">
+                                            <label class="md_switch pr">
+                                                <input type="checkbox" id="http_headers_rule_toggle_create">
+                                                <span class="md_switch__toggle on"></span>
+                                                <div class="tooltip_left dib msl">
+                                                    기능
+                                                    <span class="dtib ml10" style="height: 21px;">
+                                                        <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보">
+                                                    </span>
+                                                </div>
+                                                <div class="tooltip_sm2" style="left: 115px; top: -81px; width: 610px;">
+                                                    <p class="btxt_white_regular ac">기능설명</p>
+                                                </div>
+                                                <!-- <div class="custom-select dib" style="width:500px;">
+                                                    <select id="originGroupList2"></select>
+                                                </div> -->
+                                            </label>
+                                        </div>
+                                    </dt>
+                                    <dd id="http_headers_rule_content" class="toggle_content">
+                                        <div class="">
+                                            <table class="c_th_input_cdn">
+                                                <caption>기능</caption>
+                                                <colgroup>
+                                                    <col width="250px">
+                                                    <col width="*">
+                                                </colgroup>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <!-- <th class="vt">기본 캐시 만료</th> -->
+                                                        <th class="vt"></th>
+                                                        <td>
+                                                            <!-- function -->
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
+{{end}}

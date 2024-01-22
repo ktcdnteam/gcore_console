@@ -1,0 +1,876 @@
+<div id="contentwrapper" style="width: 100%;">
+    <div id="contentcolumn3">
+<!-- CDN 수정 -->
+        <div id="cdnContentArea" class="sub_m">
+            <div class="sub_t btop dep1_1 ml60">
+                <div class="r_quick_wrap">
+                    <span class="r_quick"><a href="" class="cicon cprod_cdn">CDN Edge</a></span> >          
+                    <span class="r_quick_s"><a href="" class="cicons">CDN</a></span>
+                        
+                    <span class="h3_quick"><a href="javascript:go_portal_page('https://manual.cloud.kt.com/kt/cdn-standard-intro');" class="tmanual7">매뉴얼</a></span>
+                    <span class="h3_quick ml10"><a href="javascript:go_portal_inquiry('3','ucloud CDN','/console/cdnlist');" class="thelp7">온라인문의</a></span>
+                    <span class="h3_quick"><a href="javascript:go_portal_satisfaction_evaluation('CDN3.0','CDN');" class="tSatisfactioni7">만족도평가</a></span>
+                </div>
+                <div class="title_area dep1_1">
+                    <h3 class="">CDN 변경</h3>                                             
+                    <p class="box_txtl mb40"><span id="modify_svcName"></span>서비스를 변경합니다.</p>
+                </div>
+            </div> 
+            <!-- 컨텐츠 wrap -->
+            <div class="listscroll"> 
+            <!-- 화면 해상도 높이 조절 start -->                           
+                <div class="sub_con_box_w">                                                                           
+                    <!--    컨텐츠 분할 영역 시작 -->
+                    <div id="" class="mybox">
+                        <div id="inner_consolecontent_div10" class="slimscrollcls" style="overflow: hidden; width: 100%; height: 100%;">
+
+                            <!--    컨텐츠 분할 영역 시작 -->
+                            <div class="scroll_notab md" style="overflow-x: scroll;">
+                                <div class="sub_box_c mt40">
+                                    <div class="" id="service_create_div">
+                                        <table class="c_th_input_cdn">
+                                            <caption>CDN Global생성</caption>
+                                            <colgroup>
+                                                <col style="width: 200px">
+                                                <col style="width: *">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="" scope="row">서비스명</th>
+                                                    <td value="" id="service_name"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="" scope="row">서비스도메인</th>
+                                                    <td value="" id="service_domain"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="vt pr" scope="row">
+                                                        <div class="tooltip_left dib">
+                                                            오리진 서버
+                                                            <span class="dtib ml10" style="height: 21px;">
+                                                                <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보">
+                                                            </span>
+                                                        </div>
+                                                        <div class="tooltip_sm2" style="left: 69px; top: -44px; width: 444px;">
+                                                            <p class="btxt_white_regular ac">오리진 서버</p>
+                                                        </div>
+                                                    </th>
+                                                    <td>
+                                                        <div class="custom-select dib" style="width:500px;">
+                                                            <select id="originGroupList2"></select>
+                                                        </div>
+                                                    </td>
+                                                    <tr>
+                                                        <th class="vt pr" scope="row">
+                                                            <div class="tooltip_left dib">
+                                                                프로토콜
+                                                                <span class="dtib ml10" style="height: 21px;">
+                                                                    <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보">
+                                                                </span>
+                                                            </div>
+                                                            <div class="tooltip_sm2" style="left: 69px; top: -44px; width: 444px;">
+                                                                <p class="btxt_white_regular ac">원본파일이 존재하는 실제 서버의 IP주소 또는 도메인 주소를 입력하세요.</p>
+                                                            </div>
+                                                        </th>
+                                                        <td>
+                                                            <div class="custom-select dib"  style="width:500px;">
+                                                                <select id="protocolBox2">
+                                                                    <option value="HTTP">HTTP</option>
+                                                                    <option value="HTTPS">HTTPS</option>
+                                                                    <option value="MATCH">HTTP/HTTPS</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                            </tbody>
+
+                                        </table>
+                                        <div class="highsetting_wrap">
+                                            <div class="highsetting_tit">
+                                                <p>Cache 설정<span class="ptitclick ml10" id="cacheSetting"></span></p>
+                                            </div>
+                                            <div class="pdescclick" id="cacheSettingArea">
+                                                <div class="depth_highsetting_wrap">
+                                                    <dl class="depth_highsetting dp_on" id="highsetting_content">
+                                                        <!--dp_on 화면 보임, dp_off 화면 숨김-->
+                                                        <dt>
+                                                            <div class="switch_box">
+                                                                <label class="md_switch pr">
+                                                                    <input type="checkbox" id="cachingToggle">
+                                                                    <span class="md_switch__toggle on"></span>
+                                                                    <div class="tooltip_left dib msl">
+                                                                        CDN caching
+                                                                        <span class="dtib ml10" style="height: 21px;">
+                                                                            <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보">
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="tooltip_sm2" style="left: 115px; top: -54px; width: 610px;">
+                                                                        <p class="btxt_white_regular ac">CDN 서버의 캐시 만료 시간입니다.</p>
+                                                                    </div>
+                                                                    <!-- <div class="custom-select dib" style="width:500px;">
+                                                                        <select id="originGroupList2"></select>
+                                                                    </div> -->
+                                                                </label>
+                                                            </div>
+                                                        </dt>
+                                                        <dd id="caching_rule_content" class="toggle_content">
+                                                            <div class="">
+                                                                <table class="c_th_input_cdn">
+                                                                    <caption>공통 캐싱 정책</caption>
+                                                                    <colgroup>
+                                                                        <col width="250px">
+                                                                        <col width="*">
+                                                                    </colgroup>
+
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th class="vt">캐싱 옵션</th>
+                                                                            <td>
+                                                                                <ul class="clfix custom_check_box" id="caching_option_check">
+                                                                                    <div class="custom-select dib"  style="width:500px;">
+                                                                                        <select id="cache_type">
+                                                                                            <option value="">원본 서버 Control</option>
+                                                                                            <option value="">Cache Control</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>최대 캐싱 기간</th>
+                                                                            <td>
+                                                                                <div class="custom-select dib"  style="width:500px;">
+                                                                                    <select id="caching_select_create" onchange="selectCacheOtherChang()">
+                                                                                        <option value="10s">캐시하지 않음</option>
+                                                                                        <option value="10s">10초</option>
+                                                                                        <option value="60s">1분</option>
+                                                                                        <option value="600s">10분</option>
+                                                                                        <option value="1800s">30분</option>
+                                                                                        <option value="3600s">1시간</option>
+                                                                                        <option value="14400s">4시간</option>
+                                                                                        <option value="43200s">12시간</option>
+                                                                                        <option value="172800s">2일</option>
+                                                                                        <option value="4d">4일</option>
+                                                                                        <option value="other">직접 설정</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <input class="i_popup al" id="caching_time_other" placeholder="[초] 단위로 입력해주세요. (숫자만 가능)" type="text" style="width: 279px;display: none;">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="vt pr">   
+                                                                                <div class="dib" style="line-height:30px;">
+                                                                                    <p class="tooltip_left"> 원본에서 리디렉션<span class="dtib" style="height:21px;"><img class="dtbc vm ml10" src="/images/coni/Table_Information.svg" alt="정보"></span></p>
+                                                                                    <div class="tooltip_sm2" style="width: 450px;left: 107px;top: -78px;"><p class="btxt_white_regular">원본 서버가 Redirect를 반환하는 경우 옵션을 사용하면 CDN이 Redirect에서 반환된 원본 서버에서 요청된 콘텐츠를 가져올 수 있습니다.<br>최종 사용자에게 최신 콘텐츠를 제공하려면 옵션을 관리한 후 캐시를 제거해야 합니다.</p></div>
+                                                                                </div>                                                                             
+                                                                            </th>
+                                                                            <td>
+                                                                                <div class="stat_bnlist_wrap clfix">
+                                                                                    <ul class="stat_bnlist" id="query_parameter_check" style="width: 368px;">
+                                                                                        301, 302, 303, 307 외 다른 코드 금지
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="vt pr">   
+                                                                                <div class="dib" style="line-height:30px;">
+                                                                                    <p class="tooltip_left"> 브라우저 캐싱 활성화<span class="dtib" style="height:21px;"><img class="dtbc vm ml10" src="/images/coni/Table_Information.svg" alt="정보"></span></p>
+                                                                                    <div class="tooltip_sm2" style="width: 450px;left: 107px;top: -78px;"><p class="btxt_white_regular">사용자 브라우저에 필요한 캐시 수명을 지정합니다.</p></div>
+                                                                                </div>                                                                             
+                                                                            </th>
+                                                                            <td>
+                                                                                <div class="stat_bnlist_wrap clfix">
+                                                                                    <ul class="stat_bnlist" id="query_parameter_check" style="width: 368px;">
+                                                                                        301, 302, 303, 307 외 다른 코드 금지
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </dd>
+                                                        <dt>
+                                                            <div class="switch_box">
+                                                                <label class="md_switch pr">
+                                                                    <input type="checkbox" id="">
+                                                                    <span class="md_switch__toggle on"></span>
+                                                                    <div class="tooltip_left dib msl">
+                                                                        대용량 파일 최적화 사용
+                                                                        <span class="dtib ml10" style="height: 21px;">
+                                                                            <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보">
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="tooltip_sm2" style="left: 172px; top: -115px; width: 491px;">
+                                                                        <p class="btxt_white_regular">
+                                                                            대용량 파일의 캐싱 효율을 높이기 위해, 100MB ~ 1.8GB 크기의 대용량 파일을 2MB 단위로 잘라서 캐싱 하는 기능을 제공합니다. <br>대상 파일 확장자 : exe, bz2, dmz, gz, iso, mov, pkg, tar, tgz, wmv, wma, zip, webp, jxr, hhdp, wdp
+                                                                        </p>
+                                                                    </div>
+
+                                                                </label>
+                                                            </div>
+                                                        </dt>
+                                                        <dd id="" style="display:none;">
+                                                            <table class="c_th_input_cdn">
+                                                                <caption>대용량 파일 최적화 사용 여부</caption>
+                                                                <colgroup>
+                                                                    <col width="250px">
+                                                                    <col width="*">
+                                                                </colgroup>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th class="vt">사용여부</th>
+                                                                        <td>
+                                                                            <div class="stat_bnlist_wrap clfix">
+                                                                                <ul class="stat_bnlist" id="" style="width: 450px;">
+                                                                                    <li class="toggle_tab" onclick="">
+                                                                                        <span class="stat on" value="" style="width: 150px;" id="large_file2_create">사용 안함</span>
+                                                                                    </li>
+                                                                                    <li class="toggle_tab" onclick="">
+                                                                                        <span class="stat" value="" style="width: 150px;" id="large_file_create">사용</span>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                        </dd>
+
+                                                        <dt>
+                                                            <div class="switch_box">
+
+                                                                <label class="md_switch pr">
+                                                                    <input type="checkbox" id="">
+                                                                    <span class="md_switch__toggle on"></span>
+                                                                    <div class="tooltip_left dib msl">
+                                                                        Last Mile 압축 사용
+                                                                        <span class="dtib ml10" style="height: 21px;">
+                                                                            <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보">
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="tooltip_sm2" style="left: 146px; top: -115px; width: 491px;">
+                                                                        <p class="btxt_white_regular">
+                                                                            Last Mile 전송 속도 향상을 위해 CDN 플랫폼에서 사용자에게 컨텐츠 전달 시 Gzip Compression 기능을 제공합니다. <br>대상 컨텐츠 타입 : text/html*, text/css*, application/x-javascript*, application/javascript
+                                                                        </p>
+                                                                    </div>
+
+                                                                </label>
+                                                            </div>
+                                                        </dt>
+                                                        <dd id="" style="display:none;">
+                                                                <table class="c_th_input_cdn">
+                                                                <caption>Last Mile 압축 사용 여부</caption>
+                                                                <colgroup>
+                                                                    <col width="250px">
+                                                                    <col width="*">
+                                                                </colgroup>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th class="vt">사용여부</th>
+                                                                        <td>
+                                                                            <div class="stat_bnlist_wrap clfix">
+                                                                                <ul class="stat_bnlist" id="" style="width: 450px;">
+                                                                                    <li class="toggle_tab" onclick="">
+                                                                                        <span class="stat on" value="" style="width: 150px;" id="compression2_create">사용 안함</span>
+                                                                                    </li>
+                                                                                    <li class="toggle_tab" onclick="">
+                                                                                        <span class="stat" value="" style="width: 150px;" id="compression_create">사용</span>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                        </dd>
+
+                                                        <dt>
+                                                            <div class="switch_box">
+
+                                                                <label class="md_switch pr">
+                                                                    <input type="checkbox" id="">
+                                                                    <span class="md_switch__toggle on"></span>
+                                                                    <div class="tooltip_left dib msl">
+                                                                        개별 캐싱 정책 추가
+                                                                        <span class="dtib ml10" style="height: 21px;">
+                                                                            <img class="dtbc vm" src="/images/coni/Table_Information.svg" alt="정보">
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="tooltip_sm2" style="left: 146px; top: -55px; width: 491px;">
+                                                                        <p class="btxt_white_regular">특정 확장자 또는 디렉토리에 따라, 캐싱 정책을 세부적으로 설정할 수 있습니다.</p>
+                                                                    </div>
+
+                                                                </label>
+                                                            </div>
+                                                        </dt>
+                                                        <dd id="chacing_rule_add_content" class="toggle_content" style="display: none;">
+                                                            <div>
+                                                                <table class="c_th_input_cdn">
+                                                                    <caption>개별 캐싱 정책 추가 여부</caption>
+                                                                    <colgroup>
+                                                                        <col width="250px">
+                                                                        <col width="*">
+                                                                    </colgroup>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th class="vt">사용여부</th>
+                                                                            <td>
+                                                                                <div class="stat_bnlist_wrap clfix">
+                                                                                    <ul class="stat_bnlist" id="chacing_rule_add_ul_create" style="width: 450px;">
+                                                                                        <li class="" onclick="">
+                                                                                            <span class="stat on" value="" style="width: 150px;" id="chacing_rule_add2_create">사용 안함</span>
+                                                                                        </li>
+                                                                                        <li class="" onclick="">
+                                                                                            <span class="stat" value="" style="width: 150px;" id="chacing_rule_add_create">사용</span>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                
+                                                            </div>
+
+                                                            <div class="mt30" id="chacing_rule_add_active_create" style="display: none;">
+                                                                <table class="c_th_tbl mt20" id="add_rule_div_create_caching" summary="리스트" style="width: 968px;">
+                                                                    <caption>리스트</caption>
+                                                                    <colgroup>
+                                                                        <col width="40%;">
+                                                                        <col width="*;">
+                                                                    </colgroup>
+                                                                    <thead id="">
+                                                                        <tr>
+                                                                            <th class="">조건</th>
+                                                                            <th>옵션</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr id="base_caching_rule_create" style="display: none;">
+                                                                            <td>
+                                                                                <span id="caching_div">
+                                                                                    <span id="rule_section_caching2">IF</span>
+                                                                                    <span id="caching_object"></span>
+                                                                                </span>
+                                                                            </td>
+                                                                            <td>
+                                                                                <span id="add_caching_option">오리진 서버의 Cache Control Header를 따름</span>
+                                                                                <img class="idel" src="/images/coni/trash.svg" alt="삭제" id="" onclick="ruleDelete(this, 'create')" style="cursor: pointer;">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <table class="c_th_input_cdn">
+                                                                    <caption>개별 캐싱 정책 추가</caption>
+                                                                    <colgroup>
+                                                                        <col width="250px">
+                                                                        <col width="*">
+                                                                    </colgroup>
+
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th class="vt">캐싱 조건</th>
+                                                                            <td>
+                                                                                <table class="c_th_tbl mt15" id="c_th_input_tb" summary="캐싱조건리스트" style="width: 690px;">
+                                                                                    <caption>캐싱조건리스트</caption>
+                                                                                    <colgroup>
+                                                                                        <col width="30%;">
+                                                                                        <col width="70%;">
+                                                                                    </colgroup>
+                                                                                    <thead id="thead_back">
+                                                                                        <tr>
+                                                                                            <th class="">조건</th>
+                                                                                            <th>대상</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody id="individual_caching_list_create">
+                                                                                        <tr class="nonebg" id="base_caching_list_create" style="display: none;">
+                                                                                            <td id="caching_matchOperator">IF</td>
+                                                                                            <td><span id="cachingValue"></span><img class="mt0 fr" onclick="delete_ip(this, 'create')" href="" src="/images/coni/trash.svg" alt="삭제" style="cursor: pointer;"></td>
+                                                                                        </tr>                                                                                       
+                                                                                    </tbody>
+                                                                                </table>
+
+                                                                                <table class="pop_tb_c mt10 pr" summary="리스트 추가" style="height: 90px;">
+                                                                                    <caption>리스트 추가</caption>
+                                                                                    <colgroup>
+                                                                                        <col style="width: 100%;">
+                                                                                    </colgroup>
+                                                                                    <thead class="bg_lmint">
+                                                                                            <tr>
+                                                                                            <th style="padding: 8px 0 23px 10px;" class="ex">
+                                                                                                <div class="custom-select dib vt" style="width: 90px;">
+                                                                                                    <select id="rule_section_caching2_create">
+                                                                                                        <option>IF</option>
+                                                                                                        <option>IF NOT</option>
+                                                                                                    </select>
+                                                                                                <div class="select-selected">IF</div><div class="select-items select-hide" id="vm_slim" style="max-height:250px; overflow-y:auto;"><div value="IF">IF</div><div value="IF NOT">IF NOT</div></div></div>
+                                                                                                <div class="custom-select dib vt" style="width: 122px; margin-left: 38px;">
+                                                                                                    <select id="rule_section_caching_create" onchange="selectExPath(this)">
+                                                                                                        <option>파일 확장자</option>
+                                                                                                        <option>경로</option>
+                                                                                                    </select>
+                                                                                                <div class="select-selected">파일 확장자</div><div class="select-items select-hide" id="vm_slim" style="max-height:250px; overflow-y:auto;"><div value="파일 확장자">파일 확장자</div><div value="경로">경로</div></div></div>
+                                                                                                <div class="dib ml10" id="ex_div_create" style="width: 314px;">
+                                                                                                    <textarea id="file_ex_text_create" rows="" cols="" class="pop_txt_area3" maxlength="4000" title="" style="width: 314px; min-height: 54px;" placeholder="파일 확장자를 입력하세요.
+    여러 개 입력 시 Enter로 구분하세요." onkeydown="inputCheck(this,5)" onkeyup="inputCheck(this,5)" onkeypress="if(event.keyCode=='13'){exPathAdd(this);}"></textarea>
+
+                                                                                                    <span class="btn_result_submit mt10 mr10 ml10 mb10" id="base_create_caching_span" style="height: 30px; padding-top: 5px; display: none;">
+                                                                                                        <font class="mt5" id="create_caching_font"></font>
+                                                                                                        <a class="ml10 c_garbege" style="background: url('../../../images/chosen-sprite.png') -42px 1px no-repeat" href="#" onclick="exPathDel(this)">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            
+            
+                                                                                                    </span>
+                                                                                                        <div class="btns_add" id="add_caching_create" onclick="addDivCaching('create')" style="position: absolute; right: 20px; bottom: 13px;">
+                                                                                                        <a href="#">+ 추가</a>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <div class="dib ml10" id="path_div_create" style="display: none; width: 314px;">
+                                                                                                    <textarea id="file_path_text_create" rows="" cols="" class="pop_txt_area3" maxlength="4000" title="" style="width: 314px; min-height: 54px;" placeholder="/cdn/example/* 형태로 입력하세요.
+    여러 개 입력 시 Enter로 구분하세요." onkeydown="inputCheck(this,1)" onkeyup="inputCheck(this,1)" onkeypress="if(event.keyCode=='13'){exPathAdd(this);}"></textarea>
+
+                                                                                                    <div class="btns_add" id="add_caching_create2" onclick="addDivCaching('create')" style="position: absolute; right: 20px; bottom: 13px;">
+                                                                                                        <a href="#">+ 추가</a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <!-- <tbody class="bg_lmint"></tbody> -->
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="vt">캐싱 옵션</th>
+                                                                            <td>
+                                                                                <ul class="clfix custom_check_box" id="in_caching_option">
+                                                                                    <li class="fl">
+                                                                                        <label id="labelchk" class="chkwrap on">
+                                                                                            <input id="add_caching_op_create" type="checkbox" class="chkbox">
+                                                                                        </label>
+                                                                                        <span class="ml5">캐싱 기간 설정</span>
+                                                                                    </li>
+                                                                                    <li class="fl ml50">
+                                                                                        <label id="labelchk" class="chkwrap chk_block">
+                                                                                            <input id="add_caching_op2_create" type="checkbox" class="chkbox">
+                                                                                        </label>
+                                                                                        <span class="ml5">오리진 서버의 Cache Control Header를 따름</span>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+
+
+                                                                        <tr>
+                                                                            <th>최대 캐싱 기간</th>
+                                                                            <td>
+                                                                                <input class="i_popup al" id="add_input_caching_create" value="7" placeholder="숫자를 입력하세요." type="text" style="width: 179px;" onkeydown="inputCheck(this,4)" onkeyup="inputCheck(this,4)">
+                                                                                <div class="custom-select dib ml10" style="width: 95px;">
+                                                                                    <select id="add_select_caching_create">
+                                                                                        <option value="d">일</option>
+                                                                                        <option value="h">시간</option>
+                                                                                        <option value="m">분</option>
+                                                                                        <option value="s">초</option>
+                                                                                    </select>
+                                                                                <div class="select-selected">일</div><div class="select-items select-hide" id="vm_slim" style="max-height:250px; overflow-y:auto;"><div value="d">일</div><div value="h">시간</div><div value="m">분</div><div value="s">초</div></div></div>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <th class="vt">캐시 서버의 오브젝트 전달 여부</th>
+                                                                            <td>
+                                                                                <ul class="clfix custom_check_box" id="in_caching_object">
+                                                                                    <li class="">
+                                                                                        <label id="labelchk" class="chkwrap on">
+                                                                                            <input id="add_caching_ser_create" type="checkbox" class="chkbox">
+                                                                                        </label>
+                                                                                        <span class="ml5">오리진 서버와 통신이 어려운 경우 캐시 서버의 오브젝트 전달</span>
+                                                                                    </li>
+                                                                                    <li class="mt15">
+                                                                                        <label id="labelchk" class="chkwrap">
+                                                                                            <input id="add_caching_ser2_create" type="checkbox" class="chkbox">
+                                                                                        </label>
+                                                                                        <span class="ml5">항상 오리진 서버에서 확인해서 전달</span>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <div class="clfix mt20">
+                                                                    <div class="btnl_primary fr" id="" onclick="addRules('create')" style="">
+                                                                        <a href="#">정책 추가</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </dd>
+
+                                                        <dt>
+                                                            <div class="switch_box">
+
+                                                                <label class="md_switch">
+                                                                    <input type="checkbox" id="">
+                                                                    <span class="md_switch__toggle"></span>
+                                                                    <span class="msl">IP 차단</span>
+                                                                </label>
+                                                            </div>
+                                                        </dt>
+                                                        <dd id="ip_block_content" class="toggle_content" style="display: none;">
+                                                            <div>
+                                                                <table class="c_th_input_cdn">
+                                                                    <caption>IP 차단 여부</caption>
+                                                                    <colgroup>
+                                                                        <col width="250px">
+                                                                        <col width="*">
+                                                                    </colgroup>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th class="vt">사용여부</th>
+                                                                            <td>
+                                                                                <div class="stat_bnlist_wrap clfix">
+                                                                                    <ul class="stat_bnlist" id="ip_block_ul_create" style="width: 450px;">
+                                                                                        <li class="toggle_tab" onclick="">
+                                                                                            <span class="stat on" value="" style="width: 150px;" id="ip_block2_create">사용 안함</span>
+                                                                                        </li>
+                                                                                        <li class="toggle_tab" onclick="">
+                                                                                            <span class="stat" value="" style="width: 150px;" id="ip_block_create">사용</span>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                
+                                                            </div>
+                                                            <div class="mt30" id="ip_block_active_create" style="display: none;">
+                                                                <table class="c_th_tbl mt20" id="add_rule_div_create_clientip" summary="리스트" style="width: 968px;">
+                                                                    <caption>리스트</caption>
+                                                                    <colgroup>
+                                                                        <col width="50%;">
+                                                                        <col width="25%;">
+                                                                        <col width="25%;">
+                                                                    </colgroup>
+                                                                    <thead id="">
+                                                                        <tr>
+                                                                            <th class="">조건</th>
+                                                                            <th>제어값</th>
+                                                                            <th>상태</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr id="ip_rule_div_create" style="display: none;">
+                                                                            <td>
+                                                                                <span id="ip_div">
+                                                                                </span>
+
+
+                                                                                </td><td>
+                                                                                    <span id="ip_rule_reason"></span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span id="clientIP_status_span_create">허용</span>
+                                                                                    <img class="idel" src="/images/coni/trash.svg" alt="삭제" id="" onclick="ruleDelete(this, 'create')" style="cursor: pointer;">
+                                                                                </td>
+                                                                        </tr>
+                                                                        <!--                                                                         <tr> -->
+                                                                        <!--                                                                             <td>(AND)IF "/test/image/users", "test/image/user2" IF".png", ".html"</td> -->
+                                                                        <!--                                                                             <td>캐싱 기간 설정 - 20일<img class="idel" src="/images/coni/trash.svg" alt="삭제" /></td> -->
+                                                                        <!--                                                                         </tr> -->
+
+                                                                    </tbody>
+                                                                </table>
+                                                                <table class="c_th_input_cdn">
+                                                                    <caption>차단 조건</caption>
+                                                                    <colgroup>
+                                                                        <col width="250px">
+                                                                        <col width="*">
+                                                                    </colgroup>
+
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th class="vt">차단 조건</th>
+                                                                            <td>
+                                                                                <table class="c_th_tbl mt15" id="c_th_input_tb" summary="캐싱조건리스트" style="width: 690px;">
+                                                                                    <caption>
+                                                                                        ip차단조건리스트
+                                                                                        </caption><caption>
+                                                                                            </caption><colgroup>
+                                                                                                <col width="30%;">
+                                                                                                <col width="70%;">
+                                                                                            </colgroup>
+                                                                                            <thead id="thead_back">
+                                                                                                <tr>
+                                                                                                    <th class="">조건</th>
+                                                                                                    <th>대상</th>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                            <tbody id="block_ip_list_create">
+
+                                                                                                <tr id="base_ip_list_create" class="nonebg" style="display:none;">
+                                                                                                    <td id="ip_matchOperator">IF</td>
+                                                                                                    <td id="ipValue">123.123.123.123<img class="mt0 fr" href="" src="/images/coni/trash.svg" alt="삭제"></td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                </table>
+
+                                                                                <table class="pop_tb_c mt10 pr" summary="리스트 추가" style="height: 90px;">
+                                                                                    <caption>리스트 추가</caption>
+                                                                                    <colgroup>
+                                                                                        <col style="width: 100%;">
+                                                                                    </colgroup>
+                                                                                    <thead class="bg_lmint">
+                                                                                        <tr>
+                                                                                            <th style="padding: 8px 0 23px 10px;" class="ip">
+                                                                                                <div class="custom-select dib vt" style="width: 90px;">
+                                                                                                    <select id="ip_if_create">
+                                                                                                        <option>IF</option>
+                                                                                                        <option>IF NOT</option>
+                                                                                                    </select>
+                                                                                                <div class="select-selected">IF</div><div class="select-items select-hide" id="vm_slim" style="max-height:250px; overflow-y:auto;"><div value="IF">IF</div><div value="IF NOT">IF NOT</div></div></div>
+
+                                                                                                <div class="dib" id="ip_div_create" style="margin-left: 130px; width: 314px;">
+
+                                                                                                    <textarea id="ip_text_create" rows="" cols="" class="pop_txt_area3" maxlength="4000" title="" style="width: 314px; min-height: 54px;" placeholder="클라이언트 IP를 입력하세요.
+    여러 개 입력 시 Enter로 구분하세요." onkeydown="inputCheck(this,6)" onkeyup="inputCheck(this,6)" onkeypress="if(event.keyCode=='13'){exPathAdd(this);}"></textarea>
+                                                                                                    <span class="btn_result_submit mt10 mr10 ml10 mb10" id="ip_de_span_create" style="height: 30px; padding-top: 5px; display: none;">
+                                                                                                        <font class="mt5" id="file_ex_font"></font>
+                                                                                                        <a class="ml10 c_garbege" href="#" onclick="exPathDel(this)" style="background: url('../../images/chosen-sprite.png') -42px 1px no-repeat">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                                                                                    </span>
+
+                                                                                                </div>
+
+                                                                                                <div class="btns_add" id="add_ip_create" onclick="addDivIp('create')" style="position: absolute; right: 20px; bottom: 13px;">
+                                                                                                    <a href="#">+ 추가</a>
+                                                                                                </div>
+                                                                                            </th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <!-- <tbody class="bg_lmint"></tbody> -->
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <th>제어값</th>
+                                                                            <td>
+                                                                                <input class="i_popup al" id="ip_reason_create" placeholder="deny by-ip" type="text" style="width: 245px;">
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="vt">상태</th>
+                                                                            <td>
+                                                                                <ul class="clfix custom_check_box" id="ip_block_state">
+                                                                                    <li class="fl">
+                                                                                        <label id="labelchk" class="chkwrap on">
+                                                                                            <input id="ip_deny_enable_create" type="checkbox" class="chkbox">
+                                                                                        </label>
+                                                                                        <span class="ml5">허용</span>
+                                                                                    </li>
+                                                                                    <li class="fl ml50">
+                                                                                        <label id="labelchk" class="chkwrap">
+                                                                                            <input id="ip_deny_enable2_create" type="checkbox" class="chkbox">
+                                                                                        </label>
+                                                                                        <span class="ml5">차단</span>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <div class="clfix mt20">
+                                                                    <div class="btnl_primary fr" id="" onclick="addIPs('create')" style="">
+                                                                        <a href="#">정책 추가</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <br>
+                                                            <br>
+                                                            <br>
+                                                        </dd>
+                                                        <dt>
+                                                            <div class="switch_box">
+
+                                                                <label class="md_switch">
+                                                                    <input type="checkbox" id="">
+                                                                    <span class="md_switch__toggle"></span>
+                                                                    <span class="msl">Token 접근 제어</span>
+                                                                </label>
+                                                            </div>
+                                                        </dt>
+                                                        <dd id="" class="toggle_content" style="display: none;">
+                                                            <div class="mt30">
+                                                                <table class="c_th_input_cdn">
+                                                                    <caption>Token 접근 제어 여부</caption>
+                                                                    <colgroup>
+                                                                        <col width="250px">
+                                                                        <col width="*">
+                                                                    </colgroup>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th class="vt">사용여부</th>
+                                                                            <td>
+                                                                                <div class="stat_bnlist_wrap clfix">
+                                                                                    <ul class="stat_bnlist" id="token_access_ul_create" style="width: 450px;">
+                                                                                        <li class="toggle_tab" onclick="">
+                                                                                            <span class="stat on" value="" style="width: 150px;" id="token_access2_create">사용 안함</span>
+                                                                                        </li>
+                                                                                        <li class="toggle_tab" onclick="">
+                                                                                            <span class="stat" value="" style="width: 150px;" id="token_access_create">사용</span>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                <table class="c_th_input_cdn" id="token_access_active_create" style="display: none;">
+                                                                    <caption>차단 조건</caption>
+                                                                    <colgroup>
+                                                                        <col width="250px">
+                                                                        <col width="*">
+                                                                    </colgroup>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th class="vt">차단 조건(선택)</th>
+                                                                            <td>
+                                                                                <div class="stat_bnlist_wrap clfix">
+                                                                                </div>
+                                                                                <table class="c_th_tbl mt15" id="c_th_input_tb" summary="캐싱조건리스트" style="width: 690px;">
+                                                                                    <caption>
+                                                                                        캐싱조건리스트
+                                                                                        </caption><caption>
+                                                                                            </caption><colgroup>
+                                                                                                <col width="30%;">
+                                                                                                <col width="70%;">
+                                                                                            </colgroup>
+                                                                                            <thead id="thead_back">
+                                                                                                <tr>
+                                                                                                    <th class="">조건</th>
+                                                                                                    <th>대상</th>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                            <tbody id="token_access_list_create">
+                                                                                                <tr class="nonebg" id="base_token_list_create" style="display: none;">
+                                                                                                    <td id="token_matchOperator">IF</td>
+                                                                                                    <td><span id="tokenValue"></span><img class="mt0 fr" onclick="delete_ip(this, 'create')" href="" src="/images/coni/trash.svg" alt="삭제" style="cursor: pointer;"></td>
+                                                                                                </tr>                                                                                       
+                                                                                            </tbody>
+                                                                                </table>
+
+                                                                                <table class="pop_tb_c mt10 pr" summary="리스트 추가" style="height: 90px;">
+                                                                                    <caption>리스트 추가</caption>
+                                                                                    <colgroup>
+                                                                                        <col style="width: 100%;">
+                                                                                    </colgroup>
+                                                                                    <thead class="bg_lmint">
+                                                                                        <tr>
+                                                                                            <th style="padding: 8px 0 23px 10px;" class="token">
+                                                                                                <div class="custom-select dib vt" style="width: 90px;">
+                                                                                                    <select id="rule_section_token2_create">
+                                                                                                        <option>IF</option>
+                                                                                                        <option>IF NOT</option>
+                                                                                                    </select>
+                                                                                                <div class="select-selected">IF</div><div class="select-items select-hide" id="vm_slim" style="max-height:250px; overflow-y:auto;"><div value="IF">IF</div><div value="IF NOT">IF NOT</div></div></div>
+                                                                                                <div class="custom-select dib vt" style="width: 122px; margin-left: 38px;">
+                                                                                                    <select id="rule_section_token_create" onchange="selectExPath(this)">
+                                                                                                        <option>파일 확장자</option>
+                                                                                                        <option>경로</option>
+                                                                                                    </select>
+                                                                                                <div class="select-selected">파일 확장자</div><div class="select-items select-hide" id="vm_slim" style="max-height:250px; overflow-y:auto;"><div value="파일 확장자">파일 확장자</div><div value="경로">경로</div></div></div>
+                                                                                                <div class="dib ml10" id="ex_div_create_token" style="width: 314px;">
+                                                                                                    <textarea id="token_ex_path_text_create" rows="" cols="" class="pop_txt_area3" maxlength="4000" title="" style="width: 314px; min-height: 54px;" placeholder="파일 확장자를 입력하세요.
+    여러 개 입력 시 Enter로 구분하세요." onkeydown="inputCheck(this,5)" onkeyup="inputCheck(this,5)" onkeypress="if(event.keyCode=='13'){exPathAdd(this);}"></textarea>
+
+                                                                                                    <span class="btn_result_submit mt10 mr10 ml10 mb10" id="token_de_span" style="height: 30px; padding-top: 5px; display: none;">
+                                                                                                        <font class="mt5" id="file_path_font"></font>
+                                                                                                        <a class="ml10 c_garbege" style="background: url('../../images/chosen-sprite.png') -42px 1px no-repeat" href="#" onclick="exPathDel(this)">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                                                                                    </span>
+
+                                                                                                </div>
+                                                                                                <div class="dib ml10" id="path_div_create_token" style="display: none; width: 314px;">
+                                                                                                    <textarea id="token_file_path_text_create" rows="" cols="" class="pop_txt_area3" maxlength="4000" title="" style="width: 314px; min-height: 54px;" placeholder="/cdn/example/* 형태로 입력하세요.
+    여러 개 입력 시 Enter로 구분하세요." onkeydown="inputCheck(this,1)" onkeyup="inputCheck(this,1)" onkeypress="if(event.keyCode=='13'){exPathAdd(this);}"></textarea>
+                                                                                                </div>
+
+                                                                                                <div class="btns_add" id="add_token_create" onclick="addDivToken('create')" style="position: absolute; right: 20px; bottom: 13px;">
+                                                                                                    <a href="#">+ 추가</a>
+                                                                                                </div>
+                                                                                            </th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <!-- <tbody class="bg_lmint"></tbody> -->
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <th>토큰위치</th>
+                                                                            <td>
+                                                                                <div class="stat_bnlist_wrap clfix">
+                                                                                    <ul class="stat_bnlist" id="">
+                                                                                        <li class="toggle_tab" onclick="">
+                                                                                            <span class="stat on" value="COOKIE" style="width: 150px;" id="token_location1_create">쿠키</span>
+                                                                                        </li>
+                                                                                        <li class="toggle_tab" onclick="">
+                                                                                            <span class="stat" value="Request Header" style="width: 150px;" id="token_location2_create">요청헤더</span>
+                                                                                        </li>
+                                                                                        <li class="toggle_tab" onclick="">
+                                                                                            <span class="stat" value="Query String" style="width: 150px;" id="token_location3_create">쿼리 문자열</span>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>동작</th>
+                                                                            <td>
+                                                                                <div class="stat_bnlist_wrap clfix">
+                                                                                    <ul class="stat_bnlist" id="" style="width: 450px;">
+                                                                                        <li class="toggle_tab" onclick="">
+                                                                                            <span class="stat on" value="token_movement1_create" style="width: 150px;" id="">단순검증</span>
+                                                                                        </li>
+                                                                                        <li class="toggle_tab" onclick="">
+                                                                                            <span class="stat" value="token_movement2_create" style="width: 150px;" id="">검증 후 차단</span>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn_apply_wrap">
+                                            <p class="ar">
+                                                <span class="btn_right btnl_secondary mr20" onclick="()" style="cursor: pointer;">
+                                                    <a href="/cdn/list">취소</a>
+                                                </span>
+                                                <span class="btn_right btnl_primary" onclick="serviceNextModify()" style="cursor: pointer;">
+                                                    <a href="#">변경하기</a>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>

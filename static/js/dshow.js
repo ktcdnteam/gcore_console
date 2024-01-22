@@ -150,7 +150,7 @@ function selectbox_design(obj){
                     a.innerHTML = a.innerHTML.substring(0,text_length)+"..";
                 }
             } else if(a.innerHTML.length > 20 && !selElmnt.classList.contains('ltxt') ){
-                a.innerHTML = a.innerHTML.substring(0,25)+"..";
+                a.innerHTML = a.innerHTML.substring(0,45)+"..";
             }
 
             x[i].appendChild(a);
@@ -179,7 +179,7 @@ function selectbox_design(obj){
                     a.innerHTML = a.innerHTML.substring(0,text_length)+"..";
                 }
             }else if(a.innerHTML.length > 25 && !selElmnt.classList.contains('ltxt')){
-                    a.innerHTML = a.innerHTML.substring(0,25)+"..";
+                    a.innerHTML = a.innerHTML.substring(0,45)+"..";
             }
             
             x[i].appendChild(a);
@@ -231,7 +231,7 @@ function selectbox_design(obj){
                                 h.innerHTML = h.innerHTML.substring(0,text_length)+"..";
                             }
                         } else if(h.innerHTML.length > 20 && !selElmnt.classList.contains('ltxt')){
-                            h.innerHTML = h.innerHTML.substring(0,25)+"..";
+                            h.innerHTML = h.innerHTML.substring(0,45)+"..";
                         }
 
                         s.options[i].setAttribute("selected","selected");
@@ -252,7 +252,7 @@ function selectbox_design(obj){
                                 h.innerHTML = h.innerHTML.substring(0,text_length)+"..";
                             }
                         } else if(h.innerHTML.length > 20 && !selElmnt.classList.contains('ltxt')){
-                            h.innerHTML = h.innerHTML.substring(0,25)+"..";
+                            h.innerHTML = h.innerHTML.substring(0,45)+"..";
                         }
 
                         s.options[i].setAttribute("selected","selected");

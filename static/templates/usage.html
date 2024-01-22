@@ -1,0 +1,104 @@
+{{define "STATISTICS"}}
+<div id="contentwrapper" style="width: 100%;">
+    <div id="contentcolumn3">
+        <div id="cdnContentArea" class="sub_m">
+                <div class="sub_t btop dep1_1 ml60">
+                <div class="r_quick_wrap">
+                    <span class="r_quick"><a href="" class="cicon cprod_cdn">CDN Edge</a></span> >          
+                    <span class="r_quick_s"><a href="" class="cicons">CDN</a></span>
+                        
+                    <span class="h3_quick"><a href="javascript:go_portal_page('https://manual.cloud.kt.com/kt/cdn-standard-intro');" class="tmanual7">매뉴얼</a></span>
+                    <span class="h3_quick ml10"><a href="javascript:go_portal_inquiry('3','ucloud CDN','/console/cdnlist');" class="thelp7">온라인문의</a></span>
+                    <span class="h3_quick"><a href="javascript:go_portal_satisfaction_evaluation('CDN3.0','CDN');" class="tSatisfactioni7">만족도평가</a></span>
+                </div>
+                <div class="title_area dep1_1">
+                    <h3 class="">Statistics</h3>                                             
+                    <p>CDN Resources에 대한 통계입니다.</p>
+                </div>
+            </div>
+            <!-- 컨텐츠 wrap -->
+            <div class="listscroll"> 
+                <!-- 화면 해상도 높이 조절 start -->                           
+                <div class="sub_con_box_w">                                                                           
+                    <!--    컨텐츠 분할 영역 시작 -->
+                    <div id="cdnPurge" class="mybox">
+                        <div id="cdnPurge"  style="width:900px;padding-top: 30px">
+                            <!-- <div class="body">
+                                <div class="con">
+                                    <div style="margin: 0px 0 20px 0; ">
+                                        <p style="line-height:36px;font-size:20px;border-bottom:1px solid #000003;">CDN 생성<span class="ptitclick ml10" id="purgePreCautions"></span></p>
+                                        <div class="pdescclick" id="purgePreCautionsArea"></div>
+                                    </div>
+                                    <ul class="clfix">
+                                        <li class="fl" style="width:100px;padding: 6px 0 4px 0;">서비스명</li>
+                                        <li class="fl">
+                                            <textarea id="service_name" rows="" cols="" class="pop_txt_area3" style="width:500px;min-height:30px;overflow-y:auto;"></textarea>
+                                        </li>
+                                    </ul>
+                                    <ul class="clfix mt25">
+                                        <li class="fl" style="width:100px;padding: 6px 0 4px 0;">서비스 도메인</li>
+                                        <li class="fl">
+                                            <textarea id="service_domain" rows="" cols="" class="pop_txt_area3" placeholder="cloud.kt.com" style="width:500px"></textarea>
+                                        </li>
+                                    </ul>
+                                    <ul class="clfix mt25">
+                                        <li class="fl" style="width:100px;padding: 6px 0 4px 0;">Origin 프로토콜</li>
+                                        <li class="fl">
+                                            <div class="custom-select dib"  style="width:500px;">
+                                                <select id="protocolBox">
+                                                    <option value="HTTP">HTTP</option>
+                                                    <option value="HTTPS">HTTPS</option>
+                                                    <option value="MATCH">HTTP/HTTPS</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                    <ul class="clfix mt25">
+                                        <li class="fl" style="width:100px;padding: 6px 0 4px 0;">Origin </li>
+                                        <li class="fl">
+                                            <ul class="img_bnlist clfix" id="origin_type" style="padding:0;">
+                                                <li><span class="imgbn on" value="1" id="origin_type1" style="width:250px;line-height: 20px;">기존 Origin Group</span></li>
+                                                <li><span class="imgbn" value="0" id="origin_type2" style="width:250px;line-height: 20px;">신규 Origin 추가</span></li>
+                                                    <div id="originListArea" >
+                                                        <div class="custom-select dib"  style="width:500px;height: 100%; margin-top:10px">
+                                                            <select id="originGroupList"></select>
+                                                        </div>
+                                                    </div>
+                                                    <div id="originCreateArea" >
+                                                        <textarea id="originList" rows="" cols="" class="pop_txt_area3" placeholder="210.111.21.88&#13;&#10;www.domain.com" style="width:500px;min-height:30px;overflow-y:auto;"></textarea>
+                                                        <div class="create-server__price-option">
+                                                            <div class="v-info-text">
+                                                                <p><img src="https://cloud.kt.com/_nuxt/information.602d3346.svg">&nbsp;  80,443 port 이외의 port를 사용한다면 {도메인:포트} 형식으로 입력하세요. <br> ex) www.domain.com:8080
+                                                                </p>
+                                                            </div>
+                                                            <div class="create-server__price-option__centos-eos"></div>
+                                                        </div>
+                                                    </div>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <li class="fl" style="width:100px;padding: 6px 0 4px 0;"></li>
+                                    <li style="padding:0px 5px">
+                                        
+                                    </li>
+                                   </ul>
+                                    <div class="btn_box twobtn mt40">
+                                        <div>
+                                            <div class="pop_btn_left btnl_secondary" id="btn_OriginCancel"><a href="#">취소</a></div> 
+                                            <div class="pop_btn_right btnl_primary" id="btn_ResourceOk"><a href="#">생성</a></div>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- body end -->
+                        </div> 
+                    </div>
+                </div>
+                            <!-- //inner_consolelist_div -->
+            </div>
+        </div>           
+    </div>
+</div>  
+{{end}}

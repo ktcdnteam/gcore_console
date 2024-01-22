@@ -1,0 +1,107 @@
+2024/01/11 09:26:44 main.go:28: Start api-server..
+2024/01/11 09:26:44 server.go:9: Start api-server..
+2024/01/11 09:26:46 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 09:27:02 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 09:29:41 main.go:28: Start api-server..
+2024/01/11 09:29:41 server.go:9: Start api-server..
+2024/01/11 09:29:47 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 09:37:08 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 09:39:14 main.go:28: Start api-server..
+2024/01/11 09:39:14 server.go:9: Start api-server..
+2024/01/11 09:39:16 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 09:40:05 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 09:40:18 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 09:41:36 main.go:28: Start api-server..
+2024/01/11 09:41:36 server.go:9: Start api-server..
+2024/01/11 09:41:40 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 09:41:40 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:10:36 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:10:36 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:11:46 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:11:46 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:11:47 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/11 10:11:47 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/11 10:11:47 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/11 10:11:47 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/11 10:11:49 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:11:49 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:12:48 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:12:48 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:13:57 main.go:28: Start api-server..
+2024/01/11 10:13:57 server.go:9: Start api-server..
+2024/01/11 10:14:00 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:14:00 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:17:50 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:17:50 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:19:30 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:19:30 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:20:43 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:20:43 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:21:16 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:21:16 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:21:51 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:21:51 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:22:57 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:22:57 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:23:27 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:23:27 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:23:43 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:23:43 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:24:03 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:24:03 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:25:00 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:25:00 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:26:57 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:26:57 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:27:30 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:27:30 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:28:57 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:28:57 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 10:59:13 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:59:14 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/11 10:59:14 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/11 10:59:16 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 10:59:17 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 11:04:35 main.go:28: Start api-server..
+2024/01/11 11:04:35 server.go:9: Start api-server..
+2024/01/11 11:04:37 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 11:04:39 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/361345  
+2024/01/11 11:04:40 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 12:06:39 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/11 12:06:39 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 12:06:40 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/11 12:06:40 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/11 12:06:40 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/11 12:06:40 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/11 12:06:41 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/11 12:06:42 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 12:06:42 billing_model.go:205: 361345. server02.ktcdnteam.link 2023-12-26 14:11:40 suspended 
+2024/01/11 12:06:42 billing_model.go:205: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/11 12:06:42 billing_model.go:205: 395596. gcore05.ktcdnteam.link 2024-01-09 09:45:06 active 
+2024/01/11 12:06:42 billing_model.go:205: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/11 12:06:42 billing_model.go:205: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/11 12:06:45 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/11 12:06:46 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 12:07:24 main.go:28: Start api-server..
+2024/01/11 12:07:24 server.go:9: Start api-server..
+2024/01/11 12:07:26 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/11 12:07:27 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 12:18:56 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/11 12:18:57 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 12:19:27 main.go:28: Start api-server..
+2024/01/11 12:19:27 server.go:9: Start api-server..
+2024/01/11 12:19:28 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/11 12:19:29 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 12:22:29 main.go:28: Start api-server..
+2024/01/11 12:22:29 server.go:9: Start api-server..
+2024/01/11 12:22:32 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/11 12:22:33 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/11 12:31:34 main.go:28: Start api-server..
+2024/01/11 12:31:34 server.go:9: Start api-server..
+2024/01/12 02:59:05 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 02:59:05 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/12 02:59:05 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/12 02:59:07 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 02:59:08 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 03:24:08 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 03:24:09 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  

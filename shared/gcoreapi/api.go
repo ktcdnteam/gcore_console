@@ -85,13 +85,19 @@ func Request(reqJSON []byte, urlpath, method, token string) ([]byte, error) {
 		log.Printf("%s %s >>> %s\n", method, url, err)
 		return nil, err
 	}
-
+	if urlpath == "cdn/resources/397881" && method == "GET" {
+		log.Println(string(respBody))
+	}
 	if resp.StatusCode > 204 {
 		log.Printf("%s %s >>> [ERROR : %d] %s \n", method, url, resp.StatusCode, string(respBody))
 		var errMsg string
 
 		if resp.StatusCode == 404 {
 			errMsg = "404 Not Found"
+			return nil, errors.New(errMsg)
+		}
+		if resp.StatusCode == 504 {
+			errMsg = "Gateway Time-out"
 			return nil, errors.New(errMsg)
 		}
 		if urlpath == "cdn/resources" && method == "POST" {

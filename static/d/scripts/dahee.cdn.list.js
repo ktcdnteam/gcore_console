@@ -58,44 +58,70 @@ var lastSelectedServerName = "";
 var lastSelectedServerName_update = "";
 var needSsSelect = false;
 
-// cdn3.0 고도화
+// select box -> 맵 저장
 let country_list = [];
+let redirect_code_list =[];
+let online_code_list =[];
 
 let add_origin_request_headers = {};
 let add_client_response_headers = {};
 
 let applyCertiData = null;
+/****************************************************
+ * ONEVIEW 처리 END
+ ****************************************************/
+// const timestampStr = "2024-01-22T01:13:04.763366Z";
+
+// // Parse the timestamp string
+// const timestamp = new Date(timestampStr);
+
+// Convert to South Korea local time (KST) and format as "YYYY-MM-DD HH:mm:ss"
+const options = {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false,
+    timeZone: 'Asia/Seoul', // Set to Asia/Seoul for KST
+  };
+const formatter = new Intl.DateTimeFormat('en-US', options);
 
 
 $(document).ready(advcdnListReady);
 
 function advcdnListReady(){
     if (url == "CDN_LIST"){
-        set_CdnEvent();
+        set_CdnListEvent();
         call_resourceList();
+        get_originGroupList('#originGroupList', "");
+    }else if(url == "PURGE"){
+        call_cdnPurge();
+    }else if(url == "CDN_DETAIL"){
+        call_cdnDetail();
+    }else if(url == "STATISTICS"){
+        call_cdnStatistics();
     }else if (url == "ORIGIN_GROUP"){
         set_OriginEvent();
         call_originList();
-    }else if(url == "PURGE"){
-        call_cdnPurge();
-        console.log(url)
     }
     // ssList();
     selectBoxChang();
     setEventCheckbox();
 }
 
-function setPageCDNList(ok){
-    if (ok){
-        // cdn list
-        $("#cdnListContent").show();
-        $("#cdnModifyContent").hide();
-    }else{
-        // cdn 수정
-        $("#cdnListContent").hide();
-        $("#cdnModifyContent").show();
-    }
-}
+// function setPageCDNList(ok){
+//     if (ok){
+//         // cdn list
+//         $("#cdnListContent").show();
+//         $("#cdnModifyContent").hide();
+//     }else{
+//         // cdn 수정
+//         $("#cdnListContent").hide();
+//         $("#cdnModifyContent").show();
+//     }
+// }
 function setEventCheckbox(){
     $("input:checkbox.chkbox").bind("change", function(){
         
@@ -110,33 +136,6 @@ function setEventCheckbox(){
         
     });
     
-}
-function call_originList(){
-    // showLoadingBox();    // 로딩중 이미지
-    
-    var params = {};
-    params.command = "listCdn2";
-    params.group_mem_sq = group_mem_sq;
-
-    $.ajax({
-        url : "/cdn/origin_groups/all"
-        , type : "GET"
-        , data : params
-        , dataType : "json"
-        , complete : function () {
-            // hideLoadingBox();    // 로딩중 이미지 닫기
-        }
-        , success : function(json) {
-            // if (json.status == "00") {
-                list_OriginGroup(json);
-            // }else{
-                // if(json.status == "99"){
-                    // showCommonNoLangErrorMsg("CDN서비스 조회","CDN서비스 조회중 에러가 발생하였습니다."+ "<br />" +"관리자에게 문의하세요");
-                // }
-            // }
-                
-        }
-    });
 }
 
 function ssList(){
@@ -220,9 +219,9 @@ function ssList(){
         }
     });
 }
-function get_originGroupList(){
-    selectbox_design($("#protocolBox"));
-    $('option','#originGroupList').remove();
+
+function get_originGroupList(selectBoxID, value){
+    $('option',selectBoxID).remove();
     $.ajax({
         url: "/cdn/origin_groups/name",
         type: "GET",
@@ -230,11 +229,13 @@ function get_originGroupList(){
         dataType: "json",
         success: function(json) { 
             json.forEach(function (elem) {
-                $('<option value="'+ elem.id +'" value1="'+ elem.sources[0].source+'">'+elem.name +'</option>').appendTo('#originGroupList');   
+                $('<option value="'+ elem.id +'" value1="'+ elem.sources[0].source+'">'+elem.name +'</option>').appendTo(selectBoxID);   
             })
-            selectbox_design($("#originGroupList"));
+            if (value != "")$('#originGroupList2').val(value).prop("selected", true);
+            selectbox_design($(selectBoxID));
         }
     });
+    
 }
 
 // //message Box 보이기(로딩)
@@ -284,7 +285,7 @@ function call_resourceList(){
     // showLoadingBox();    // 로딩중 이미지
     
     $.ajax({
-        url : "/cdn/list/all"
+        url : "/cdn/resources?delete=false&fields=id,description,status,cname,originGroup_name,created,origins"
         , type : "GET"
         , data : {}
         , dataType : "json"
@@ -455,7 +456,7 @@ function list_CloudServer(items){
                     vmList.find("#text_vmDisplayText").text(items[i].description);
                     $("#text_selected_vmDisplayText").text(items[i].description); //하단 선택된 서비스
                 }
-                
+                console.log()
                 //상태는 확인 후 작업 필요 
                 if (items[i].status == "active") { //사용
                     vmList.find("#img_vmState").html('<img src="/images/c_common/ico_state_use.png" alt="사용" class="mr5 vm" />사용').end();
@@ -467,8 +468,9 @@ function list_CloudServer(items){
                 
                 vmList.find("#text_vmServiceDomain").text(items[i].cname);
                 vmList.find("#text_vmOriginGroup").text(items[i].originGroup_name);
-         
-                vmList.find("#button_vmConsoleView").text(items[i].created_str);
+                const utcTimestamp = new Date(items[i].created);
+                const kstFormatted = formatter.format(utcTimestamp);
+                vmList.find("#button_vmConsoleView").text(kstFormatted);
                 
                 // 항목변경 default 숨김메뉴
                 vmList.find("#text_service_id").text(items[i].id); // 리스트-서비스 아이디
@@ -510,7 +512,6 @@ function list_CloudServer(items){
                 vmList.data("denycountrylist" ,"");
                 vmList.data("allowiplist" ,"");
                 vmList.data("denyiplist" ,"");
-                
                 
                 if(items[i].svctype){ vmList.data("svc_" , items[i].svctype);}
                 if(items[i].svcname){ vmList.data("svc_name" , items[i].description);}
@@ -572,81 +573,6 @@ function list_CloudServer(items){
 }
 
 
-function list_OriginGroup(items){
-    $(".tr_origin_list").remove();
-    // show_tooltip("button_cdnDelete", "Y");
-    if(items != null && items.length > 0){
-        for(var i = 0; i < items.length ; i++){
-            var originList = $("#base_vmList").clone(true).addClass("tr_origin_list");
-            // checkbox
-            originList.find("input:checkbox[name=contentsList]").val(items[i].id);
-            
-            //이름      
-            originList.find("#text_originDisplayText").text(items[i].name);
-            $("#text_originDisplayText").text(items[i].name); //하단 선택된 서비스
-            
-            //origin
-            var originText = '';
-            if (items[i].sources.length > 0){
-                for (var j=0; j < items[i].sources.length ; j++) {
-                    originText += (j > 0)?'<br>':'';
-                    originText += items[i].sources[j].source;
-                }
-            }
-            originList.find("#text_originList").html(originText).end();
-
-
-            // 사용중인 CDN서비스,상태
-            var resourceText = '';
-            if (items[i].has_related_resources && items[i].resource_info !== null){
-                for (var j=0; j < items[i].resource_info.length ; j++) {
-                    resourceText += (j > 0)?'<br>':'';
-                    var status = items[i].resource_info[j].status
-                    if (status == "active") { //사용
-                        resourceText += '<img src="/images/c_common/ico_state_use.png" alt="사용" class="mr5 vm" />&nbsp;&nbsp'
-                    } else if (status == "suspended") {
-                        resourceText += '<img src="/images/c_common/ico_state_stop.png" alt="정지" class="mr5 vm" />&nbsp;&nbsp'
-                    } else if(status == "processed") {
-                        resourceText += '<img src="/images/c_common/ico_state_process.png" class="mr5 vm" />&nbsp;&nbsp'
-                    }
-                    resourceText += items[i].resource_info[j].description ;
-                } 
-            }
-            originList.find("#text_resourceList").html(resourceText).end();
-       
-          
-            originList.attr("id" , items[i].id);
-            originList.attr("origin_name" , items[i].originGroup_name);
-            
-            originList.data("id" ,"");
-            originList.data("origin_name" ,"");
-         
-            
-            
-            if(items[i].id){ originList.data("id" , items[i].id);}
-            if(items[i].originGroup_name){ originList.data("origin_name" , items[i].originGroup_name);}
-           
-            
-            $("#base_vmList").before(originList.show());
-            
-            firstlistcheck = true;
-        
-            //oneview경우 행선택 표시
-            if(oneview_id!=""){
-                if(oneview_id==items[i].svc_name){
-                    $("#text_originDisplayText", originList).trigger("click");
-                }
-            }
-                
-        }
-        // 최상단 자동클릭
-        if(oneview_id!=""){
-            oneview_id="";
-        }
-        
-        $("#div_nonelist").hide();
-    }
-}
 
 function event_cdnClick(e){
     e.preventDefault();
@@ -681,38 +607,55 @@ function event_cdnClick(e){
         setControl_Panel_CDN(selectedRow.data("status"));
 }
 
-function event_originClick(e){
-    e.preventDefault();
-    selectedRow = $(e.target).parents("tr");
-    var selectedvm_id = selectedRow.attr("id");
-    var selectedvm_name = selectedRow.attr("origin_name");
-    if(selectedvm_id == null) {
-        return false;
+function selectProtocolChang(){
+    if ($('#protocolBox').attr('value') != "MATCH"){
+        $("#portText").show();
+        var msgPort =  ($('#protocolBox').attr('value') == "HTTP")?"80이외 포트":"443이외 포트";
+        $("#portText").attr("placeholder",  msgPort);
+    }else{
+        $("#portText").hide();
     }
-  
-    selectedRow.data("id", selectedvm_id);
-    selectedRow.data("origin_name", selectedvm_name)
-
-  
-    $("input:checkbox[name=contentsList]").prop("checked",false).change();
-        selectedRow.find("input:checkbox[name=contentsList]").prop("checked",true).change();
-        
-        $("#button_cdnDetail").removeClass('action_disabled');
-        $("#button_cdnModify").removeClass('action_disabled');
-    
-    setControl_Panel_Origin();
-
+    $("#portText").val("");
+        // $("#contentsList1").unbind("click").bind("click" , alert("!"));
 }
+
 function selectPortChang(){
     if ($("#use_default_port").prop("checked")){
         $("#step4_modify_header_value").hide();
-        $("#step4_modify_header_value").val("");
     }else{
         $("#step4_modify_header_value").show();
-        $("#step4_modify_header_value").val("");
     }
+    $("#step4_modify_header_value").val("");
     // $("#contentsList1").unbind("click").bind("click" , alert("!"));
 }
+function selectCacheOtherChang(){
+    if ($('#caching_select_create').attr('value') == "other"){
+        $("#caching_time_other").show();
+    }else{
+        $("#caching_time_other").hide();
+    }
+    $("#caching_time_other").val("");
+        // $("#contentsList1").unbind("click").bind("click" , alert("!"));
+}
+function selectCacheOtherChang2(){
+    if ($('#browser_caching_select_create').attr('value') == "other"){
+        $("#browser_caching_time_other").show();
+    }else{
+        $("#browser_caching_time_other").hide();
+    }
+    $("#browser_caching_time_other").val("");
+        // $("#contentsList1").unbind("click").bind("click" , alert("!"));
+}
+function selectCacheOtherChang3(){
+    if ($('#ignore_select_create').attr('value') == "0"){
+        $("#ignore_query_time_other").hide();
+    }else{
+        $("#ignore_query_time_other").show();
+    }
+    $("#ignore_query_time_other").val("");
+        // $("#contentsList1").unbind("click").bind("click" , alert("!"));
+}
+
 function selectBoxChang(){
     $("#org_select li span").each(function(i,e){
         if($(this).hasClass('on')){
@@ -813,23 +756,8 @@ function setControl_Panel_CDN(state){
         } 
     
 }
-function setControl_Panel_Origin(){
-    //11/16 설명창에 나오는 상태 이미지처리
-    if(!selectedRow.find("input:checkbox[name=contentsList]").prop("checked")){
-        $("#button_originUpdate").attr("class", "action action_disabled");
-        $("#button_originDelete").attr("class", "action action_disabled");
-        
-    }else{ // 사용중 상태
-        //각 액션 버튼 셋팅
-        $("#button_originUpdate").attr("class", "action");
-        $("#button_originDelete").attr("class", "action");
 
-        $("#button_originUpdate").unbind("click").bind("click" , button_originUpdate_event); 
-        $("#button_originDelete").unbind("click").bind("click" , button_originDelete_event); 
-        show_tooltip("button_cdnDelete", "Y");
-    }
-}
-function set_CdnEvent(){
+function set_CdnListEvent(){
     svcNm_chk = false;
     svcDm_chk = false;
     $("#green_svn_nm").hide();
@@ -863,7 +791,6 @@ function set_CdnEvent(){
     });
     //CDN 생성
     $("#button_cdnDeploy").unbind("click").bind("click" , function() {
-        get_originGroupList();
         if($(this).hasClass("action_disabled")){
             return false;
         }
@@ -890,11 +817,9 @@ function set_CdnEvent(){
         // $('<option value="cdn_domain">'+cdn_domain+'</option>').appendTo('#purge_domain');
         // selectbox_design($("#purge_domain"));
         // dlgForm.find("#hardPurgeUse").prop("checked", false);
-        
+
         // 팝업 주의사항 보기
         dlgForm.find("#purgePreCautions").unbind("click").bind("click" , precautionToggle);
-            
-    
         function precautionToggle(){
             dlgForm.find("#purgePreCautions").toggleClass("on");
             dlgForm.find("#purgePreCautionsArea").toggleClass("on");
@@ -926,19 +851,10 @@ function set_CdnEvent(){
             dlgForm.dialog("close");
         }
         
-        $("#originList").keyup(function (e){
-            var content = $(this).val();
-
-            if(content.length>5000){
-                $(this).val(content.substring(0,5000));
-                // showCommonNoLangErrorMsg("", "최대 5000자 이내로 입력 가능합니다.");
-                return;
-            }
-        });
-        
         dlgForm.find("#btn_ResourceOk").unbind("click").bind("click", ResourceOK); 
         function ResourceOK(){
-            var originURLList = dlgForm.find("#originList").val();
+            var originURL = dlgForm.find("#originList").val();
+            var portText = dlgForm.find("#portText").val();
             var origin_type =null;
             $("#origin_type li span").each(getOriginType);
             function getOriginType(){
@@ -993,22 +909,41 @@ function set_CdnEvent(){
                 resourceCreate(param);
                 dlgForm.dialog("close");
             }else if (origin_type == "0"){      //신규 Origin 추가
-                if (originURLList == "") {
+                if (originURL == "") {
                     showCommonNoLangErrorMsg("", " 최소 1개 이상의 오리진 주소를 입력하세요.");
                     return;
                 }
-                var origin_arr = originURLList.split("\n");
-                if(origin_arr.length == 5){
-                    showCommonNoLangErrorMsg("", "한번에 최대 5개까지 입력 가능합니다.");
+                if(!checkDomainOrIP(originURL)){
+                    showCommonNoLangErrorMsg("", originURL + "은 형식에 맞지 않습니다.Origin은 IP주소 또는 도메인 형식만 가능합니다.");
                     return;
                 }
-                for (var p = 0; p < origin_arr.length; p++) {
-                    if(!checkDomainOrIP(origin_arr[p])){
-                        showCommonNoLangErrorMsg("신규 Origin 추가", origin_arr[p] + "은 형식에 맞지 않습니다.Origin은 IP주소 또는 도메인 형식만 가능합니다.");
+                var origin = originURL;
+                if (protocol !== "MATCH"){
+                    if(!checkPort(portText)){
+                        showCommonNoLangErrorMsg("", portText + "은 형식에 맞지 않습니다.Port는 0~65535 사이의 정수만 가능합니다.");
                         return;
+                    }else{
+                        origin = originURL + ":" + portText
                     }
-                }
-                var params = {origins : origin_arr};
+                } 
+                
+                var originsMap = [];
+                
+                originsMap.push(origin)
+                var params = {origins : originsMap};
+                // origin이 복수개 일 때 (01/16) 
+                // var origin_arr = originURLList.split("\n");
+                // if(origin_arr.length == 5){
+                //     showCommonNoLangErrorMsg("", "한번에 최대 5개까지 입력 가능합니다.");
+                //     return;
+                // }
+                // for (var p = 0; p < origin_arr.length; p++) {
+                //     if(!checkDomainOrIP(origin_arr[p])){
+                //         showCommonNoLangErrorMsg("신규 Origin 추가", origin_arr[p] + "은 형식에 맞지 않습니다.Origin은 IP주소 또는 도메인 형식만 가능합니다.");
+                //         return;
+                //     }
+                // }
+                // var params = {origins : origin_arr};
                 $.ajax({
                     url : "/cdn/origin_group",
                     type : "POST",
@@ -1059,20 +994,620 @@ function set_CdnEvent(){
     });
     $("#button_cdnDetail").unbind("click").bind("click" , button_cdnDetail_event);
     $("#base_vmList").unbind("click").bind("click" , event_cdnClick);
+
+    //Select Box (custom-select dib)
+    selectbox_design($("#protocolBox"));
 }
 
-//CDN 수정
-function event_cdnModify(e){
+function call_cdnStatistics(){
+    url = "/cdn/resources?ordering=status,-id&deleted=false&fields=id,cname,status"
+    $.ajax({
+        url : url
+        , type : "GET"
+        , data : {}
+        , dataType : "json"
+        , complete : function () {
+            // hideLoadingBox();    
+            // 로딩중 이미지 닫기
+        }
+        , success : function(json) {
+            if (json.status == "00") {
+                console.log(json.data);
+            }else{
+                if(json.status == "99"){
+                    showCommonNoLangErrorMsg("CDN서비스 조회","CDN서비스 조회중 에러가 발생하였습니다."+ "<br />" +"관리자에게 문의하세요");
+                }
+            }
+                
+        }
+    });
+}
+
+function call_cdnDetail(){
+    url = "/cdn/resources/" + svc_id;
+    $.ajax({
+        url : url
+        , type : "GET"
+        , data : {}
+        , dataType : "json"
+        , complete : function () {
+            // hideLoadingBox();    // 로딩중 이미지 닫기
+        }
+        , success : function(json) {
+            if (json.status == "00") {
+                set_CdnDetailEvent(json.data);
+            }else{
+                if(json.status == "99"){
+                    showCommonNoLangErrorMsg("CDN서비스 조회","CDN서비스 조회중 에러가 발생하였습니다."+ "<br />" +"관리자에게 문의하세요");
+                    
+                }
+            }
+                
+        }
+    });
+}
+function set_CdnDetailEvent(e){
+    console.log(e.options)
     var mdfForm = $("#cdnModifyContent");
-    e.preventDefault();
-    var svc_id = selectedRow.data("id");
-    var svc_name = selectedRow.data("service_name")
-    var svc_domain = selectedRow.data("domain")
-    $("#cdnListContent").hide();
-    $("#cdnModifyContent").show();
+    // Cache 설정 메뉴 
+    mdfForm.find("#cacheSetting").unbind("click").bind("click" , CacheToggle);
+    function CacheToggle(){
+        mdfForm.find("#cacheSetting").toggleClass("on");
+        mdfForm.find("#cacheSettingArea").toggleClass("on");
+    }
+    
+    // Access 설정 메뉴
+    mdfForm.find("#accessSetting").unbind("click").bind("click" , accessToggle);
+    function accessToggle(){
+        mdfForm.find("#accessSetting").toggleClass("on");
+        mdfForm.find("#accessSettingArea").toggleClass("on");
+    }
+    // Content 설정 메뉴
+    mdfForm.find("#contentSetting").unbind("click").bind("click" , ContentToggle);
+    function ContentToggle(){
+        mdfForm.find("#contentSetting").toggleClass("on");
+        mdfForm.find("#contentSettingArea").toggleClass("on");
+    }
+    // HTTP Headers 설정 메뉴
+    mdfForm.find("#httpHeadersSetting").unbind("click").bind("click" , HTTPToggle);
+    function HTTPToggle(){
+        mdfForm.find("#httpHeadersSetting").toggleClass("on");
+        mdfForm.find("#httpHeadersSettingArea").toggleClass("on");
+    }
+
+    var svc_name = e.description
+    var svc_domain = e.cname
+    var originProtocol = e.originProtocol
+    // $("#cdnListContent").hide();
+    // $("#cdnModifyContent").show();
     mdfForm.find("#modify_svcName").text(svc_name);
     mdfForm.find("#service_name").text(svc_name);
     mdfForm.find("#service_domain").text(svc_domain);
+    get_originGroupList('#originGroupList2', e.originGroup);
+    $('#protocolBox2').val(originProtocol).prop("selected", true);
+    // selectbox_design($("#cache_type"));
+    // selectbox_design($("#cache_type2"));
+    selectbox_design($('#originGroupList2'));
+    selectbox_design($("#protocolBox2"));
+    selectbox_design($("#ignore_select_create"));
+    selectbox_design($("#country_list"));
+    selectbox_design($("#online_code_list"));
+    selectbox_design($("#redirect_code_list"));
+
+    
+    // Step1. Cache UI
+    var step1Form = $("#cacheSettingArea");
+    // 기능 json 
+    var step1Caching = e.options.edge_cache_settings  
+    var step1Redirect = e.options.follow_origin_redirect  
+    var step1Browser = e.options.browser_cache_settings  
+    var step1Cookie = e.options.ignore_cookie  
+    var step1Query = e.options.browser_cache_settings  
+    // "ignoreQueryString": null,
+    // "query_params_whitelist": {
+    //   "enabled": true,
+    //   "value": [
+    //     "id"
+    //   ]
+    // },
+
+    var step1Cookie = e.options.ignore_cookie  
+    // "stale": {
+    //     "enabled": true,
+    //     "value": [
+    //       "error",
+    //       "updating"
+    //     ]
+    //   },
+
+    /*사용/미사용에 따른 toggle 처리*/
+    // (1) CDN caching
+    step1Form.find("#cachingToggle").unbind("click").bind("click", cachingEnableToggle); 
+    function cachingEnableToggle(){ 
+        if ($("#cachingToggle").is(":checked")){
+            step1Form.find("#cdn_caching_content").show();
+            step1Form.find("#cachingToggle").prop("checked", true);
+        }else{
+            step1Form.find("#cdn_caching_content").hide();
+            step1Form.find("#cachingToggle").prop("checked", false);
+        }
+    }
+    // (2) Redirect 응답 설정 
+    step1Form.find("#redirectToggle").unbind("click").bind("click", redirectEnableToggle); 
+    function redirectEnableToggle(){ 
+        if ($("#redirectToggle").is(":checked")){
+            step1Form.find("#redirect_response_content").show();
+            step1Form.find("#redirectToggle").prop("checked", true);
+        }else{
+            step1Form.find("#redirect_response_content").hide();
+            step1Form.find("#redirectToggle").prop("checked", false);
+        }
+    }
+    //(3) 브라우저 캐싱 활성화 설정 
+    step1Form.find("#browserToggle").unbind("click").bind("click", browserEnableToggle); 
+    function browserEnableToggle(){ 
+        if ($("#browserToggle").is(":checked")){
+            step1Form.find("#browser_caching_content").show();
+            step1Form.find("#browserToggle").prop("checked", true);
+        }else{
+            step1Form.find("#browser_caching_content").hide();
+            step1Form.find("#browserToggle").prop("checked", false);
+        }
+    }
+    // (4) Set-Cookie
+    step1Form.find("#setCookieToggle").unbind("click").bind("click",function (){ 
+        step1Form.find("#setCookieToggle").prop("checked", $("#setCookieToggle").is(":checked"));
+    })
+    
+    // (5) 쿼리 문자열 무시 정보 //ignore_query_content //Ignore Set-Cookie
+    step1Form.find("#queryToggle").unbind("click").bind("click", queryEnableToggle); 
+    function queryEnableToggle(){ 
+        if ($("#queryToggle").is(":checked")){
+            step1Form.find("#ignore_query_content").show();
+            step1Form.find("#queryToggle").prop("checked", true);
+        }else{
+            step1Form.find("#ignore_query_content").hide();
+            step1Form.find("#queryToggle").prop("checked", false);
+        }
+    }
+
+    // (6) 온라인 활성화
+    step1Form.find("#onlineToggle").unbind("click").bind("click", onlineEnableToggle); 
+    function onlineEnableToggle(){ 
+        if ($("#onlineToggle").is(":checked")){
+            step1Form.find("#online_content").show();
+            step1Form.find("#onlineToggle").prop("checked", true);
+        }else{
+            step1Form.find("#online_content").hide();
+            step1Form.find("#onlineToggle").prop("checked", false);
+        }
+    }
+    
+    // (1) CDN caching (Setting)
+    var cachingType = "";
+    var cachingTimeTxt = "";
+
+    if (step1Caching.enabled){ 
+        //사용 중 - 토글 활성화
+        step1Form.find("#cachingToggle").prop("checked", true);
+        step1Form.find("#cdn_caching_content").show();
+        //  Origin Control / CDN Control 
+        if (step1Caching.custom_values === undefined && step1Caching.default !== '') {
+            // [1] Origin Control : custom_values, value 컬럼 X.  ex) {enabled: true, default: '0s', value: '',}
+            cachingType = "0";
+            cachingTimeTxt = step1Caching.default;
+        } else {
+            // [2] CDN Control : custom_values, value 컬럼 O.  ex) {enabled: true, default: '', value: '345600s', custom_values: {}}
+            cachingType = "1";
+            cachingTimeTxt = step1Caching.value;
+            
+            // [3] CDN Control - 추가 룰 기능(2차 고도화) : custom_values 컬럼 및 값 O. ex) {enabled: true, default: '', value: '345600s', custom_values: {"404": "3600s","500": "345600s"}}
+            if (Object.keys(step1Caching.custom_values).length === 0) {} else {}
+        } 
+        //asdf
+        $("#caching_control_type li span").each(function() {
+            if ($(this).attr('value') === cachingType) $(this).addClass('on'); 
+            if ($(this).attr('value') !== cachingType) $(this).removeClass("on");
+        });
+
+        // 캐싱시간 설정
+        // select box에서 cachingTimeTxt 값과 일치하는 옵션을 선택
+        $('#caching_select_create').val(cachingTimeTxt).prop("selected", true);
+            
+        // 만약 cachingTimeTxt 값에 해당하는 옵션이 없으면 'other'를 선택 후 input에 값 입력. 
+        if ($('#caching_select_create option[value="' + cachingTimeTxt + '"]').length === 0) {
+            $("#caching_time_other").show();
+            $("#caching_time_other").val(cachingTimeTxt);
+            $('#caching_select_create').val('other').prop("selected", true);
+        }
+    }else{
+        step1Form.find("#cachingToggle").prop("checked", false);
+        step1Form.find("#cdn_caching_content").hide();
+        // 사용 안함 (토글 비활성화 )
+    }
+
+       
+    
+    // *클릭 시 설정 : [1] Origin Control / [2] CDN Control 
+    $("#caching_control_type li span").unbind("click").bind("click", function(e) {
+        console.log("!!")
+        step1Form.find("#caching_control_type li span").removeClass('on');
+        $(this).addClass('on');
+        // step1Form.find("#caching_select_create").val("");
+        var type = step1Form.find("#caching_control_type").find(".on").attr("value");
+        if(type == "1"){
+            // 1번
+            step1Form.find("#caching_option_check").show();
+        }else{
+            // 2번
+            step1Form.find("#caching_option_check").hide();
+        }
+    }); 
+   
+    $("#redirect_code_list").bind("change", function() {
+    })
+    // (2) Redirect 응답 설정  {"enabled": true,"codes": [301,302, 303, 307, 308]}
+    if (step1Redirect.enabled){ 
+        //사용 중 - 토글 활성화
+        step1Form.find("#redirectToggle").prop("checked", true);
+        step1Form.find("#redirect_response_content").show();
+
+        step1Redirect.codes.forEach(e => {
+            //문자열로 변환
+            var code = e.toString() ;  
+            redirect_code_list.push(code);
+            let code_base = $("#redirect_code_base").clone().show();
+            code_base.find("#redirect_code_text").text(code);
+            code_base.find("img").bind("click", function(){
+                let span_redirect_code = $(this).parent().parent().find("#redirect_code_text").text();
+                let reomve_index = redirect_code_list.indexOf(redirect_code_list.find(item => item === span_redirect_code));
+                redirect_code_list.splice(reomve_index, 1);
+                $(this).parent().parent().remove();
+            });
+            $("#redirect_code_div").append(code_base);
+            $("#redirect_text_area").show().css("display","none"); 
+        });
+    }else{
+        // 사용 안함 - 토글 비활성화 
+        step1Form.find("#redirectToggle").prop("checked", false);
+        $("#redirect_response_content").hide(); 
+    }
+    // Redirect Code 추가/삭제  
+    $("#redirect_code_list").bind("change", function() {
+		let redirect_code = $(this).val();
+		if(redirect_code_list.includes(redirect_code)) return false;
+		redirect_code_list.push($(this).val());
+		
+		let code_base = $("#redirect_code_base").clone().show();
+		code_base.find("#redirect_code_text").text(redirect_code);
+		
+		code_base.find("img").bind("click", function(){
+			let span_redirect_code = $(this).parent().parent().find("#redirect_code_text").text();
+			let reomve_index = redirect_code_list.indexOf(redirect_code_list.find(item => item === span_redirect_code));
+            redirect_code_list.splice(reomve_index, 1);
+			$(this).parent().parent().remove();
+		});
+		$("#redirect_code_div").append(code_base);
+        $("#redirect_text_area").show().css("display","none");
+	});
+    
+
+    
+    //(3) 브라우저 캐싱 활성화 설정 
+    var browserType = "";
+    var browserTimeTxt = "";
+    if (step1Browser !== null && step1Browser.enabled){ 
+        //사용 중 - 토글 활성화
+        step1Form.find("#browserToggle").prop("checked", true);
+        step1Form.find("#browser_caching_content").show();
+
+        //  Origin Control / CDN Control 
+        if (step1Browser.value === '') {
+            // [1] Origin Control {enabled: true,  value: ''}
+            browserType = "0";
+        } else {
+            // [2] CDN Control  {"enabled": true, "value": "3600s"}
+            browserType = "1";
+            browserTimeTxt = step1Browser.value;
+        } 
+        $("#caching_control_type2 li span").each(function() {
+            if ($(this).attr('value') === browserType) $(this).addClass('on'); 
+            if ($(this).attr('value') !== browserType) $(this).removeClass("on");
+        });
+        // 캐싱시간 설정
+        // select box에서 cachingTimeTxt 값과 일치하는 옵션을 선택
+        $('#browser_caching_select_create').val(browserTimeTxt).prop("selected", true);
+            
+        // 만약 cachingTimeTxt 값에 해당하는 옵션이 없으면 'other'를 선택 후 input에 값 입력. 
+        if ($('#browser_caching_select_create option[value="' + browserTimeTxt + '"]').length === 0) {
+            $("#browser_caching_time_other").show();
+            $("#browser_caching_time_other").val(browserTimeTxt);
+            $('#browser_caching_select_create').val('other').prop("selected", true);
+        }
+    }else{
+        //사용 안함 - 토글 비활성화
+        step1Form.find("#browserToggle").prop("checked", false);
+        step1Form.find("#browser_caching_content").hide();
+    }
+
+
+    selectbox_design($("#caching_select_create"));
+    selectbox_design($("#browser_caching_select_create"));
+
+    //클릭시 
+    $("#caching_control_type2 li span").unbind("click").bind("click", function(e) {
+        step1Form.find("#caching_control_type2 li span").removeClass('on');
+        $(this).addClass('on');
+        // cdnCacheForm.find("#caching_select_create").val("");
+        var type = step1Form.find("#caching_control_type2").find(".on").attr("value");
+        if(type == "1"){
+            //1번
+            step1Form.find("#caching_option_check2").show();
+            // svcDm_chk = false;
+            // if(cdnCacheForm.find("#step1_sslType").find(".on").attr("value") != "0"){
+            //     cdnCacheForm.find("#certificateArea").show();
+            // }
+        }else{
+            step1Form.find("#caching_option_check2").hide();
+            // svcDm_chk = true;
+            // dlgForm.find("#red_svn_dm").hide();
+            // dlgForm.find("#certificateArea").hide();
+            // dlgForm.find("#red_svn_ssl").hide();
+            // dlgForm.find("#txt_sel_certificate").val("");
+        }
+    }); 
+
+    // (4) Set-Cookie : {"enabled":false,"value":true}
+    
+    if (step1Cookie !== undefined && step1Cookie.enabled){ 
+        //사용 중 - 토글 활성화
+        step1Form.find("#setCookieToggle").prop("checked", true);
+    }else{
+        //사용 안함 - 토글 비활성화
+        step1Form.find("#setCookieToggle").prop("checked", false);
+    }
+    // (5) 쿼리 문자열 무시 정보 //ignore_query_content 
+
+    //클릭시 
+    $("#caching_control_type3 li span").unbind("click").bind("click", function(e) {
+        step1Form.find("#caching_control_type3 li span").removeClass('on');
+        $(this).addClass('on');
+        // cdnCacheForm.find("#caching_select_create").val("");
+        var type = step1Form.find("#caching_control_type3").find(".on").attr("value");
+        console.log(type)
+        if(type !== "0"){
+            //1번
+            step1Form.find("#ignore_query_time_other").show();
+            // svcDm_chk = false;
+            // if(cdnCacheForm.find("#step1_sslType").find(".on").attr("value") != "0"){
+            //     cdnCacheForm.find("#certificateArea").show();
+            // }
+        }else{
+            step1Form.find("#ignore_query_time_other").hide();
+            // svcDm_chk = true;
+            // dlgForm.find("#red_svn_dm").hide();
+            // dlgForm.find("#certificateArea").hide();
+            // dlgForm.find("#red_svn_ssl").hide();
+            // dlgForm.find("#txt_sel_certificate").val("");
+        }
+    }); 
+
+    // (6) 온라인 활성화
+    $("#online_code_list").bind("change", function() {
+        let online_code = $(this).val();
+        if(online_code_list.includes(online_code)) return false;
+        
+        online_code_list.push($(this).val());
+        
+        let code_base = $("#online_code_base").clone().show();
+        code_base.find("#online_code_text").text(online_code);
+        
+        code_base.find("img").bind("click", function(){
+            let span_online_code = $(this).parent().parent().find("#online_code_text").text();
+            let reomve_index = online_code_list.indexOf(online_code_list.find(item => item === span_online_code));
+            online_code_list.splice(reomve_index, 1);
+            
+            $(this).parent().parent().remove();
+        });
+        $("#online_code_div").append(code_base);
+        $("#online_text_area").show().css("display","none");
+    });
+
+
+
+    // step2. Access UI
+    var step2Form = $("#accessSettingArea");
+    // 기능 json 
+    var step2GEO = e.options.country_acl;
+    console.log(step2GEO)
+
+    // var step2Redirect = e.options.follow_origin_redirect  
+    // var step2Browser = e.options.browser_cache_settings  
+    // var step2Cookie = e.options.ignore_cookie  
+
+    /*사용/미사용에 따른 toggle 처리*/
+    // (1) GEO 접근제어
+    step2Form.find("#geoToggle").unbind("click").bind("click", geoEnableToggle); 
+    function geoEnableToggle(){ 
+        if ($("#geoToggle").is(":checked")){
+            step2Form.find("#geo_content").show();
+            step2Form.find("#geoToggle").prop("checked", true);
+        }else{
+            step2Form.find("#geo_content").hide();
+            step2Form.find("#geoToggle").prop("checked", false);
+        }
+    }
+
+    //(1) GEO 접근제어 설정 
+    var geoType = "";
+    var geoTimeTxt = "";
+    if (step2GEO !== null && step2GEO.enabled){ 
+        //사용 중 - 토글 활성화
+        step1Form.find("#geoToggle").prop("checked", true);
+        step1Form.find("#geo_content").show();
+
+        //  Origin Control / CDN Control 
+        if (step1Browser.value === '') {
+            // [1] Origin Control {enabled: true,  value: ''}
+            browserType = "0";
+        } else {
+            // [2] CDN Control  {"enabled": true, "value": "3600s"}
+            browserType = "1";
+            browserTimeTxt = step1Browser.value;
+        } 
+        $("#caching_control_type2 li span").each(function() {
+            if ($(this).attr('value') === browserType) $(this).addClass('on'); 
+            if ($(this).attr('value') !== browserType) $(this).removeClass("on");
+        });
+        // 캐싱시간 설정
+        // select box에서 cachingTimeTxt 값과 일치하는 옵션을 선택
+        $('#browser_caching_select_create').val(browserTimeTxt).prop("selected", true);
+            
+        // 만약 cachingTimeTxt 값에 해당하는 옵션이 없으면 'other'를 선택 후 input에 값 입력. 
+        if ($('#browser_caching_select_create option[value="' + browserTimeTxt + '"]').length === 0) {
+            $("#browser_caching_time_other").show();
+            $("#browser_caching_time_other").val(browserTimeTxt);
+            $('#browser_caching_select_create').val('other').prop("selected", true);
+        }
+    }else{
+        //사용 안함 - 토글 비활성화
+        step1Form.find("#browserToggle").prop("checked", false);
+        step1Form.find("#geo_content").hide();
+    }
+
+    // GEO 선택시
+    $("#geo_policy_type li span").unbind("click").bind("click", function(e) {
+        dlgForm.find("#geo_policy_type li span").removeClass('on');
+        $(this).addClass('on');
+        dlgForm.find("#step1_custom_domains").val("");
+        var type = dlgForm.find("#geo_policy_type").find(".on").attr("value");
+        if(type == "0"){
+            dlgForm.find("#step1_custom_domains").show();
+            svcDm_chk = false;
+            if(dlgForm.find("#step1_sslType").find(".on").attr("value") != "0"){
+                dlgForm.find("#certificateArea").show();
+            }
+        }else{
+            dlgForm.find("#step1_custom_domains").hide();
+            svcDm_chk = true;
+            dlgForm.find("#red_svn_dm").hide();
+            dlgForm.find("#certificateArea").hide();
+            dlgForm.find("#red_svn_ssl").hide();
+            dlgForm.find("#txt_sel_certificate").val("");
+        }
+    });
+    //  //step2 Redirect 응답 설정
+    //  $("span[name=redirect_response_controll]").unbind("click").bind("click", function(e) {
+    //     var dlgForm = $("#cdnCreateArea");
+    //     dlgForm.find("span[name=redirect_response_controll]").removeClass('on');
+    //     $(this).addClass('on');
+        
+    //     var val = this.dataset.value;
+    //     if (val === "0") {
+    //         geo_chk = false;
+	// 		$("#redirect_response_controll_div").hide();
+	// 	} else if (val === "1") {
+    //         geo_chk = true;
+    //         $("#redirect_response_controll_div").show();
+    //         $("#redirect_response_controll0").addClass('on');
+    //     } else {
+    //         geo_chk = true;
+	// 		$("#redirect_response_controll_div").show();
+    //         $("#redirect_response_controll3").addClass('on');
+    //         $("#redirect_response_controll0").addClass('on');
+	// 	}
+    // });
+   
+    
+
+
+    // //step4 GEO 기반 접근 제어
+    // $("span[name=geo_access_controll]").unbind("click").bind("click", function(e) {
+    //     var dlgForm = $("#cdnCreateArea");
+    //     dlgForm.find("span[name=geo_access_controll]").removeClass('on');
+    //     $(this).addClass('on');
+        
+    //     var val = this.dataset.value;
+    //     if (val === "0") {
+    //         geo_chk = false;
+	// 		$("#geo_access_controll_div").hide();
+	// 	} else if (val === "1") {
+    //         geo_chk = true;
+    //         $("#geo_access_controll_div").show();
+    //         $("#geo_access_controll0").addClass('on');
+    //     } else {
+    //         geo_chk = true;
+	// 		$("#geo_access_controll_div").show();
+    //         $("#geo_access_controll3").addClass('on');
+    //         $("#geo_access_controll0").addClass('on');
+	// 	}
+    // });
+    
+    $("#country_list").bind("change", function() {
+		let country_code = $(this).val();
+		if(country_list.includes(country_code)) return false;
+		
+		country_list.push($(this).val());
+		
+		let code_base = $("#geo_country_code_base").clone().show();
+		code_base.find("#country_code_text").text(country_code);
+		
+		code_base.find("img").bind("click", function(){
+			let span_country_code = $(this).parent().parent().find("#country_code_text").text();
+			let reomve_index = country_list.indexOf(country_list.find(item => item === span_country_code));
+            country_list.splice(reomve_index, 1);
+            
+			$(this).parent().parent().remove();
+		});
+		$("#geo_country_code_div").append(code_base);
+        $("#geo_access_text_area").show().css("display","none");
+	});
+    
+    //버튼 정규식 
+    $("#btnClick").bind("change", function() { 
+        // Redirect 응답 설정
+        if (geo_chk && $("#redirect_code_div").find("p").length <= 1) {
+            $("#redirect_text_area").show().css("display","");
+            $("#redirect_red_text").text("필수입니다.");
+            return false;
+        } else {
+            $("#redirect_text_area").show().css("display","none");
+        }
+
+
+        // GEO 기반 접근제어 유효성 검사(input value 여부)
+        if (geo_chk && $("#geo_country_code_div").find("p").length <= 1) {
+            $("#geo_access_text_area").show().css("display","");
+            $("#geo_access_red_text").text("필수입니다.");
+            return false;
+        } else {
+            $("#geo_access_text_area").show().css("display","none");
+        }
+	});
+    // //버튼 선택
+    // cacheForm.find($("#cache_type li span")).each(cacheTypeClick);
+    // function cacheTypeClick(){
+    //     if($(this).attr('value') == "0"){
+    //         $(this).attr('class', 'imgbn');
+    //     }else{
+    //         $(this).attr('class', 'imgbn on');
+    //     }
+    // }
+    // mdfForm.find($("#cache_type li span")).unbind("click").bind("click", cacheTypeClick1);
+
+    // function cacheTypeClick1(){
+    //     $("#cache_type li span").each($(this).removeClass('on'));
+    //     $(this).addClass('on');
+    // }
+
+}
+//CDN 수정
+function event_cdnModify(e){
+    e.preventDefault();
+    var svc_id = selectedRow.data("id");
+    url = "/cdn/detail/"+svc_id;
+    window.location.href = url
+
 }
 
 //CDN 수정
@@ -1089,7 +1624,7 @@ function call_CDN_Modify (svc_id, svc_name) {
     var delURL ="/cdn/resources/" + svc_id;
     $.ajax({
         url : delURL
-        , type : "DELETE"
+        , type : "PUT"
         , data : null
         , dataType : "json"
         , complete : function () {
@@ -1121,6 +1656,7 @@ function event_cdnDelete(e){
     e.preventDefault();
     var svc_id = selectedRow.data("id");
     var svc_name = selectedRow.data("service_name")
+    var scv_origin_id = selectedRow.data("origin_group")
     var el_dialog = $("#dialog_CDN_Delete"); 
     commonDialogInit(el_dialog);
     el_dialog.dialog("open");
@@ -1134,13 +1670,13 @@ function event_cdnDelete(e){
     $("#button_VM_Delete_OK", el_dialog).unbind("click").bind("click" , vmDelOK);
     function vmDelOK(){
         el_dialog.dialog("close");
-        call_CDN_Delete(svc_id, svc_name);
+        call_CDN_Delete(svc_id, svc_name, scv_origin_id);
         return false;
     }
 }
 
 //  CDN 삭제
-function call_CDN_Delete (svc_id, svc_name) {
+function call_CDN_Delete (svc_id, svc_name, scv_origin_id) {
     var success_msg = svc_name + " 삭제 시작";
     process_toast_popup("CDN", success_msg, true);
     
@@ -1149,7 +1685,8 @@ function call_CDN_Delete (svc_id, svc_name) {
     var el_target    = $("#"+ svc_id).find("#img_vmState");
     el_target.html('<img src="/images/coni/Circle_Gray.svg" alt="" class="mr5 vm" />삭제중');
     $("#dialog_CDN_Delete").dialog("close");
-    
+
+    // 1. Resource 삭제
     var delURL ="/cdn/resources/" + svc_id;
     $.ajax({
         url : delURL
@@ -1167,6 +1704,7 @@ function call_CDN_Delete (svc_id, svc_name) {
             
             if (json.status == "00") {
                 success_msg = svc_name + " 삭제 성공";
+                OriginDelete(scv_origin_id)
                 add_noti_message("/console/d/osadvcdnlist", success_msg);
                 process_toast_popup("CDN", success_msg, true);
             }else{
@@ -1177,7 +1715,30 @@ function call_CDN_Delete (svc_id, svc_name) {
             setTimeout(() =>  call_resourceList(), 3000);
         }
     });
+}
 
+function OriginDelete(scv_origin_id){
+    // 2. 오리진 삭제
+    var delURL ="/cdn/origin_groups/" + scv_origin_id;
+    $.ajax({
+        url : delURL
+        , type : "DELETE"
+        , data : null
+        , dataType : "json"
+        , complete : function () {
+            // hideLoadingBox();    // 로딩중 이미지 닫기
+        }
+        , success : function(json) {
+            if(json.status == "29") { /* IAM 사용자 정책 처리 */
+                commonErrorMessage("29");
+                return;
+            }
+            
+            if (json.status !== "00" && json.data == "There are resources using such group") {
+               alert("이미 사용중인 origin은 삭제처리 되지 않습니다. ");
+            }
+        }
+    });
 }
 // CDN 정지 버튼
 function button_cdnStop_event(e) {
@@ -1226,7 +1787,7 @@ function call_CDN_Stop(svc_id, svc_name){
     $.ajax({
         url : stopURL
         , type : "PUT"
-        // , contentType: "application/json"
+        , contentType: "application/json"
         , data : null
         , dataType : "json"
         , success : function(json) {
@@ -1312,7 +1873,7 @@ function call_CDN_Start(svc_id, svc_name){
 function call_cdnPurge(){
     $('option','#purge_domain').remove();
     $.ajax({
-        url : "/cdn/list/all"
+        url : "/cdn/resources?ordering=status,-id&deleted=false&fields=id,cname,status"
         , type : "GET"
         , data : {}
         , dataType : "json"
@@ -1322,7 +1883,6 @@ function call_cdnPurge(){
         , success : function(json) {
             if (json.status == "00") {
                 json.data.forEach(function (elem) {
-                    console.log(elem.status);
                     if (elem.status == "active"){
                         $('<option value="'+ elem.id +'">'+elem.cname +'</option>').appendTo('#purge_domain');   
                         selectbox_design($("#purge_domain"));
@@ -1341,8 +1901,8 @@ function call_cdnPurge(){
     var svc_id ="";
 
     // purgeForm.find("#purge_svcName").text(svc_name);
-    purgeForm.find("#purgePreCautions").removeClass("on");
-    purgeForm.find("#purgePreCautionsArea").removeClass("on");
+    // purgeForm.find("#purgePreCautions").removeClass("on");
+    // purgeForm.find("#purgePreCautionsArea").removeClass("on");
     // $('#purge_domain').remove();
     // $('option','#purge_domain').remove();
     purgeForm.find($("#purge_type li span")).each(purgeTypeClick);
@@ -1424,10 +1984,12 @@ function call_cdnPurge(){
 
         if(purge_type !== "0"){
             //파일지정 선택
-            var purge_arr = trim(purgeurl.split("\n"));
+            var purge_arr = trim(purgeurl).split("\n");
             for (var i=0; i < purge_arr.length ; i++) {
-                if (purge_arr[i] == "") showCommonNoLangErrorMsg("", "Purge할 URL을 확인해주세요.");
-                return;
+                if (purge_arr[i] == "") {
+                    showCommonNoLangErrorMsg("", "Purge할 URL을 확인해주세요.");
+                    return;
+                }
             }
 
             if(purge_arr.length > 30){
@@ -1527,618 +2089,178 @@ function resourceCreate(param){
     }); 
 }
 
-//Origin Event
-function set_OriginEvent(){
-    svcNm_chk = false;
-    svcDm_chk = false;
-    $("#green_svn_nm").hide();
-    $("#red_svn_nm").hide();
-    //sort
-//     view_svr_name
-// view_svr_origins
-// view_svr_cdn
 
+// // CDN Update
+// function event_originUpdate(e){
+//     e.preventDefault();
+//     var svc_id = selectedRow.data("id");
+//     var svc_name = selectedRow.data("service_name")
 
-    //이름
-    $("#view_svr_name").unbind("click").bind("click" ,function(e) {
-        e.preventDefault();
-        evnet_sort("view_svr_name");
-    });
-   
+//     if($(this).hasClass("action_disabled")){
+//         return false;
+//     }
+//     var dlgForm = $("#dialog_cdnPurge");
+//     commonDialogInit(dlgForm);
+//     dlgForm.dialog("open");
+//     var svc_name = selectedRow.data("service_name");
+//     var cdn_domain = selectedRow.data("domain");
+//     var svc_id = selectedRow.data("id");
 
-    //origin group 생성
-    $("#button_originGroupDeploy").unbind("click").bind("click" , function(e) {
-        if($(this).hasClass("action_disabled")){
-            return false;
-        }
-        var dlgForm = $("#dialog_OriginGroup_Detail");
-        commonDialogInit(dlgForm);
-        dlgForm.dialog("open");
-
-        dlgForm.find("#OriginGroupPreCautions").removeClass("on");
-        dlgForm.find("#OriginGroupPreCautionsArea").removeClass("on");
-        // $('#purge_domain').remove();
-        // $('option','#purge_domain').remove();
-        dlgForm.find($("#origin_type li span")).each(originTypeClick);
-
-        function originTypeClick(){
-            if($(this).attr('value') == "0"){
-                $(this).attr('class', 'imgbn');
-                dlgForm.find("#originCreateArea").hide();
-            }else{
-                $(this).attr('class', 'imgbn on');
-                dlgForm.find("#originCreateArea").show();
-            }
-        }
-        // dlgForm.find("#originList").val("");
-        // $('<option value="cdn_domain">'+cdn_domain+'</option>').appendTo('#purge_domain');
-        // selectbox_design($("#purge_domain"));
-        // dlgForm.find("#hardPurgeUse").prop("checked", false);
-        
-        // 팝업 주의사항 보기
-        dlgForm.find("#OriginGroupPreCautions").unbind("click").bind("click" , precautionToggle);
-            
+//     dlgForm.find("#purge_svcName").text(svc_name);
+//     dlgForm.find("#purge_domain").text(cdn_domain);
+//     dlgForm.find("#purgePreCautions").removeClass("on");
+//     dlgForm.find("#purgePreCautionsArea").removeClass("on");
+//     // $('#purge_domain').remove();
+//     // $('option','#purge_domain').remove();
+//     dlgForm.find($("#purge_type li span")).each(purgeTypeClick);
+//     function purgeTypeClick(){
+//         if($(this).attr('value') == "0"){
+//             $(this).attr('class', 'imgbn');
+//         }else{
+//             $(this).attr('class', 'imgbn on');
+//         }
+//     }
+//     dlgForm.find("#purgeURLarea").show();
+//     dlgForm.find("#purge_file").val("");
+//     // $('<option value="cdn_domain">'+cdn_domain+'</option>').appendTo('#purge_domain');
+//     // selectbox_design($("#purge_domain"));
+//     // dlgForm.find("#hardPurgeUse").prop("checked", false);
     
-        function precautionToggle(){
-            dlgForm.find("#OriginGroupPreCautions").toggleClass("on");
-            dlgForm.find("#OriginGroupPreCautionsArea").toggleClass("on");
-        }
+//     // 팝업 주의사항 보기
+//     dlgForm.find("#purgePreCautions").unbind("click").bind("click" , precautionToggle);
         
-        dlgForm.find($("#origin_type li span")).unbind("click").bind("click", originTypeClick1);
+
+//     function precautionToggle(){
+//         dlgForm.find("#purgePreCautions").toggleClass("on");
+//         dlgForm.find("#purgePreCautionsArea").toggleClass("on");
+//     }
     
-        function originTypeClick1(){
-            dlgForm.find("#originList").val("");
-            $("#origin_type li span").each(originTypeClickSub);
-            $(this).addClass('on');
-            if($(this).attr('value') == "0"){
-                // dlgForm.find("#originListArea1").show();
-                // dlgForm.find("#originCreateArea1").hide();
-            }else{
-                dlgForm.find("#originListArea1").hide();
-                dlgForm.find("#originCreateArea1").show();
-            }
-        }
+//     dlgForm.find($("#purge_type li span")).unbind("click").bind("click", purgeTypeClick1);
+
+//     function purgeTypeClick1(){
+//         dlgForm.find("#purge_file").val("");
+//         $("#purge_type li span").each(purgeTypeClickSub);
+//         $(this).addClass('on');
+//         if($(this).attr('value') == "0"){
+//             dlgForm.find("#purgeURLarea").hide();
+//         }else{
+//             dlgForm.find("#purgeURLarea").show();
+//         }
+//     }
+
+//     function purgeTypeClickSub(){
+//         $(this).removeClass('on');
+//     }
+        
+//     dlgForm.find("#btn_PurgeCancel_TOP").unbind("click").bind("click", cancelTopPurgePop);
+//     dlgForm.find("#btn_PurgeCancel").unbind("click").bind("click", cancelTopPurgePop);
+
+//     function cancelTopPurgePop(){
+//         dlgForm.dialog("close");
+//     }
     
-        function originTypeClickSub(){
-            $(this).removeClass('on');
-        }
-         
-        dlgForm.find("#btn_OriginCancel_TOP").unbind("click").bind("click", cancelTopOriginPop);
-        dlgForm.find("#btn_OriginCancel").unbind("click").bind("click", cancelTopOriginPop);
+//     $("#purge_file").keyup(function (e){
+//         var content = $(this).val();
 
-        
-
-        function cancelTopOriginPop(){
-            dlgForm.dialog("close");
-        }
-        
-        $("#originList").keyup(function (e){
-            var content = $(this).val();
-
-            // if(content.length>5000){
-            //     $(this).val(content.substring(0,5000));
-            //     // showCommonNoLangErrorMsg("", "최대 5000자 이내로 입력 가능합니다.");
-            //     return;
-            // }
-        });
-        
-      
-        
-        // //수정 _ step4_set
-        // $("span[name=ip_access_controll]").removeClass('on');
-        // $("span[name=geo_access_controll]").removeClass('on');
-        
-        // dlgForm.find("#allow_http_method").children('li').find('.stat').removeClass('on');
-        // dlgForm.find("#corsSet").children('li').find('.stat').removeClass('on');
-        // dlgForm.find("#step4_modify_header").children('li').find('.stat').removeClass('on');
-        // 1.3 버튼        
-        // $('option','#step4_modify_header_action').remove();
-        // selectbox_design($("#step4_modify_header_action"));
-        selectbox_design($("#backup_box"));
-
-        //step4 Modify Header
-        $("#step4_modify_header li span").unbind("click").bind("click", function(e) {
-            var dlgForm = $("#cdnCreateArea");
-            dlgForm.find("#step4_modify_header li span").removeClass('on');
-            $(this).addClass('on');
-            let type = dlgForm.find("#step4_modify_header").find(".on").attr("value");
-
-        });    
-        //origin 추가
-        $("#step4_modify_header_add").unbind("click").bind("click", function() {
-            //초기화
-            $("#step4_modify_header_name").attr("required", false);
-            $("#step4_modify_header_value").attr("required", false);
-
-            let backup = ($("#backup_box").val()== "Backup")?true:false;
-            let originSource = $("#step4_modify_header_name").val();
-            let originPort = $("#step4_modify_header_value").val();
-            var enable =  $("#hardPurgeUse22").is(":checked")? "ON": "OFF";
-             // (첫주) : 첫번째 필수 active, on 등록 // 도메인, 숫자 정규식
-             if (Object.keys(add_client_response_headers).length === 0) {
-                if (backup || $("#hardPurgeUse22").is(":checked") == false){
-                    $("#modify_header_client_text_area").show();
-                    $("#modify_header_client_red_text").text("처음 등록 될 오리진은 primary origin으로 설정됩니다. Active 및 Enable On 필수입니다.");
-                    return false
-                }
-            }
-            // originSource 입력값 유효성 체크
-            if (originSource === "" || !checkDomainOrIP(originSource)) {
-                $("#step4_modify_header_name").attr("required", true);
-                $("#modify_header_client_text_area").show();
-                $("#modify_header_client_red_text").text("IP주소 또는 도메인 형식만 가능합니다.");
-                return false;
-            }else{
-                $("#step4_modify_header_name").attr("required", false);
-            }
-
-            $("#modify_header_client_text_area").hide();
-
-            //use_default_port가 true이면서 origin port가 없을 때 
-            if (!$("#use_default_port").prop("checked") && !checkPort(originPort)){
-                console.log("!")
-                $("#step4_modify_header_value").attr("required", true);
-                $("#modify_header_client_red_text").text("포트 번호는 0부터 65535 사이의 정수여야 합니다.");
-                return false;
-            }else {
-                $("#step4_modify_header_value").attr("required", false);
-            }
-            
-
-            //저장 후 테이블 출력
-            
-            add_client_response_headers[originSource] = originPort;
-            let base_modify_header = $("#step4_base_modify_header").clone().show();
-            let base_modify_header_step5 = $("#step5_modify_header2_base").clone().attr('id', originSource).show(); // 최종화면
-            
-            $("#step4_modify_header_name").val('');
-            $("#step4_modify_header_value").val('');
-            
-            base_modify_header.find("#text_step4_modify_header_action").text($("#backup_box").val());
-            base_modify_header.find("#text_step4_modify_header_enable").text(enable);
-            base_modify_header.find("#text_step4_modify_header_name").text(originSource);
-            base_modify_header.find("#text_step4_modify_header_value").text(originPort);
-            
-            // base_modify_header_step5.find("#base_action").text($("#backup_box").val());
-            // base_modify_header_step5.find("#base_enable").text(enable);
-            // base_modify_header_step5.find("#base_name").text(originSource);
-            // base_modify_header_step5.find("#base_value").text(originPort);
-            
-            console.log(add_client_response_headers);
-            base_modify_header.find(".tablessh").bind("click", function() {
-                let text_header_name = $(this).parent().parent().find("#text_step4_modify_header_name").text();
-                delete add_client_response_headers[text_header_name];
-                $(this).parent().parent().remove();
-                $("#step5_modify_header_step4_div").find("#" + originSource).remove();
-            });
-            console.log(add_client_response_headers);
-            $("#step5_modify_header2_base").before(base_modify_header_step5);
-            $("#step4_base_modify_header").before(base_modify_header);
-        });
-
-        dlgForm.find("#btn_ResourceOk").unbind("click").bind("click", ResourceOK); 
-        function ResourceOK(){
-            var originURLList = dlgForm.find("#originList").val();
-            var origin_type =null;
-            $("#origin_type li span").each(getOriginType);
-            function getOriginType(){
-                if($(this).hasClass('on')){
-                    origin_type = $(this).attr('value');
-                }
-            }
-            //23.12.15 멈춤
-            var param = {
-                service_name : dlgForm.find("#service_name").val(),
-                service_domain : dlgForm.find("#service_domain").val(),
-                origin_id : 0,
-                origin_url : '',
-
-            };
-            console.log("origin group에서 log찍히면 이부분 지우기. 복붙코드")
-            if(origin_type == "1"){
-                var $selectedOption = dlgForm.find("#originGroupList option:selected")
-                var selectNum = $selectedOption.val();
-                var selectValue1 = $selectedOption.attr('value1');
-                
-                param.origin_id = Number(selectNum);
-                param.origin_url = selectValue1;
-                resourceCreate(param);
-                dlgForm.dialog("close");
-            }else if (origin_type == "0"){
-                if (originURLList == "") {
-                    showCommonNoLangErrorMsg("Origin 확인", " 최소 1개 이상의 오리진 주소를 입력하세요.");
-                    return;
-                }
-                var origin_arr = originURLList.split("\n");
-                if(origin_arr.length > 5){
-                    showCommonNoLangErrorMsg("", "한번에 최대 5개까지 입력 가능합니다.");
-                    return;
-                }
-                var params = {origins : origin_arr};
-                $.ajax({
-                    url : "/cdn/origin_group",
-                    type : "POST",
-                    contentType: "application/json",
-                    data : JSON.stringify(params),
-                    dataType : "json",
-                    success : function(json) {
-                        if(json.status == "29") { /* IAM 사용자 정책 처리 */
-                            commonErrorMessage("29");
-                            return;
-                        }   
-                        if ( json.status == '00'){
-                            param.origin_id = json.data.id;
-                            param.origin_url = json.data.sources[0].source;
-                            param.protocol = protocol;
-                            resourceCreate(param);
-                            dlgForm.dialog("close");
-                        }
-                    },error: function(XMLHttpResponse) {
-                        var resp = JSON.parse(XMLHttpResponse.responseText);
-                        success_msg = param.service_name + " 생성 실패 (" + resp.data + ")";
-                        add_noti_message("/cdn/list", success_msg);
-                        process_toast_popup("CDN", success_msg, false);
-                    }
-                }); 
-            }
-            $("#purge_OkUrl").empty();
-            $("#purge_FailUrl").empty();
-        }
-
-        //Origin 수정
-        $("#button_originUdate").unbind("click").bind("click" , function(e) {
-            e.preventDefault();
-            event_OriginUpdate(e);
-            return false;
-        }); 
-        //Origin 삭제
-        $("#button_originDelete").unbind("click").bind("click" , function(e) {
-            e.preventDefault();
-            event_originDelete(e);
-            return false;
-        });
-
-
-
-
-        dlgForm.find("#btn_OriginOk").unbind("click").bind("click", OriginOK); 
-        function OriginOK(){
-            //  (첫주) origin은 최초 하나 이상 등록하셔야 합니다.  
-
-            
-            // var originURLList = dlgForm.find("#originList").val();
-            // var origin_type =null;
-            // $("#origin_type li span").each(getOriginType);
-            // function getOriginType(){
-            //     if($(this).hasClass('on')){
-            //         origin_type = $(this).attr('value');
-            //     }
-            // }
-            // //23.12.15 멈춤
-            // var param = {
-            //     service_name : dlgForm.find("#origin_name").val(),
-            //     service_domain : dlgForm.find("#service_domain").val(),
-            //     origin_id : 0,
-            //     origin_url : '',
-            // };
-            // if(origin_type == "1"){
-            //     var $selectedOption = dlgForm.find("#originGroupList option:selected")
-            //     var selectNum = $selectedOption.val();
-            //     var selectValue1 = $selectedOption.attr('value1');
-                
-            //     param.origin_id = Number(selectNum);
-            //     param.origin_url = selectValue1;
-            //     resourceCreate(param);
-            //     dlgForm.dialog("close");
-            // }else if (origin_type == "0"){
-            //     if (originURLList == "") {
-            //         showCommonNoLangErrorMsg("Origin 확인", " 최소 1개 이상의 오리진 주소를 입력하세요.");
-            //         return;
-            //     }
-            //     var origin_arr = originURLList.split("\n");
-            //     if(origin_arr.length > 5){
-            //         showCommonNoLangErrorMsg("", "한번에 최대 5개까지 입력 가능합니다.");
-            //         return;
-            //     }
-            //     // var userurl = "";
-            //     // for (var p = 0; p < origin_arr.length; p++) {
-            //     //     var temp_arr = origin_arr[p].split(".");
+//         if(content.length>5000){
+//             $(this).val(content.substring(0,5000));
+//             showCommonNoLangErrorMsg("", "최대 5000자 이내로 입력 가능합니다.");
+//             return;
+//         }
+//     });
     
-            //     //      var temp = null;
-            //     //     if(temp_arr.length >= 2) {
-            //     //         temp = temp_arr[temp_arr.length-1].toLowerCase();
-            //     //     }
-                    
-            //     //     userurl =userurl + origin_arr[p];
-            //     //     if (origin_arr.length > p+1){
-            //     //         userurl = userurl +",";
-            //     //     }
-            //     // }
-            //     var params = {name: dlgForm.find("#origin_name").val(), origins : origin_arr };
-            //     $.ajax({
-            //         url : "/cdn/origin_group",
-            //         type : "POST",
-            //         contentType: "application/json",
-            //         data : JSON.stringify(params),
-            //         dataType : "json",
-            //         success : function(json) {
-            //             if(json.status == "29") { /* IAM 사용자 정책 처리 */
-            //                 commonErrorMessage("29");
-            //                 return;
-            //             }   
-            //             if ( json.status == '00'){
-            //                 param.origin_id = json.data.id;
-            //                 param.origin_url = json.data.sources[0].source;
-            //                 resourceCreate(param);
-            //                 dlgForm.dialog("close");
-            //             }
-            //         },error: function(XMLHttpResponse) {
-            //             var resp = JSON.parse(XMLHttpResponse.responseText);
-            //             success_msg = param.service_name + " 생성 실패 (" + resp.data + ")";
-            //             add_noti_message("/cdn/list", success_msg);
-            //             process_toast_popup("CDN", success_msg, false);
-            //         }
-            //     }); 
-            // }
-            // $("#purge_OkUrl").empty();
-            // $("#purge_FailUrl").empty();
-        }
-    });
-    $("#button_cdnDetail").unbind("click").bind("click" , button_cdnDetail_event);
-    $("#base_vmList").unbind("click").bind("click" , event_originClick);
-}
-// Origin 삭제
-function button_originDelete_event(e) {
-    e.preventDefault();
-    if($(this).hasClass("action_disabled")){
-        return false;
-    }
-    event_originDelete(e);
-}
-//Origin 삭제
-function event_originDelete(e){
-    e.preventDefault();
-    var svc_id = selectedRow.data("id");
-    var svc_name = selectedRow.data("origin_name")
-    var el_dialog = $("#dialog_Origin_Delete"); 
-    commonDialogInit(el_dialog);
-    el_dialog.dialog("open");
-    // var cdn_domain = selectedRow.data("domain");
-    $("#dialog_Origin_Delete").find("#dialog_Origin_Delete_text1").text(svc_name);
-    $("#button_VM_Delete_TopClose", el_dialog).unbind("click").bind("click" , cancelDelPop);
-    $("#button_VM_Delete_Cancel", el_dialog).unbind("click").bind("click" , cancelDelPop);
-    function cancelDelPop(){
-        el_dialog.dialog("close");
-    }
-    $("#button_VM_Delete_OK", el_dialog).unbind("click").bind("click" , vmDelOK);
-    function vmDelOK(){
-        el_dialog.dialog("close");
-        call_Origin_Delete(svc_id, svc_name);
-        return false;
-    }
-}
-
-// Origin 삭제
-function call_Origin_Delete (svc_id, svc_name) {
-    var success_msg = svc_name + " 삭제 시작";
-    process_toast_popup("CDN", success_msg, true);
-    
-    $("#"+svc_id).find("label").hide();
-    $("#"+svc_id).find(".show_loading_img").show();
-    var el_target    = $("#"+ svc_id).find("#img_vmState");
-    el_target.html('<img src="/images/coni/Circle_Gray.svg" alt="" class="mr5 vm" />삭제중');
-    // $("#dialog_CDN_Delete").dialog("close");
-    var delURL ="/cdn/origin_groups/" + svc_id;
-    $.ajax({
-        url : delURL
-        , type : "DELETE"
-        , data : null
-        , dataType : "json"
-        , complete : function () {
-            // hideLoadingBox();    // 로딩중 이미지 닫기
-        }
-        , success : function(json) {
-            if(json.status == "29") { /* IAM 사용자 정책 처리 */
-                commonErrorMessage("29");
-                return;
-            }
-            
-            if (json.status == "00") {
-                success_msg = svc_name + " 삭제 성공";
-                add_noti_message("/console/d/osadvcdnlist", success_msg);
-                process_toast_popup("CDN", success_msg, true);
-                call_originList()
-            }else{
-                success_msg = svc_name + " 삭제 실패(" + json.data + ")";
-                add_noti_message("/console/d/osadvcdnlist", success_msg);
-                process_toast_popup("CDN", success_msg, false);
-                call_originList()
-            }
-        }
-    });
-
-}
-
-// Origin Update
-function button_originUpdate_event(e) {
-    e.preventDefault();
-    if($(this).hasClass("action_disabled")){
-        return false;
-    }
-    event_originUpdate(e);
-}
-
-// CDN Update
-function event_originUpdate(e){
-    e.preventDefault();
-    var svc_id = selectedRow.data("id");
-    var svc_name = selectedRow.data("service_name")
-
-    if($(this).hasClass("action_disabled")){
-        return false;
-    }
-    var dlgForm = $("#dialog_cdnPurge");
-    commonDialogInit(dlgForm);
-    dlgForm.dialog("open");
-    var svc_name = selectedRow.data("service_name");
-    var cdn_domain = selectedRow.data("domain");
-    var svc_id = selectedRow.data("id");
-
-    dlgForm.find("#purge_svcName").text(svc_name);
-    dlgForm.find("#purge_domain").text(cdn_domain);
-    dlgForm.find("#purgePreCautions").removeClass("on");
-    dlgForm.find("#purgePreCautionsArea").removeClass("on");
-    // $('#purge_domain').remove();
-    // $('option','#purge_domain').remove();
-    dlgForm.find($("#purge_type li span")).each(purgeTypeClick);
-    function purgeTypeClick(){
-        if($(this).attr('value') == "0"){
-            $(this).attr('class', 'imgbn');
-        }else{
-            $(this).attr('class', 'imgbn on');
-        }
-    }
-    dlgForm.find("#purgeURLarea").show();
-    dlgForm.find("#purge_file").val("");
-    // $('<option value="cdn_domain">'+cdn_domain+'</option>').appendTo('#purge_domain');
-    // selectbox_design($("#purge_domain"));
-    // dlgForm.find("#hardPurgeUse").prop("checked", false);
-    
-    // 팝업 주의사항 보기
-    dlgForm.find("#purgePreCautions").unbind("click").bind("click" , precautionToggle);
+//     //Purge 퍼튼 클릭
+//     dlgForm.find("#btn_PurgeOk").unbind("click").bind("click", purgeOK); 
+//     function purgeOK(){
+//         var purgeurl = dlgForm.find("#purge_file").val();
+//         var purge_type =null;
+//         $("#purge_type li span").each(getPurgeType);
+//         function getPurgeType(){
+//             if($(this).hasClass('on')){
+//                 purge_type = $(this).attr('value');
+//             }
+//         }
+//         var hard_purge_yn = $("#hardPurgeUse").is(":checked");
         
-
-    function precautionToggle(){
-        dlgForm.find("#purgePreCautions").toggleClass("on");
-        dlgForm.find("#purgePreCautionsArea").toggleClass("on");
-    }
-    
-    dlgForm.find($("#purge_type li span")).unbind("click").bind("click", purgeTypeClick1);
-
-    function purgeTypeClick1(){
-        dlgForm.find("#purge_file").val("");
-        $("#purge_type li span").each(purgeTypeClickSub);
-        $(this).addClass('on');
-        if($(this).attr('value') == "0"){
-            dlgForm.find("#purgeURLarea").hide();
-        }else{
-            dlgForm.find("#purgeURLarea").show();
-        }
-    }
-
-    function purgeTypeClickSub(){
-        $(this).removeClass('on');
-    }
+//         if(purge_type == "1"){
+//             //파일지정 선택
+//             if (purgeurl == "") {
+//                 showCommonNoLangErrorMsg("파일명 확인", "파일명을 입력해주세요.");
+//                 return;
+//             }
+//             purge_type = "no";
+//         }else{
+//             purge_type = "yes";
+//         }
         
-    dlgForm.find("#btn_PurgeCancel_TOP").unbind("click").bind("click", cancelTopPurgePop);
-    dlgForm.find("#btn_PurgeCancel").unbind("click").bind("click", cancelTopPurgePop);
+//         if(!hard_purge_yn){
+//             hard_purge_yn = "no";
+//         }else{
+//             hard_purge_yn = "yes";
+//         }
+        
+//         var purge_arr = purgeurl.split("\n");
+//         if(purge_arr.length > 30){
+//             showCommonNoLangErrorMsg("", "URL단위 Purge시, 한번에 최대 30개 파일입력 가능합니다.");
+//             return;
+//         }
+        
+//         $("#purge_OkUrl").empty();
+//         $("#purge_FailUrl").empty();
+        
+//         for (var p = 0; p < purge_arr.length; p++) {
+//             var temp_arr = purge_arr[p].split(".");
 
-    function cancelTopPurgePop(){
-        dlgForm.dialog("close");
-    }
-    
-    $("#purge_file").keyup(function (e){
-        var content = $(this).val();
-
-        if(content.length>5000){
-            $(this).val(content.substring(0,5000));
-            showCommonNoLangErrorMsg("", "최대 5000자 이내로 입력 가능합니다.");
-            return;
-        }
-    });
-    
-    //Purge 퍼튼 클릭
-    dlgForm.find("#btn_PurgeOk").unbind("click").bind("click", purgeOK); 
-    function purgeOK(){
-        var purgeurl = dlgForm.find("#purge_file").val();
-        var purge_type =null;
-        $("#purge_type li span").each(getPurgeType);
-        function getPurgeType(){
-            if($(this).hasClass('on')){
-                purge_type = $(this).attr('value');
-            }
-        }
-        var hard_purge_yn = $("#hardPurgeUse").is(":checked");
-        
-        if(purge_type == "1"){
-            //파일지정 선택
-            if (purgeurl == "") {
-                showCommonNoLangErrorMsg("파일명 확인", "파일명을 입력해주세요.");
-                return;
-            }
-            purge_type = "no";
-        }else{
-            purge_type = "yes";
-        }
-        
-        if(!hard_purge_yn){
-            hard_purge_yn = "no";
-        }else{
-            hard_purge_yn = "yes";
-        }
-        
-        var purge_arr = purgeurl.split("\n");
-        if(purge_arr.length > 30){
-            showCommonNoLangErrorMsg("", "URL단위 Purge시, 한번에 최대 30개 파일입력 가능합니다.");
-            return;
-        }
-        
-        $("#purge_OkUrl").empty();
-        $("#purge_FailUrl").empty();
-        
-        for (var p = 0; p < purge_arr.length; p++) {
-            var temp_arr = purge_arr[p].split(".");
-
-//----- Start 2011. 10. 18 commented by shcho
-                var temp = null;
+// //----- Start 2011. 10. 18 commented by shcho
+//                 var temp = null;
                             
-            if(temp_arr.length >= 2) {
-                temp = temp_arr[temp_arr.length-1].toLowerCase();
-            }
+//             if(temp_arr.length >= 2) {
+//                 temp = temp_arr[temp_arr.length-1].toLowerCase();
+//             }
             
-//----- Start 2011. 10. 18 commented by shcho
-            //스트리밍, 다운로드 모두 같은 url 전송
-        }
+// //----- Start 2011. 10. 18 commented by shcho
+//             //스트리밍, 다운로드 모두 같은 url 전송
+//         }
         
-        // purge API svc_type 필수값 추가
-        urlOkNm = "";
-        dlgForm.dialog("close");
-        var success_msg = selectedRow.data("svc_name") + " purge 시작";
-        add_noti_message("/console/d/osadvcdnlist", success_msg);
-        process_toast_popup("CDN", success_msg, true);
-        var params = {id : svc_id, hardPurge: hard_purge_yn, purgeAll : purge_type, urls : purge_arr};
-        $.ajax({
-            url : "/cdn/resources/purge"
-            , type : "POST"
-            , contentType: "application/json"
-            , data : JSON.stringify(params)
-            , dataType : "json"
-            , success : function(json) {
-                if(json.status == "29") { /* IAM 사용자 정책 처리 */
-                    commonErrorMessage("29");
-                    return;
-                }
-                if(json.status == '00'){
-                    success_msg = selectedRow.data("svc_name") + " purge 성공";
-                    add_noti_message("/console/d/osadvcdnlist", success_msg);
-                    process_toast_popup("CDN", success_msg, true);
-                    setTimeout(() =>  call_originList(), 3000);
-                }else{
-                    success_msg = selectedRow.data("svc_name") + " purge 실패";
-                    add_noti_message("/console/d/osadvcdnlist", success_msg);
-                    process_toast_popup("CDN", success_msg, false);
-                }
-            }
-            ,error: function(XMLHttpResponse) {
-                success_msg = selectedRow.data("svc_name") + " purge 실패";
-                add_noti_message("/console/d/osadvcdnlist", success_msg);
-                process_toast_popup("CDN", success_msg, false);
-            }
-        });    
-    }
-}
+//         // purge API svc_type 필수값 추가
+//         urlOkNm = "";
+//         dlgForm.dialog("close");
+//         var success_msg = selectedRow.data("svc_name") + " purge 시작";
+//         add_noti_message("/console/d/osadvcdnlist", success_msg);
+//         process_toast_popup("CDN", success_msg, true);
+//         var params = {id : svc_id, hardPurge: hard_purge_yn, purgeAll : purge_type, urls : purge_arr};
+//         $.ajax({
+//             url : "/cdn/resources/purge"
+//             , type : "POST"
+//             , contentType: "application/json"
+//             , data : JSON.stringify(params)
+//             , dataType : "json"
+//             , success : function(json) {
+//                 if(json.status == "29") { /* IAM 사용자 정책 처리 */
+//                     commonErrorMessage("29");
+//                     return;
+//                 }
+//                 if(json.status == '00'){
+//                     success_msg = selectedRow.data("svc_name") + " purge 성공";
+//                     add_noti_message("/console/d/osadvcdnlist", success_msg);
+//                     process_toast_popup("CDN", success_msg, true);
+//                     setTimeout(() =>  call_originList(), 3000);
+//                 }else{
+//                     success_msg = selectedRow.data("svc_name") + " purge 실패";
+//                     add_noti_message("/console/d/osadvcdnlist", success_msg);
+//                     process_toast_popup("CDN", success_msg, false);
+//                 }
+//             }
+//             ,error: function(XMLHttpResponse) {
+//                 success_msg = selectedRow.data("svc_name") + " purge 실패";
+//                 add_noti_message("/console/d/osadvcdnlist", success_msg);
+//                 process_toast_popup("CDN", success_msg, false);
+//             }
+//         });    
+//     }
+// }
 
-// 새로 추가 (첫주)
+// 새로 추가 
 function checkDomainOrIP(str) {
     // IPv4 주소 검사용 정규식
     const ipPattern = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
@@ -2149,14 +2271,13 @@ function checkDomainOrIP(str) {
     return ipPattern.test(str) || domainPattern.test(str);
 }
 
-// 새로 추가 (첫주)
+// 새로 추가
 function checkPort(port) {
     //0~65535 사이의 정수
     const portPattern = /^(6553[0-5]|655[0-2][0-9]|65[0-4][0-9]{2}|6[0-4][0-9]{3}|[1-5][0-9]{4}|[1-9][0-9]{0,3}|0)$/;
 
     return portPattern.test(port);
 }
-
 
 // 한글이나 공백을 포함하지 않는 정규 표현식
 function CheckString(str) {
@@ -2165,9 +2286,10 @@ function CheckString(str) {
     // 주어진 문자열이 해당 패턴에 부합하는지 검사
     return pattern.test(str);
 }
+
 // CDN Update
 function call_CDN_Stop(svc_id, svc_name){
-    var success_msg = svc_name + " 수정 시작";
+    var success_msg = svc_name + " 정지 시작";
     add_noti_message("/console/d/osadvcdnlist", success_msg);
     process_toast_popup("CDN", success_msg, true);
 

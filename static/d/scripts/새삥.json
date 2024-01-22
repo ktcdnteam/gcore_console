@@ -1,0 +1,43 @@
+{
+    "custom_server_name": null,
+    "slice": null,
+    "gzipOn": null,
+    "brotli_compression": null,
+    "ignoreQueryString": null,
+    "hostHeader": {
+        "enabled": true,
+        "value": "1.1.1.1"
+    },
+    "stale": {
+        "enabled": true,
+        "value": [
+            "error",
+            "updating"
+        ]
+    },
+    "sni": {
+        "enabled": true,
+        "sni_type": "dynamic",
+        "custom_hostname": ""
+    },
+    "browser_cache_settings": {
+        "enabled": false,
+        "value": ""
+    },
+    "edge_cache_settings": {
+        "enabled": true,
+        "value": "",
+        "default": "4d"
+    },
+    "tls_versions": {
+        "enabled": false,
+        "value": [
+            "SSLv3",
+            "TLSv1",
+            "TLSv1.1",
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
+    },
+    "follow_origin_redirect": {}
+}

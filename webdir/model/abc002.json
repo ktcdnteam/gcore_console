@@ -51,7 +51,7 @@
   "description": "abc002",
   "secondaryHostnames": [],
   "options": {
-    "edge_cache_settings": {
+    "edge_cache_types": {
       "enabled": true,
       "default": "4d"
     },
@@ -129,8 +129,8 @@
       "ip_address_acl": null,
       "query_params_blacklist": null,
       "query_params_whitelist": null,
-      "browser_cache_settings": null,
-      "edge_cache_settings": {
+      "browser_cache_types": null,
+      "edge_cache_types": {
           "enabled": true,
           "default": "4d"
       },

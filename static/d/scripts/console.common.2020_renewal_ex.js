@@ -27,7 +27,7 @@ var service_basic_data =
         {servicename:"storage2",         mainservice:"N",    servicecode:"S1853",    serviceurl:"/console/d/osstoragelistEC",            displayname:"Storage 2.0",         imageclass:"m13"},
         {servicename:"storage3",         mainservice:"Y",    servicecode:"S1853",    serviceurl:"/console/d/osstoragelist3",            displayname:"Storage 3.0",         imageclass:"m13"},
         {servicename:"disitalworks",     mainservice:"Y",    servicecode:"S4747",    serviceurl:"/console/d/osdisitalworkslist",            displayname:"KT Digital Works",         imageclass:"m26"},
-        {servicename:"cdn_new",         mainservice:"Y",    servicecode:"S4599",    serviceurl:"/console/d/osadvcdnlist",            displayname:"CDN Standard",             imageclass:"m14"},
+        {servicename:"cdn_new",         mainservice:"Y",    servicecode:"S4599",    serviceurl:"/console/d/osadvcdnlist",            displayname:"CDN Edge",             imageclass:"m14"},
         {servicename:"datalake",         mainservice:"Y",    servicecode:"S4729",    serviceurl:"/console/d/osdatalakendc",            displayname:"Data Lake",             imageclass:"m14"},
         {servicename:"iotmakers",         mainservice:"Y",    servicecode:"S4731",        serviceurl:"/console/d/osiotmakerslist",            displayname:"IoTMakers",         imageclass:"m38"},
         {servicename:"waf",             mainservice:"Y",    servicecode:"S1963",    serviceurl:"/console/d/oswaflist",                displayname:"WAF",                 imageclass:"m23"},
@@ -102,21 +102,21 @@ var sub_service_data = [
     {mainservice:"loadbalancer",     subservice:"mpx_log_history",            serviceurl:"/console/d/osmpxloghistory",    displayname:"Log History"},
 
     {mainservice:"storage",         subservice:"storage_list",            serviceurl:"/console/d/osstoragelist",            displayname:"Storage"},
-    {mainservice:"storage",         subservice:"storage_stat_list",        serviceurl:"/console/d/osstoragestatistics",    displayname:"Usage"},
+    {mainservice:"storage",         subservice:"storage_stat_list",        serviceurl:"/console/d/osstoragestatistics",    displayname:"Statistics"},
     {mainservice:"storage",         subservice:"storage_resel_list",    serviceurl:"/console/d/osreseller",                displayname:"Reseller Account"},
     {mainservice:"storage",         subservice:"storage_apkey_list",    serviceurl:"/console/d/osstorageapikey",        displayname:"API Key"},
 
     {mainservice:"storage2",         subservice:"storage_list_ec",        serviceurl:"/console/d/osstoragelistEC",        displayname:"Storage 2.0"},
     {mainservice:"storage3",         subservice:"storage_list3",        serviceurl:"/console/d/osstoragelist3",        displayname:"Storage 3.0"},
     {mainservice:"storage3",         subservice:"storage_apkey_list_3",    serviceurl:"/console/d/oss3apikey",        displayname:"API Key"},
-    {mainservice:"storage3",         subservice:"storage_stat_list_3",    serviceurl:"/console/d/osstoragestatistics3",        displayname:"Usage"},
-    {mainservice:"storage2",         subservice:"storage_stat_list_ec",    serviceurl:"/console/d/osstoragestatisticsEC",    displayname:"Usage"},
+    {mainservice:"storage3",         subservice:"storage_stat_list_3",    serviceurl:"/console/d/osstoragestatistics3",        displayname:"Statistics"},
+    {mainservice:"storage2",         subservice:"storage_stat_list_ec",    serviceurl:"/console/d/osstoragestatisticsEC",    displayname:"Statistics"},
     {mainservice:"storage2",         subservice:"storage_apkey_list_ec",    serviceurl:"/console/d/osstorageapikeyEC",        displayname:"API Key"},
 
     {mainservice:"disitalworks",     subservice:"works_list",            serviceurl:"/console/d/osdisitalworkslist",        displayname:"KT Works"},
 
-    {mainservice:"cdn_new",         subservice:"cdn_list_new",            serviceurl:"/console/d/osadvcdnlist",    displayname:"CDN Standard"},
-    {mainservice:"cdn_new",         subservice:"cdn_statistics_new",    serviceurl:"/console/d/osadvcdnstatistics",        displayname:"Usage"},
+    {mainservice:"cdn_new",         subservice:"cdn_list_new",            serviceurl:"/console/d/osadvcdnlist",    displayname:"CDN Edge"},
+    {mainservice:"cdn_new",         subservice:"cdn_statistics_new",    serviceurl:"/console/d/osadvcdnstatistics",        displayname:"Statistics"},
 
     // 20230823 Data Lake 상품 일부 메뉴 삭제 및 이름 변경 적용
     {mainservice:"datalake",         subservice:"datalake_ndc",        serviceurl:"/console/d/osdatalakendc",        displayname:"Data Lake Instance"},
@@ -193,7 +193,7 @@ var sub_service_data = [
     {mainservice:"ezml", subservice:"ezml_list",    serviceurl:"/console/d/osezml",    displayname:"EZML 구독형"},
 
     {mainservice:"apigw", subservice:"apigw_list",    serviceurl:"/console/d/osapigw-list",    displayname:"APIs"},
-    {mainservice:"apigw", subservice:"apigw_usageplans",    serviceurl:"/console/d/osapigw-usageplans",    displayname:"Usage Plans"},
+    {mainservice:"apigw", subservice:"apigw_usageplans",    serviceurl:"/console/d/osapigw-usageplans",    displayname:"Statistics Plans"},
     {mainservice:"apigw", subservice:"apigw_apikeys",    serviceurl:"/console/d/osapigw-apikeys",    displayname:"API Keys"},
     {mainservice:"apigw", subservice:"apigw_dashboard",    serviceurl:"/console/d/osapigw-dashboard",    displayname:"Dashboard"},
 

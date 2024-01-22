@@ -16805,7 +16805,7 @@ jQuery.cssHooks.borderColor = {
 };
 
 // Basic color names only.
-// Usage of any of the other color names requires adding yourself or including
+// Statistics of any of the other color names requires adding yourself or including
 // jquery.color.svg-names.js.
 colors = jQuery.Color.names = {
 

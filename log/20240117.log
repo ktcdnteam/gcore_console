@@ -1,0 +1,442 @@
+2024/01/17 04:24:27 main.go:28: Start api-server..
+2024/01/17 04:24:27 server.go:9: Start api-server..
+2024/01/17 04:24:37 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/17 04:24:38 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 04:57:58 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/17 04:57:59 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/17 04:57:59 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/17 04:58:00 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/17 04:58:01 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 05:02:32 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/17 05:02:44 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/17 05:02:45 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 05:04:42 api.go:72: Get "https://api.gcore.com/cdn/resources/379118": dial tcp 92.223.61.30:443: connect: connection timed out
+2024/01/17 05:04:42 billing_model.go:490: [waf v2 api] server error
+2024/01/17 05:04:42 route.go:80: [waf v2 api] server error
+2024/01/17 05:13:55 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/17 05:13:56 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 05:14:32 main.go:28: Start api-server..
+2024/01/17 05:14:32 server.go:9: Start api-server..
+2024/01/17 05:14:36 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/17 05:14:37 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 05:16:21 main.go:28: Start api-server..
+2024/01/17 05:16:21 server.go:9: Start api-server..
+2024/01/17 05:16:27 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/17 05:16:29 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 05:28:55 main.go:28: Start api-server..
+2024/01/17 05:28:55 server.go:9: Start api-server..
+2024/01/17 08:09:42 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/17 08:09:43 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/17 08:09:43 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/17 08:09:44 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/17 08:09:46 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 08:17:55 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/17 08:17:56 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 08:18:21 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 08:18:23 billing_model.go:341: &{503387 1.1.1.1 [{1.1.1.1 false true default} {2.2.2.2 false true default}] true false none  []}
+2024/01/17 08:18:23 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=503387  
+2024/01/17 08:18:24 billing_model.go:341: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/17 08:18:24 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/17 08:18:25 billing_model.go:341: &{491753 www.asdf.com [{www.asdf.com false true default} {www.nexon.com false true default}] true false none  []}
+2024/01/17 08:18:25 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=491753  
+2024/01/17 08:18:26 billing_model.go:341: &{505876 2.2.1.8 [{2.2.1.8 false true default} {1.2.3.4 false true default}] true false none  []}
+2024/01/17 08:18:26 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=505876  
+2024/01/17 08:18:27 billing_model.go:341: &{523548 8.8.8.8 [{8.8.8.8 false true default}] true false none  []}
+2024/01/17 08:18:27 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=523548  
+2024/01/17 08:18:28 billing_model.go:341: &{523549 9.9.9.9:8080 [{9.9.9.9:8080 false true default}] true false none  []}
+2024/01/17 08:18:28 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=523549  
+2024/01/17 08:18:33 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 08:18:35 billing_model.go:318: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/17 08:18:35 billing_model.go:318: 395596. gcore05.ktcdnteam.link 2024-01-09 09:45:06 active 
+2024/01/17 08:18:35 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 08:18:35 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 08:18:35 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 08:18:35 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 08:18:46 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 08:18:46 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 08:18:47 billing_model.go:318: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/17 08:18:47 billing_model.go:318: 395596. gcore05.ktcdnteam.link 2024-01-09 09:45:06 active 
+2024/01/17 08:18:47 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 08:18:47 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 08:18:47 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 08:18:47 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 08:19:08 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/17 08:19:09 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 08:19:18 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 08:19:19 billing_model.go:341: &{503387 1.1.1.1 [{1.1.1.1 false true default} {2.2.2.2 false true default}] true false none  []}
+2024/01/17 08:19:19 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=503387  
+2024/01/17 08:19:20 billing_model.go:341: &{467686 Origins for server02.ktcdnteam.link [{210.104.79.216:80 false true default}] true true none  []}
+2024/01/17 08:19:20 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=467686  
+2024/01/17 08:19:21 billing_model.go:341: &{491753 www.asdf.com [{www.asdf.com false true default} {www.nexon.com false true default}] true false none  []}
+2024/01/17 08:19:21 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=491753  
+2024/01/17 08:19:22 billing_model.go:341: &{505876 2.2.1.8 [{2.2.1.8 false true default} {1.2.3.4 false true default}] true false none  []}
+2024/01/17 08:19:22 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=505876  
+2024/01/17 08:19:23 billing_model.go:341: &{523548 8.8.8.8 [{8.8.8.8 false true default}] true false none  []}
+2024/01/17 08:19:23 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=523548  
+2024/01/17 08:19:24 billing_model.go:341: &{523549 9.9.9.9:8080 [{9.9.9.9:8080 false true default}] true false none  []}
+2024/01/17 08:19:24 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?fields=status,description&originGroup=523549  
+2024/01/17 08:19:32 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 08:19:32 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 08:19:33 billing_model.go:318: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/17 08:19:33 billing_model.go:318: 395596. gcore05.ktcdnteam.link 2024-01-09 09:45:06 active 
+2024/01/17 08:19:33 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 08:19:33 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 08:19:33 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 08:19:33 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 08:21:29 main.go:28: Start api-server..
+2024/01/17 08:21:29 server.go:9: Start api-server..
+2024/01/17 08:21:33 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 08:21:33 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 08:21:34 billing_model.go:318: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/17 08:21:34 billing_model.go:318: 395596. gcore05.ktcdnteam.link 2024-01-09 09:45:06 active 
+2024/01/17 08:21:34 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 08:21:34 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 08:21:34 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 08:21:34 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 08:26:17 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/412316  
+2024/01/17 08:26:19 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 08:26:25 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 08:26:25 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 08:26:26 billing_model.go:318: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/17 08:26:26 billing_model.go:318: 395596. gcore05.ktcdnteam.link 2024-01-09 09:45:06 active 
+2024/01/17 08:26:26 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 08:26:26 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 08:26:26 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 08:26:26 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 08:26:31 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/395596  
+2024/01/17 08:26:32 api.go:60: [PUT] Request >> https://api.gcore.com/cdn/resources/395596 {"id":395596,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":null,"hostHeader":{"enabled":true,"value":"1.1.1.1"},"stale":{"enabled":true,"value":["error","updating"]},"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"edge_cache_settings":{"default":"4d","enabled":true},"tls_versions":{"enabled":false,"value":["TLSv1.1","TLSv1.3","SSLv3","TLSv1.2","TLSv1"]}},"deleted":false,"secondaryHostnames":[],"client":250053,"status":"active","active":false,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"1.1.1.1","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"created":"2024-01-09T00:45:06.263274Z","created_str":"","updated":"2024-01-09T01:14:20.013781Z","originProtocol":"MATCH","cname":"gcore05.ktcdnteam.link","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspended":false,"description":"server04","originGroup":503387} 
+2024/01/17 08:26:36 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 08:26:37 billing_model.go:318: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/17 08:26:37 billing_model.go:318: 395596. gcore05.ktcdnteam.link 2024-01-09 09:45:06 suspended 
+2024/01/17 08:26:37 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 08:26:37 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 08:26:37 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 08:26:37 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 08:26:41 api.go:60: [DELETE] Request >> https://api.gcore.com/cdn/resources/395596  
+2024/01/17 08:26:42 api.go:60: [DELETE] Request >> https://api.gcore.com/cdn/origin_groups/503387  
+2024/01/17 08:26:45 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 08:26:46 billing_model.go:318: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/17 08:26:46 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 08:26:46 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 08:26:46 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 08:26:46 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 08:26:51 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 08:26:51 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 08:26:52 billing_model.go:318: 379118. cloud11.kt.com 2024-01-02 10:26:14 active 
+2024/01/17 08:26:52 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 08:26:52 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 08:26:52 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 08:26:52 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 08:27:00 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/17 08:27:01 api.go:60: [PUT] Request >> https://api.gcore.com/cdn/resources/379118 {"id":379118,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":null,"hostHeader":{"enabled":true,"value":"210.104.79.216:80"},"stale":{"enabled":true,"value":["invalid_header"]},"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"edge_cache_settings":{"default":"0s","enabled":true},"tls_versions":{"enabled":false,"value":["SSLv3","TLSv1.1","TLSv1.2","TLSv1","TLSv1.3"]}},"deleted":false,"secondaryHostnames":[],"client":250053,"status":"active","active":false,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"Origins for server02.ktcdnteam.link","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"created":"2024-01-02T01:26:14.609699Z","created_str":"","updated":"2024-01-12T08:28:38.196954Z","originProtocol":"HTTP","cname":"cloud11.kt.com","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspended":false,"description":"server01","originGroup":467686} 
+2024/01/17 08:27:06 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 08:27:07 billing_model.go:318: 379118. cloud11.kt.com 2024-01-02 10:26:14 suspended 
+2024/01/17 08:27:07 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 08:27:07 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 08:27:07 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 08:27:07 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 08:27:10 api.go:60: [DELETE] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/17 08:27:11 api.go:60: [DELETE] Request >> https://api.gcore.com/cdn/origin_groups/467686  
+2024/01/17 08:27:14 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 08:27:15 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 08:27:15 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 08:27:15 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 08:27:15 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 08:35:09 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/undefined  
+2024/01/17 08:35:10 api.go:92: GET https://api.gcore.com/cdn/resources/undefined >>> [ERROR : 404] 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+ 
+2024/01/17 08:35:10 billing_model.go:490: 404 Not Found
+2024/01/17 08:35:10 route.go:80: 404 Not Found
+2024/01/17 08:35:23 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/undefined  
+2024/01/17 08:35:24 api.go:92: GET https://api.gcore.com/cdn/resources/undefined >>> [ERROR : 404] 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+ 
+2024/01/17 08:35:24 billing_model.go:490: 404 Not Found
+2024/01/17 08:35:24 route.go:80: 404 Not Found
+2024/01/17 08:51:35 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/undefined  
+2024/01/17 08:51:36 api.go:92: GET https://api.gcore.com/cdn/resources/undefined >>> [ERROR : 404] 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+ 
+2024/01/17 08:51:36 billing_model.go:490: 404 Not Found
+2024/01/17 08:51:36 route.go:80: 404 Not Found
+2024/01/17 08:51:56 main.go:28: Start api-server..
+2024/01/17 08:51:56 server.go:9: Start api-server..
+2024/01/17 08:51:59 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/undefined  
+2024/01/17 08:52:00 api.go:92: GET https://api.gcore.com/cdn/resources/undefined >>> [ERROR : 404] 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+ 
+2024/01/17 08:52:00 billing_model.go:490: 404 Not Found
+2024/01/17 08:52:00 route.go:80: 404 Not Found
+2024/01/17 08:52:05 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/undefined  
+2024/01/17 08:52:06 api.go:92: GET https://api.gcore.com/cdn/resources/undefined >>> [ERROR : 404] 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+ 
+2024/01/17 08:52:06 billing_model.go:490: 404 Not Found
+2024/01/17 08:52:06 route.go:80: 404 Not Found
+2024/01/17 08:52:28 main.go:28: Start api-server..
+2024/01/17 08:52:28 server.go:9: Start api-server..
+2024/01/17 08:52:30 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/undefined  
+2024/01/17 08:52:31 api.go:92: GET https://api.gcore.com/cdn/resources/undefined >>> [ERROR : 404] 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+ 
+2024/01/17 08:52:31 billing_model.go:490: 404 Not Found
+2024/01/17 08:52:31 route.go:80: 404 Not Found
+2024/01/17 08:53:28 main.go:28: Start api-server..
+2024/01/17 08:53:28 server.go:9: Start api-server..
+2024/01/17 08:53:30 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 08:53:30 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 08:53:31 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 08:53:31 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 08:53:31 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 08:53:31 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 08:53:36 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 08:53:36 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 08:53:37 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 08:53:37 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 08:53:37 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 08:53:37 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 08:53:39 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 08:53:39 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 08:53:40 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 08:53:40 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 08:53:40 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 08:53:40 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 08:53:41 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 08:53:42 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 08:53:42 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 08:53:42 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 08:53:42 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 08:57:23 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 08:57:23 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 08:57:24 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 08:57:24 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 08:57:24 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 08:57:24 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 09:17:35 main.go:28: Start api-server..
+2024/01/17 09:17:35 server.go:9: Start api-server..
+2024/01/17 09:18:04 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 09:18:04 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 09:18:05 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 09:18:05 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 09:18:05 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 09:18:05 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 09:18:15 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/397881  
+2024/01/17 09:18:16 api.go:89: {"id":397881,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":{"enabled":true,"value":true},"hostHeader":{"enabled":true,"value":"2.2.1.8"},"staticHeaders":null,"static_response_headers":null,"staticRequestHeaders":null,"allowedHttpMethods":null,"stale":{"enabled":true,"value":["error","updating","timeout","invalid_header","http_500","http_502","http_503","http_504","http_403","http_404","http_429"]},"cors":null,"proxy_cache_methods_set":null,"rewrite":null,"force_return":null,"secure_key":{"enabled":false,"key":null,"type":2},"cache_expire":null,"disable_cache":null,"ignore_cookie":{"enabled":true,"value":true},"cache_http_headers":null,"response_headers_hiding_policy":null,"override_browser_ttl":null,"fetch_compressed":null,"disable_proxy_force_ranges":null,"redirect_http_to_https":null,"redirect_https_to_http":null,"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"limit_bandwidth":null,"request_limiter":null,"bot_protection":null,"waf":null,"country_acl":{"enabled":true,"policy_type":"deny","excepted_values":["KR"]},"referrer_acl":null,"user_agent_acl":null,"ip_address_acl":null,"query_params_blacklist":null,"query_params_whitelist":null,"browser_cache_settings":{"enabled":true,"value":"3600s"},"edge_cache_settings":{"enabled":true,"custom_values":{},"value":"345600s"},"forward_host_header":null,"websockets":null,"use_default_le_chain":null,"use_rsa_le_cert":null,"use_dns01_le_challenge":null,"tls_versions":{"enabled":false,"value":["TLSv1.2","TLSv1.3","TLSv1","TLSv1.1","SSLv3"]},"follow_origin_redirect":{"enabled":true,"codes":[301,302]},"http3_enabled":null,"image_stack":null},"deleted":false,"secondaryHostnames":[],"rules":[],"client":250053,"status":"active","active":true,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"2.2.1.8","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"name":null,"created":"2024-01-10T04:47:42.081934Z","updated":"2024-01-16T07:27:44.164708Z","originProtocol":"HTTPS","cname":"gcore07.ktcdnteam.link","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspend_date":null,"suspended":false,"is_primary":null,"description":"server06","originGroup":505876,"sslData":null,"proxy_ssl_ca":null,"proxy_ssl_data":null,"shield_routing_map":null,"primary_resource":null}
+2024/01/17 09:18:16 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 09:18:18 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 09:18:18 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 09:18:19 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 09:18:19 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 09:18:19 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 09:18:19 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 09:18:57 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 09:18:57 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 09:18:58 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 09:18:58 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 09:18:58 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 09:18:58 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 09:44:59 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/17 09:44:59 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 09:54:45 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 09:54:45 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 09:54:46 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/17 09:54:46 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/17 09:54:46 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/17 09:54:46 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/17 09:54:48 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 09:54:48 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 09:54:49 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 09:54:49 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 09:54:49 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 09:54:49 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 active 
+2024/01/17 09:55:00 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/412316  
+2024/01/17 09:55:01 api.go:60: [PUT] Request >> https://api.gcore.com/cdn/resources/412316 {"id":412316,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":null,"hostHeader":{"enabled":true,"value":"9.9.9.9:8080"},"stale":{"enabled":true,"value":["error","updating"]},"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"edge_cache_settings":{"default":"4d","enabled":true},"tls_versions":{"enabled":false,"value":["SSLv3","TLSv1","TLSv1.1","TLSv1.2","TLSv1.3"]}},"deleted":false,"secondaryHostnames":[],"client":250053,"status":"active","active":false,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"9.9.9.9:8080","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"created":"2024-01-16T11:09:24.244663Z","created_str":"","updated":"2024-01-16T11:09:24.244679Z","originProtocol":"HTTP","cname":"www.asdfg.com","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspended":false,"description":"service09","originGroup":523549} 
+2024/01/17 09:55:06 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 09:55:08 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 09:55:08 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 09:55:08 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 09:55:08 billing_model.go:318: 412316. www.asdfg.com 2024-01-16 20:09:24 suspended 
+2024/01/17 09:55:11 api.go:60: [DELETE] Request >> https://api.gcore.com/cdn/resources/412316  
+2024/01/17 09:55:12 api.go:60: [DELETE] Request >> https://api.gcore.com/cdn/origin_groups/523549  
+2024/01/17 09:55:15 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 09:55:16 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 09:55:16 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 09:55:16 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 09:55:30 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 09:55:30 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 09:55:31 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 09:55:31 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 09:55:31 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 09:56:37 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 09:56:38 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 09:56:38 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 09:56:38 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 09:57:04 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 09:57:04 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 09:57:05 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 09:57:05 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 09:57:05 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 10:00:27 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/17 10:00:32 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 10:11:14 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 10:11:14 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 10:11:15 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 10:11:15 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 10:11:15 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 11:20:40 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 11:20:40 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 11:20:41 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/17 11:20:41 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/17 11:20:41 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/17 11:20:41 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/17 11:20:43 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 11:20:43 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 11:20:44 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 11:20:44 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 11:20:44 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 11:20:47 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/17 11:20:48 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 11:28:41 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 11:28:41 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 11:28:42 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 11:28:42 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 11:28:42 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 11:32:44 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 11:32:45 billing_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 11:32:45 billing_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 11:32:45 billing_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 11:48:28 main.go:28: Start api-server..
+2024/01/17 11:48:28 server.go:9: Start api-server..
+2024/01/17 11:48:31 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 11:48:31 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 11:48:32 resource_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 11:48:32 resource_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 11:48:32 resource_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 11:59:08 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 11:59:08 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 11:59:09 resource_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 11:59:09 resource_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 11:59:09 resource_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 11:59:19 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/397881  
+2024/01/17 11:59:20 api.go:89: {"id":397881,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":{"enabled":true,"value":true},"hostHeader":{"enabled":true,"value":"2.2.1.8"},"staticHeaders":null,"static_response_headers":null,"staticRequestHeaders":null,"allowedHttpMethods":null,"stale":{"enabled":true,"value":["error","updating","timeout","invalid_header","http_500","http_502","http_503","http_504","http_403","http_404","http_429"]},"cors":null,"proxy_cache_methods_set":null,"rewrite":null,"force_return":null,"secure_key":{"enabled":false,"key":null,"type":2},"cache_expire":null,"disable_cache":null,"ignore_cookie":{"enabled":true,"value":true},"cache_http_headers":null,"response_headers_hiding_policy":null,"override_browser_ttl":null,"fetch_compressed":null,"disable_proxy_force_ranges":null,"redirect_http_to_https":null,"redirect_https_to_http":null,"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"limit_bandwidth":null,"request_limiter":null,"bot_protection":null,"waf":null,"country_acl":{"enabled":true,"policy_type":"deny","excepted_values":["KR"]},"referrer_acl":null,"user_agent_acl":null,"ip_address_acl":null,"query_params_blacklist":null,"query_params_whitelist":null,"browser_cache_settings":{"enabled":true,"value":"3600s"},"edge_cache_settings":{"enabled":true,"custom_values":{},"value":"345600s"},"forward_host_header":null,"websockets":null,"use_default_le_chain":null,"use_rsa_le_cert":null,"use_dns01_le_challenge":null,"tls_versions":{"enabled":false,"value":["TLSv1.2","TLSv1.3","TLSv1","TLSv1.1","SSLv3"]},"follow_origin_redirect":{"enabled":true,"codes":[301,302]},"http3_enabled":null,"image_stack":null},"deleted":false,"secondaryHostnames":[],"rules":[],"client":250053,"status":"active","active":true,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"2.2.1.8","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"name":null,"created":"2024-01-10T04:47:42.081934Z","updated":"2024-01-16T07:27:44.164708Z","originProtocol":"HTTPS","cname":"gcore07.ktcdnteam.link","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspend_date":null,"suspended":false,"is_primary":null,"description":"server06","originGroup":505876,"sslData":null,"proxy_ssl_ca":null,"proxy_ssl_data":null,"shield_routing_map":null,"primary_resource":null}
+2024/01/17 11:59:20 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 11:59:30 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/397881  
+2024/01/17 11:59:31 api.go:89: {"id":397881,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":{"enabled":true,"value":true},"hostHeader":{"enabled":true,"value":"2.2.1.8"},"staticHeaders":null,"static_response_headers":null,"staticRequestHeaders":null,"allowedHttpMethods":null,"stale":{"enabled":true,"value":["error","updating","timeout","invalid_header","http_500","http_502","http_503","http_504","http_403","http_404","http_429"]},"cors":null,"proxy_cache_methods_set":null,"rewrite":null,"force_return":null,"secure_key":{"enabled":false,"key":null,"type":2},"cache_expire":null,"disable_cache":null,"ignore_cookie":{"enabled":true,"value":true},"cache_http_headers":null,"response_headers_hiding_policy":null,"override_browser_ttl":null,"fetch_compressed":null,"disable_proxy_force_ranges":null,"redirect_http_to_https":null,"redirect_https_to_http":null,"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"limit_bandwidth":null,"request_limiter":null,"bot_protection":null,"waf":null,"country_acl":{"enabled":true,"policy_type":"deny","excepted_values":["KR"]},"referrer_acl":null,"user_agent_acl":null,"ip_address_acl":null,"query_params_blacklist":null,"query_params_whitelist":null,"browser_cache_settings":{"enabled":true,"value":"3600s"},"edge_cache_settings":{"enabled":true,"custom_values":{},"value":"345600s"},"forward_host_header":null,"websockets":null,"use_default_le_chain":null,"use_rsa_le_cert":null,"use_dns01_le_challenge":null,"tls_versions":{"enabled":false,"value":["TLSv1.2","TLSv1.3","TLSv1","TLSv1.1","SSLv3"]},"follow_origin_redirect":{"enabled":true,"codes":[301,302]},"http3_enabled":null,"image_stack":null},"deleted":false,"secondaryHostnames":[],"rules":[],"client":250053,"status":"active","active":true,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"2.2.1.8","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"name":null,"created":"2024-01-10T04:47:42.081934Z","updated":"2024-01-16T07:27:44.164708Z","originProtocol":"HTTPS","cname":"gcore07.ktcdnteam.link","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspend_date":null,"suspended":false,"is_primary":null,"description":"server06","originGroup":505876,"sslData":null,"proxy_ssl_ca":null,"proxy_ssl_data":null,"shield_routing_map":null,"primary_resource":null}
+2024/01/17 11:59:31 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 12:00:36 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/397881  
+2024/01/17 12:00:37 api.go:89: {"id":397881,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":{"enabled":true,"value":true},"hostHeader":{"enabled":true,"value":"2.2.1.8"},"staticHeaders":null,"static_response_headers":null,"staticRequestHeaders":null,"allowedHttpMethods":null,"stale":{"enabled":true,"value":["error","updating","timeout","invalid_header","http_500","http_502","http_503","http_504","http_403","http_404","http_429"]},"cors":null,"proxy_cache_methods_set":null,"rewrite":null,"force_return":null,"secure_key":{"enabled":false,"key":null,"type":2},"cache_expire":null,"disable_cache":null,"ignore_cookie":{"enabled":true,"value":true},"cache_http_headers":null,"response_headers_hiding_policy":null,"override_browser_ttl":null,"fetch_compressed":null,"disable_proxy_force_ranges":null,"redirect_http_to_https":null,"redirect_https_to_http":null,"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"limit_bandwidth":null,"request_limiter":null,"bot_protection":null,"waf":null,"country_acl":{"enabled":true,"policy_type":"deny","excepted_values":["KR"]},"referrer_acl":null,"user_agent_acl":null,"ip_address_acl":null,"query_params_blacklist":null,"query_params_whitelist":null,"browser_cache_settings":{"enabled":true,"value":"3600s"},"edge_cache_settings":{"enabled":true,"custom_values":{},"value":"345600s"},"forward_host_header":null,"websockets":null,"use_default_le_chain":null,"use_rsa_le_cert":null,"use_dns01_le_challenge":null,"tls_versions":{"enabled":false,"value":["TLSv1.2","TLSv1.3","TLSv1","TLSv1.1","SSLv3"]},"follow_origin_redirect":{"enabled":true,"codes":[301,302]},"http3_enabled":null,"image_stack":null},"deleted":false,"secondaryHostnames":[],"rules":[],"client":250053,"status":"active","active":true,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"2.2.1.8","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"name":null,"created":"2024-01-10T04:47:42.081934Z","updated":"2024-01-16T07:27:44.164708Z","originProtocol":"HTTPS","cname":"gcore07.ktcdnteam.link","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspend_date":null,"suspended":false,"is_primary":null,"description":"server06","originGroup":505876,"sslData":null,"proxy_ssl_ca":null,"proxy_ssl_data":null,"shield_routing_map":null,"primary_resource":null}
+2024/01/17 12:00:37 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 12:01:27 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/397881  
+2024/01/17 12:01:28 api.go:89: {"id":397881,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":{"enabled":true,"value":true},"hostHeader":{"enabled":true,"value":"2.2.1.8"},"staticHeaders":null,"static_response_headers":null,"staticRequestHeaders":null,"allowedHttpMethods":null,"stale":{"enabled":true,"value":["error","updating","timeout","invalid_header","http_500","http_502","http_503","http_504","http_403","http_404","http_429"]},"cors":null,"proxy_cache_methods_set":null,"rewrite":null,"force_return":null,"secure_key":{"enabled":false,"key":null,"type":2},"cache_expire":null,"disable_cache":null,"ignore_cookie":{"enabled":true,"value":true},"cache_http_headers":null,"response_headers_hiding_policy":null,"override_browser_ttl":null,"fetch_compressed":null,"disable_proxy_force_ranges":null,"redirect_http_to_https":null,"redirect_https_to_http":null,"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"limit_bandwidth":null,"request_limiter":null,"bot_protection":null,"waf":null,"country_acl":{"enabled":true,"policy_type":"deny","excepted_values":["KR"]},"referrer_acl":null,"user_agent_acl":null,"ip_address_acl":null,"query_params_blacklist":null,"query_params_whitelist":null,"browser_cache_settings":{"enabled":true,"value":"3600s"},"edge_cache_settings":{"enabled":true,"custom_values":{},"value":"345600s"},"forward_host_header":null,"websockets":null,"use_default_le_chain":null,"use_rsa_le_cert":null,"use_dns01_le_challenge":null,"tls_versions":{"enabled":false,"value":["TLSv1.2","TLSv1.3","TLSv1","TLSv1.1","SSLv3"]},"follow_origin_redirect":{"enabled":true,"codes":[301,302]},"http3_enabled":null,"image_stack":null},"deleted":false,"secondaryHostnames":[],"rules":[],"client":250053,"status":"active","active":true,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"2.2.1.8","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"name":null,"created":"2024-01-10T04:47:42.081934Z","updated":"2024-01-16T07:27:44.164708Z","originProtocol":"HTTPS","cname":"gcore07.ktcdnteam.link","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspend_date":null,"suspended":false,"is_primary":null,"description":"server06","originGroup":505876,"sslData":null,"proxy_ssl_ca":null,"proxy_ssl_data":null,"shield_routing_map":null,"primary_resource":null}
+2024/01/17 12:01:28 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 12:03:17 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 12:03:17 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 12:03:18 resource_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 12:03:18 resource_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 12:03:18 resource_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 12:03:22 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/397881  
+2024/01/17 12:03:23 api.go:89: {"id":397881,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":{"enabled":true,"value":true},"hostHeader":{"enabled":true,"value":"2.2.1.8"},"staticHeaders":null,"static_response_headers":null,"staticRequestHeaders":null,"allowedHttpMethods":null,"stale":{"enabled":true,"value":["error","updating","timeout","invalid_header","http_500","http_502","http_503","http_504","http_403","http_404","http_429"]},"cors":null,"proxy_cache_methods_set":null,"rewrite":null,"force_return":null,"secure_key":{"enabled":false,"key":null,"type":2},"cache_expire":null,"disable_cache":null,"ignore_cookie":{"enabled":true,"value":true},"cache_http_headers":null,"response_headers_hiding_policy":null,"override_browser_ttl":null,"fetch_compressed":null,"disable_proxy_force_ranges":null,"redirect_http_to_https":null,"redirect_https_to_http":null,"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"limit_bandwidth":null,"request_limiter":null,"bot_protection":null,"waf":null,"country_acl":{"enabled":true,"policy_type":"deny","excepted_values":["KR"]},"referrer_acl":null,"user_agent_acl":null,"ip_address_acl":null,"query_params_blacklist":null,"query_params_whitelist":null,"browser_cache_settings":{"enabled":true,"value":"3600s"},"edge_cache_settings":{"enabled":true,"custom_values":{},"value":"345600s"},"forward_host_header":null,"websockets":null,"use_default_le_chain":null,"use_rsa_le_cert":null,"use_dns01_le_challenge":null,"tls_versions":{"enabled":false,"value":["TLSv1.2","TLSv1.3","TLSv1","TLSv1.1","SSLv3"]},"follow_origin_redirect":{"enabled":true,"codes":[301,302]},"http3_enabled":null,"image_stack":null},"deleted":false,"secondaryHostnames":[],"rules":[],"client":250053,"status":"active","active":true,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"2.2.1.8","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"name":null,"created":"2024-01-10T04:47:42.081934Z","updated":"2024-01-16T07:27:44.164708Z","originProtocol":"HTTPS","cname":"gcore07.ktcdnteam.link","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspend_date":null,"suspended":false,"is_primary":null,"description":"server06","originGroup":505876,"sslData":null,"proxy_ssl_ca":null,"proxy_ssl_data":null,"shield_routing_map":null,"primary_resource":null}
+2024/01/17 12:03:23 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 12:16:49 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 12:16:49 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 12:16:51 resource_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 12:16:51 resource_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 12:16:51 resource_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 12:17:09 api.go:60: [POST] Request >> https://api.gcore.com/cdn/origin_groups {"id":0,"auth_type":"none","use_next":false,"sources":[{"source":"1.1.1.1","backup":false,"enabled":true}],"name":"1.1.1.1"} 
+2024/01/17 12:17:10 api.go:60: [POST] Request >> https://api.gcore.com/cdn/resources {"sslEnabled":false,"sslData":null,"active":true,"originGroup":526029,"originProtocol":"MATCH","cname":"gcore01.ktcdnteam.link","description":"service01","origin":"","secondaryHostnames":[],"options":{"edge_cache_types":{"enabled":true,"default":"4d"},"cache_expire":null,"stale":{"enabled":true,"value":["error","updating"]},"allowedHttpMethods":null,"cache_http_headers":null,"hostHeader":{"enabled":true,"value":"1.1.1.1"},"forward_host_header":null,"limit_bandwidth":null,"bot_protection":null}} 
+2024/01/17 12:17:12 resource_model.go:483: {"id":414622,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":null,"hostHeader":{"enabled":true,"value":"1.1.1.1"},"staticHeaders":null,"static_response_headers":null,"staticRequestHeaders":null,"allowedHttpMethods":null,"stale":{"enabled":true,"value":["error","updating"]},"cors":null,"proxy_cache_methods_set":null,"rewrite":null,"force_return":null,"secure_key":null,"cache_expire":null,"disable_cache":null,"ignore_cookie":null,"cache_http_headers":null,"response_headers_hiding_policy":null,"override_browser_ttl":null,"fetch_compressed":null,"disable_proxy_force_ranges":null,"redirect_http_to_https":null,"redirect_https_to_http":null,"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"limit_bandwidth":null,"request_limiter":null,"bot_protection":null,"waf":null,"country_acl":null,"referrer_acl":null,"user_agent_acl":null,"ip_address_acl":null,"query_params_blacklist":null,"query_params_whitelist":null,"browser_cache_settings":null,"edge_cache_settings":{"enabled":true,"default":"4d"},"forward_host_header":null,"websockets":null,"use_default_le_chain":null,"use_rsa_le_cert":null,"use_dns01_le_challenge":null,"tls_versions":{"enabled":false,"value":["SSLv3","TLSv1","TLSv1.1","TLSv1.2","TLSv1.3"]},"follow_origin_redirect":null,"http3_enabled":null,"image_stack":null},"deleted":false,"secondaryHostnames":[],"rules":[],"client":250053,"status":"processed","active":true,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"1.1.1.1","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"name":null,"created":"2024-01-17T09:17:11.876711Z","updated":"2024-01-17T09:17:11.876727Z","originProtocol":"MATCH","cname":"gcore01.ktcdnteam.link","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspend_date":null,"suspended":false,"is_primary":null,"description":"service01","originGroup":526029,"sslData":null,"proxy_ssl_ca":null,"proxy_ssl_data":null,"shield_routing_map":null,"primary_resource":null}
+2024/01/17 12:17:15 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 12:17:15 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 12:17:16 resource_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 12:17:16 resource_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 12:17:16 resource_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 12:17:16 resource_model.go:318: 414622. gcore01.ktcdnteam.link 2024-01-17 18:17:11 processed 
+2024/01/17 12:17:17 resource_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 12:17:17 resource_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 12:17:17 resource_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 12:17:17 resource_model.go:318: 414622. gcore01.ktcdnteam.link 2024-01-17 18:17:11 processed 
+2024/01/17 12:17:20 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/414622  
+2024/01/17 12:17:21 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 12:26:11 main.go:28: Start api-server..
+2024/01/17 12:26:11 server.go:9: Start api-server..
+2024/01/17 12:26:18 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/17 12:26:19 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 12:27:13 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/17 12:27:14 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 12:35:45 main.go:28: Start api-server..
+2024/01/17 12:35:45 server.go:9: Start api-server..
+2024/01/17 12:37:40 main.go:28: Start api-server..
+2024/01/17 12:37:40 server.go:9: Start api-server..
+2024/01/17 12:37:43 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/17 12:37:44 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 12:39:22 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/17 12:39:23 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 12:39:46 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/17 12:39:47 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 12:40:00 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/17 12:40:01 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 12:40:43 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/17 12:40:44 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 12:41:48 main.go:28: Start api-server..
+2024/01/17 12:41:48 server.go:9: Start api-server..
+2024/01/17 12:41:51 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/17 12:41:52 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 12:57:36 main.go:28: Start api-server..
+2024/01/17 12:57:36 server.go:9: Start api-server..
+2024/01/17 12:59:55 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources  
+2024/01/17 12:59:55 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/17 12:59:56 resource_model.go:318: 396129. gcore06.ktcdnteam.link 2024-01-09 16:40:11 active 
+2024/01/17 12:59:56 resource_model.go:318: 397881. gcore07.ktcdnteam.link 2024-01-10 13:47:42 active 
+2024/01/17 12:59:56 resource_model.go:318: 412315. www.asdf.com 2024-01-16 20:08:50 active 
+2024/01/17 12:59:56 resource_model.go:318: 414622. gcore01.ktcdnteam.link 2024-01-17 18:17:11 active 
+2024/01/17 12:59:57 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/396129  
+2024/01/17 12:59:58 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  

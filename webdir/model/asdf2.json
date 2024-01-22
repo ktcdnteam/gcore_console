@@ -8,7 +8,7 @@
     "description": "cdn03",
     "secondaryHostnames": [],
     "options": {
-      "edge_cache_settings": {
+      "edge_cache_types": {
         "enabled": true,
         "default": "4d"
       },
@@ -18,6 +18,16 @@
         "value": [
           "error",
           "updating"
+      //default:  ture면서 error, updating 
+          //       "timeout",
+          //       "invalid_header",
+          //       "http_500",
+          //       "http_502",
+          //       "http_503",
+          //       "http_504",
+          //       "http_403",
+          //       "http_404",
+          //       "http_429"
         ]
       },
       "allowedHttpMethods": null,

@@ -9,7 +9,7 @@
     "url": "",
     "menu": "cdn-standard",
     "children": [
-      {
+      {          
         "displayName": "CDN Resource",
         "url": "/cdn/list",
         "meta": {
@@ -25,19 +25,21 @@
         "menu": "cdnEdgeManagement"
       },
       {
-        "displayName": "Origin Groups",
-        "url": "/cdn/origin_group",
-        "meta": {
-          "subtitle": "Origin Groups을 설정합니다.",
-          "manualLink": "",
-          "qnaCategorySq": 3,
-          "qnaCategoryName": "CDN Edge+",
-          "unavailableZones": [
-            "DX-Central",
-            "DX-DCN-CJ"
-          ]
-        },
-        "menu": "cdnEdgeOriginGroups"
+        "__comment2__": {
+          "displayName": "Origin Groups",
+          "url": "/cdn/origin_group",
+          "meta": {
+            "subtitle": "Origin Groups을 설정합니다.",
+            "manualLink": "",
+            "qnaCategorySq": 3,
+            "qnaCategoryName": "CDN Edge+",
+            "unavailableZones": [
+              "DX-Central",
+              "DX-DCN-CJ"
+            ]
+          },
+          "menu": "cdnEdgeOriginGroups"
+        }
       },
       {
         "displayName": "Purge",
@@ -53,6 +55,21 @@
           ]
         },
         "menu": "cdnEdgePurge"
+      },
+      {
+        "displayName": "Statistics",
+        "url": "/cdn/usage",
+        "meta": {
+          "subtitle": "CDN Resource 통계입니다.",
+          "manualLink": "",
+          "qnaCategorySq": 3,
+          "qnaCategoryName": "CDN Edge+",
+          "unavailableZones": [
+            "DX-Central",
+            "DX-DCN-CJ"
+          ]
+        },
+        "menu": "cdnEdgeStatistics"
       }
     ]
   }

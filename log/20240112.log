@@ -1,0 +1,225 @@
+2024/01/12 03:29:38 main.go:28: Start api-server..
+2024/01/12 03:29:38 server.go:9: Start api-server..
+2024/01/12 03:29:41 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 03:29:42 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 03:29:55 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 03:29:56 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 03:31:04 main.go:28: Start api-server..
+2024/01/12 03:31:04 server.go:9: Start api-server..
+2024/01/12 03:31:15 main.go:28: Start api-server..
+2024/01/12 03:31:15 server.go:9: Start api-server..
+2024/01/12 03:37:59 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 03:38:01 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 03:38:42 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 03:38:43 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 03:38:48 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 03:38:49 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 03:47:04 main.go:28: Start api-server..
+2024/01/12 03:47:04 server.go:9: Start api-server..
+2024/01/12 03:47:11 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 03:47:12 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 03:47:31 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 03:47:34 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 04:01:45 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 04:01:46 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 04:01:59 main.go:28: Start api-server..
+2024/01/12 04:01:59 server.go:9: Start api-server..
+2024/01/12 04:02:01 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 04:02:02 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 04:04:53 main.go:28: Start api-server..
+2024/01/12 04:04:53 server.go:9: Start api-server..
+2024/01/12 04:05:11 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 04:05:12 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 04:05:47 main.go:28: Start api-server..
+2024/01/12 04:05:47 server.go:9: Start api-server..
+2024/01/12 04:05:49 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 04:05:50 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 04:06:53 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 04:06:56 main.go:28: Start api-server..
+2024/01/12 04:06:56 server.go:9: Start api-server..
+2024/01/12 04:07:27 main.go:28: Start api-server..
+2024/01/12 04:07:27 server.go:9: Start api-server..
+2024/01/12 04:07:32 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 04:07:33 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 04:57:26 main.go:28: Start api-server..
+2024/01/12 04:57:26 server.go:9: Start api-server..
+2024/01/12 04:57:28 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 04:57:29 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 04:58:50 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 04:58:51 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 05:11:06 main.go:28: Start api-server..
+2024/01/12 05:11:06 server.go:9: Start api-server..
+2024/01/12 05:11:09 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 05:11:10 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 05:32:13 main.go:28: Start api-server..
+2024/01/12 05:32:13 server.go:9: Start api-server..
+2024/01/12 05:32:15 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 05:32:16 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 05:35:59 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 05:36:00 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 07:00:32 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 07:00:33 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/12 07:00:33 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/12 07:00:39 main.go:28: Start api-server..
+2024/01/12 07:00:39 server.go:9: Start api-server..
+2024/01/12 07:00:42 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 07:00:43 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 07:02:21 main.go:28: Start api-server..
+2024/01/12 07:02:21 server.go:9: Start api-server..
+2024/01/12 07:02:53 main.go:28: Start api-server..
+2024/01/12 07:02:53 server.go:9: Start api-server..
+2024/01/12 07:03:27 main.go:28: Start api-server..
+2024/01/12 07:03:27 server.go:9: Start api-server..
+2024/01/12 07:03:29 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 07:03:30 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 07:04:14 main.go:28: Start api-server..
+2024/01/12 07:04:14 server.go:9: Start api-server..
+2024/01/12 07:04:19 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 07:04:20 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:01:56 main.go:28: Start api-server..
+2024/01/12 08:01:56 server.go:9: Start api-server..
+2024/01/12 08:02:12 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:02:13 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:24:31 main.go:28: Start api-server..
+2024/01/12 08:24:31 server.go:9: Start api-server..
+2024/01/12 08:34:26 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:34:27 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:36:39 main.go:28: Start api-server..
+2024/01/12 08:36:39 server.go:9: Start api-server..
+2024/01/12 08:36:42 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:36:43 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:37:28 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:37:29 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:40:37 main.go:28: Start api-server..
+2024/01/12 08:40:37 server.go:9: Start api-server..
+2024/01/12 08:40:39 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:40:40 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:42:15 main.go:28: Start api-server..
+2024/01/12 08:42:15 server.go:9: Start api-server..
+2024/01/12 08:42:16 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:42:17 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:46:19 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:46:19 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:46:35 main.go:28: Start api-server..
+2024/01/12 08:46:35 server.go:9: Start api-server..
+2024/01/12 08:46:37 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:46:38 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:47:59 main.go:28: Start api-server..
+2024/01/12 08:47:59 server.go:9: Start api-server..
+2024/01/12 08:48:04 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:48:05 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:49:09 main.go:28: Start api-server..
+2024/01/12 08:49:09 server.go:9: Start api-server..
+2024/01/12 08:49:14 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:49:15 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:54:58 main.go:28: Start api-server..
+2024/01/12 08:54:58 server.go:9: Start api-server..
+2024/01/12 08:55:01 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:55:03 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:55:59 main.go:28: Start api-server..
+2024/01/12 08:55:59 server.go:9: Start api-server..
+2024/01/12 08:56:02 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:56:03 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:56:04 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:56:05 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:56:39 main.go:28: Start api-server..
+2024/01/12 08:56:39 server.go:9: Start api-server..
+2024/01/12 08:56:41 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:56:42 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:57:22 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:57:23 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:57:34 main.go:28: Start api-server..
+2024/01/12 08:57:34 server.go:9: Start api-server..
+2024/01/12 08:57:36 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:57:37 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:58:04 main.go:28: Start api-server..
+2024/01/12 08:58:04 server.go:9: Start api-server..
+2024/01/12 08:58:06 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:58:08 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:58:09 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:58:28 main.go:28: Start api-server..
+2024/01/12 08:58:28 server.go:9: Start api-server..
+2024/01/12 08:58:31 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:58:32 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:58:34 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:58:35 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:58:56 main.go:28: Start api-server..
+2024/01/12 08:58:56 server.go:9: Start api-server..
+2024/01/12 08:59:00 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:59:01 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:59:27 main.go:28: Start api-server..
+2024/01/12 08:59:27 server.go:9: Start api-server..
+2024/01/12 08:59:30 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:59:31 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 08:59:51 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 08:59:52 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 09:00:22 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 09:00:23 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 09:01:08 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 09:01:09 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 09:26:25 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 09:26:26 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 09:27:24 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 09:27:25 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 09:27:31 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 09:27:32 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 09:28:06 main.go:28: Start api-server..
+2024/01/12 09:28:06 server.go:9: Start api-server..
+2024/01/12 09:28:09 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 09:28:10 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 09:30:09 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 09:30:10 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 09:30:15 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 09:30:16 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 09:32:34 main.go:28: Start api-server..
+2024/01/12 09:32:34 server.go:9: Start api-server..
+2024/01/12 09:32:40 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 09:32:41 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 10:24:25 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 10:24:26 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/12 10:24:26 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/12 10:24:28 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 10:24:29 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 10:29:03 main.go:28: Start api-server..
+2024/01/12 10:29:03 server.go:9: Start api-server..
+2024/01/12 10:29:05 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 10:29:06 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 11:16:23 main.go:28: Start api-server..
+2024/01/12 11:16:23 server.go:9: Start api-server..
+2024/01/12 11:16:26 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 11:16:27 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 11:17:11 main.go:28: Start api-server..
+2024/01/12 11:17:11 server.go:9: Start api-server..
+2024/01/12 11:17:14 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 11:17:15 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 11:56:38 main.go:28: Start api-server..
+2024/01/12 11:56:39 server.go:9: Start api-server..
+2024/01/12 11:56:45 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 11:56:46 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 11:58:16 main.go:28: Start api-server..
+2024/01/12 11:58:16 server.go:9: Start api-server..
+2024/01/12 11:58:17 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 11:58:18 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 12:02:34 main.go:28: Start api-server..
+2024/01/12 12:02:34 server.go:9: Start api-server..
+2024/01/12 12:02:36 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 12:02:40 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 12:03:12 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 12:03:14 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 12:03:58 main.go:28: Start api-server..
+2024/01/12 12:03:58 server.go:9: Start api-server..
+2024/01/12 12:04:01 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 12:04:05 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 12:06:57 main.go:28: Start api-server..
+2024/01/12 12:06:57 server.go:9: Start api-server..
+2024/01/12 12:06:59 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 12:07:00 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 12:07:53 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 12:07:54 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/12 12:15:41 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/12 12:15:42 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  
+2024/01/15 03:04:49 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/15 03:04:50 api.go:79: [Token ERROR] >> GET Token Start
+2024/01/15 03:04:50 loadconf.go:69: [POST] NEW TOKEN >> {"username":"dlek55@naver.com","password":"number1Cloud!2#","one_time_password":""} 
+2024/01/15 03:04:52 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources/379118  
+2024/01/15 03:04:53 api.go:60: [GET] Request >> https://api.gcore.com/cdn/origin_groups  

@@ -8,7 +8,7 @@
     "description": "",
     "secondaryHostnames": [],
     "options": {
-        "edge_cache_settings": {
+        "edge_cache_types": {
             "enabled": true,
             "default": "4d"
         },

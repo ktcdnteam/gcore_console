@@ -367,3 +367,13 @@
 2024/01/22 10:26:57 resource_model.go:328: 412315. www.asdf.com 0001-01-01 00:00:00 +0000 UTC active 
 2024/01/22 10:26:57 resource_model.go:328: 397881. gcore07.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
 2024/01/22 10:26:57 resource_model.go:328: 396129. gcore06.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:46:08 main.go:28: Start api-server..
+2024/01/22 10:46:08 server.go:9: Start api-server..
+2024/01/22 10:46:13 route.go:57: id,cname,status
+2024/01/22 10:46:13 route.go:58: id,cname,status
+2024/01/22 10:46:13 api.go:60: [GET] Request >> https://api.gcore.com/cdn/resources?ordering=status,-id&deleted=false&fields=id,cname,status  
+2024/01/22 10:46:16 resource_model.go:328: 425691. service06.gcore.com 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:46:16 resource_model.go:328: 414622. gcore01.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:46:16 resource_model.go:328: 412315. www.asdf.com 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:46:16 resource_model.go:328: 397881. gcore07.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 
+2024/01/22 10:46:16 resource_model.go:328: 396129. gcore06.ktcdnteam.link 0001-01-01 00:00:00 +0000 UTC active 

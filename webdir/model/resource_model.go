@@ -12,8 +12,12 @@ import (
 	"time"
 )
 
+type ResourceSimpleBlock struct {
+	ID int `json:"id"`
+}
+
 // {"id":379118,"options":{"custom_server_name":null,"slice":null,"gzipOn":null,"brotli_compression":null,"ignoreQueryString":null,"hostHeader":{"enabled":true,"value":"210.104.79.216:80"},"staticHeaders":null,"static_response_headers":null,"staticRequestHeaders":null,"allowedHttpMethods":null,"stale":{"enabled":true,"value":["error","updating"]},"cors":null,"proxy_cache_methods_set":null,"rewrite":null,"force_return":null,"secure_key":null,"cache_expire":null,"disable_cache":null,"ignore_cookie":null,"cache_http_headers":null,"response_headers_hiding_policy":null,"override_browser_ttl":null,"fetch_compressed":null,"disable_proxy_force_ranges":null,"redirect_http_to_https":null,"redirect_https_to_http":null,"sni":{"enabled":true,"sni_type":"dynamic","custom_hostname":""},"limit_bandwidth":null,"request_limiter":null,"bot_protection":null,"waf":null,"country_acl":null,"referrer_acl":null,"user_agent_acl":null,"ip_address_acl":null,"query_params_blacklist":null,"query_params_whitelist":null,"browser_cache_settings":null,"edge_cache_settings":{"enabled":true,"default":"0s"},"forward_host_header":null,"websockets":null,"use_default_le_chain":null,"use_rsa_le_cert":null,"use_dns01_le_challenge":null,"tls_versions":{"enabled":false,"value":["TLSv1.3","TLSv1.1","TLSv1.2","TLSv1","SSLv3"]},"follow_origin_redirect":null,"http3_enabled":null,"image_stack":null},"deleted":false,"secondaryHostnames":[],"rules":[],"client":250053,"status":"active","active":true,"enabled":true,"preset_applied":false,"vp_enabled":false,"originGroup_name":"Origins for server02.ktcdnteam.link","shielded":false,"shield_dc":null,"shield_enabled":false,"full_custom_enabled":false,"can_purge_by_urls":false,"name":null,"created":"2024-01-02T01:26:14.609699Z","updated":"2024-01-10T02:32:18.306957Z","originProtocol":"HTTP","cname":"cloud11.kt.com","sslEnabled":false,"ssl_automated":false,"proxy_ssl_enabled":false,"suspend_date":null,"suspended":false,"is_primary":null,"description":"server01","originGroup":467686,"sslData":null,"proxy_ssl_ca":null,"proxy_ssl_data":null,"shield_routing_map":null,"primary_resource":null}
-type CDNBlock struct {
+type GetResourceBlock struct {
 	ID      int `json:"id"`
 	Options struct {
 		CustomServerName  any `json:"custom_server_name"`
@@ -308,7 +312,7 @@ type ResourceInfoBlock struct {
 	Description string `json:"description"`
 }
 
-func GetResourceList(url string) ([]*CDNBlock, error) {
+func GetResourceSimpleList(url string) ([]*GetResourceBlock, error) {
 	url = strings.TrimLeft(url, "/")
 	respBody, err := gcoreapi.Request(nil, url, "GET", loadconf.TOTKENINFO.Access)
 	if err != nil {
@@ -316,17 +320,39 @@ func GetResourceList(url string) ([]*CDNBlock, error) {
 		return nil, err
 	}
 
-	var cdnList []*CDNBlock
+	var cdnList []*GetResourceBlock
 	err = json.Unmarshal(respBody, &cdnList)
 	if err != nil {
 		log.Println(err)
 		return nil, err
 	}
 
-	for _, v := range cdnList {
-		// v.CreatedStr = UTCChangeKR()
-		log.Printf("%d. %s %s %s \n", v.ID, v.Cname, v.Created, v.Status)
+	// for _, v := range cdnList {
+	// 	// v.CreatedStr = UTCChangeKR()
+	// 	log.Printf("%d. %s %s %s \n", v.ID, v.Cname, v.Created, v.Status)
+	// }
+
+	return cdnList, nil
+}
+func GetResourceList(url string) ([]*GetResourceBlock, error) {
+	url = strings.TrimLeft(url, "/")
+	respBody, err := gcoreapi.Request(nil, url, "GET", loadconf.TOTKENINFO.Access)
+	if err != nil {
+		log.Println(err)
+		return nil, err
 	}
+
+	var cdnList []*GetResourceBlock
+	err = json.Unmarshal(respBody, &cdnList)
+	if err != nil {
+		log.Println(err)
+		return nil, err
+	}
+
+	// for _, v := range cdnList {
+	// 	// v.CreatedStr = UTCChangeKR()
+	// 	log.Printf("%d. %s %s %s \n", v.ID, v.Cname, v.Created, v.Status)
+	// }
 
 	return cdnList, nil
 }
@@ -494,13 +520,13 @@ func CreateCDN(u *ResourceBlock) error {
 
 	return nil
 }
-func GetResource(id string) (*CDNBlock, error) {
+func GetResource(id string) (*GetResourceBlock, error) {
 	respBody, err := gcoreapi.Request(nil, fmt.Sprintf("cdn/resources/%s", id), "GET", loadconf.TOTKENINFO.Access)
 	if err != nil {
 		log.Println(err)
 		return nil, err
 	}
-	var cdnInfo *CDNBlock
+	var cdnInfo *GetResourceBlock
 	err = json.Unmarshal(respBody, &cdnInfo)
 	if err != nil {
 		log.Println(err)

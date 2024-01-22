@@ -53,15 +53,22 @@ func Route() *echo.Echo {
 		// ordering := c.QueryParam("ordering")
 
 		// deleted := c.QueryParam("deleted")
-		fields := c.QueryParam("fields")
-		log.Println(fields)
-		log.Println("id,cname,status")
-		cdnList, err := model.GetResourceList(c.Request().RequestURI)
-		if err != nil {
-			log.Println(err)
-			return c.JSON(200, &ResponseMsgBlock{Status: "10", Data: err.Error()})
+		if c.QueryParam("fields") == "id,cname,status" {
+			cdnList, err := model.GetResourceList(c.Request().RequestURI)
+			if err != nil {
+				log.Println(err)
+				return c.JSON(200, &ResponseMsgBlock{Status: "10", Data: err.Error()})
+			}
+			return c.JSON(200, &ResponseMsgBlock{Status: "00", Data: cdnList})
+		} else {
+			cdnList, err := model.GetResourceList(c.Request().RequestURI)
+			if err != nil {
+				log.Println(err)
+				return c.JSON(200, &ResponseMsgBlock{Status: "10", Data: err.Error()})
+			}
+			return c.JSON(200, &ResponseMsgBlock{Status: "00", Data: cdnList})
 		}
-		return c.JSON(200, &ResponseMsgBlock{Status: "00", Data: cdnList})
+
 	})
 	// CDN Resource 상세보기
 	e.GET("/cdn/resources/:id", func(c echo.Context) error {
